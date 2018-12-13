@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+
+<category>
+<pattern>$PROBLEM START FIVE</pattern>
+<template>So remember that pine tree I told you about? Well I've decided I want to plant a new one every year! We've done lots with equations so I'm pretty sure we can use an equation to figure this out. But I want to know how many trees I will have in <set name="topic">five years</set>.</template>
+</category>
+
+<category>
+<pattern>$PROBLEM START 5</pattern>
+<template>So remember that pine tree I told you about? Well I've decided I want to plant a new one every year! We've done lots with equations so I'm pretty sure we can use an equation to figure this out. But I want to figure out how many trees I will have in <set name="topic">five years</set>.</template>
+</category>
+
+  <category>
+<pattern>next step 5 2</pattern>
+<template>Now that we have an equation. Can we use the same one to figure out how many trees I will have in <set name="topic">fourteen years</set>?</template>
+</category>
+
+<category>
+<pattern>prior step 5 1</pattern>
+<template>Back to how figuring out how many trees I will have in <set name="topic">five years</set>!</template>
+</category>
+
+
+<category>
+<pattern>prior step 5 1 a</pattern>
+<template>Interesting. We figured this out right? I will have <set name="topic">seven trees</set> in five years.</template>
+</category>
+
+<category>
+<pattern>next step 5 2 a</pattern>
+<template>I told you the answer to this one. I will have <set name="topic">sixteen trees</set> in fourteen years.</template>
+</category>
+
+<topic name = "seven trees">
+
+    <category>
+      <pattern>*</pattern>
+      <template>Have you ever planted a tree before?</template>
+    </category>
+
+   <category>
+    <pattern>^ GREAT ^</pattern>
+    <template>yeah yeah. I am pretty great.</template>
+  </category>
+
+
+  <category>
+    <pattern>^ Good ^</pattern>
+    <template>Good? That was awesome! </template>
+  </category>
+
+
+  <category>
+    <pattern>^ Nice ^</pattern>
+    <template>Nice? That was awesome! </template>
+  </category>
+
+
+      <category>
+        <pattern>*</pattern>
+        <that>Have you ever planted a tree before</that>
+        <template>My pine trees will be my first trees I have ever planted. And someone will probably have to help me because my fingers are so small! Anyway, lets go to the next step!</template>
+      </category>
+
+
+</topic>
+
+  <topic name = "sixteen trees">
+
+    <category>
+      <pattern>*</pattern>
+      <template>I am excited about all my trees! I might plant more than one a year.</template>
+    </category>
+    
+   <category>
+    <pattern>^ GREAT ^</pattern>
+    <template>yeah yeah. I am pretty great.</template>
+  </category>
+
+
+  <category>
+    <pattern>^ Good ^</pattern>
+    <template>Good? That was awesome! </template>
+  </category>
+
+
+  <category>
+    <pattern>^ Nice ^</pattern>
+    <template>Nice? That was awesome! </template>
+  </category>
+
+    <category>
+      <pattern>*</pattern>
+      <that>I might plant more than one a year</that>
+      <template>Cool! Lets go to the next problem!</template>
+    </category>
+
+
+
+  </topic>
+
+
+</aiml>

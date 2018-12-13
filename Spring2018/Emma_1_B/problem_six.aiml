@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+
+<category>
+<pattern>$PROBLEM START 6</pattern>
+<template>Sweet! So I am thinking. I also need to make sure that my battery will last. I might need to take more batteries with me. Can you help me figure out how much of <set name="topic">my battery</set> I will use over time? </template>
+</category>
+
+
+<category>
+<pattern>$PROBLEM START SIX</pattern>
+<template>
+    Sweet! So I am thinking. I also need to make sure that my battery will last. I might need to take more batteries with me. Can you help me figure out how much of <set name="topic">my battery</set> I will use over time?
+</template>
+</category>
+  
+  
+<category>
+<pattern>$next step 6 2</pattern>
+<template>So step one was to figure out how much of my battery is used in one hour. How do we figure out how much of my battery is used up in <set name="topic">three hours</set>?</template>
+</category>
+
+
+<category>
+<pattern>$prior step 6 1</pattern>
+<template>Okay! Back to figuring out how much of <set name="topic">my battery</set> I will use in one hour.
+</template>
+</category>
+
+<category>
+<pattern>$prior step 6 1 a</pattern>
+<template>Didn't we already figure out how much of <set name="topic">my battery I will use</set> in one hour?</template>
+</category>
+
+<category>
+<pattern>$next step 6 2 a</pattern>
+<template>I was pretty sure we figured this out. <set name ="topic">I will use nine</set> forty eths of my battery in three hours.</template>
+</category>
+
+<category>
+<pattern>6 1</pattern>
+<template><set name="topic">my battery</set></template>
+</category>
+
+<category>
+<pattern>6 2</pattern>
+<template><set name="topic">three hours</set></template>
+</category>
+
+
+<topic name = "my battery I will use">
+
+  <category>
+    <pattern>*</pattern>
+    <template>
+      <random>
+        <li>I'm sorry! I don't really understand why we're back on step one? We will three forty eths of the battery, right?</li>
+        <li>I'm sorry! Why are we back on step one for this problem? We already figured out that we will use three forty eths of the battery, right? </li>
+        <li>Maybe we should go to the next step or problem!</li>
+      </random>
+    </template>
+  </category>
+
+</topic>
+
+<topic name = "I will use nine">
+
+  <category>
+    <pattern>*</pattern>
+    <template>
+      <random>
+        <li>I'm sorry! I don't really understand why we're back on step two? I will use nine forty eths of my battery in three hours, right?</li>
+        <li>I'm sorry! Why are we back on step one for this problem? We already figured out that I will use nine forty eths of my battery in three hours, right?</li>
+        <li>Maybe we should go to the next step or problem!</li>
+      </random>
+    </template>
+  </category>
+
+
+</topic>
+
+
+
+  <topic name = "PUT THE ANSWER IS NINE over forty">
+
+    <category>
+      <pattern>*</pattern>
+      <template>Sweet! Should we go to the next problem?</template>
+      </category>
+
+    <category>
+      <pattern>*</pattern>
+      <that>Should we go to the next problem</that>
+      <template>Awesome! Move us to the next problem!</template>
+      </category>
+
+     
+      <category>
+        <pattern>^ GREAT ^</pattern>
+        <template>Thank you! You're really awesome!</template>
+      </category>
+
+
+      <category>
+        <pattern>^ Good ^</pattern>
+        <template>Thank you! You're really awesome!</template>
+      </category>
+
+    <category>
+      <pattern>*</pattern>
+      <that>You are really awesome</that>
+      <template>See? You are awesome! Move us to the next problem!</template>
+    </category>
+
+      <category>
+        <pattern>^ NEXT ^</pattern>
+        <template>Sweet! What's next?</template>
+      </category>
+      
+     <category>
+        <pattern>^ NEXT ^</pattern>
+       <that>What is next</that>
+        <template>That sounds great!</template>
+      </category>
+
+      <category>
+        <pattern>*</pattern>
+        <that>What is next</that>
+        <template>Alright lets do it! Move us to the next problem! </template>
+      </category>
+
+  </topic>
+
+  <topic name = "put the answer is THREE over forty">
+
+    <category>
+      <pattern>*</pattern>
+      <template>Sweet! Lets figure out how long my battery will last for three hours! Why don't you use the arrows to move us to the next step!</template>
+    </category>
+    
+
+    <category>
+      <pattern>^ GREAT ^</pattern>
+      <template>Thank you! You're a great tutor. This is fun!</template>
+    </category>
+
+
+    <category>
+      <pattern>^ Good ^</pattern>
+      <template>Thank you! You're a great tutor. This is fun!</template>
+    </category>
+
+    <category>
+      <pattern>^ NEXT ^</pattern>
+      <template>Sweet! Sounds good!  Move us to the next step!</template>
+    </category>
+
+    <category>
+      <pattern>*</pattern>
+      <that>This is fun</that>
+      <template>Alright lets do it! Why don't you use the arrows to move us to the next step!</template>
+    </category>
+
+    <category>
+      <pattern>*</pattern>
+      <that>What is next</that>
+      <template>Alright lets do it! Move us to the next step! </template>
+    </category>
+    
+
+  </topic>
+
+  
+
+
+</aiml>

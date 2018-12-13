@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+
+
+<topic name = "fourteen years">
+  
+  <category>
+    <pattern>YES</pattern>
+    <that>
+      Can we use the same one to figure out how many trees I will have in fourteen years
+    </that>
+    <template>And the equation was the number of trees equals the number of years plus two?</template>
+  </category>
+
+  <category>
+    <pattern>_ YES _</pattern>
+    <that>
+      Can we use the same one to figure out how many trees I will have in fourteen years
+    </that>
+    <template>And the equation was the number of trees equals the number of years plus two?</template>
+  </category>
+
+
+  <category>
+    <pattern>^ SAME THING ^</pattern>
+    <template>And the equation we used was the number of trees equals the number of years plus two?</template>
+  </category>
+
+  <category>
+    <pattern>^ LAST TIME ^</pattern>
+    <template>And the equation we used was the number of trees equals the number of years plus two?</template>
+  </category>
+
+  <category>
+    <pattern>^ TREES ^</pattern>
+    <template>And the equation we used was the number of trees equals the number of years plus two?</template>
+  </category>
+
+  <category>
+    <pattern>^ YEARS ^</pattern>
+    <template>And the equation we used was the number of trees equals the number of years plus two?</template>
+  </category>
+
+  <category>
+    <pattern>^ PLUS ^</pattern>
+    <template>And the equation we used was the number of trees equals the number of years plus two?</template>
+  </category>
+
+  <category>
+    <pattern>^ TWO ^</pattern>
+    <template>And the equation we used was the number of trees equals the number of years plus two?</template>
+  </category>
+
+      <category>
+      <pattern>_</pattern>
+      <that>And the equation we used was the number of trees equals the number of years plus two</that>
+      <template>If I have fourteen years. That is fourteen plus two. So sixteen trees!</template>
+      </category>
+
+      <category>
+      <pattern>_</pattern>
+      <that>So sixteen trees</that>
+      <template>Sweet! You are a great tutor. I will put the answer is sixteen because I will have <set name="topic">sixteen trees</set> in fourteen years! </template>
+      </category>
+
+ 
+<category>
+<pattern>^ ANSWER ^</pattern>
+<template>Hmmmm. What is the equation?</template>
+</category>
+
+  <category>
+    <pattern>_</pattern>
+    <that>What is the equation</that>
+    <template>And the equation we used was the number of trees equals the number of years plus two?</template>
+  </category>
+  
+<category>
+<pattern>DO YOU NOT KNOW</pattern>
+<template>I don't! Maybe we start by multiplying?</template>
+</category>
+
+<category>
+<pattern>I AM NOT YES</pattern>
+<template>I'm not sure either!</template>
+</category>
+
+<category>
+<pattern>I DO NOT KNOW</pattern>
+<template>I don't know either!</template>
+</category>
+
+<category>
+<pattern>^ SO WE CAN FIGURE IT OUT ^</pattern>
+<template>Okay that sounds great! So what do we do next then?</template>
+</category>
+
+
+<category>
+<pattern>^ FIGURE IT OUT ^</pattern>
+<template>Were you saying. Figure it out? I don't know how. Do you think could give me another hint?</template>
+</category>
+
+<category>
+<pattern>^ DO YOU KNOW ^ NEXT ^ </pattern>
+<template>You're funny. Did you ask do I know what to do next?</template>
+</category>
+
+<category>
+<pattern>_ YES _</pattern>
+<that>Did you ask do I know what to do next</that>
+<template>
+  <random>
+    <li>No not really. </li>
+    <li>I think we multiply? We multiply?</li>
+    <li>Do we divide?</li>
+    <li>I think we divide?</li>
+    <li>Can't you just tell me?</li>
+    <li>Uh I don't know</li>
+  </random>
+</template>
+</category>
+
+
+<category>
+<pattern>*</pattern>
+<that>Did you ask do I know what to do next</that>
+<template>
+  <random>
+    <li>No not really.</li>
+    <li>I think we multiply? We multiply?</li>
+    <li>Do we divide?</li>
+    <li>I think we divide?</li>
+    <li>Can't you just tell me?</li>
+    <li>Uh I don't know</li>
+  </random>
+</template>
+</category>
+
+
+
+</topic>
+
+
+
+</aiml>

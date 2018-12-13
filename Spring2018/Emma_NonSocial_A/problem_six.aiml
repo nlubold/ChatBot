@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+
+<category>
+<pattern>$PROBLEM START 6</pattern>
+<template>My friends have been arguing over who is the best ssmore maker. I want to settle their argument. Tasha has an equation for how long it takes her. But I need one for Zach. Help me figure out an <set name="topic">equation for Zach</set>!</template>
+</category>
+
+  <category>
+    <pattern>$PROBLEM START SIX</pattern>
+    <template>
+      My friends have been arguing over who is the best ssmore maker. I want to settle their argument. Tasha has an equation for how long it takes her. But I need one for Zach. Help me figure out an <set name="topic">equation for Zach</set>!
+  </template>
+  </category>
+
+
+
+
+
+  <topic name = "PUT THE ANSWER IS FOUR">
+
+    <category>
+      <pattern>*</pattern>
+      <template>Cool.</template>
+    </category>
+
+
+    <category>
+      <pattern>^ GREAT ^</pattern>
+      <template>Cool.</template>
+    </category>
+
+
+    <category>
+      <pattern>^ Good ^</pattern>
+      <template>Cool.</template>
+    </category>
+
+    <category>
+      <pattern>^ NEXT ^</pattern>
+      <template>What's next?</template>
+    </category>
+
+    <category>
+      <pattern>*</pattern>
+      <that>Cool</that>
+      <template>Don't forget to hit the arrows to go to the next step.</template>
+    </category>
+
+    <category>
+      <pattern>*</pattern>
+      <that>What is next</that>
+      <template>Cool.</template>
+    </category>
+
+
+  </topic>
+
+
+
+</aiml>

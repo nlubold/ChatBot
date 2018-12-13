@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+
+<category>
+<pattern>PROBLEM START 2</pattern>
+<template>Now my legs and torso can be waterproof! Thank you! But I think it is not enough to just go in up to my hips. Can you help me figure out what waterproof paint I need to cover my arms and head too? I'm looking at <set name="topic">STEP ONE OF PROBLEM TWO</set> and I'm not sure what to do.</template>
+</category>
+
+
+<category>
+<pattern>next step 2 2</pattern>
+<template>That was great! Can you give me a hint on <set name="topic">STEP TWO OF PROBLEM TWO</set>?
+</template>
+</category>
+
+
+<category>
+<pattern>prior step 2 1</pattern>
+<template>Awesome! Back to <set name="topic">STEP ONE PROBLEM TWO</set>. What do we do?</template>
+</category>
+
+
+<category>
+<pattern>prior step 2 1 a</pattern>
+<template>While I really like working with you, didn't we already <set name="topic">do step one for problem two</set>?</template>
+</category>
+
+
+<category>
+<pattern>next step 2 2 a</pattern>
+<template>And I thought we already have <set name="topic">done step two for problem two</set>?</template>
+</category>
+
+
+
+<category>
+<pattern>2 1</pattern>
+<template><set name="topic">STEP ONE OF PROBLEM TWO</set></template>
+</category>
+
+<category>
+<pattern>2 2</pattern>
+<template><set name="topic">STEP TWO OF PROBLEM TWO</set></template>
+</category>
+
+
+
+<topic name = "DO STEP ONE for PROBLEM TWO">
+
+
+<category>
+<pattern>*</pattern>
+<template><random>
+<li>Oh I'm sorry! Why are we back on step one? It takes one fluid ounce of paint to cover my arms right?</li>
+<li>Oh! Why are we back on step one for this problem? We already figured out that it is one fluid ounces.</li>
+  <li>Maybe we should go to the next step or problem?</li>
+</random></template>
+</category>
+
+</topic>
+
+<topic name = "DONE STEP TWO for PROBLEM TWO">
+
+<category>
+<pattern>*</pattern>
+<template><random>
+<li>Oh back on step two! We figured out that it is 3 fluid ounces.</li>
+<li>Maybe we should go to the next step or problem?</li>
+</random></template>
+</category>
+
+</topic>
+
+
+  <topic name = "PUT THE ANSWER IS ONE">
+
+    <category>
+      <pattern>*</pattern>
+      <template>Sweet! Should we go to the next step and figure out how big my head is?</template>
+    </category>
+    
+      <category>
+        <pattern>^ GREAT ^</pattern>
+        <template>Thank you! You're really awesome!</template>
+      </category>
+
+
+      <category>
+        <pattern>^ Good ^</pattern>
+        <template>Thank you! You're really awesome!</template>
+      </category>
+
+      <category>
+        <pattern>^ NEXT ^</pattern>
+        <template>Sweet! What's next?</template>
+      </category>
+
+      <category>
+        <pattern>_</pattern>
+        <that>Should we go to the next step and figure out how big my head is</that>
+        <template>Cool! So don't forget to hit the arrows to move us to the next step.</template>
+      </category>
+    
+    <category>
+      <pattern>*</pattern>
+      <that>What is next</that>
+      <template>Cool! Sounds good!</template>
+    </category>
+
+
+
+  </topic>
+
+  <topic name = "put the answer is nine">
+
+    <category>
+      <pattern>*</pattern>
+      <template>Sweet! Should we go to the next problem?</template>
+    </category>
+
+
+    <category>
+      <pattern>_</pattern>
+      <that>Should we go to the next problem</that>
+      <template>Cool! Just go ahead and hit the arrows to move us to the next step.</template>
+    </category>
+
+
+
+    <category>
+      <pattern>^ GREAT ^</pattern>
+      <template>Thank you! You're really awesome!</template>
+    </category>
+
+
+    <category>
+      <pattern>^ Good ^</pattern>
+      <template>Thank you! You're really awesome!</template>
+    </category>
+
+    <category>
+      <pattern>^ NEXT ^</pattern>
+      <template>Sweet! What's next?</template>
+    </category>
+
+    <category>
+      <pattern>*</pattern>
+      <that>What is next</that>
+      <template>Sweet! Lets do it!</template>
+    </category>
+
+
+  </topic>
+
+
+</aiml>

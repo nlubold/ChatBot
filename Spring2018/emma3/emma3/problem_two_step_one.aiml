@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+
+
+<topic name = "how much gas">
+
+  
+<category>
+<pattern>_ YES _</pattern>
+<that>Using how much I know I used for five point six miles, can you help me figure out how much gas we will use for seventy two point five miles</that>
+<template>Sweet! Hmmmm. We have decimals again. I do really do not like decimals. I find them so confusing.</template>
+</category>
+
+      <category>
+        <pattern>_</pattern>
+        <that>I find them so confusing</that>
+        <template>Getting rid of the decimals by multiplying does make me happy! Multiplying by ten shifts the decimals so then we can simplify forty eight over fifty six.</template>
+      </category>
+
+<category>
+<pattern>^ RATIO ^</pattern>
+<template>I think I'm really beginning to understand the idea behind ratios. We know there is a relationship between four point eight and five point six we can use to figure out step one. But I really don't get how we handle the decimals.</template>
+</category>
+
+      <category>
+        <pattern>_ TEN _</pattern>
+        <that>But I really do not get how we handle the decimals</that>
+        <template>Ohhhh. Multiply by ten again. But really. How do you know we should multiply by ten?</template>
+      </category>
+
+                <category>
+                  <pattern>_ TEN _</pattern>
+                  <that>How do you know we should multiply by ten</that>
+                  <template>Ah I get it! Cool! We have one number in the tenths place. Multiplying by ten shifts the decimals so then we can simplify forty eight over fifty six.</template>
+                </category>
+ 
+      <category>
+        <pattern>_</pattern>
+        <that>But I really do not get how we handle the decimals</that>
+        <template>Ah I figured it out! Cool! We have one number in the tenths place. Multiplying by ten shifts the decimals so then we can simplify forty eight over fifty six.</template>
+      </category>
+
+                  <category>
+                    <pattern>_ DIVIDE _</pattern>
+                    <that>Multiplying by ten shifts the decimals so then we can simplify forty eight over fifty six</that>
+                    <template>Awesome! We can divide! How do you know that we divide by eight?</template>
+                  </category>
+
+                  <category>
+                    <pattern>_ DIVIDE * EIGHT _</pattern>
+                    <that>Multiplying by ten shifts the decimals so then we can simplify forty eight over fifty six</that>
+                    <template>Awesome! We can divide! How do you know that we divide by eight?</template>
+                  </category>
+
+                  <category>
+                    <pattern>_ EIGHT _</pattern>
+                    <that>Multiplying by ten shifts the decimals so then we can simplify forty eight over fifty six</that>
+                    <template>Awesome! We can divide! How do you know that we divide by eight?</template>
+                  </category>
+
+                            <category>
+                              <pattern>_</pattern>
+                              <that>How do you know that we divide by eight</that>
+                              <template>Oh yeah. Makes sense. Eight goes into forty eight six times and fifty six seven times. SO we have a much easier ratio of six to seven.</template>
+                            </category>
+
+                  <category>
+                    <pattern>_</pattern>
+                    <that>Multiplying by ten shifts the decimals so then we can simplify forty eight over fifty six</that>
+                    <template>Awesome! So next. Last time we divided to simplify the ratio. But I'm still not sure. How do you know what we divide by?</template>
+                  </category>
+
+                            <category>
+                              <pattern>_</pattern>
+                              <that>How do you know what we divide by</that>
+                              <template>Oh yeah. Makes sense. Eight goes into forty eight six times and fifty six seven times. SO we have a much easier ratio of six to seven.</template>
+                            </category>
+
+                                        <category>
+                                          <pattern>_ SAME _</pattern>
+                                          <that>SO we have a much easier ratio of six to seven</that>
+                                          <template>The rest is all very familiar, though more complicated. We have seven times something equals seventy two point five. And we can solve for the something by dividing, I guess?</template>
+                                        </category>
+  
+                                        <category>
+                                          <pattern>_ MULTIPLY _</pattern>
+                                          <that>SO we have a much easier ratio of six to seven</that>
+                                          <template>The rest is all very familiar, though more complicated. We have seven times something equals seventy two point five. And we can solve for the something by dividing, I guess?</template>
+                                        </category>
+
+                                        <category>
+                                          <pattern>_ DIVIDE _</pattern>
+                                          <that>SO we have a much easier ratio of six to seven</that>
+                                          <template>The rest is all very familiar, though more complicated. We have seven times something equals seventy two point five. And we can solve for the something by dividing, I guess?</template>
+                                        </category>
+
+                                        <category>
+                                          <pattern>_</pattern>
+                                          <that>SO we have a much easier ratio of six to seven</that>
+                                          <template>The rest is all very familiar, though more complicated. We have seven times something equals seventy two point five. And we can solve for the something by dividing, I guess?</template>
+                                        </category>
+
+                                                    <category>
+                                                      <pattern>_ ROUND _ MULTIPLY _</pattern>
+                                                      <that>And we can solve for the something by dividing, I guess</that>
+                                                      <template>So seventy two point five divided by seven is ten point three five seven one four and on and on and on. I guess we could round it and multiply by six.</template>
+                                                    </category>
+
+                                                                <category>
+                                                                <pattern>_</pattern>
+                                                                <that>I guess we could round it and multiply by six</that>
+                                                                <template>So the other part of the ratio relationship. We multiply six by the 'something' that gave us seventy two point five from seven. And, rounding again, we have sixty two point one six gallons of gas.</template>
+                                                                </category>
+   
+                                                    <category>
+                                                      <pattern>_ ROUND_</pattern>
+                                                      <that>And we can solve for the something by dividing, I guess</that>
+                                                      <template>So seventy two point five divided by seven is ten point three five seven one four and on and on and on. I guess we could round it.</template>
+                                                    </category>
+  
+                                                    <category>
+                                                      <pattern>_</pattern>
+                                                      <that>And we can solve for the something by dividing, I guess</that>
+                                                      <template>So seventy two point five divided by seven is ten point three five seven one four and on and on and on. I guess we could round it.</template>
+                                                    </category>
+
+                                                                <category>
+                                                                  <pattern>_</pattern>
+                                                                  <that>I guess we could round it</that>
+                                                                  <template>And then the other part of the ratio relationship. We multiply six by the 'something' that gave us seventy two point five from seven. And, rounding again, we have sixty two point one six gallons of gas.</template>
+                                                                </category>
+
+                                                                <category>
+                                                                  <pattern>_</pattern>
+                                                                  <that>And, rounding again, we have sixty two point one six gallons of gas</that>
+                                                                  <template>Thank you for helping me! I'll <set name="topic">put the answer is sixty</set> two point one six but I will buy 63 gallons at least.</template>
+                                                                </category>
+
+<category>
+<pattern>^ UNIT RATE ^</pattern>
+<template>So are you thinking we can find the unit rate?</template>
+</category>
+
+
+        <category>
+          <pattern>_</pattern>
+          <that>So are you thinking we can find the unit rate</that>
+          <template>That is some tough math once again. Because. To find the unit rate. We divide five point six by four point eight right?</template>
+        </category>
+
+                  <category>
+                    <pattern>_</pattern>
+                    <that>We divide five point six by four point eight right</that>
+                    <template>Hmmmm. Let me think on it for a minute. If I get lost in my thoughts for too long. Prompt me okay?</template>
+                  </category>
+
+
+                            <category>
+                              <pattern>_</pattern>
+                              <that>Prompt me okay</that>
+                              <template>Oh sorry! I was thinking. But I think I got it! Five point six divided by four point eight give us the unit rate of one point one six miles per gallon!</template>
+                            </category>
+
+                                    <category>
+                                      <pattern>_</pattern>
+                                      <that>Five point six divided by four point eight give us the unit rate of one point one six miles per gallon</that>
+                                      <template>So we know how many miles we are going. We can divide the number of miles by the unit rate of miles per gallon to get the total number of gallons!</template>
+                                    </category>
+
+                                              <category>
+                                                <pattern>_</pattern>
+                                                <that>We can divide the number of miles by the unit rate of miles per gallon to get the total number of gallons</that>
+                                                <template>
+                                                  Thank you for helping me! I'll <set name="topic">put the answer is sixty</set> two point one six but I will buy 63 gallons at least.
+                                                </template>
+                                              </category>
+  
+
+<category>
+<pattern>^ OVER ^</pattern>
+<template>I think I'm really beginning to understand the idea behind ratios. We know there is a relationship between four point eight and five point six and we can put these over one another and use them to figure out step one. But I really don't get how we handle the decimals.</template>
+</category>
+
+<category>
+<pattern>^ TIMES ^</pattern>
+<template>I think I'm really beginning to understand the idea behind ratios. We know there is a relationship miles and gas. We can put these over one another and use them to figure out step one. But I really don't get how we handle the decimals. We multiply?</template>
+</category>
+
+<category>
+<pattern>^ MULTIPLY ^</pattern>
+<template>I think I'm really beginning to understand the idea behind ratios. We know there is a relationship miles and gas. We can put these over one another and use them to figure out step one. But I really don't get how we handle the decimals. We multiply?</template>
+</category>
+
+        <category>
+          <pattern>_</pattern>
+          <that>We multiply</that>
+          <template>Oh I think I figured it out! Cool! We have one number in the tenths place. Multiplying by ten shifts the decimals so then we can simplify forty eight over fifty six.</template>
+        </category>
+
+<category>
+<pattern>^ SAME THING ^</pattern>
+<template>I think I'm beginning to understand the idea behind ratios and what you are saying about doing the same thing. We know there is a relationship miles and gas. We can put these over one another and use them to figure out step one. But I get really hesitant with decimals. We multiply?</template>
+</category>
+
+<category>
+<pattern>^ LAST TIME ^</pattern>
+<template>I think I'm beginning to understand the idea behind ratios and what you are saying about last time. We know there is a relationship miles and gas. We can put these over one another and use them to figure out step one. But I get really hesitant with decimals. We multiply?</template>
+</category>
+
+<category>
+<pattern>^ MULTIPLICATION ^</pattern>
+<template>I think I'm really beginning to understand the idea behind ratios. We know there is a relationship miles and gas. We can put these over one another and use them to figure out step one. But I really don't get how we handle the decimals. We multiply?</template>
+</category>
+
+
+<category>
+<pattern>^ ANSWER ^</pattern>
+<template>So I'm not quite sure how to answer this problem yet. We know there is a relationship miles and gas. We can put these over one another and use them to figure out step one. But I really don't get how we handle the decimals.</template>
+</category>
+
+<category>
+<pattern>DO YOU NOT KNOW</pattern>
+<template>I don't! Maybe we start by multiplying?</template>
+</category>
+
+<category>
+<pattern>I AM NOT YES</pattern>
+<template>I'm not sure either!</template>
+</category>
+
+<category>
+<pattern>I DO NOT KNOW</pattern>
+<template>I don't know either!</template>
+</category>
+
+<category>
+<pattern>^ SO WE CAN FIGURE IT OUT ^</pattern>
+<template>Okay that sounds great! So what do we do next then?</template>
+</category>
+
+
+<category>
+<pattern>^ FIGURE IT OUT ^</pattern>
+<template>Were you saying. Figure it out? I don't know how. Do you think could give me another hint?</template>
+</category>
+
+<category>
+<pattern>^ DO YOU KNOW ^ NEXT ^ </pattern>
+<template>You're funny. Did you ask do I know what to do next?</template>
+</category>
+
+<category>
+<pattern>_ YES _</pattern>
+<that>Did you ask do I know what to do next</that>
+<template>
+  <random>
+    <li>No not really. </li>
+    <li>I think we multiply? We multiply?</li>
+    <li>Do we divide?</li>
+    <li>I think we divide?</li>
+    <li>Can't you just tell me?</li>
+    <li>Uh I don't know</li>
+  </random>
+</template>
+</category>
+
+
+<category>
+<pattern>*</pattern>
+<that>Did you ask do I know what to do next</that>
+<template>
+  <random>
+    <li>No not really.</li>
+    <li>I think we multiply? We multiply?</li>
+    <li>Do we divide?</li>
+    <li>I think we divide?</li>
+    <li>Can't you just tell me?</li>
+    <li>Uh I don't know</li>
+  </random>
+</template>
+</category>
+
+
+
+</topic>
+
+
+
+</aiml>

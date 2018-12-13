@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+
+<category>
+<pattern>$PROBLEM START 6</pattern>
+<template>Everyone has decided they will help <set name="topic">chip in</set> to pay for the food, which is really good because with more people its going to cost more! Can you help me figure out how much more it will cost?</template>
+</category>
+
+
+<category>
+<pattern>$PROBLEM START SIX</pattern>
+  <template>
+    Everyone has decided they will help <set name="topic">chip in</set> to pay for the food, which is really good because with more people its going to cost more! Can you help me figure out how much more it will cost?
+  </template>
+</category>
+  
+  
+
+  <topic name = "PUT THE ANSWER IS four dollars">
+
+    <category>
+      <pattern>*</pattern>
+      <template>Sweet! Thank you so much for helping me! I can't wait until next week!</template>
+      </category>
+
+     
+      <category>
+        <pattern>^ GREAT ^</pattern>
+        <template>Thank you! You're really awesome!</template>
+      </category>
+
+
+      <category>
+        <pattern>^ Good ^</pattern>
+        <template>Thank you! You're really awesome!</template>
+      </category>
+
+    <category>
+      <pattern>*</pattern>
+      <that>You are really awesome</that>
+      <template>See? You are awesome! Move us to the next problem!</template>
+    </category>
+
+      <category>
+        <pattern>^ NEXT ^</pattern>
+        <template>Sweet! What's next?</template>
+      </category>
+      
+     <category>
+        <pattern>^ NEXT ^</pattern>
+       <that>What is next</that>
+        <template>That sounds great!</template>
+      </category>
+
+      <category>
+        <pattern>*</pattern>
+        <that>What is next</that>
+        <template>Sweet! Thank you so much for helping me! I can't wait until next week!</template>
+      </category>
+
+  </topic>
+
+
+
+</aiml>

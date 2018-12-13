@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+
+
+<topic name = "how I can compare">
+
+
+
+
+<category>
+<pattern>^ CONVERT ^</pattern>
+<template>So first we will convert the numbers from scientific notation? On the last problem we put numbers into scientific notation. I'm not sure I understand. How do we convert them back? </template>
+</category>
+
+      <category>
+      <pattern>_</pattern>
+      <that>How do we convert them back</that>
+      <template>Nice! I think I get it! We just extend the multiplication back out. So like two point seven times ten to the fourth becomes two point seven times ten thousand.</template>
+      </category>
+
+                <category>
+                <pattern>_</pattern>
+                <that>So like two point seven times ten to the fourth becomes two point seven times ten thousand</that>
+                <template>So that gives us thirty seven hundred in two thousand and ten. And. We have twenty seven hundred in two thousand and fourteen. Then how do you know what we do next?</template>
+                </category>
+
+
+                          <category>
+                            <pattern>_ SUBTRACT_</pattern>
+                            <that>Then how do you know what we do next</that>
+                            <template>Oh right! Subtract! So subtracting how much cholorine was in the water in twenty fourteen from how much was in the water in twenty ten. We get twenty thousand three hundred!</template>
+                          </category>
+
+                          <category>
+                            <pattern>_ MINUS _</pattern>
+                            <that>Then how do you know what we do next</that>
+                            <template>Oh right! Subtract! So subtracting how much cholorine was in the water in twenty fourteen from how much was in the water in twenty ten. We get twenty thousand three hundred!</template>
+                          </category>
+
+
+                          <category>
+                            <pattern>_ DIFFERENCE _</pattern>
+                            <that>Then how do you know what we do next</that>
+                            <template>Oh right! Subtract! So subtracting how much cholorine was in the water in twenty fourteen from how much was in the water in twenty ten. We get twenty thousand three hundred!</template>
+                          </category>
+
+
+                          <category>
+                            <pattern>_ SUBTRACTION _</pattern>
+                            <that>Then how do you know what we do next</that>
+                            <template>Oh right! Subtract! So subtracting how much cholorine was in the water in twenty fourteen from how much was in the water in twenty ten. We get twenty thousand three hundred!</template>
+                          </category>
+
+
+                          <category>
+                          <pattern>_</pattern>
+                          <that>Then how do you know what we do next</that>
+                          <template>So I'm guessing we subtract? So subtracting how much cholorine was in the water in twenty fourteen from how much was in the water in twenty ten. We get twenty thousand three hundred!</template>
+                          </category>
+
+                                      <category>
+                                      <pattern>_</pattern>
+                                      <that>We get twenty thousand three hundred</that>
+                                      <template>I suppose I should convert it to scientific notation?</template>
+                                      </category>
+
+                                                  <category>
+                                                    <pattern>_</pattern>
+                                                    <that>I suppose I should convert it to scientific notation</that>
+                                                    <template>You're such a great tutor that I remember how to convert it from last time. I can put the decimal after the first digit, two, and then I can multiply by ten raised to the number of tens needed. That's four!</template>
+                                                  </category>
+
+
+                                                                <category>
+                                                                <pattern>_</pattern>
+                                                                <that>That is four</that>
+                                                                <template>So in scientific notation, the difference in chlorine between two thousand fourteen and and two thousand and ten is two point three times ten to the fourth. I will <set name="topic">PUT THE ANSWER IS two point</set> three times ten to the fourth. That's a big change right?
+                                                                </template>
+                                                                </category>
+
+<category>
+<pattern>^ TIMES ^</pattern>
+<template>So opposite of the last problem, we will need to convert the numbers from scientific notation, right? And we do that by multiplying? I guess I'm a little confused. How does that work?</template>
+</category>
+
+<category>
+<pattern>^ MULTIPLY ^</pattern>
+<template>So opposite of the last problem, we will need to convert the numbers from scientific notation, right? And we do that by multiplying? I guess I'm a little confused. How does that work?</template>
+</category>
+
+<category>
+<pattern>^ SAME THING ^</pattern>
+<template>So opposite of the last problem, we will need to convert the numbers from scientific notation, right? And we do that by multiplying? I guess I'm a little confused. How does that work?</template>
+</category>
+
+<category>
+<pattern>^ LAST ^</pattern>
+<template>So opposite of the last problem, we will need to convert the numbers from scientific notation, right? And we do that by multiplying? I guess I'm a little confused. How does that work?</template>
+</category>
+
+<category>
+<pattern>^ MULTIPLICATION ^</pattern>
+<template>So opposite of the last problem, we will need to convert the numbers from scientific notation, right? And we do that by multiplying? I guess I'm a little confused. How does that work?</template>
+</category>
+
+      <category>
+      <pattern>_</pattern>
+      <that>How does that work</that>
+      <template>Nice! I think I get it! We just extend the multiplication back out. So like two point seven times ten to the fourth becomes two point seven times ten thousand.</template>
+      </category>
+
+<category>
+<pattern>^ ANSWER ^</pattern>
+<template>So to get the answer to this problem, we need to start by converting the numbers from scientific notation. Correct?</template>
+</category>
+
+    <category>
+      <pattern>_</pattern>
+      <that>Correct</that>
+      <template>Hmmmm. So. How do we convert the numbers from scientific notation?</template>
+    </category>
+  
+            <category>
+                <pattern>_</pattern>
+                <that>How do we convert the numbers from scientific notation</that>
+                <template>Nice! I think I get it! We just extend the multiplication back out. So like two point seven times ten to the fourth becomes two point seven times ten thousand.</template>
+              </category>
+  
+<category>
+<pattern>DO YOU NOT KNOW</pattern>
+<template>I don't! Maybe we start by multiplying?</template>
+</category>
+
+<category>
+<pattern>I AM NOT YES</pattern>
+<template>I'm not sure either!</template>
+</category>
+
+<category>
+<pattern>I DO NOT KNOW</pattern>
+<template>I don't know either!</template>
+</category>
+
+<category>
+<pattern>^ SO WE CAN FIGURE IT OUT ^</pattern>
+<template>Okay that sounds great! So what do we do next then?</template>
+</category>
+
+
+<category>
+<pattern>^ FIGURE IT OUT ^</pattern>
+<template>Were you saying. Figure it out? I don't know how. Do you think could give me another hint?</template>
+</category>
+
+<category>
+<pattern>^ DO YOU KNOW ^ NEXT ^ </pattern>
+<template>You're funny. Did you ask do I know what to do next?</template>
+</category>
+
+<category>
+<pattern>_ YES _</pattern>
+<that>Did you ask do I know what to do next</that>
+<template>
+  <random>
+    <li>No not really. </li>
+    <li>I think we multiply? We multiply?</li>
+    <li>Do we divide?</li>
+    <li>I think we divide?</li>
+    <li>Can't you just tell me?</li>
+    <li>Uh I don't know</li>
+  </random>
+</template>
+</category>
+
+
+<category>
+<pattern>*</pattern>
+<that>Did you ask do I know what to do next</that>
+<template>
+  <random>
+    <li>No not really.</li>
+    <li>I think we multiply? We multiply?</li>
+    <li>Do we divide?</li>
+    <li>I think we divide?</li>
+    <li>Can't you just tell me?</li>
+    <li>Uh I don't know</li>
+  </random>
+</template>
+</category>
+
+
+
+</topic>
+
+
+
+</aiml>

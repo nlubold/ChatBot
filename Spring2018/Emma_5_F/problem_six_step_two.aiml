@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+
+
+<topic name = "how much of one">
+
+
+  <category>
+    <pattern>_ SAME _</pattern>
+    <that>
+      How do we figure out how much of one hundred and twenty five minutes is the total
+    </that>
+    <template>Of course! We do the same thing. That's easy!</template>
+  </category>
+
+  <category>
+    <pattern>_ LAST _</pattern>
+    <that>
+      How do we figure out how much of one hundred and twenty five minutes is the total
+    </that>
+    <template>Of course! We do the same thing. That's easy!</template>
+  </category>
+
+
+  <category>
+    <pattern>_ YES _</pattern>
+    <that>
+      How do we figure out how much of one hundred and twenty five minutes is the total
+    </that>
+    <template>Of course! We do the same thing. That's easy!</template>
+  </category>
+
+<category>
+<pattern>^ SAME THING ^</pattern>
+  <template>Of course! We do the same thing. That's easy!</template>
+</category>
+
+<category>
+  <pattern>^ LAST TIME ^</pattern>
+  <template>Of course! We do the same thing. That's easy!</template>
+</category>
+
+  <category>
+    <pattern>_</pattern>
+    <that>That is easy</that>
+    <template>We convert the time again from minutes to hours and add it all up?</template>
+  </category>
+
+  <category>
+    <pattern>^ Convert ^</pattern>
+    <template>We convert the time again from minutes to hours and add it all up?</template>
+  </category>
+
+  <category>
+    <pattern>^ CHANGE ^</pattern>
+    <template>We convert the time again from minutes to hours and add it all up?</template>
+  </category>
+
+  <category>
+    <pattern>^ MULTIPLY ^</pattern>
+    <template>We convert the time again from minutes to hours and add it all up?</template>
+  </category>
+
+  <category>
+    <pattern>^ TIMES ^</pattern>
+    <template>We convert the time again from minutes to hours and add it all up?</template>
+  </category>
+
+  <category>
+    <pattern>^ ADD ^</pattern>
+    <template>We convert the time again from minutes to hours and add it all up?</template>
+  </category>
+
+      <category>
+      <pattern>_</pattern>
+      <that>We convert the time again from minutes to hours and add it all up</that>
+      <template>I can divide Zach's time. One hundred and twenty five minutes. From that total. Right? </template>
+      </category>
+
+      <category>
+      <pattern>_</pattern>
+      <that>right</that>
+      <template>That is more than Pedro! The fraction or decimal version of the fraction. I guess. Is <set name="topic">zero point two one</set>. I will put the answer is zero point two one!</template>
+      </category>
+
+
+<category>
+<pattern>^ ANSWER ^</pattern>
+<template>We do the same thing as last time?</template>
+</category>
+
+  <category>
+    <pattern>_</pattern>
+    <that>
+      We do the same thing as last time
+    </that>
+    <template>Of course! We do the same thing. That's easy!</template>
+  </category>
+
+<category>
+<pattern>DO YOU NOT KNOW</pattern>
+<template>I don't! Maybe we start by multiplying?</template>
+</category>
+
+<category>
+<pattern>I AM NOT YES</pattern>
+<template>I'm not sure either!</template>
+</category>
+
+<category>
+<pattern>I DO NOT KNOW</pattern>
+<template>I don't know either!</template>
+</category>
+
+<category>
+<pattern>^ SO WE CAN FIGURE IT OUT ^</pattern>
+<template>Okay that sounds great! So what do we do next then?</template>
+</category>
+
+
+<category>
+<pattern>^ FIGURE IT OUT ^</pattern>
+<template>Were you saying. Figure it out? I don't know how. Do you think could give me another hint?</template>
+</category>
+
+<category>
+<pattern>^ DO YOU KNOW ^ NEXT ^ </pattern>
+<template>You're funny. Did you ask do I know what to do next?</template>
+</category>
+
+<category>
+<pattern>_ YES _</pattern>
+<that>Did you ask do I know what to do next</that>
+<template>
+  <random>
+    <li>No not really. </li>
+    <li>I think we multiply? We multiply?</li>
+    <li>Do we divide?</li>
+    <li>I think we divide?</li>
+    <li>Can't you just tell me?</li>
+    <li>Uh I don't know</li>
+  </random>
+</template>
+</category>
+
+
+<category>
+<pattern>*</pattern>
+<that>Did you ask do I know what to do next</that>
+<template>
+  <random>
+    <li>No not really.</li>
+    <li>I think we multiply? We multiply?</li>
+    <li>Do we divide?</li>
+    <li>I think we divide?</li>
+    <li>Can't you just tell me?</li>
+    <li>Uh I don't know</li>
+  </random>
+</template>
+</category>
+
+
+
+</topic>
+
+
+
+</aiml>

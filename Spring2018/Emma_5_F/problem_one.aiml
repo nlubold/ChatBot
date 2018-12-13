@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+
+<category>
+<pattern>$PROBLEM START 1</pattern>
+  <template>
+    While camping, we are thinking we would like to pick some berries! But we need baskets to do that. So we are going to make baskets from some leaves and sticks based on this idea from the internet. But it only tells how to make three baskets at a time. We need to figure out how many sticks and leaves we need for <set name="topic">fourteen baskets</set>!
+  </template>
+</category>
+
+<category>
+<pattern>$PROBLEM START ONE</pattern>
+  <template>
+    While camping, we are thinking we would like to pick some berries! But we need baskets to do that. So we are going to make baskets from some leaves and sticks based on this idea from the internet. But it only tells how to make three baskets at a time. We need to figure out how many sticks and leaves we need for <set name="topic">fourteen baskets</set>!
+  </template>
+</category>
+
+<category>
+<pattern>next step 1 2</pattern>
+<template>
+  So we need sticks and leaves. I'm guessing we do something similar to figure out how <set name="topic">many leaves</set> we need?</template>
+</category>
+
+<category>
+<pattern>prior step 1 1</pattern>
+<template>How do we figure out how many sticks we need for <set name="topic">fourteen baskets</set>?</template>
+</category>
+
+<category>
+<pattern>prior step 1 1 a</pattern>
+<template>
+  I really like working with you <bot name="username" />. But didn't we already <set name="topic">put the answer is twenty nine</set> sticks plus one third of a stick?</template>
+</category>
+
+<category>
+<pattern>next step 1 2 a</pattern>
+<template>
+  So I know I told you the answer to this one. I <set name="topic">put the answer is nine</set> leaves plus one third of a leaf!</template>
+</category>
+
+
+
+<topic name = "put the answer is twenty nine">
+
+<category>
+<pattern>*</pattern>
+<template>Cool. Lets go to the next problem.</template>
+</category>
+
+  <category>
+    <pattern>*</pattern>
+    <that>Lets go to the next problem</that>
+    <template>I know you know this. Hit the arrows and move us to the next step!</template>
+  </category>
+
+  <category>
+    <pattern>^ GREAT ^</pattern>
+    <template>yeah yeah. I am pretty great.</template>
+  </category>
+
+
+  <category>
+    <pattern>^ Good ^</pattern>
+    <template>Good? That was awesome! </template>
+  </category>
+
+
+  <category>
+    <pattern>^ Nice ^</pattern>
+    <template>Nice? That was awesome! </template>
+  </category>
+
+
+  <category>
+    <pattern>^ Job ^</pattern>
+    <template>I know! I am a rockstar! </template>
+  </category>
+
+  <category>
+    <pattern>^ NEXT ^</pattern>
+    <template>Cool! Lets go to the next step!</template>
+  </category>
+
+
+</topic>
+
+<topic name = "put the answer is nine">
+
+<category>
+<pattern>*</pattern>
+<template>Wow, seems like a lot people. But it's probably a big park. Don't forget to hit the next problem button to move us to the next step.</template>
+</category>
+
+  <category>
+    <pattern>^ GREAT ^</pattern>
+    <template>yeah yeah. I am pretty great.</template>
+  </category>
+
+
+  <category>
+    <pattern>^ Good ^</pattern>
+    <template>Good? That was awesome! </template>
+  </category>
+
+
+  <category>
+    <pattern>^ Nice ^</pattern>
+    <template>Nice? That was awesome! </template>
+  </category>
+
+  <category>
+    <pattern>^ Job ^</pattern>
+    <template>I know! I am a rockstar! </template>
+  </category>
+
+  <category>
+    <pattern>^ NEXT ^</pattern>
+    <template>Yeah! On to the next step!</template>
+  </category>
+
+
+</topic>
+
+
+</aiml>

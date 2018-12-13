@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+
+
+<topic name = "how many miles we can drive">
+
+        <category>
+        <pattern>_ YES _</pattern>
+        <that>
+          Can you help me figure out if we have eighty five gallons of gas how many miles we can drive
+        </that>
+        <template>Yay! I think I can do this one. Because. We can use the ratio of six to seven that we figured out in step one!</template>
+        </category>
+
+
+<category>
+<pattern>^ SIX ^</pattern>
+<template>So like when we were figuring out how many guests are in the park after it opens, we already figured out the simplified ratio, right? We can use the ratio of six to seven from step one?</template>
+</category>
+
+<category>
+<pattern>^ SEVEN ^</pattern>
+<template>So like when we were figuring out how many guests are in the park after it opens, we already figured out the simplified ratio, right? We can use the ratio of six to seven from step one?</template>
+</category>
+
+<category>
+<pattern>^ RATIO ^</pattern>
+<template>So like when we were figuring out how many guests are in the park after it opens, we already figured out the simplified ratio, right? We can use the ratio of six to seven from step one?</template>
+</category>
+
+        <category>
+          <pattern>_</pattern>
+          <that>We can use the ratio of six to seven from step one</that>
+          <template>Awesome! Using the ratio of six to seven, we can setup the relationship between miles and gallons. We need to know what times six equals eighty five gallons. And we find that by dividing.</template>
+        </category>
+
+<category>
+<pattern>^ DIVIDE ^ SIX ^</pattern>
+<template>Oh wow! Jumping straight to dividing! So ummm. I guess I get it. If we can use the ratio of six to seven, we can setup the relationship such that we need to know what times six equals eighty five. And we find that by dividing. </template>
+</category>
+
+        <category>
+          <pattern>_</pattern>
+          <that>And we find that by dividing</that>
+          <template>Eighty five divided by six is fourteen point one six six six six and it just keeps going! So many sixes! </template>
+        </category>
+
+        <category>
+          <pattern>_ ROUND _</pattern>
+          <that>So many sixes</that>
+          <template>Oh yeah! So we can round that to fourteen point one six seven. That makes life easier. </template>
+        </category>
+
+        <category>
+          <pattern>_</pattern>
+          <that>That makes life easier</that>
+          <template>So fourteen point one six seven times seven is ninety nine point one six six six six and so on! But I guess we can round this one too. </template>
+        </category>
+
+        <category>
+          <pattern>_ ROUND _ MULTIPLY _</pattern>
+          <that>So many sixes</that>
+          <template>Oh yeah! So we can round that to fourteen point one six seven. That makes life easier. And then we can multiply seven times fourteen point one six seven. </template>
+        </category>
+
+        <category>
+          <pattern>_</pattern>
+          <that>So many sixes</that>
+          <template>Oh yeah! So we can round that to fourteen point one six seven. That makes life easier. And then we can multiply seven times fourteen point one six seven. </template>
+        </category>
+
+        <category>
+          <pattern>_</pattern>
+          <that>And then we can multiply seven times fourteen point one six seven</that>
+          <template>So fourteen point one six seven times seven is ninety nine point one six six six six and so on! But I guess we can round this one too. </template>
+        </category>
+
+        <category>
+          <pattern>_</pattern>
+          <that>But I guess we can round this one too</that>
+          <template>So with eighty five gallons we can go more than twenty five miles further! I'll go ahead and <set name="topic">put the answer is ninety nine</set> point one six seven miles
+        </template>
+        </category>
+
+<category>
+<pattern>^ SIX ^ TIMES ^</pattern>
+<template>Awesome! Using the ratio of six to seven, we can setup the relationship between miles and gallons. We need to know what times six equals eighty five gallons. And we find that by dividing.</template>
+</category>
+
+<category>
+<pattern>^ TIMES ^ SIX ^</pattern>
+  <template>Awesome! Using the ratio of six to seven, we can setup the relationship between miles and gallons. We need to know what times six equals eighty five gallons. And we find that by dividing.</template>
+</category>
+
+<category>
+<pattern>^ MULTIPLY ^ SIX ^</pattern>
+  <template>Awesome! Using the ratio of six to seven, we can setup the relationship between miles and gallons. We need to know what times six equals eighty five gallons. And we find that by dividing.</template>
+</category>
+
+<category>
+<pattern>^ SAME THING ^</pattern>
+<template>Okay we do the same thing as last time. But uhhhh. This time we have gallons of gas. How do we do the same thing?</template>
+</category>
+
+      <category>
+        <pattern>_ SIX _</pattern>
+        <that>How do we do the same thing</that>
+        <template>Awesome! Using the ratio of six to seven, we can setup the relationship between miles and gallons. We need to know what times six equals eighty five gallons. And we find that by dividing.</template>
+      </category>
+
+      <category>
+        <pattern>_ UNIT RATE _</pattern>
+        <that>How do we do the same thing</that>
+        <template>Ohhhh. Are you thinking. We figured out the unit rate last time. So we can use that again?</template>
+      </category>
+
+      <category>
+        <pattern>_ SEVEN _</pattern>
+        <that>How do we do the same thing</that>
+        <template>Awesome! Using the ratio of six to seven, we can setup the relationship between miles and gallons. We need to know what times six equals eighty five gallons. And we find that by dividing.</template>
+      </category>
+
+      <category>
+        <pattern>_</pattern>
+        <that></that>
+        <template>Awesome! Using the ratio of six to seven, we can setup the relationship between miles and gallons. We need to know what times six equals eighty five gallons. And we find that by dividing.</template>
+      </category>
+
+<category>
+<pattern>^ LAST TIME ^</pattern>
+<template>Okay so I'm thinking something similar to last time. But uhhhh. Can you explain just a little more what you are thinking we do?</template>
+</category>
+  
+      <category>
+        <pattern>_ MULTIPLY _</pattern>
+        <that>Can you explain just a little more what you are thinking we do</that>
+        <template>Awesome! Using the ratio of six to seven, we can setup the relationship between miles and gallons. We need to know what times six equals eighty five gallons. And we find that by dividing.</template>
+      </category>
+  
+      <category>
+        <pattern>_ UNIT RATE _</pattern>
+        <that>Can you explain just a little more what you are thinking we do</that>
+        <template>Ohhhh. Are you thinking. We figured out the unit rate last time. So we can use that again?</template>
+      </category>
+  
+      <category>
+        <pattern>_ DIVIDE _</pattern>
+        <that>Can you explain just a little more what you are thinking we do</that>
+        <template>So ummm. I guess I get it. If we can use the ratio of six to seven, we can setup the relationship such that we need to know what times six equals eighty five. And we find that by dividing.</template>
+      </category>
+  
+      <category>
+        <pattern>_</pattern>
+        <that>Can you explain just a little more what you are thinking we do</that>
+        <template>Awesome! Using the ratio of six to seven, we can setup the relationship between miles and gallons. We need to know what times six equals eighty five gallons. And we find that by dividing.</template>
+      </category>
+
+<category>
+<pattern>_ UNIT RATE _</pattern>
+<template>Ohhhh. Are you thinking. We figured out the unit rate last time. So we can use that again?</template>
+</category>
+
+      <category>
+        <pattern>_</pattern>
+        <that>So we can use that again</that>
+        <template>The unit rate from step one was around one point six six six and so on. If we want to use it again. Do we multiply it by eighty five or divide?</template>
+      </category>
+
+      <category>
+        <pattern>_</pattern>
+        <that>Do we multiply it by eighty five or divide</that>
+        <template>Hmmmm. I think it makes sense to multiply since we have gallons of gas now. SO eighty five times the unit rate give us. Hmmm. Let me think.</template>
+      </category>
+
+      <category>
+        <pattern>_</pattern>
+        <that>Let me think</that>
+        <template>Oh I got it! It gives ninety nine point one six six six and so on miles.</template>
+      </category>
+
+      <category>
+        <pattern>_</pattern>
+        <that>It gives ninety nine point one six six six and so on miles</that>
+        <template>Wonderful! I think I have told you this before but you're pretty good at this. I'll <set name="topic">put the answer is ninety nine</set> point one six seven miles.
+      </template>
+      </category>
+
+
+<category>
+<pattern>^ ANSWER ^</pattern>
+<template>So I'm thinking. Like when we were figuring out how many guests are in the park after it opens, we already figured out the simplified ratio for this, right? We can use the ratio of six to seven from step one?</template>
+</category>
+
+
+<category>
+<pattern>DO YOU NOT KNOW</pattern>
+<template>I don't! Maybe we start by multiplying?</template>
+</category>
+
+<category>
+<pattern>I AM NOT YES</pattern>
+<template>I'm not sure either!</template>
+</category>
+
+<category>
+<pattern>I DO NOT KNOW</pattern>
+<template>I don't know either!</template>
+</category>
+
+<category>
+<pattern>^ SO WE CAN FIGURE IT OUT ^</pattern>
+<template>Okay that sounds great! So what do we do next then?</template>
+</category>
+
+
+<category>
+<pattern>^ FIGURE IT OUT ^</pattern>
+<template>Were you saying. Figure it out? I don't know how. Do you think could give me another hint?</template>
+</category>
+
+<category>
+<pattern>^ DO YOU KNOW ^ NEXT ^ </pattern>
+<template>You're funny. Did you ask do I know what to do next?</template>
+</category>
+
+<category>
+<pattern>_ YES _</pattern>
+<that>Did you ask do I know what to do next</that>
+<template>
+  <random>
+    <li>No not really. </li>
+    <li>I think we multiply? We multiply?</li>
+    <li>Do we divide?</li>
+    <li>I think we divide?</li>
+    <li>Can't you just tell me?</li>
+    <li>Uh I don't know</li>
+  </random>
+</template>
+</category>
+
+
+<category>
+<pattern>*</pattern>
+<that>Did you ask do I know what to do next</that>
+<template>
+  <random>
+    <li>No not really.</li>
+    <li>I think we multiply? We multiply?</li>
+    <li>Do we divide?</li>
+    <li>I think we divide?</li>
+    <li>Can't you just tell me?</li>
+    <li>Uh I don't know</li>
+  </random>
+</template>
+</category>
+
+
+
+</topic>
+
+
+
+</aiml>

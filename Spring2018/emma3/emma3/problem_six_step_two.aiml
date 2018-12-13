@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+
+
+<topic name = "five over five">
+
+
+<category>
+<pattern>^ REDUCE ^</pattern>
+<template>Hmmmm. So do you think we can just do the same thing as the last step?</template>
+</category>
+
+<category>
+<pattern>^ FRACTION ^</pattern>
+  <template>Hmmmm. So do you think we can just do the same thing as the last step?</template>
+</category>
+
+      <category>
+      <pattern>_</pattern>
+      <that>So do you think we can just do the same thing as the last step</that>
+      <template>Okay so we start by figuring out all the prime numbers, I mean factors, of hundred and five and five hundred! So like last time, these are the prime numbers that go into a number. So the prime factors of one hundred and five are just three and seven right?</template>
+      </category>
+
+            <category>
+            <pattern>_ NO _</pattern>
+            <that>So the prime factors of one hundred and five are just three and seven right</that>
+            <template>Oh! I forgot one! I see that. Five is also a prime factor of one hundred and five. </template>
+            </category>
+
+            <category>
+            <pattern>_ NOPE _</pattern>
+            <that>So the prime factors of one hundred and five are just three and seven right</that>
+            <template>Oh! I forgot one! I see that. Five is also a prime factor of one hundred and five. </template>
+            </category>
+
+            <category>
+            <pattern>_ NOT _</pattern>
+            <that>So the prime factors of one hundred and five are just three and seven right</that>
+            <template>Oh! I forgot one! I see that. Five is also a prime factor of one hundred and five. </template>
+            </category>
+
+            <category>
+            <pattern>_</pattern>
+            <that>So the prime factors of one hundred and five are just three and seven right</that>
+            <template>Okay cool! So then the prime factors of five hundred are easy. I think it is just two and five. </template>
+            </category>
+
+                      <category>
+                      <pattern>_</pattern>
+                      <that>I think it is just two and five</that>
+                      <template>Hmmmm. So if the factors of one hundred and five are three and seven and the factors of five hundred are two and five. This means they have no prime factor in common?</template>
+                      </category>
+
+                                  <category>
+                                  <pattern>_</pattern>
+                                  <that>This means they have no prime factor in common</that>
+                                  <template>Ohhhhh. I missed one factor, five. So the greatest prime factor they both have in common is five!</template>
+                                  </category>
+  
+      <category>
+      <pattern>_</pattern>
+      <that>Five is also a prime factor of one hundred and five</that>
+      <template>And then. There aren't many prime factors for five hundred. Just two and five. </template>
+      </category>
+
+      <category>
+      <pattern>_</pattern>
+      <that>Just two and five</that>
+      <template>Awesome! So the greatest prime factor they both have in common is five! </template>
+      </category>
+
+              <category>
+              <pattern>_</pattern>
+              <that>So the greatest prime factor they both have in common is five</that>
+              <template>We can divide the top and bottom of the fraction. Both. by five right?</template>
+              </category>
+
+                        <category>
+                        <pattern>_</pattern>
+                        <that>by five right</that>
+                        <template>So then the answer is twenty one over one hundred! I will <set name="topic">put the answer is twenty one over</set> one hundred! That's still not an easy fraction to understand but at least it is close to one fifth. 
+                        </template>
+                        </category>
+
+<category>
+<pattern>^ DIVIDE ^</pattern>
+<template>Hmmmm. We can divide if we can find the greatest common prime factor. Do you think we can just do the same thing as the last step to find the prime factor? </template>
+</category>
+
+
+        <category>
+        <pattern>_</pattern>
+        <that>Do you think we can just do the same thing as the last step to find the prime factor</that>
+        <template>Okay so we start by figuring out all the prime numbers, I mean factors, of hundred and five and five hundred! So like last time, these are the prime numbers that go into a number. So the prime factors of one hundred and five are just three and seven right?</template>
+        </category>
+
+<category>
+<pattern>^ OVER ^</pattern>
+<template>Hmmmm. So this time we have one hundred and five over five hundred. Do you think we can just do the same thing as the last step to find the prime factor?</template>
+</category>
+
+<category>
+<pattern>^ GREATEST ^</pattern>
+<template>Ah the greatest! Let us go find the greatest common factor! So do you think we can just do the same thing as the last step</template>
+</category>
+
+<category>
+<pattern>^ COMMON ^</pattern>
+<template>Ah the greatest! Let us go find the greatest common factor! So do you think we can just do the same thing as the last step</template>
+</category>
+
+<category>
+<pattern>^ PRIME ^</pattern>
+<template>Ah the greatest! Let us go find the greatest common factor! So do you think we can just do the same thing as the last step</template>
+</category>
+
+<category>
+<pattern>^ FACTOR ^</pattern>
+<template>Hmmmm. So this time we have one hundred and five over five hundred. Do you think we can just do the same thing as the last step to find the prime factor?</template>
+</category>
+
+<category>
+<pattern>^ FACTORS ^</pattern>
+<template>Hmmmm. So this time we have one hundred and five over five hundred. Do you think we can just do the same thing as the last step to find the prime factor?</template>
+</category>
+
+<category>
+<pattern>^ TIMES ^</pattern>
+<template>So are you thinking we multiply? I'm not sure I get it though. Do you think we can just do the same thing as the last step to find the prime factor? </template>
+</category>
+
+
+<category>
+<pattern>^ ANSWER ^</pattern>
+<template>I'm still trying to figure out the answer. Do you think we can just do the same thing as the last step to find the prime factor?</template>
+</category>
+
+
+<category>
+<pattern>DO YOU NOT KNOW</pattern>
+<template>I don't! Maybe we start by multiplying?</template>
+</category>
+
+<category>
+<pattern>I AM NOT YES</pattern>
+<template>I'm not sure either!</template>
+</category>
+
+<category>
+<pattern>I DO NOT KNOW</pattern>
+<template>I don't know either!</template>
+</category>
+
+<category>
+<pattern>^ SO WE CAN FIGURE IT OUT ^</pattern>
+<template>Okay that sounds great! So what do we do next then?</template>
+</category>
+
+
+<category>
+<pattern>^ FIGURE IT OUT ^</pattern>
+<template>Were you saying. Figure it out? I don't know how. Do you think could give me another hint?</template>
+</category>
+
+<category>
+<pattern>^ DO YOU KNOW ^ NEXT ^ </pattern>
+<template>You're funny. Did you ask do I know what to do next?</template>
+</category>
+
+<category>
+<pattern>_ YES _</pattern>
+<that>Did you ask do I know what to do next</that>
+<template>
+  <random>
+    <li>No not really. </li>
+    <li>I think we multiply? We multiply?</li>
+    <li>Do we divide?</li>
+    <li>I think we divide?</li>
+    <li>Can't you just tell me?</li>
+    <li>Uh I don't know</li>
+  </random>
+</template>
+</category>
+
+
+<category>
+<pattern>*</pattern>
+<that>Did you ask do I know what to do next</that>
+<template>
+  <random>
+    <li>No not really.</li>
+    <li>I think we multiply? We multiply?</li>
+    <li>Do we divide?</li>
+    <li>I think we divide?</li>
+    <li>Can't you just tell me?</li>
+    <li>Uh I don't know</li>
+  </random>
+</template>
+</category>
+
+
+
+</topic>
+
+
+
+</aiml>

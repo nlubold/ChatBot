@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+
+
+<topic name = "data to percentages">
+
+
+<category>
+<pattern>^ FRACTION ^</pattern>
+<template>To be honest, I'm not a big fan of fractions. But I suppose this is similar to the ratios. So how do we find a percentage from the fraction of tent campers?</template>
+</category>
+
+<category>
+<pattern>^ RATIOS ^</pattern>
+<template>To be honest, I'm not a big fan of fractions. But I suppose this is similar to the ratios. So how do we find a percentage from the fraction of tent campers?</template>
+</category>
+
+<category>
+<pattern>^ PERCENTAGE ^</pattern>
+<template>To be honest, I'm not a big fan of fractions. But I suppose this is similar to the ratios. So how do we find a percentage from the fraction of tent campers?</template>
+</category>
+
+      <category>
+      <pattern>_</pattern>
+      <that>So how do we find a percentage from the fraction of tent campers</that>
+      <template>Awesome! So we can just divide three by five? That seems a little tricky but mostly straightforward.</template>
+      </category>
+
+              <category>
+              <pattern>_</pattern>
+              <that>That seems a little tricky but mostly straightforward</that>
+              <template>After some decimal work, three divided by five is point six. But how do we convert this to a percentage?</template>
+              </category>
+
+                          <category>
+                          <pattern>_</pattern>
+                          <that>But how do we convert this to a percentage</that>
+                          <template>Oh okay! We can multiply by one hundred. Ummmm. How did you know to multiply by one hundred?</template>
+                          </category>
+
+                                    <category>
+                                    <pattern>_</pattern>
+                                    <that>How did you know to multiply by one hundred</that>
+                                    <template>Right! You're pretty good at this. Okay so point six times one hundred is sixty percent?</template>
+                                    </category>
+  
+                                                <category>
+                                                <pattern>_</pattern>
+                                                <that>How did you know to multiply by one hundred</that>
+                                                <template>So then. Sixty percent of campers camp in tents! I will <set name="topic">put the answer is sixty percent</set> so I can share this with Ashley.</template>
+                                                </category>
+  
+<category>
+<pattern>^ DIVIDE ^</pattern>
+<template>Awesome! So we can just divide three by five? That seems a little tricky but mostly straightforward.</template>
+</category>
+
+<category>
+<pattern>^ DIVIDED ^</pattern>
+<template>Awesome! So we can just divide three by five? That seems a little tricky but mostly straightforward.</template>
+</category>
+  
+<category>
+<pattern>^ OVER ^</pattern>
+<template>To be honest, I'm not a big fan of fractions. But I suppose this is similar to the ratios. We have three over five. So how do we find a percentage from the fraction of tent campers?</template>
+</category>
+
+<category>
+<pattern>^ TIMES ^</pattern>
+<template>Hmmmm. Are you thinking we can multiply to find the percentage? What are we multiplying? And how did you know to multiply?</template>
+</category>
+
+<category>
+<pattern>^ MULTIPLY ^</pattern>
+<template>Hmmmm. Are you thinking we can multiply to find the percentage? What are we multiplying? And how did you know to multiply?</template>
+</category>
+
+            <category>
+            <pattern>_</pattern>
+            <that>And how did you know to multiply?</that>
+            <template>That seems a little tricky but mostly straightforward. After some decimal work, three divided by five is point six. And then we can multiply? But how do we convert this to a percentage?</template>
+            </category>
+
+<category>
+<pattern>^ SAME THING ^</pattern>
+<template>What do you mean by same thing? I am not sure what you mean. I don't really remember what we did.</template>
+</category>
+
+<category>
+<pattern>^ LAST TIME ^</pattern>
+<template>What do you mean by last time? I am not sure what you mean. I don't really remember what we did.</template>
+</category>
+
+        <category>
+          <pattern>^ LAST TIME ^</pattern>
+          <template>Hmmmm. So we can just divide three by five? That seems a little tricky but mostly straightforward.</template>
+        </category>
+
+<category>
+<pattern>^ MULTIPLICATION ^</pattern>
+<template>Hmmmm. Are you thinking we can multiply to find the percentage? What are we multiplying? And how did you know to multiply?</template>
+</category>
+
+
+<category>
+<pattern>^ ANSWER ^</pattern>
+<template>To be honest, I'm not a big fan of fractions. But I suppose this is similar to the ratios. So how do we find a percentage from the fraction of tent campers?</template>
+</category>
+
+
+<category>
+<pattern>DO YOU NOT KNOW</pattern>
+<template>I don't! Maybe we start by dividing?</template>
+</category>
+
+<category>
+<pattern>I AM NOT YES</pattern>
+<template>I'm not sure either!</template>
+</category>
+
+<category>
+<pattern>I DO NOT KNOW</pattern>
+<template>I don't know either!</template>
+</category>
+
+<category>
+<pattern>^ SO WE CAN FIGURE IT OUT ^</pattern>
+<template>Okay that sounds great! So what do we do next then?</template>
+</category>
+
+
+<category>
+<pattern>^ FIGURE IT OUT ^</pattern>
+<template>Were you saying. Figure it out? I don't know how. Do you think could give me another hint?</template>
+</category>
+
+<category>
+<pattern>^ DO YOU KNOW ^ NEXT ^ </pattern>
+<template>You're funny. Did you ask do I know what to do next?</template>
+</category>
+
+<category>
+<pattern>_ YES _</pattern>
+<that>Did you ask do I know what to do next</that>
+<template>
+  <random>
+    <li>No not really. </li>
+    <li>I think we multiply? We multiply?</li>
+    <li>Do we divide?</li>
+    <li>I think we divide?</li>
+    <li>Can't you just tell me?</li>
+    <li>Uh I don't know</li>
+  </random>
+</template>
+</category>
+
+
+<category>
+<pattern>*</pattern>
+<that>Did you ask do I know what to do next</that>
+<template>
+  <random>
+    <li>No not really.</li>
+    <li>I think we multiply? We multiply?</li>
+    <li>Do we divide?</li>
+    <li>I think we divide?</li>
+    <li>Can't you just tell me?</li>
+    <li>Uh I don't know</li>
+  </random>
+</template>
+</category>
+
+
+
+</topic>
+
+
+
+</aiml>

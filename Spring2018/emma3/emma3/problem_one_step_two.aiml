@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+
+
+<topic name = "after seven hours">
+
+<category>
+<pattern>$PROBLEM START 2</pattern>
+<template>
+So the first time we talked, I said I wanted to ride my bike to the park. But I'm actually thinking we might drive. I am estimating how much gas we will need and how far we could go if I put extra gas in. Using how much I know I used for five point six miles, can you help me figure out <set name="topic">how much gas</set> we will use for seventy two point five miles?
+</template>
+</category>
+
+<category>
+<pattern>_</pattern>
+  <that>I think it would be something similar as to step one</that>
+<template>So similar to problems we've done before and the last step, we can set up a ratio. But. Hmmm. What does that look like here? </template>
+</category>
+
+<category>
+<pattern>^ RATIO ^</pattern>
+<template>So similar to problems we've done before and the last step, we can set up a ratio. But. Hmmm. What does that look like here? </template>
+</category>
+
+<category>
+<pattern>^ DECIMAL ^</pattern>
+<template>Decimals are hard but at least you showed me some helpful stuff on the last step. But. Hmmm. What does that look like here?</template>
+</category>
+
+<category>
+<pattern>^ DECIMALS ^</pattern>
+<template>Decimals are hard but at least you showed me some helpful stuff on the last step. But. Hmmm. What does that look like here?</template>
+</category>
+
+<category>
+<pattern>^ RATIOS ^</pattern>
+<template>So similar to problems we've done before and the last step, we can set up a ratio. But. Hmmm. What does that look like here? </template>
+</category>
+
+<category>
+<pattern>^ SIMPLIFY ^</pattern>
+<template>Decimals are hard but at least you showed me some helpful stuff on the last step to simplify things! But. Hmmm. What does that look like here?</template>
+</category>
+
+<category>
+<pattern>^ REDUCE ^</pattern>
+<template>Decimals are hard but at least you showed me some helpful stuff on the last step to reduce the complicated fractions! But. Hmmm. What does that look like here?</template>
+</category>
+
+<category>
+<pattern>^ OVER ^</pattern>
+<template>So similar to problems we've done before and the last step, we can set up a ratio of one point two over thirty. But. Hmmm. What does that look like here?</template>
+</category>
+
+        <category>
+        <pattern>_ MULTIPLY _</pattern>
+        <that>What does that look like here</that>
+        <template>Sweet! So we already know that one point two over thirty is the same as one to twenty five. So using that ratio and what we know to get from one to seven. We just multiply by seven. </template>
+        </category>
+
+        <category>
+        <pattern>_ TIMES _</pattern>
+        <that>What does that look like here</that>
+        <template>Sweet! So we already know that one point two over thirty is the same as one to twenty five. So using that ratio and what we know to get from one to seven. We just multiply by seven. </template>
+        </category>
+
+        <category>
+        <pattern>_</pattern>
+        <that>What does that look like here</that>
+        <template>Sweet! So we already know that one point two over thirty is the same as one to twenty five. So using that ratio and what we know to get from one to seven. We just multiply by seven. </template>
+        </category>
+
+
+                <category>
+                <pattern>_</pattern>
+                <that>We just multiply by seven</that>
+                <template>Twenty-five times seven is one hundred and seventy-five! Is that it? There will be one hundred and seventy five guests in the park after seven hours?</template>
+                </category>
+
+
+                          <category>
+                          <pattern>_</pattern>
+                          <that>There will be one hundred and seventy five guests in the park after seven hours</that>
+                          <template>
+                            Awesome! It is much easier when you already have a simplified ratio! I will <set name="topic">put the answer is one hundred</set> and seventy five!
+                          </template>
+                          </category>
+
+<category>
+<pattern>^ TIMES ^</pattern>
+<template>You showed me some helpful stuff on the last step to reduce the complicated fractions and using multiplication. But. Hmmmm. What does that look like here?</template>
+</category>
+
+<category>
+<pattern>^ MULTIPLY ^</pattern>
+<template>You showed me some helpful stuff on the last step to reduce the complicated fractions and using multiplication. But. Hmmmm. What does that look like here?</template>
+</category>
+
+<category>
+<pattern>^ MULTIPLICATION ^</pattern>
+<template>You showed me some helpful stuff on the last step to reduce the complicated fractions and using multiplication. But. Hmmmm. What does that look like here?</template>
+</category>
+
+<category>
+<pattern>^ UNIT RATE ^</pattern>
+<template>
+So we pretty much found the unit rate last time. Right?
+</template>
+</category>
+
+        <category>
+        <pattern>_</pattern>
+        <that>Right</that>
+        <template>So from the unit rate, we knew that we have twenty five guests every hour. What do we do with that though?</template>
+        </category>
+
+        <category>
+        <pattern>_</pattern>
+        <that> What do I do with that though</that>
+        <template>Oh right! You are so clever! So. We just multiply by seven! </template>
+        </category>
+
+
+<category>
+<pattern>^ ANSWER ^</pattern>
+<template>
+  So I know that we have the ratio of one point two to thirty and we know that's the same as one to twenty-five. But. Hmmmm. What does that look like here?
+</template>
+</category>
+
+
+<category>
+<pattern>DO YOU NOT KNOW</pattern>
+<template>I don't! Maybe we start by multiplying?</template>
+</category>
+
+<category>
+<pattern>I AM NOT YES</pattern>
+<template>I'm not sure either!</template>
+</category>
+
+<category>
+<pattern>I DO NOT KNOW</pattern>
+<template>I don't know either!</template>
+</category>
+
+<category>
+<pattern>^ SO WE CAN FIGURE IT OUT ^</pattern>
+<template>Okay that sounds great! So what do we do next then?</template>
+</category>
+
+
+<category>
+<pattern>^ FIGURE IT OUT ^</pattern>
+<template>Were you saying. Figure it out? I don't know how. Do you think could give me another hint?</template>
+</category>
+
+<category>
+<pattern>^ DO YOU KNOW ^ NEXT ^ </pattern>
+<template>You're funny. Did you ask do I know what to do next?</template>
+</category>
+
+<category>
+<pattern>_ YES _</pattern>
+<that>Did you ask do I know what to do next</that>
+<template>
+<random>
+<li>No not really.</li>
+<li>I think we multiply? We multiply?</li>
+<li>Do we divide?</li>
+<li>I think we divide?</li>
+<li>Can't you just tell me?</li>
+<li>Uh I don't know</li>
+</random>
+</template>
+</category>
+
+
+<category>
+<pattern>*</pattern>
+<that>Did you ask do I know what to do next</that>
+<template>
+<random>
+<li>No not really. </li>
+<li>I think we multiply? We multiply?</li>
+<li>Do we divide?</li>
+<li>I think we divide?</li>
+<li>Can't you just tell me?</li>
+<li>Uh I don't know</li>
+</random>
+</template>
+</category>
+
+
+
+
+
+</topic>
+
+
+
+</aiml>

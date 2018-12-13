@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+
+<category>
+<pattern>$PROBLEM START 8</pattern>
+<template>Now I need to make sure I have enough money. Can you help me figure out how much forty five hot dogs <set name="topic">will cost</set>?</template>
+</category>
+
+<category>
+<pattern>$PROBLEM START EIGHT</pattern>
+  <template>
+    Now I need to make sure I have enough money. Can you help me figure out how much forty five hot dogs <set name="topic">will cost</set>?
+  </template>
+</category>
+
+<topic name = "put the answer is ninety">
+
+    <category>
+      <pattern>*</pattern>
+      <template>Should I go to the next problem?</template>
+    </category>
+
+
+
+  <category>
+    <pattern>*</pattern>
+    <that>Should I go to the next problem</that>
+    <template>Don't forget to hit the next problem button.</template>
+  </category>
+  
+  
+  <category>
+    <pattern>^ GREAT ^</pattern>
+    <template>Cool. </template>
+  </category>
+
+
+  <category>
+    <pattern>^ Good ^</pattern>
+    <template>Cool. </template>
+  </category>
+
+  <category>
+    <pattern>^ NEXT ^</pattern>
+    <template>Don't forget. You have to hit the button to go to the next problem.</template>
+  </category>
+
+
+
+</topic>
+
+
+</aiml>

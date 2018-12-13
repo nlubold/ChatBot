@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+
+
+<topic name = "convert the times">
+
+
+<category>
+<pattern>^ remainder ^</pattern>
+<template>I know we divided the numerator and denominator of fractions before but I actually don't remember much about it. What do you mean by remainder?</template>
+</category>
+
+  <category>
+    <pattern>_</pattern>
+    <that>What do you mean by remainder</that>
+    <template>Oh right. Remainder. It comes from dividing numbers which don't go into each other completely. But. I'm confused. Why is that important?</template>
+  </category>
+
+          <category>
+            <pattern>_</pattern>
+            <that>Why is that important</that>
+            <template>Cool! So twenty two divided by six is three because six times three is eighteen. And then the remainder is four? What's next?</template>
+          </category>
+ 
+                  <category>
+                    <pattern>_</pattern>
+                    <that>What is next</that>
+                    <template>So that's it then! We can make a mixed fraction by dividing and then we use the remainder in the other fraction! So that's three and four sixths. 
+                    </template>
+                  </category>
+
+                          <category>
+                            <pattern>_</pattern>
+                            <that>So that is three and four sixths</that>
+                            <template>Oh yeah! If I reduce it, we get three and two thirds! I will <set name="topic">put the answer is three and</set> two thirds.
+                            </template>
+                          </category>
+  
+<category>
+<pattern>^ divide ^</pattern>
+<template>I know we divided numerators and denominators before. I think for percentages? But why do we divide here? This isn't a percentage.</template>
+</category>
+
+      <category>
+        <pattern>_</pattern>
+        <that>This is not a percentage</that>
+        <template>Ah. We divide because that is what we need to do. To create a mixed fraction?</template>
+      </category>
+
+              <category>
+                <pattern>_</pattern>
+                <that>To create a mixed fraction</that>
+                <template>Cool! So twenty two divided by six is three because six times three is eighteen. We have four left over. What do we do next?</template>
+              </category>
+
+                      <category>
+                        <pattern>_</pattern>
+                        <that>What do we do next</that>
+                        <template>
+                          So that's it then! We can make a mixed fraction by dividing and then we use the remainder of four in the other fraction! So that's three and four sixths.
+                        </template>
+                      </category>
+
+
+<category>
+<pattern>^ twenty two ^</pattern>
+<template>So we have twenty two on top and six on the bottom. I know we divided numerators and denominators before. I think for percentages? But. Do we divide here? This isn't a percentage.</template>
+</category>
+
+      <category>
+        <pattern>_</pattern>
+        <that>This is not a percentage</that>
+        <template>Ah. We divide because that is what we need to do. To create a mixed fraction?</template>
+      </category>
+
+              <category>
+                <pattern>_</pattern>
+                <that>To create a mixed fraction</that>
+                <template>Cool! So twenty two divided by six is three because six times three is eighteen. We have four left over. What do we do next?</template>
+              </category>
+
+                      <category>
+                        <pattern>_</pattern>
+                        <that>What do we do next</that>
+                        <template>
+                          So that's it then! We can make a mixed fraction by dividing and then we use the remainder of four in the other fraction! So that's three and four sixths.
+                        </template>
+                      </category>
+
+<category>
+<pattern>^ six ^</pattern>
+<template>So we have twenty two on top and six on the bottom. I know we divided numerators and denominators before. I think for percentages? But. Do we divide here? This isn't a percentage.</template>
+</category>
+
+      <category>
+        <pattern>_</pattern>
+        <that>This is not a percentage</that>
+        <template>Ah. We divide because that is what we need to do. To create a mixed fraction?</template>
+      </category>
+
+              <category>
+                <pattern>_</pattern>
+                <that>To create a mixed fraction</that>
+                <template>Cool! So twenty two divided by six is three because six times three is eighteen. We have four left over. What do we do next?</template>
+              </category>
+
+                      <category>
+                        <pattern>_</pattern>
+                        <that>What do we do next</that>
+                        <template>
+                          So that's it then! We can make a mixed fraction by dividing and then we use the remainder of four in the other fraction! So that's three and four sixths.
+                        </template>
+                      </category>
+
+
+<category>
+<pattern>^ three ^</pattern>
+<template>Did you say three? Where did the three come from?</template>
+</category>
+  
+      <category>
+      <pattern>_</pattern>
+        <that>Where did the three come from</that>
+      <template>I know we divided numerators and denominators before. I think for percentages? But. We divide here? This isn't a percentage.</template>
+      </category>
+
+<category>
+<pattern>^ ANSWER ^</pattern>
+<template>The answer? I don't know what the answer is. I could guess. Maybe three? But I'm not really sure. Where the three came from.</template>
+</category>
+
+        <category>
+      <pattern>_</pattern>
+        <that>Where the three came from</that>
+      <template>I know we divided numerators and denominators before. I think for percentages? But. We divide here? This isn't a percentage.</template>
+      </category>
+
+<category>
+<pattern>DO YOU NOT KNOW</pattern>
+<template>I don't! Maybe we start by dividing?</template>
+</category>
+
+<category>
+<pattern>I AM NOT YES</pattern>
+<template>I'm not sure either!</template>
+</category>
+
+<category>
+<pattern>I DO NOT KNOW</pattern>
+<template>I don't know either!</template>
+</category>
+
+<category>
+<pattern>^ SO WE CAN FIGURE IT OUT ^</pattern>
+<template>Okay that sounds great! So what do we do next then?</template>
+</category>
+
+
+<category>
+<pattern>^ FIGURE IT OUT ^</pattern>
+<template>Were you saying. Figure it out? I don't know how. Do you think could give me another hint?</template>
+</category>
+
+<category>
+<pattern>^ DO YOU KNOW ^ NEXT ^ </pattern>
+<template>You're funny. Did you ask do I know what to do next?</template>
+</category>
+
+<category>
+<pattern>_ YES _</pattern>
+<that>Did you ask do I know what to do next</that>
+<template>
+  <random>
+    <li>No not really. </li>
+    <li>Do we divide?</li>
+    <li>I think we divide?</li>
+    <li>Can't you just tell me?</li>
+    <li>Uh I don't know</li>
+  </random>
+</template>
+</category>
+
+
+<category>
+<pattern>*</pattern>
+<that>Did you ask do I know what to do next</that>
+<template>
+  <random>
+    <li>No not really.</li>
+    <li>Do we divide?</li>
+    <li>I think we divide?</li>
+    <li>Can't you just tell me?</li>
+    <li>Uh I don't know</li>
+  </random>
+</template>
+</category>
+
+
+
+</topic>
+
+
+
+</aiml>

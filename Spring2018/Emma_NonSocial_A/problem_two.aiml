@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+
+<category>
+<pattern>$PROBLEM START 2</pattern>
+<template>So now I know how much waterproof paint to get at the store. But. Before I go to the store, can you help me figure out how much of <set name="topic">my battery</set> I will use over time? </template>
+</category>
+
+<category>
+<pattern>$next step 2 2</pattern>
+<template>So step one was to figure out how much of my battery is used in one hour. How do I figure out how much of my battery is used up in <set name="topic">three hours</set>?</template>
+</category>
+
+
+<category>
+<pattern>$prior step 2 1</pattern>
+<template>Back to figuring out how much of <set name="topic">my battery</set> I will use in one hour.
+</template>
+</category>
+
+<category>
+<pattern>$prior step 2 1 a</pattern>
+<template>Didn't I already figure out how much of <set name="topic">my battery I will use</set> in one hour?</template>
+</category>
+
+<category>
+<pattern>$next step 2 2 a</pattern>
+<template><set name ="topic">I will use nine</set> forty eths of my battery in three hours.</template>
+</category>
+
+<category>
+<pattern>2 1</pattern>
+<template><set name="topic">my battery</set></template>
+</category>
+
+<category>
+<pattern>2 2</pattern>
+<template><set name="topic">three hours</set></template>
+</category>
+
+
+<topic name = "my battery I will use">
+
+  <category>
+    <pattern>*</pattern>
+    <template>
+      <random>
+        <li>I don't really understand why we're back on step one cause I figured this out right? I will three forty eths of the battery.</li>
+        <li>Why are we back on step one for this problem? I already figured out that I will use three forty eths of the battery.</li>
+        <li>We should go to the next step or problem because I already know how to do this one.</li>
+        <li>I'm bored. I already did this one.</li>
+        <li>The answer is three forty eths isn't it?</li>
+        <li>Why are we here?</li>
+      </random>
+    </template>
+  </category>
+
+</topic>
+
+<topic name = "I will use nine">
+
+  <category>
+    <pattern>*</pattern>
+    <template>
+      <random>
+        <li>I don't really understand why we're back on step two cause I figured this out. I will use nine forty eths of my battery in three hours.</li>
+        <li>Why are we back on step one for this problem? I already figured out that I will use nine forty eths of my battery in three hours.</li>
+        <li>We should go to the next step or problem because I already know how to do this one.</li>
+        <li>I'm bored. I already did this.</li>
+        <li>The answer is nine forty eths, isn't it?</li>
+        <li>Why are we here?</li>
+      </random>
+    </template>
+  </category>
+
+
+</topic>
+
+
+
+  <topic name = "PUT THE ANSWER IS NINE over forty">
+
+    <category>
+      <pattern>*</pattern>
+      <template>Should I go to the next problem?</template>
+      </category>
+
+    <category>
+      <pattern>*</pattern>
+      <that>Should I go to the next problem</that>
+      <template>Move me to the next problem.</template>
+      </category>
+
+     
+      <category>
+        <pattern>^ GREAT ^</pattern>
+        <template>Cool.</template>
+      </category>
+
+
+      <category>
+        <pattern>^ Good ^</pattern>
+        <template>Cool.</template>
+      </category>
+
+    <category>
+      <pattern>*</pattern>
+      <that>Cool.</that>
+      <template>On to the next problem.</template>
+    </category>
+
+      <category>
+        <pattern>^ NEXT ^</pattern>
+        <template>What's next?</template>
+      </category>
+      
+     <category>
+        <pattern>^ NEXT ^</pattern>
+       <that>What is next</that>
+        <template>Cool.</template>
+      </category>
+
+      <category>
+        <pattern>*</pattern>
+        <that>What is next</that>
+        <template>On to the next problem! </template>
+      </category>
+
+  </topic>
+
+  <topic name = "put the answer is THREE over forty">
+
+    <category>
+      <pattern>*</pattern>
+      <template>Okay. I want to figure out how long my battery will last for three hours. Why don't you use the arrows to go to the next step?</template>
+    </category>
+    
+
+    <category>
+      <pattern>^ GREAT ^</pattern>
+      <template>Cool.</template>
+    </category>
+
+
+    <category>
+      <pattern>^ Good ^</pattern>
+      <template>Cool.</template>
+    </category>
+
+    <category>
+      <pattern>^ NEXT ^</pattern>
+      <template>Cool.</template>
+    </category>
+
+    <category>
+      <pattern>*</pattern>
+      <that>Cool</that>
+      <template>Why don't you use the arrows to go to the next step?</template>
+    </category>
+
+    <category>
+      <pattern>*</pattern>
+      <that>What is next</that>
+      <template>On to the next step! </template>
+    </category>
+    
+
+  </topic>
+
+  
+
+
+</aiml>

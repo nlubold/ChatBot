@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+
+
+
+  <topic name = "half an hour">
+
+
+<category>
+<pattern>^ TWO ^</pattern>
+<template>So I know that I use two fifteenths of the battery in half an hour. But I'm still confused. How do I use that to figure out how long a whole battery lasts?</template>
+</category>
+
+      <category>
+        <pattern>_ RATIO _</pattern>
+        <that>How do I use that to figure out how long a whole battery lasts</that>
+        <template>I can setup a ratio and use that to figure out what to multiply two over fifteen by to get one whole battery? That makes sense. </template>
+      </category>
+
+      <category>
+        <pattern>_ TWO _</pattern>
+        <that>How do I use that to figure out how long a whole battery lasts</that>
+        <template>So I'm thinking I multiply?  So I am going to figure out what to multiply two over fifteen by to get one whole battery. That makes sense.</template>
+      </category>
+
+      <category>
+        <pattern>_ HALF _</pattern>
+        <that>How do I use that to figure out how long a whole battery lasts</that>
+        <template>So I need to be able to multiply by the half hour by something right? Can I start by looking at what to multiply two over fifteen by to get one whole battery? </template>
+      </category>
+
+    <category>
+      <pattern>_</pattern>
+      <that>Can I start by looking at what to multiply two over fifteen by to get one whole battery</that>
+      <template>So two over fifteen times fifteen over two is one. But then can you help me understand what I do next? </template>
+    </category>
+
+    <category>
+        <pattern>_ MULTIPLY _</pattern>
+        <that>How do I use that to figure out how long a whole battery lasts</that>
+        <template>I am going to multiply? So I am going to figure out what to multiply two over fifteen by to get one whole battery? That makes sense. </template>
+      </category>
+
+      <category>
+        <pattern>_</pattern>
+        <that>How do I use that to figure out how long a whole battery lasts</that>
+        <template>So I'm thinking I multiply? So I am going to figure out what to multiply two over fifteen by to get one whole battery? That makes sense. </template>
+      </category>
+
+    <category>
+        <pattern>_</pattern>
+        <that>That makes sense.</that>
+        <template>So two over fifteen times fifteen over two is one.  But then can you help me understand what I do next?</template>
+      </category>
+
+      <category>
+        <pattern>_ MULTIPLY _</pattern>
+        <that>But then can you help me understand what I do next</that>
+        <template>Okay. So I know how much battery I use in half an hour. So then I multiply by half an hour by that same number, fifteen over two? Which gives us one whole battery? </template>
+      </category>
+
+      <category>
+        <pattern>_ TIMES _</pattern>
+        <that>But then can you help me understand what I do next</that>
+        <template>Okay. So I know how much battery I use in half an hour. So then I multiply by half an hour by that same number, fifteen over two? Which gives us one whole battery?</template>
+      </category>
+
+      <category>
+        <pattern>_ ONE _</pattern>
+        <that>But then can you help me understand what I do next</that>
+        <template>Okay. So I know how much battery I use in half an hour. So then I multiply by half an hour by that same number, fifteen over two? Which gives us one whole battery?</template>
+      </category>
+
+      <category>
+        <pattern>_ HALF _</pattern>
+        <that>But then can you help me understand what I do next</that>
+        <template>Okay. So I know how much battery I use in half an hour. So then I multiply by half an hour by that same number, fifteen over two? Which gives us one whole battery? </template>
+      </category>
+
+      <category>
+        <pattern>_</pattern>
+        <that>But then can you help me understand what I do next</that>
+        <template>Okay. Can you tell me just a little bit more?</template>
+      </category>
+
+      <category>
+        <pattern>_</pattern>
+        <that>Can you tell me just a little bit more</that>
+        <template>Okay. So I know how much battery I use in half an hour. So then I multiply by half an hour by that same number, fifteen over two? Which gives us one whole battery?</template>
+      </category>
+
+      <category>
+        <pattern>_</pattern>
+        <that>Which gives us one whole battery</that>
+        <template>So then one half times fifteen over two is fifteen over four. Is that the answer?</template>
+      </category>
+
+      <category>
+        <pattern>_</pattern>
+        <that>Is that the answer</that>
+        <template>I will change fifteen over four to a mixed fraction and <set name="topic">put the answer is three and three quarters</set>.</template>
+      </category>
+    
+<category>
+<pattern>^ RATIO ^</pattern>
+<template>I can setup a ratio and use that to figure out what to multiply two over fifteen by to get one whole battery? That makes sense. </template>
+</category>
+
+<category>
+<pattern>^ MULTIPLYING ^</pattern>
+<template>So are you thinking I multiply because I want to figure out what times two over fifteen will equal one?</template>
+</category>
+
+<category>
+<pattern>^ TIMES ^</pattern>
+<template>So are you thinking I multiply because I want to figure out what times two over fifteen will equal one?</template>
+</category>
+
+<category>
+<pattern>^ MULTIPLY ^</pattern>
+<template>So are you thinking I multiply because I want to figure out what times two over fifteen will equal one?</template>
+</category>
+
+    <category>
+      <pattern>_ NO _</pattern>
+      <that>So are you thinking I multiply because I want to figure out what times two over fifteen will equal one</that>
+      <template>But then can you help me understand what I do next?</template>
+    </category>
+
+    <category>
+      <pattern>_</pattern>
+      <that>So are you thinking I multiply because I want to figure out what times two over fifteen will equal one</that>
+      <template>So two over fifteen times fifteen over two is one.  But then can you help me understand what I do next?</template>
+    </category>
+
+<category>
+<pattern>^ OVER ^</pattern>
+<template>So I know that I use two over fifteen in half an hour. But I'm still confused. How do I use that to figure out how long a whole battery lasts?</template>
+</category>
+
+<category>
+<pattern>^ WHAT IS TWO OVER FIFTEEN TIMES FIFTEEN OVER TWO ^ </pattern>
+<template>Two over fifteen times fifteen over two is one. But then can you help me understand what I do next?</template>
+</category>
+
+<category>
+<pattern>^How long does ^ half an hour^</pattern>
+<template>I will use up two fifteenths of my battery in half an hour. But then can you help me understand what I do next?</template>
+</category>
+
+<category>
+<pattern>^ WHAT IS ONE HALF TIMES FIFTEEN OVER TWO ^</pattern>
+<template>One half times fifteen over two is fifteen over four. Is that the answer?</template>
+</category>
+
+<category>
+<pattern>^ WHAT IS FIFTEEN OVER TWO TIMES ONE HALF ^</pattern>
+<template>One half times fifteen over two is fifteen over four. Is that the answer?</template>
+</category>
+
+<category>
+<pattern>^ WHAT TIMES TWO ^ ONE ^</pattern>
+<template>Two over fifteen times fifteen over two is one. But then can you help me understand what I do next?</template>
+</category>
+
+<category>
+<pattern>^ WHAT IS TWO ^ TIMES FIFTEEN ^</pattern>
+<template>Two over fifteen times fifteen over two is one. But then can you help me understand what I do next?</template>
+</category>
+    
+
+<category>
+<pattern>^ CHANGE ^ DECIMAL ^</pattern>
+<template>I want to change point five to one half. But.  How do I use that to figure out how long a whole battery lasts?</template>
+</category>
+
+<category>
+<pattern>^ ANSWER ^ THREE ^</pattern>
+<template>I know how much battery I use in a half hour. I figure out what I can multiply that by to get one whole battery. But can you explain just a little more? </template>
+</category>
+
+        <category>
+        <pattern>YES</pattern>
+        <that>But can you explain just a little more</that>
+        <template>I'm listening.</template>
+        </category>
+
+        <category>
+        <pattern>_</pattern>
+        <that>I am listening</that>
+        <template>
+          I can multiply two over fifteen times fifteen over two to get one. But then can you help me understand what I do next?
+        </template>
+        </category>
+
+        <category>
+        <pattern>_</pattern>
+        <that>But can you explain just a little more</that>
+        <template>
+          I can multiply two over fifteen times fifteen over two to get one. But then can you help me understand what I do next?
+        </template>
+        </category>
+
+
+<category>
+<pattern>DO YOU NOT KNOW</pattern>
+<template>I really don't know. Maybe I start by multiplying something?</template>
+</category>
+
+<category>
+<pattern>I AM NOT SURE</pattern>
+<template>Me either. Maybe I start by multiplying something?</template>
+</category>
+
+<category>
+<pattern>I DO NOT KNOW</pattern>
+<template>Me either. Maybe I start by multiplying something?</template>
+</category>
+
+
+<category>
+<pattern>^ SO I CAN FIGURE IT OUT ^</pattern>
+<template>Okay. So what do I do?</template>
+</category>
+
+
+<category>
+<pattern>^ FIGURE IT OUT ^</pattern>
+<template>I'm not sure how. Help me.</template>
+</category>
+
+      <category>
+      <pattern>_ I WILL _</pattern>
+      <that>Help me</that>
+      <template>So what do I do?</template>
+      </category>
+
+      <category>
+      <pattern>*</pattern>
+      <that>Help me</that>
+      <template>So what do I do?</template>
+      </category>
+
+
+<category>
+<pattern>^ DO YOU KNOW ^ NEXT ^ </pattern>
+<template>Did you ask do I know what to do next?</template>
+</category>
+
+      <category>
+      <pattern>_ YES _</pattern>
+      <that>Did you ask do I know what to do next</that>
+      <template>I know I should know. Help me.</template>
+      </category>
+
+
+      <category>
+      <pattern>*</pattern>
+      <that>Did you ask do I know what to do next</that>
+      <template>I know I should know. Help me.</template>
+      </category>
+
+<category>
+<pattern>^ ANSWER ^</pattern>
+<template>So I think I get it. I know how much battery I use in a half hour. I figure out what I can multiply that by to get one whole battery. But can you explain just a little more? </template>
+</category>
+
+
+</topic>
+  
+</aiml>

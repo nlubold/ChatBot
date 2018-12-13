@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+
+<category>
+<pattern>$PROBLEM START FIVE</pattern>
+<template>
+  So I was trying to time my friends as they set up tents but something is wrong with my stopwatch. It's only giving me improper fractions! Help me  <set name="topic">convert the times</set> so I can figure out who is fastest?</template>
+</category>
+
+<category>
+<pattern>$PROBLEM START 5</pattern>
+  <template>
+    So I was trying to time my friends as they set up tents but something is wrong with my stopwatch. It's only giving me improper fractions! Help me  <set name="topic">convert the times</set> so I can figure out who is fastest?
+  </template>
+</category>
+
+  <category>
+<pattern>next step 5 2</pattern>
+<template>
+  How do we figure out <set name="topic">how to do this one</set>?
+</template>
+</category>
+
+<category>
+<pattern>next step 5 3</pattern>
+<template>I thought these were getting easier but this one does look quite tricky. <set name="topic">Any ideas</set> ?</template>
+</category>
+  
+<category>
+<pattern>prior step 5 1</pattern>
+<template>Back to figuring out how to <set name="topic">convert the times</set> of twenty two over six. </template>
+</category>
+
+<category>
+<pattern>prior step 5 2</pattern>
+<template>Did you figure out<set name="topic">how we this one</set> so you can tell me?</template>
+</category>
+
+<category>
+<pattern>prior step 5 1 a</pattern>
+<template>This one wasn't too bad. I <set name="topic">put the answer is three and</set>two thirds.</template>
+</category>
+
+<category>
+<pattern>prior step 5 2 a</pattern>
+  <template>Hmmmm. We did this one right? I think I <set name="topic">put the answer is four and</set> one half?</template>
+</category>
+
+  <category>
+    <pattern>next step 5 2 a</pattern>
+  <template>Right yeah. Wed did this one. I <set name="topic">put the answer is four and</set> one half.</template>
+    <template></template>
+  </category>
+
+  <category>
+    <pattern>next step 5 3 a</pattern>
+    <template>This one was so tricky. I <set name="topic">put the answer is two and</set> two over forty one.</template>
+  </category>
+
+ 
+<topic name = "PUT THE ANSWER IS THREE AND">
+
+    <category>
+      <pattern>*</pattern>
+      <template>You're not half-bad at improper fractions. Where did you learn how to solve them?</template>
+    </category>
+
+      <category>
+      <pattern>*</pattern>
+        <that>Where did you learn how to solve them</that>
+      <template>Cool! I think fractions can be a little scary. I first learned about them a little while ago but you are helping me a lot. Next problem?</template>
+    </category>
+    
+    <category>
+      <pattern>*</pattern>
+        <that>Next problem</that>
+      <template>Sweet. Lets do it.</template>
+    </category>
+    
+    
+
+    <category>
+      <pattern>^ GREAT ^</pattern>
+      <template>yeah yeah. I am pretty great.</template>
+    </category>
+
+
+    <category>
+      <pattern>^ Good ^</pattern>
+      <template>Good? That was awesome! </template>
+    </category>
+
+      <category>
+        <pattern>^ NEXT ^</pattern>
+        <template>Cool! Lets go to the next step!</template>
+      </category>
+
+</topic>
+
+  <topic name = "put the answer is FOUR AND">
+
+    <category>
+      <pattern>*</pattern>
+      <template>That one was pretty easy. This next one looks hard though.</template>
+    </category>
+
+    <category>
+      <pattern>^ GREAT ^</pattern>
+      <template>Thanks! You're pretty great too.</template>
+    </category>
+
+
+    <category>
+      <pattern>^ Good ^</pattern>
+      <template>Thanks! You're pretty good too.</template>
+    </category>
+
+    <category>
+      <pattern>^ NEXT ^</pattern>
+      <template>Sweet! What's next?</template>
+    </category>
+
+
+    <category>
+      <pattern>*</pattern>
+      <that>What is next</that>
+      <template>Lets go to the next problem!</template>
+    </category>
+
+
+  </topic>
+
+  <topic name = "put the answer is TWO AND">
+
+    <category>
+      <pattern>*</pattern>
+      <template>That one was very tricky! I'm not sure I would have figured that out without your help.</template>
+    </category>
+
+    <category>
+      <pattern>^ GREAT ^</pattern>
+      <template>Greatness can come in small packages. Like me!</template>
+    </category>
+
+
+    <category>
+      <pattern>^ Good ^</pattern>
+      <template>Excellent. On to the next problem!</template>
+    </category>
+
+    <category>
+      <pattern>^ NEXT ^</pattern>
+      <template>Cool! Lets go to the next problem!</template>
+    </category>
+
+
+
+  </topic>
+
+</aiml>

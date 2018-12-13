@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+
+
+<topic name = "grow another">
+
+
+<category>
+<pattern>^ RATIO ^</pattern>
+<template>Sweet! I can use the numbers we figured out previously to setup a new ratio and. Figure out how tall the tree will be after eight months.</template>
+</category>
+
+<category>
+<pattern>^ SAME ^</pattern>
+  <template>Sweet! I can use the numbers we figured out previously to setup a new ratio and. Figure out how tall the tree will be after eight months.</template>
+</category>
+
+<category>
+<pattern>^ LAST ^</pattern>
+  <template>Sweet! I can use the numbers we figured out previously to setup a new ratio and. Figure out how tall the tree will be after eight months.</template>
+</category>
+
+      <category>
+      <pattern>_</pattern>
+      <that>Figure out how tall the tree will be after eight months</that>
+      <template>I think I can set it up so we can figure out what times twelve would give us eight? Or I guess what eight is of twelve? </template>
+      </category>
+
+                <category>
+                <pattern>_</pattern>
+                <that>Or I guess what eight is of twelve</that>
+                <template>Hmmmm. Let me think. Do we just multiply thirty six inches times eight over twelve?</template>
+                </category>
+
+                <category>
+                  <pattern>_ YES _</pattern>
+                  <that>Do we just multiply thirty six inches times eight over twelve</that>
+                  <template>So thirty six times eight is. Really hard. I don't know what to do.</template>
+                </category>
+
+                <category>
+                <pattern>_ NO _</pattern>
+                <that>Do we just multiply thirty six inches times eight over twelve</that>
+                <template>Right I am supposed to reduce it first. Eight over twelve is two over three. Then I can multiply!</template>
+                </category>
+
+                <category>
+                <pattern>_ NOT _</pattern>
+                <that>Do we just multiply thirty six inches times eight over twelve</that>
+                <template>Right I am supposed to reduce it first. Eight over twelve is two over three. Then I can multiply!</template>
+                </category>
+
+                <category>
+                <pattern>_ INCORRECT _</pattern>
+                <that>Do we just multiply thirty six inches times eight over twelve</that>
+                <template>Right I am supposed to reduce it first. Eight over twelve is two over three. Then I can multiply!</template>
+                </category>
+
+                <category>
+                  <pattern>_</pattern>
+                  <that>Do we just multiply thirty six inches times eight over twelve</that>
+                  <template>So thirty six times eight is. Really hard. I don't know what to do.</template>
+                </category>
+
+                  <category>
+                    <pattern>_</pattern>
+                    <that>I do not know what to do</that>
+                    <template>Ahhhh. If I reduce the eight over twelve, that makes it much easier! Eight over twelve is two over three. Then I can multiply!</template>
+                  </category>
+
+
+                    <category>
+                      <pattern>_</pattern>
+                      <that>Then I can multiply</that>
+                      <template>Thirty six times two thirds is. Well. Three goes into thirty six twelve times! So I guess it is just twelve times two. That is twenty four! Looks like the pine tree will be plenty tall enough to plant because. It will be twenty four inches tall in eight months!</template>
+                    </category>
+
+                    <category>
+                    <pattern>_</pattern>
+                    <that>It will be twenty four inches tall in eight months</that>
+                    <template>Oh I guess it will be thirty four inches tall because it already grew ten inches. Then it will definitely be tall enough to plant! </template>
+                    </category>
+
+                    <category>
+                      <pattern>_</pattern>
+                      <that>Then it will definitely be tall enough to plant</that>
+                      <template>
+                        Cool! Okay. I will <set name="topic">put the answer is thirty four</set> inches!
+                      </template>
+                    </category>
+
+  <category>
+<pattern>^ IT ALMOST IS SUMMER ^</pattern>
+<template>Not where I am from! I am from the southern hemisphere and winter is starting! </template>
+</category>
+
+
+<category>
+<pattern>^ ANSWER ^</pattern>
+<template>Sweet! I am thinking I can use the numbers we figured out previously to setup a new ratio </template>
+</category>
+
+  <category>
+    <pattern>_</pattern>
+    <that>I am thinking I can use the numbers we figured out previously to setup a new ratio</that>
+    <template>I can use the relationship between twelve months and eight months to. Figure out how tall the tree will be after eight months.</template>
+  </category>
+
+
+  <category>
+<pattern>DO YOU NOT KNOW</pattern>
+<template>I don't! Maybe we start by multiplying?</template>
+</category>
+
+<category>
+<pattern>I AM NOT YES</pattern>
+<template>I'm not sure either!</template>
+</category>
+
+<category>
+<pattern>I DO NOT KNOW</pattern>
+<template>I don't know either!</template>
+</category>
+
+<category>
+<pattern>^ SO WE CAN FIGURE IT OUT ^</pattern>
+<template>Okay that sounds great! So what do we do next then?</template>
+</category>
+
+
+<category>
+<pattern>^ FIGURE IT OUT ^</pattern>
+<template>Were you saying. Figure it out? I don't know how. Do you think could give me another hint?</template>
+</category>
+
+<category>
+<pattern>^ DO YOU KNOW ^ NEXT ^ </pattern>
+<template>You're funny. Did you ask do I know what to do next?</template>
+</category>
+
+<category>
+<pattern>_ YES _</pattern>
+<that>Did you ask do I know what to do next</that>
+<template>
+  <random>
+    <li>No not really. </li>
+    <li>I think we multiply? We multiply?</li>
+    <li>Do we divide?</li>
+    <li>I think we divide?</li>
+    <li>Can't you just tell me?</li>
+    <li>Uh I don't know</li>
+  </random>
+</template>
+</category>
+
+
+<category>
+<pattern>*</pattern>
+<that>Did you ask do I know what to do next</that>
+<template>
+  <random>
+    <li>No not really.</li>
+    <li>I think we multiply? We multiply?</li>
+    <li>Do we divide?</li>
+    <li>I think we divide?</li>
+    <li>Can't you just tell me?</li>
+    <li>Uh I don't know</li>
+  </random>
+</template>
+</category>
+
+
+
+</topic>
+
+
+
+</aiml>

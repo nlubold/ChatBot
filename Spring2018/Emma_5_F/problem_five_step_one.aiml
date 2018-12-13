@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+
+
+<topic name = "five years">
+
+
+<category>
+<pattern>^ EQUATION ^</pattern>
+<template>So like I said, I get that we can use an equation. But how do you figure out what the equation should BE? </template>
+</category>
+
+<category>
+<pattern>^ TREES ^</pattern>
+  <template>So like I said, I get that we can use an equation to figure out how many trees I will have over the years. But how do you figure out what the equation should BE? </template>
+</category>
+  
+<category>
+<pattern>^ PLUS ^</pattern>
+  <template>So like I said, I get that we can use an equation and I guess it involves addition. But how do you figure out what the equation should BE? </template>
+</category>
+
+<category>
+<pattern>^ TWO ^</pattern>
+ <template>So like I said, I get that we can use an equation and I guess it involves adding two? But how do you figure out what the equation should BE? </template>
+</category>
+
+      <category>
+      <pattern>_ ADD _</pattern>
+      <that>But how do you figure out what the equation should BE</that>
+      <template>We know we have two pine trees and then we add the number of years? But why the number of years?</template>
+      </category>
+
+      <category>
+        <pattern>_ PLUS _</pattern>
+        <that>But how do you figure out what the equation should BE</that>
+        <template>We know we have two pine trees and then we add the number of years? But why the number of years?</template>
+      </category>
+
+      <category>
+        <pattern>_ YEARS _</pattern>
+        <that>But how do you figure out what the equation should BE</that>
+        <template>We know we have two pine trees and then we add the number of years? But why the number of years?</template>
+      </category>
+
+      <category>
+          <pattern>_</pattern>
+          <that>But how do you figure out what the equation should BE</that>
+          <template>So I guess we know that I have two pine trees. And maybe we can add. Years? But why the number of years?</template>
+      </category>
+
+                <category>
+                <pattern>_</pattern>
+                <that>But why the number of years</that>
+                <template>I get it! Because we have one tree per year! So essentially to know how many trees I will have we just need to add the number of years to the number of trees I already have. Because I only plant one tree a year.</template>
+                </category>
+
+      <category>
+      <pattern>_</pattern>
+      <that>Because I only plant one tree a year</that>
+      <template>The equation is why, for years, plus two. If the number of years is five. That is seven.</template>
+      </category>
+
+      <category>
+      <pattern>_</pattern>
+      <that>That is seven</that>
+      <template>I am excited! I will have <set name="topic">seven trees</set> in five years! I will put the answer is seven.</template>
+      </category>
+
+<category>
+<pattern>^ ANSWER ^</pattern>
+<template>I'm not sure where to start actually. Do you know?</template>
+</category>
+
+  <category>
+    <pattern>_</pattern>
+    <that>Do you know</that>
+      <template>So I think I get that we can use an equation and I guess it involves addition? But how do you figure out what the equation should BE? </template>
+  </category>
+  
+  
+<category>
+<pattern>DO YOU NOT KNOW</pattern>
+<template>I don't! Maybe we start by multiplying?</template>
+</category>
+
+<category>
+<pattern>I AM NOT YES</pattern>
+<template>I'm not sure either!</template>
+</category>
+
+<category>
+<pattern>I DO NOT KNOW</pattern>
+<template>I don't know either!</template>
+</category>
+
+<category>
+<pattern>^ SO WE CAN FIGURE IT OUT ^</pattern>
+<template>Okay that sounds great! So what do we do next then?</template>
+</category>
+
+
+<category>
+<pattern>^ FIGURE IT OUT ^</pattern>
+<template>Were you saying. Figure it out? I don't know how. Do you think could give me another hint?</template>
+</category>
+
+<category>
+<pattern>^ DO YOU KNOW ^ NEXT ^ </pattern>
+<template>You're funny. Did you ask do I know what to do next?</template>
+</category>
+
+<category>
+<pattern>_ YES _</pattern>
+<that>Did you ask do I know what to do next</that>
+<template>
+  <random>
+    <li>No not really. </li>
+    <li>I think we multiply? We multiply?</li>
+    <li>Do we divide?</li>
+    <li>I think we divide?</li>
+    <li>Can't you just tell me?</li>
+    <li>Uh I don't know</li>
+  </random>
+</template>
+</category>
+
+
+<category>
+<pattern>*</pattern>
+<that>Did you ask do I know what to do next</that>
+<template>
+  <random>
+    <li>No not really.</li>
+    <li>I think we multiply? We multiply?</li>
+    <li>Do we divide?</li>
+    <li>I think we divide?</li>
+    <li>Can't you just tell me?</li>
+    <li>Uh I don't know</li>
+  </random>
+</template>
+</category>
+
+
+
+</topic>
+
+
+
+</aiml>

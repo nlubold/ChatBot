@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+
+<category>
+<pattern>$PROBLEM START 6</pattern>
+  <template>
+    This is our last problem! I am looking at how much time I spent with each of my friends while camping. Can you help me figure out how much of the total time I spent with <set name="topic">each of them</set>?
+  </template>
+</category>
+
+
+<category>
+<pattern>$PROBLEM START SIX</pattern>
+  <template>
+  This is our last problem! I am looking at how much time I spent with each of my friends while camping. Can you help me figure out how much of the total time I spent with each of <set name="topic">each of them</set>? 
+  </template>
+</category>
+
+  <category>
+    <pattern>next step 6 2</pattern>
+    <template>
+    Hmmmm. How do we figure out <set name="topic">how much of one</set> hundred and twenty five minutes is the total?
+    </template>
+  </category>
+
+  <category>
+    <pattern>next step 6 3</pattern>
+    <template>
+     I think I get this. But Tasha's <set name="topic">time is in hours</set>.
+    </template>
+  </category>
+
+  <category>
+    <pattern>prior step 6 1</pattern>
+    <template>
+      Trying to figure out how much time I spent with <set name="topic">each of them</set>, my friends. Lets figure out how much time I spent with Pedro out of the total!
+    </template>
+  </category>
+
+    <category>
+    <pattern>prior step 6 2</pattern>
+    <template>
+      So. Really. <set name="topic">how much of one</set> hundred and twenty five minutes is the total?
+    </template>
+  </category>
+
+  <category>
+    <pattern>prior step 6 1 a</pattern>
+    <template>
+      Interesting. We figured this out right? I put that the fraction of time I spent with Pedro is <set name="topic">zero point one</set> two five.
+    </template>
+  </category>
+
+  <category>
+    <pattern>prior step 6 2 a</pattern>
+    <template>
+      The fraction of time I spent with Zach was easy! It was <set name="topic">zero point two one</set>!
+    </template>
+  </category>
+
+  <category>
+    <pattern>next step 6 2 a</pattern>
+    <template>
+      I told you the answer to this one. It was <set name="topic">zero point two one</set>.
+    </template>
+  </category>
+
+  <category>
+    <pattern>next step 6 3 a</pattern>
+    <template>
+      Last step is the best step! I figured out that the total time I spent with Tasha was <set name="topic">zero point two</set>. Almost the same as Zach!
+    </template>
+  </category>
+
+  <topic name = "Zero point one">
+
+    <category>
+      <pattern>*</pattern>
+      <template>I bet the time with Zach is a greater decimal because it is larger!</template>
+    </category>
+
+
+    <category>
+      <pattern>^ GREAT ^</pattern>
+      <template>yeah yeah. I am pretty great.</template>
+    </category>
+
+
+    <category>
+      <pattern>^ Good ^</pattern>
+      <template>Good? That was awesome! </template>
+    </category>
+
+
+    <category>
+      <pattern>^ Nice ^</pattern>
+      <template>Nice? That was awesome! </template>
+    </category>
+
+  </topic>
+
+
+  <topic name = "Zero point two one">
+
+    <category>
+      <pattern>*</pattern>
+      <template>Alright! Lets do this last one!</template>
+    </category>
+
+
+    <category>
+      <pattern>^ GREAT ^</pattern>
+      <template>yeah yeah. I am pretty great.</template>
+    </category>
+
+
+    <category>
+      <pattern>^ Good ^</pattern>
+      <template>Good? That was awesome! </template>
+    </category>
+
+
+    <category>
+      <pattern>^ Nice ^</pattern>
+      <template>Nice? That was awesome! </template>
+    </category>
+
+  </topic>
+
+
+  <topic name = "Zero point two">
+
+    <category>
+      <pattern>*</pattern>
+      <template>I hope you have a great summer!</template>
+      </category>
+
+
+    <category>
+      <pattern>^ GREAT ^</pattern>
+      <template>yeah yeah. I am pretty great.</template>
+    </category>
+
+
+    <category>
+      <pattern>^ Good ^</pattern>
+      <template>Good? That was awesome! </template>
+    </category>
+
+
+    <category>
+      <pattern>^ Nice ^</pattern>
+      <template>Nice? That was awesome! </template>
+    </category>
+
+  </topic>
+
+
+
+</aiml>

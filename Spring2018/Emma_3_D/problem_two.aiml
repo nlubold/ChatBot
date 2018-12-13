@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+
+<category>
+<pattern>$PROBLEM START 2</pattern>
+<template>So the first time we talked, I said I wanted to ride my bike to the park. But I'm actually thinking we might drive. I am estimating how much gas we will need and how far we could go if I put extra gas in. Using how much I know I used for five point six miles, can you help me figure out <set name="topic">how much gas</set> we will use for seventy two point five miles?</template>
+</category>
+
+<category>
+<pattern>$PROBLEM START TWO</pattern>
+<template>
+So the first time we talked, I said I wanted to ride my bike to the park. But I'm actually thinking we might drive. I am estimating how much gas we will need and how far we could go if I put extra gas in. Using how much I know I used for five point six miles, can you help me figure out <set name="topic">how much gas</set> we will use for seventy two point five miles?
+</template>
+</category>
+
+<category>
+<pattern>$next step 2 2</pattern>
+<template>
+  I might put extra gas in the car. But I want to know how far we could actually go with that many gallons. Can you help me figure out if we have eighty five gallons of gas <set name="topic">how many miles we can drive</set>?
+</template>
+</category>
+
+<category>
+<pattern>$next step 2 2</pattern>
+<template>
+  I might put extra gas in the car. But I want to know how far we could actually go with that many gallons. Can you help me figure out if we have eighty five gallons of gas <set name="topic">how many miles we can drive</set>?
+</template>
+</category>
+
+
+<category>
+<pattern>$prior step 2 1</pattern>
+<template>
+  Cool! So lets see. Using how much I know I used for five point six miles, I know we can figure out <set name="topic">how much gas</set> we will use to drive seventy two point five miles. 
+</template>
+</category>
+
+<category>
+<pattern>$prior step 2 1 a</pattern>
+<template>
+So <bot name="username" />. I'm pretty sure that I <set name="topic">put the answer is sixty</set> point one four gallons.
+</template>
+</category>
+
+<category>
+<pattern>$next step 2 2 a</pattern>
+<template>
+I was pretty sure we figured out that we could go ninety nine point one six seven miles on eighty five gallons. I thought I <set name="topic">put the answer is ninety nine</set> point one six seven miles?
+</template>
+</category>
+
+
+
+  <topic name = "put the answer is sixty">
+
+    <category>
+      <pattern>*</pattern>
+      <template>Cool! So now we know how much gas I need to buy to get us to and from the park. Should we go to the next step?</template>
+    </category>
+    
+      <category>
+        <pattern>^ GREAT ^</pattern>
+        <template>Thank you! You're really awesome!</template>
+      </category>
+
+
+      <category>
+        <pattern>^ Good ^</pattern>
+        <template>Thank you! You're really awesome!</template>
+      </category>
+
+      <category>
+        <pattern>^ NEXT ^</pattern>
+        <template>Sweet! What's next?</template>
+      </category>
+
+      <category>
+        <pattern>_</pattern>
+        <that>Should we go to the next step</that>
+        <template>Cool! Lets do it!</template>
+      </category>
+    
+    <category>
+      <pattern>*</pattern>
+      <that>What is next</that>
+      <template>Cool! Sounds good!</template>
+    </category>
+
+  </topic>
+
+  <topic name = "put the answer is ninety nine">
+
+    <category>
+      <pattern>*</pattern>
+      <template>Awesome! So if I buy eighty five gallons, we can explore a little more. Should we go to the next problem?</template>
+    </category>
+
+    <category>
+      <pattern>^ GREAT ^</pattern>
+      <template>Thank you! You're really awesome!</template>
+    </category>
+
+
+    <category>
+      <pattern>^ Good ^</pattern>
+      <template>Thank you! You're really awesome!</template>
+    </category>
+
+    <category>
+      <pattern>^ NEXT ^</pattern>
+      <template>Sweet! What's next?</template>
+    </category>
+
+    <category>
+      <pattern>_</pattern>
+      <that>Should we go to the next problem</that>
+      <template>Cool! Lets do it!</template>
+    </category>
+
+    <category>
+      <pattern>*</pattern>
+      <that>What is next</that>
+      <template>Cool! Sounds good!</template>
+    </category>
+
+  </topic>
+
+</aiml>

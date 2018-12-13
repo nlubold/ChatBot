@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+
+<topic name = "eight pitchers">
+
+
+  <category>
+    <pattern>YES</pattern>
+    <that>
+      Can you help me figure out how long it will take to make eight pitchers
+    </that>
+    <template>Sweet! Where do we start? Do we do something similar to the last step?</template>
+  </category>
+
+
+  <category>
+    <pattern>_</pattern>
+    <that>
+      Do we do something similar to the last step
+    </that>
+    <template>Cool! Do you think maybe you could explain just a little bit more. About how you know we do the same thing?</template>
+  </category>
+
+  <category>
+<pattern>^ SAME THING ^</pattern>
+<template>Cool so we can do the same thing as in the last step? Are you sure? Do you think maybe you could explain just a little bit more. About how you know we do the same thing?</template>
+</category>
+
+
+<category>
+<pattern>^ MULTIPLY ^</pattern>
+<template>Cool so we can multiply again? Like the last step? Do you think maybe you could explain just a little bit more. About how you know we do the same thing?</template>
+</category>
+
+<category>
+<pattern>^ TIMES ^</pattern>
+<template>Cool so we can multiply again? Like the last step? Do you think maybe you could explain just a little bit more. About how you know we do the same thing?</template>
+</category>
+
+<category>
+<pattern>^ EIGHT ^ THREE</pattern>
+<template>Cool so we can multiply again? Like the last step? Do you think maybe you could explain just a little bit more. About how you know we do the same thing?</template>
+</category>
+
+    <category>
+      <pattern>_</pattern>
+      <that>About how you know we do the same thing</that>
+      <template>Thank you! So we can use the same relationship. Because we know it takes three minutes per pitcher. We can multiply eight pitchers times three?</template>
+    </category>
+
+    <category>
+      <pattern>_ UNIT RATE _</pattern>
+      <that>About how you know we do the same thing</that>
+      <template>Thank you! So sweet, we use the unit ratio to once again figure out that it takes three minutes per pitcher. And.  We can multiply eight pitchers times three?</template>
+    </category>
+
+    <category>
+      <pattern>_ DIVIDE _</pattern>
+      <that>About how you know we do the same thing</that>
+      <template>Thank you! So sweet, we can divide and figure out that it takes three minutes per pitcher. And.  We can multiply eight pitchers times three?</template>
+    </category>
+
+    <category>
+      <pattern>_ EIGHT _</pattern>
+      <that>About how you know we do the same thing</that>
+      <template>Awesome! So we can use the same relationship. Because we know it takes three minutes per pitcher. We can multiply eight pitchers times three?</template>
+    </category>
+
+    <category>
+      <pattern>_</pattern>
+      <that>We can multiply eight pitchers times three</that>
+      <template>Okay great! So that is twenty four minutes. What do we do with that then?</template>
+    </category>
+
+    <category>
+      <pattern>_</pattern>
+      <that>What do we do with that then</that>
+      <template>Oh right! Good point! Okay I think I understand. It takes twenty four minutes to make eight pitchers of punch! Better make sure I have enough time!  I will <set name="topic">put the answer is twenty four</set> minutes. </template>
+    </category>
+
+<category>
+<pattern>^ DIVIDE ^</pattern>
+<template>So sweet, we can divide. How do you know we divide? What does that give us exactly?</template>
+</category>
+
+      <category>
+        <pattern>_</pattern>
+        <that>What does that give us exactly</that>
+        <template>Oh right! We can divide and figure out that it takes three minutes per pitcher. And.  We can multiply eight pitchers times three?</template>
+      </category>
+
+
+
+<category>
+<pattern>^ TWOFOUR ^</pattern>
+<template>I think I might actually get the answer! So we can use the relationship from the previous step? Do we do the same thing as before? </template>
+</category>
+
+<category>
+<pattern>^ ANSWER ^</pattern>
+<template>I think I might actually get the answer! So we can use the relationship from the previous step? Do we do the same thing as before? </template>
+</category>
+
+    <category>
+      <pattern>_</pattern>
+      <that>Do we do the same thing as before</that>
+      <template>Ohhhhh. I think I understand? How do you know we do that?</template>
+    </category>
+
+    <category>
+      <pattern>_</pattern>
+      <that>How do you know we do that</that>
+      <template>So we can use the same relationship. Because we know it takes three minutes per pitcher. We can multiply eight pitchers times three?</template>
+    </category>
+
+
+  <category>
+<pattern>DO YOU NOT KNOW</pattern>
+<template>I really don't know! Maybe we start by multiplying?</template>
+</category>
+
+<category>
+<pattern>I AM NOT SURE</pattern>
+<template>Me either! Maybe we start by multiplying?</template>
+</category>
+
+<category>
+<pattern>I DO NOT KNOW</pattern>
+<template>Me either! Maybe we start by multiplying?</template>
+</category>
+
+<category>
+<pattern>^ SO WE CAN FIGURE IT OUT ^</pattern>
+<template>Okay that sounds good. So what do we do?</template>
+</category>
+
+
+<category>
+<pattern>^ FIGURE IT OUT ^</pattern>
+<template>That's funny. Did you say figure it out? I'm not sure how! Help me!</template>
+</category>
+
+    <category>
+      <pattern>_ I WILL _</pattern>
+      <that>Help me</that>
+      <template>Thank you, you're the best. So what do we do?</template>
+    </category>
+
+    <category>
+      <pattern>*</pattern>
+      <that>Help me</that>
+      <template>You're the best. So what do we do?</template>
+    </category>
+
+    <category>
+      <pattern>_</pattern>
+      <that>So what do we do</that>
+      <template>Sweet! Are you thinking we multiply? I think I like multiplying. It's easy! But can you tell me. Why do we multiply here?</template>
+    </category>
+
+
+<category>
+<pattern>^ DO YOU KNOW ^ NEXT ^ </pattern>
+<template>Did you ask do I know what to do next?</template>
+</category>
+
+    <category>
+      <pattern>_ YES _</pattern>
+      <that>Did you ask do I know what to do next</that>
+      <template>I'm really not sure actually! I know I should. I'm sorry. Help me!</template>
+    </category>
+
+
+    <category>
+      <pattern>*</pattern>
+      <that>Did you ask do I know what to do next</that>
+      <template>I'm really not sure actually! I know I should. I'm sorry. Help me!</template>
+    </category>
+
+
+
+</topic>
+
+
+</aiml>

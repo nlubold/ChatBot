@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+
+<category>
+<pattern>$PROBLEM START 1</pattern>
+<template>Before you ask. Yes, we are still planning our camping trip! We have decided to go to a state park. I've been looking at how many people are in the park. With the ratio relationships we've covered, I think I should be able to predict how many people are in the park after <set name="topic">three hours</set> and seven hours. But there's decimals and it's confusing.</template>
+</category>
+
+<category>
+<pattern>$PROBLEM START ONE</pattern>
+<template>
+Before you ask. Yes, we are still planning our camping trip! We have decided to go to a state park. I've been looking at how many people are in the park. With the ratio relationships we've covered, I think I should be able to predict how many people are in the park after <set name="topic">three hours</set> and seven hours. But there's decimals and it's confusing.
+</template>
+</category>
+
+<category>
+<pattern>$next step 1 2</pattern>
+<template>Hmmmm. To figure out how many people are in the park <set name="topic">after seven hours</set>. I think it would be something similar as to step one.</template>
+</category>
+
+<category>
+<pattern>$prior step 1 1</pattern>
+<template>Okay great! Back to predicting the number of people after <set name="topic">three hours</set>.</template>
+</category>
+
+<category>
+<pattern>$prior step 1 1 a</pattern>
+<template>
+  I really like working with you <bot name="username" />. But didn't we already <set name="topic">put the answer is seventy</set> five people?</template>
+</category>
+
+<category>
+<pattern>$next step 1 2 a</pattern>
+<template>
+  We figured out that after seven hours in the park, we should <set name="topic">put the answer is one hundred</set> and seventy five guests. Maybe you could hit the button to move us to the next problem!</template>
+</category>
+
+<category>
+<pattern>1 1</pattern>
+<template><set name="topic">three hours</set></template>
+</category>
+
+<category>
+<pattern>1 2</pattern>
+<template><set name="topic">seven hours</set></template>
+</category>
+
+
+<topic name = "put the answer is seventy">
+
+<category>
+<pattern>*</pattern>
+<template>Cool. Lets go to the next problem.</template>
+</category>
+
+  <category>
+    <pattern>*</pattern>
+    <that>Lets go to the next problem</that>
+    <template>Awesome! Don't forget to hit the arrows to move us to the next step!</template>
+  </category>
+
+
+  <category>
+<pattern>^ GREAT ^</pattern>
+<template>Thank you! You're really awesome!</template>
+</category>
+
+
+<category>
+<pattern>^ Good ^</pattern>
+<template>Thank you! You're really awesome!</template>
+</category>
+
+<category>
+<pattern>^ NEXT ^</pattern>
+<template>Sweet! What's next?</template>
+</category>
+
+
+</topic>
+
+<topic name = "put the answer is one hundred">
+
+<category>
+<pattern>*</pattern>
+<template>Wow, seems like a lot people. But it's probably a big park. Don't forget to hit the next problem button to move us to the next step.</template>
+</category>
+
+<category>
+<pattern>^ GREAT ^</pattern>
+<template>Yeah I am great, right? </template>
+</category>
+
+
+<category>
+<pattern>^ Good ^</pattern>
+<template>I am a good robot! I agree!</template>
+</category>
+
+<category>
+<pattern>^ NEXT ^</pattern>
+<template>Cool. Lets do it. </template>
+</category>
+
+  <category>
+    <pattern>*</pattern>
+    <that>What is next</that>
+    <template>Cool! Let's do it.</template>
+  </category>
+
+
+</topic>
+
+
+</aiml>

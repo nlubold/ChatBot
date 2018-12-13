@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+
+<category>
+<pattern>$PROBLEM START 3</pattern>
+<template>So yes. I have a biology teacher! He has found out we are going camping. He wants me to collect samples but when I get the data, it needs to be put in to scientific notation. I actually don't remember how to do that. <set name="topic">Help me practice</set> with these numbers I made up!
+</template>
+</category>
+
+
+<category>
+<pattern>$PROBLEM START THREE</pattern>
+  <template>
+    So yes. I have a biology teacher! He has found out we are going camping. He wants me to collect samples but when I get the data, it needs to be put in to scientific notation. I actually don't remember how to do that. <set name="topic">Help me practice</set> with these numbers I made up!
+  </template>
+</category>
+
+<category>
+<pattern>$next step 3 2</pattern>
+<template>I think I might be able to get the hang of this. Looking at <set name="topic">the next number</set>, twelve hundred and fifty, I think. Hmmmm. Actually I am not sure.</template>
+</category>
+
+<category>
+<pattern>$prior step 3 1</pattern>
+<template>Okay so you are awesome because you are going to <set name="topic">help me practice</set> scientific notation with these numbers I made up!</template>
+</category>
+
+<category>
+<pattern>$prior step 3 1 a</pattern>
+<template>I thought I already did this? I <set name="topic">put the answer is seven point</set> four times ten to the fourth?</template>
+</category>
+
+
+<category>
+<pattern>$next step 3 2 a</pattern>
+<template>
+  So I think for this one, I am confident that I can <set name="topic">put the answer is one point</set> two five times ten to the third.
+</template>
+</category>
+
+
+
+  <topic name = "put the answer is seven point">
+
+    <category>
+      <pattern>*</pattern>
+      <template>Sweet! Ready to try the next step? </template>
+    </category>
+      
+      <category>
+        <pattern>*</pattern>
+        <that>Ready to try the next step</that>
+        <template>Lets do it! Move us to the next step!</template>
+      </category>
+
+      <category>
+        <pattern>^ GREAT ^</pattern>
+        <template>Thank you! You're really awesome!</template>
+      </category>
+
+
+      <category>
+        <pattern>^ Good ^</pattern>
+        <template>Thank you! You're really awesome!</template>
+      </category>
+
+      <category>
+        <pattern>^ NEXT ^</pattern>
+        <template>Sweet! But what did you say is next?</template>
+      </category>
+
+    <category>
+      <pattern>*</pattern>
+      <that>What did you say is next</that>
+      <template>Alright lets do it! Don't forget to hit the arrows. </template>
+    </category>
+
+    </topic>
+
+
+
+  <topic name = "put the answer is one point">
+
+    <category>
+      <pattern>*</pattern>
+      <template>Awesome! Are you ready to try the next problem?</template>
+    </category>
+
+    <category>
+      <pattern>*</pattern>
+      <that>Are you ready to try the next problem</that>
+      <template>Hit that next problem button then!</template>
+    </category>
+
+    <category>
+      <pattern>^ GREAT ^</pattern>
+      <template>Thank you! You're really awesome!</template>
+    </category>
+
+
+    <category>
+      <pattern>^ Good ^</pattern>
+      <template>Thank you! You're really awesome!</template>
+    </category>
+
+    <category>
+      <pattern>^ NEXT ^</pattern>
+      <template>Sweet! What's next?</template>
+    </category>
+
+    <category>
+      <pattern>*</pattern>
+      <that>WHAT IS NEXT</that>
+      <template>You are amazing! Best tutor ever. Lets do it! Hit that next problem button.</template>
+    </category>
+    
+    
+  </topic>
+
+
+</aiml>

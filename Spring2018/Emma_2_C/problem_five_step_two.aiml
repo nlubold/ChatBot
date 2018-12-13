@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+
+<topic name = "one fifth">
+
+<category>
+<pattern>^ making ^</pattern>
+<template>Now we need to figure out how much time we should spend making smmores if we only use one fifth of the remaining time. But I'm sorry. I'm still confused. How do we know what to do?</template>
+</category>
+
+<category>
+<pattern>^ Step Zero ^</pattern>
+<template>Now we need to figure out how much time we should spend making smmores if we only use one fifth of the remaining time from step zero. But I'm sorry. I'm still confused. How do we know what to do?</template>
+</category>
+
+<category>
+<pattern>^ last time ^</pattern>
+<template>So I guess I get that we do something similar as to last time. But I'm sorry. I'm still confused. How do we know what to do?</template>
+</category>
+  
+<category>
+<pattern>^ similar ^</pattern>
+<template>So I guess I get that we do something similar as to last time. But I'm sorry. I'm still confused. How do we know what to do?</template>
+</category>
+
+<category>
+<pattern>^ same thing ^</pattern>
+<template>So I guess I get that we do the same thing as to last time. But I'm sorry. I'm still confused. How do we know what to do?</template>
+</category>
+
+<category>
+<pattern>^ one fifth ^</pattern>
+<template>Okay! I get that we do something similar as last time but with one fifth? But I'm sorry. I'm still confused. How do we know what to do?</template>
+</category>
+
+      <category>
+      <pattern>_</pattern>
+      <that>How do we know what to do</that>
+      <template>Right okay! Awesome. So I would like to spend one fifth of the remaining time making ssmores. So we multiply thirty seven point five times one fifth.</template>
+      </category>
+
+
+<category>
+<pattern>^ multiply ^</pattern>
+<template>So I guess I get that we do the same thing as to last time and multiply again? But I'm sorry. I'm still confused. How do we know what to multiply?</template>
+</category>
+
+<category>
+<pattern>^ times ^</pattern>
+  <template>So I guess I get that we do the same thing as to last time and multiply again? But I'm sorry. I'm still confused. How do we know what to multiply?</template>
+</category>
+
+<category>
+<pattern>^ subtract ^</pattern>
+<template>Sweet! So we use the same subtraction as last time and then do we multiply again? But I'm sorry. I'm still confused. How do we know what to multiply?</template>
+</category>
+
+      <category>
+      <pattern>_</pattern>
+      <that>How do we know what to multiply</that>
+      <template>Right okay! Awesome. So I would like to spend one fifth of the remaining time making ssmores. So we multiply thirty seven point five times one fifth.</template>
+      </category>
+
+      <category>
+      <pattern>_</pattern>
+      <that>So we multiply thirty seven point five times one fifth</that>
+      <template>Using the same simplification as last time, seventy five over two times one fifth is seven point five minutes. Does that sound right to you do you think?</template>
+      </category>
+
+      <category>
+      <pattern>_ YES _</pattern>
+      <that>Does that sound right to you do you think</that>
+      <template>Thank you for helping me! So then I will <set name="topic">put the answer is seven</set> and a half minutes! </template>
+      </category>
+
+      <category>
+      <pattern>_ NO _</pattern>
+      <that>Does that sound right to you do you think</that>
+      <template>
+      Oh. Why not? What do you think I did wrong?
+      </template>
+      </category>
+
+      <category>
+      <pattern>_</pattern>
+      <that>What do you think I did wrong</that>
+      <template>
+        Hmmmm. So let me check my work. Hmmmm. So. I'm thinking it might be seven and a half minutes? I'm sorry but I think I'll go ahead and just put that. 
+      </template>
+      </category>
+  
+      <category>
+      <pattern>_</pattern>
+      <that>Does that sound right to you do you think</that>
+      <template>Thank you for helping me! So then I will <set name="topic">put the answer is seven</set> and a half minutes! </template>
+      </category>
+  
+
+<category>
+<pattern>WHAT IS ONE FIFTH TIMES ^</pattern>
+<template>Oh good question! One fifth times thirty seven and a half is tricky. But if we use the same simplification as last time. Seventy five over two times one fifth is seven point five minutes. Does that sound right to you do you think?</template>
+</category>
+
+<category>
+<pattern>^ ANSWER ^</pattern>
+<template>I think I'm getting better and better at fractions! But I'm a little uncertain of the answer still. I think we multiply again? But can you help me here. How do we know what to multiply?</template>
+</category>
+
+</topic>
+
+
+</aiml>

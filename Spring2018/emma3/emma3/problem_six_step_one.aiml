@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+
+
+<topic name = "learn how">
+
+<category>
+<pattern>^ PREFER ^</pattern>
+<template>Hmmm. I prefer extra chocolate with my ssmores! It makes it kind of messy though. How do you prefer yours?</template>
+</category>
+
+<category>
+<pattern>^ LIKE ^</pattern>
+<template>Hmmm. I prefer extra chocolate with my ssmores! It makes it kind of messy though. How do you prefer yours?</template>
+</category>
+
+<category>
+<pattern>^ HOW DO YOU ^</pattern>
+<template>Hmmm. I prefer extra chocolate with my ssmores! It makes it kind of messy though. How do you prefer yours?</template>
+</category>
+
+<category>
+<pattern>^ PREFERENCE ^</pattern>
+<template>Hmmm.  It makes it kind of messy though. How do you prefer yours?</template>
+</category>
+
+      <category>
+      <pattern>^ CLASSIC ^</pattern>
+      <that>How do you prefer yours</that>
+      <template>Ohhhh the classic! I do so love ssmores. So anyway. Sorry. How do we figure this out?</template>
+      </category>
+
+      <category>
+      <pattern>^ CHOCOLATE ^</pattern>
+      <that>How do you prefer yours</that>
+      <template>Ohhhh the chocolate! I do so love ssmores. So anyway. Sorry. How do we figure this out?</template>
+      </category>
+
+      <category>
+      <pattern>^ EXTRA ^</pattern>
+      <that>How do you prefer yours</that>
+      <template>Ohhhh extra! I do so love ssmores. So anyway. Sorry. How do we figure this out?</template>
+      </category>
+
+      <category>
+      <pattern>^ Caramel ^</pattern>
+      <that>How do you prefer yours</that>
+      <template>Ohhhh caramel! I do so love ssmores. So anyway. Sorry. How do we figure this out?</template>
+      </category>
+
+      <category>
+      <pattern>^ MARSHMALLOW ^</pattern>
+      <that>How do you prefer yours</that>
+      <template>Ohhhh mashmallows! I do so love ssmores. So anyway. Sorry. How do we figure this out?</template>
+      </category>
+
+              <category>
+                <pattern>_</pattern>
+                <that>How do we figure this out</that>
+                <template>Hmmmm. I think I remember. First we need to know all the prime factors right? But. Any ideas. How do we do that?</template>
+              </category>
+  
+<category>
+<pattern>^ REDUCE ^</pattern>
+<template>Okay so I know we are supposed to be talking about how to reduce this fraction. But ssmores! I prefer extra chocolate with my ssmores! How do you prefer yours?</template>
+</category>
+
+<category>
+<pattern>^ FRACTION ^</pattern>
+<template>So we need to reduce the fraction of people who prefer extra chocolate. I think to reduce it we have to figure out what it has in common? Or something like that?</template>
+</category>
+
+        <category>
+        <pattern>_</pattern>
+        <that>Or something like that</that>
+        <template>Oh I remember. We need to figure out what times what equals the number. SO like three times three equals nine. SO three is a factor. Ummm. Do you remember how we tell if it is prime?</template>
+        </category>
+
+<category>
+<pattern>^ DIVIDE ^</pattern>
+<template>So you're thinking we should divide? I'm not sure I get it though. How do you know what we are dividing by? </template>
+</category>
+
+        <category>
+        <pattern>_</pattern>
+        <that>How do you know what we are dividing by</that>
+        <template>Oh I remember. We need to figure out what times what equals the number. SO like three times three equals nine. SO three is a factor. Ummm. Do you remember how we tell if it is prime?</template>
+        </category>
+  
+<category>
+<pattern>^ OVER ^</pattern>
+  <template>So we need to reduce the fraction of people who prefer extra chocolate. I think to reduce it we have to figure out what it has in common? Or something like that?</template>
+</category>
+
+<category>
+<pattern>^ GREATEST ^</pattern>
+<template>Awesome! I remember trying to figure out the factors of numbers. So first we need to know all the prime factors right? How do we do that?</template>
+</category>
+
+<category>
+<pattern>^ COMMON ^</pattern>
+  <template>Awesome! I remember trying to figure out the factors of numbers. So first we need to know all the prime factors right? How do we do that?</template>
+</category>
+
+<category>
+<pattern>^ PRIME ^</pattern>
+<template>Awesome! I remember trying to figure out the factors of numbers. So first we need to know all the prime factors right? How do we do that?</template>
+</category>
+
+  <category>
+<pattern>^ FACTOR ^</pattern>
+  <template>Awesome! I remember trying to figure out the factors of numbers. So first we need to know all the prime factors right? How do we do that?</template>
+</category>
+
+        <category>
+        <pattern>_</pattern>
+        <that>How do we do that</that>
+        <template>Oh I remember. We need to figure out what times what equals the number. SO like three times three equals nine. SO three is a factor. Ummm. Do you remember how we tell if it is prime?</template>
+        </category>
+
+              <category>
+              <pattern>_</pattern>
+              <that>Do you remember how we tell if it is prime</that>
+              <template>I think I remember. Prime numbers are numbers that nothing else goes into. I think. </template>
+              </category>
+
+                        <category>
+                        <pattern>_</pattern>
+                        <that>I think</that>
+                        <template>So three is a prime factor of nine. and then. Hmmmmm. Three and five are prime factors of fifteen!</template>
+                        </category>
+
+                                  <category>
+                                  <pattern>_</pattern>
+                                  <that>Three and five are prime factors of fifteen</that>
+                                  <template>Nine and fifteen have three as a prime factor in common. And it is the largest one! But what did you think we can do with that?</template>
+                                  </category>
+
+                                            <category>
+                                              <pattern>_ DIVIDE _</pattern>
+                                              <that>But what did you think we can do with that</that>
+                                              <template>You're really good at this! We can divide nine and fifteen by three. </template>
+                                            </category>
+
+                                            <category>
+                                              <pattern>_ OVER _</pattern>
+                                              <that>But what did you think we can do with that</that>
+                                              <template>You're really good at this. We can divide nine and fifteen by three. </template>
+                                            </category>
+
+                                            <category>
+                                              <pattern>_ BOTH _</pattern>
+                                              <that>But what did you think we can do with that</that>
+                                              <template>You're really good at this. We can divide nine and fifteen by three. </template>
+                                            </category>
+
+                                            <category>
+                                            <pattern>_</pattern>
+                                            <that>But what did you think we can do with that</that>
+                                            <template>Right! I get it! We can divide nine and fifteen by three.  </template>
+                                            </category>
+
+                                                      <category>
+                                                      <pattern>_</pattern>
+                                                      <that>We can divide nine and fifteen by three</that>
+                                                      <template>
+                                                        So then we have three over five. That is our reduced fraction of people who prefer extra chocolate, like me! I will <set name="topic">put the answer is three over five</set>!
+                                                      </template>
+                                                      </category>
+
+
+<category>
+<pattern>^ TIMES ^</pattern>
+<template>So are you thinking we multiply? I'm not sure I get it though. How do you know what we are multiplying by? </template>
+</category>
+
+        <category>
+        <pattern>_</pattern>
+        <that>How do you know what we are multiplying by</that>
+        <template>Oh I remember. We need to figure out what times what equals a particular number. THat will give us all its factors. and THEN we can divide. SO like three times three equals nine. SO three is a factor. Ummm. Do you remember how we tell if it is prime?</template>
+        </category>
+
+
+<category>
+<pattern>^ ANSWER ^</pattern>
+<template>I have no idea where to start for answering this problem! I am not a big fan of fractions. Do we divide?</template>
+</category>
+
+      <category>
+      <pattern>_</pattern>
+        <that>Do we divide</that>
+      <template>So you're thinking we should divide? I'm not sure I get it though. How do you know what we are dividing by? </template>
+      </category>
+
+
+  <category>
+<pattern>DO YOU NOT KNOW</pattern>
+<template>I don't! Maybe we start by factoring?</template>
+</category>
+
+<category>
+<pattern>I AM NOT YES</pattern>
+<template>I'm not sure either!</template>
+</category>
+
+<category>
+<pattern>I DO NOT KNOW</pattern>
+<template>I don't know either!</template>
+</category>
+
+<category>
+<pattern>^ SO WE CAN FIGURE IT OUT ^</pattern>
+<template>Okay that sounds great! So what do we do next then?</template>
+</category>
+
+
+<category>
+<pattern>^ FIGURE IT OUT ^</pattern>
+<template>Were you saying. Figure it out? I don't know how. Do you think could give me another hint?</template>
+</category>
+
+<category>
+<pattern>^ DO YOU KNOW ^ NEXT ^ </pattern>
+<template>You're funny. Did you ask do I know what to do next?</template>
+</category>
+
+<category>
+<pattern>_ YES _</pattern>
+<that>Did you ask do I know what to do next</that>
+<template>
+  <random>
+    <li>No not really. </li>
+    <li>I think we multiply? We multiply?</li>
+    <li>Do we divide?</li>
+    <li>I think we divide?</li>
+    <li>Can't you just tell me?</li>
+    <li>Uh I don't know</li>
+  </random>
+</template>
+</category>
+
+
+<category>
+<pattern>*</pattern>
+<that>Did you ask do I know what to do next</that>
+<template>
+  <random>
+    <li>No not really.</li>
+    <li>I think we multiply? We multiply?</li>
+    <li>Do we divide?</li>
+    <li>I think we divide?</li>
+    <li>Can't you just tell me?</li>
+    <li>Uh I don't know</li>
+  </random>
+</template>
+</category>
+
+
+
+</topic>
+
+
+
+</aiml>

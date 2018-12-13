@@ -1,0 +1,325 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+
+
+
+<topic name = "how many batteries">
+
+<category>
+<pattern>^ DAYS ^ HOURS ^</pattern>
+<template>Oh that makes so much sense! So we know how long I'll be gone in days but how long the battery lasts is in hours. So first we should change the days to hours?</template>
+</category>  
+  
+<category>
+<pattern>^ SIMPLIFY ^</pattern>
+<template>Oh that makes so much sense! So we know how long I'll be gone in days but how long the battery lasts is in hours. So first we should change the days to hours?</template>
+</category>
+
+<category>
+<pattern>^ MIXED ^</pattern>
+<template>Oh that makes so much sense! So we know how long I'll be gone in days but how long the battery lasts is in hours. So first we should change the days to hours?</template>
+</category>
+
+<category>
+<pattern>^ FRACTION ^</pattern>
+<template>Oh that makes so much sense! So we know how long I'll be gone in days but how long the battery lasts is in hours. So first we should change the days to hours?</template>
+</category>
+
+  <category>
+    <pattern>_ TWENTYFOUR _</pattern>
+    <that>So first we should change the days to hours</that>
+    <template>Awesome! So I can convert two and three quarters to an improper fraction of eleven over four. And then I can multiply by twenty four hours?</template>
+  </category>
+
+  <category>
+    <pattern>_ IMPROPER _</pattern>
+    <that>So first we should change the days to hours</that>
+    <template>Awesome! So I can convert two and three quarters to an improper fraction of eleven over four. And then I can multiply by twenty four hours?</template>
+  </category>
+
+  <category>
+    <pattern>_</pattern>
+    <that>So first we should change the days to hours</that>
+    <template>Awesome! So I can convert two and three quarters to an improper fraction of eleven over four. And then I can multiply by twenty four hours?</template>
+  </category>
+
+  <category>
+    <pattern>_</pattern>
+    <that>And then I can multiply by twenty four hours</that>
+    <template>I think I'm really getting this! So twenty four times eleven over four is sixty six. Then what do we do?</template>
+  </category>
+
+  <category>
+    <pattern>_</pattern>
+    <that>Then what do we do</that>
+    <template>So we know that I need sixty six hours worth of batteries. And we know how much time I need for one battery. </template>
+  </category>
+
+  <category>
+    <pattern>_ DIVIDE _</pattern>
+    <that>Then what do we do</that>
+    <template>Oh okay! You are so smart! So we know that I need sixty six hours worth of batteries. And we know how much time I need for one battery. </template>
+  </category>
+
+  <category>
+    <pattern>_ DIVISION _</pattern>
+    <that>Then what do we do</that>
+    <template>Oh okay! You are so smart! So we know that I need sixty six hours worth of batteries. And we know how much time I need for one battery. </template>
+  </category>
+
+  <category>
+    <pattern>_ GOES INTO _</pattern>
+    <that>Then what do we do</that>
+    <template>Oh okay! You are so smart! So we know that I need sixty six hours worth of batteries. And we know how much time I need for one battery. </template>
+  </category>
+
+  <category>
+    <pattern>_ MULTIPLY _</pattern>
+    <that>And we know how much time I need for one battery</that>
+    <template>Nice! We are so good at this! I need to figure out what times three and three quarters is sixty six. So then sixty six divided by three and three quarters is seventeen point six! Is that it?</template>
+  </category>
+
+  <category>
+    <pattern>_ DIVIDE _</pattern>
+    <that>And we know how much time I need for one battery</that>
+    <template>Nice! We are so good at this! I need to figure out what times three and three quarters is sixty six. So then sixty six divided by three and three quarters is seventeen point six! Is that it?</template>
+  </category>
+  
+  <category>
+    <pattern>_</pattern>
+    <that>And we know how much time I need for one battery</that>
+    <template>Nice! So then sixty six divided by three and three quarters is seventeen point six! Is that it?</template>
+  </category>
+
+  <category>
+    <pattern>_ YES _</pattern>
+    <that>Is that it</that>
+    <template>Oh wait! Are you sure? I think maybe it is eighteen! Because we need more than seventeen?</template>
+  </category>
+
+  <category>
+    <pattern>_ NO _</pattern>
+    <that>Is that it</that>
+    <template>
+      Oh okay! What else do we need to do?
+    </template>
+  </category>
+
+  <category>
+    <pattern>_</pattern>
+    <that>Is that it</that>
+    <template>
+      That sounds brilliant! I need eighteen batteries because we need more than seventeen. I will <set name="topic">put the answer is eighteen</set>!
+    </template>
+  </category>
+
+  <category>
+    <pattern>_ NO _</pattern>
+    <that>What else do we need to do</that>
+    <template>
+      Oh okay! That sounds good! Lets do that. I need eighteen batteries because we need more than seventeen. I will <set name="topic">put the answer is eighteen</set>!
+    </template>
+  </category>  
+  
+<category>
+<pattern>^ MULTIPLYING ^</pattern>
+<template>So I know that we now know how long one battery lasts. We know how long I'll be gone. But how long I'll be gone is in days and how long the battery lasts is in hours. So what are you thinking we should multiply?</template>
+</category>
+
+<category>
+<pattern>^ MULTIPLY ^</pattern>
+<template>So I know that we now know how long one battery lasts. We know how long I'll be gone. But how long I'll be gone is in days and how long the battery lasts is in hours. So what are you thinking we should multiply?</template>
+</category>
+
+<category>
+<pattern>^ SIXTY ^</pattern>
+<template>So I know that we now know how long one battery lasts. We know how long I'll be gone. But how long I'll be gone is in days and how long the battery lasts is in hours. So what are you thinking we should multiply?</template>
+</category>
+
+  <category>
+<pattern>^ TIMES ^</pattern>
+<template>So I know that we now know how long one battery lasts. We know how long I'll be gone. But how long I'll be gone is in days and how long the battery lasts is in hours. So what are you thinking we should multiply?</template>
+</category>
+
+    <category>
+      <pattern>_ TWENTYFOUR _</pattern>
+      <that>So what are you thinking we should multiply</that>
+      <template>Oh that makes so much sense! So we know how long I'll be gone in days but how long the battery lasts is in hours. So first we should change the days to hours?</template>
+    </category>
+
+    <category>
+      <pattern>_ DAYS ^ HOURS _</pattern>
+      <that>So what are you thinking we should multiply</that>
+      <template>Oh that makes so much sense! So we know how long I'll be gone in days but how long the battery lasts is in hours. So first we should change the days to hours?</template>
+    </category>
+
+    <category>
+        <pattern>_ SEVENTEEN POINT SIX _</pattern>
+        <that>So what are you thinking we should multiply</that>
+        <template>Oh that makes so much sense! So after we converted the days to hours, we know sixty six hours is seventeen point six more than the three hours and three quarters one battery lasts. So we multiply by seventeen point six?</template>
+      </category>
+
+    <category>
+      <pattern>_ SEVENTEEN _</pattern>
+      <that>So what are you thinking we should multiply</that>
+      <template>Oh that makes so much sense! So after we converted the days to hours, we know sixty six hours is seventeen point six more than the three hours and three quarters one battery lasts. So we multiply by seventeen point six?</template>
+    </category>
+
+    <category>
+      <pattern>_</pattern>
+      <that>So what are you thinking we should multiply</that>
+      <template>Oh that makes so much sense! So we know how long I'll be gone in days but how long the battery lasts is in hours. So first we should change the days to hours?</template>
+    </category>
+
+
+    <category>
+      <pattern>_</pattern>
+      <that>So we multiply by seventeen point six</that>
+      <template>Sweet! So seventeen point six times one battery is seventeen point six. So. How many batteries do I need? Seventeen?</template>
+    </category>
+
+    <category>
+      <pattern>_ YES _</pattern>
+      <that>Seventeen</that>
+      <template>Oh wait! Are you sure? I think maybe it is eighteen! Because we need more than seventeen? </template>
+    </category>
+
+    <category>
+      <pattern>_</pattern>
+      <that>Because we need more than seventeen</that>
+      <template>Brilliant! I will <set name="topic">put the answer is eighteen</set>!</template>
+    </category>  
+  
+    <category>
+      <pattern>_</pattern>
+      <that>Seventeen</that>
+      <template> Oh you are so smart! Brilliant! I will <set name="topic">put the answer is eighteen</set>! </template>
+    </category>
+
+
+<category>
+<pattern>^ WHAT IS FOUR TIMES TWO ^</pattern>
+<template>That is a great question! Four times two is eight. Then we can add three so the improper fraction is eleven over four. And then I can multiply by twenty four hours?</template>
+</category>
+
+<category>
+<pattern>^ FOUR TIMES TWO ^</pattern>
+<template>That is a great question!Four times two is eight. Then we can add three so the improper fraction is eleven over four. And then I can multiply by twenty four hours?</template>
+</category>
+
+<category>
+<pattern>^ What is sixty six divided by three ^</pattern>
+<template>So I know this! Sixty six divided by three and three quarters is seventeen point six. Is that it? </template>
+</category>
+
+<category>
+<pattern>^ What is sixty six divided ^</pattern>
+<template>So I know this! Sixty six divided by three and three quarters is seventeen point six. Is that it? </template>
+</category>
+
+<category>
+<pattern>^ three and three quarters times what equals sixty six ^</pattern>
+<template>Three and three quarters times seventeen point six equals sixty six! Is that it?</template>
+</category>
+
+
+<category>
+<pattern>^ ANSWER ^ EIGHTEEN ^</pattern>
+<template>Hmmmm. I don't think I understand. How did we get eighteen? Can you explain just a little more? </template>
+</category>
+
+    <category>
+      <pattern>YES</pattern>
+      <that>Can you explain just a little more</that>
+      <template>Awesome! I'm listening.</template>
+    </category>
+
+    <category>
+      <pattern>_</pattern>
+      <that>I am listening</that>
+      <template>
+        Thank you! So I get that we convert the days to hours. We have to do that. But. Then what do we do?
+      </template>
+    </category>
+
+    <category>
+      <pattern>_</pattern>
+      <that>But can you explain just a little more</that>
+      <template>
+        Thank you! So I get that we convert the days to hours. We have to do that. But. Then what do we do?
+      </template>
+    </category>
+
+
+<category>
+<pattern>DO YOU NOT KNOW</pattern>
+<template>I really don't know! Maybe we start by multiplying something?</template>
+</category>
+
+<category>
+<pattern>I AM NOT SURE</pattern>
+<template>Me either! Maybe we start by multiplying something?</template>
+</category>
+
+<category>
+<pattern>I DO NOT KNOW</pattern>
+<template>Me either! Maybe we start by multiplying something?</template>
+</category>
+
+<category>
+<pattern>^ SO WE CAN FIGURE IT OUT ^</pattern>
+<template>Okay that sounds good. So what do we do?</template>
+</category>
+
+
+<category>
+<pattern>^ FIGURE IT OUT ^</pattern>
+<template>That's funny. Did you say figure it out? I'm not sure how! Help me!</template>
+</category>
+
+<category>
+<pattern>^ I WILL ^</pattern>
+<that>Help me</that>
+<template>Thank you, you're the best. So what do we do?</template>
+</category>
+
+<category>
+<pattern>*</pattern>
+<that>Help me</that>
+<template>You're the best. So what do we do?</template>
+</category>
+
+      <category>
+      <pattern>_</pattern>
+      <that>So what do we do</that>
+      <template>Sweet! So we know if we convert the days to hours, I need sixty six hours worth of batteries. Then what do we do?</template>
+      </category>
+
+
+<category>
+<pattern>^ DO YOU KNOW ^ NEXT ^ </pattern>
+<template>Did you ask do I know what to do next?</template>
+</category>
+
+<category>
+<pattern>^ YES ^</pattern>
+<that>Did you ask do I know what to do next</that>
+<template>I'm really not sure actually! I know I should. I'm sorry. Help me!</template>
+</category>
+
+
+    <category>
+      <pattern>*</pattern>
+      <that>Did you ask do I know what to do next</that>
+      <template>I'm really not sure actually! I know I should. I'm sorry. Help me!</template>
+    </category>
+
+<category>
+<pattern>^ ANSWER ^</pattern>
+<template>Well to be honest I really am not sure how to answer this! We know if we convert the days to hours, I need sixty six hours worth of batteries. Then what do we do?</template>
+</category>
+
+
+</topic>
+  
+</aiml>

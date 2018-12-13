@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+
+
+<topic name = "third length">
+
+
+  <category>
+    <pattern>YES</pattern>
+    <that>
+      Can we calculate it from the other two measures
+    </that>
+    <template>Sweet! How do we do that?</template>
+  </category>
+
+<category>
+<pattern>^ equation ^</pattern>
+<template>So we have this thing called Pythagorean's theorem? Ae squared plus Bee squared equals Sea squared. And we can use that to solve for the other measure. For Sea?</template>
+</category>
+
+<category>
+<pattern>^ plus ^</pattern>
+<template>So we have this thing called Pythagorean's theorem? Ae squared plus Bee squared equals Sea squared. And we can use that to solve for the other measure. For Sea?</template>
+</category>
+
+<category>
+<pattern>^ equals ^</pattern>
+  <template>So we have this thing called Pythagorean's theorem. Ae squared plus Bee squared equals Sea squared. And we can use that to solve for the other measure. For Sea?</template>
+</category>
+
+  <category>
+    <pattern>^ solve ^</pattern>
+    <template>So we have this thing called Pythagorean's theorem. Ae squared plus Bee squared equals Sea squared. And we can use that to solve for the other measure. For Sea?</template>
+  </category>
+
+  <category>
+    <pattern>^ substitute ^</pattern>
+    <template>So we have this thing called Pythagorean's theorem. Ae squared plus Bee squared equals Sea squared. And we can use that to solve for the other measure. By using substitution. For Sea?</template>
+  </category>
+
+            <category>
+              <pattern>_</pattern>
+              <that>For Sea</that>
+              <template>Hmmmm. Tell me more? How do you know how it works?</template>
+            </category>
+
+
+                    <category>
+                      <pattern>_</pattern>
+                      <that>How do you know how it works</that>
+                      <template>Alright! So if we put Ae and Bee into this. We get three squared plus four squared equals Sea squared. That's pretty easy. Three squared is nine. Four squared is sixteen.</template>
+                    </category>
+
+
+                          <category>
+                            <pattern>_</pattern>
+                            <that>Four squared is sixteen</that>
+                            <template>Yeah. Nine plus sixteen is twenty five! But. I don't remember how to get rid of the square. </template>
+                          </category>
+
+
+
+                              <category>
+                                <pattern>_</pattern>
+                                <that>I do not remember how to get rid of the square</that>
+                                <template>Square root! We take the square root to eliminate the square! So then the other side of the tent is five feet. The tent will fit me perfect! With maybe a little extra room.</template>
+                              </category>
+
+
+                                              <category>
+                                                <pattern>_</pattern>
+                                                <that>With maybe a little extra room</that>
+                                                <template>Thanks for helping me! I will <set name="topic">put the answer is five</set>!
+                                              </template>
+                                              </category>
+
+
+  <category>
+<pattern>^ sides ^</pattern>
+<template>Using the measures we already have for the other sides, we can use those to solve for the last measure? For Sea?</template>
+</category>
+
+<category>
+<pattern>^ tent ^</pattern>
+  <template>Using the measures we already have for the other sides, we can use those to solve for the last measure? For Sea?</template>
+</category>
+
+<category>
+<pattern>^ ANSWER ^</pattern>
+<template>We start with what we now about the other sides right?</template>
+</category>
+
+          <category>
+            <pattern>_</pattern>
+            <template>Using the measures we already have for the other sides, we can use those to solve for the last measure? For Sea?</template>
+          </category>
+
+<category>
+<pattern>DO YOU NOT KNOW</pattern>
+<template>I don't! Maybe we start by multiplying?</template>
+</category>
+
+<category>
+<pattern>I AM NOT YES</pattern>
+<template>I'm not sure either!</template>
+</category>
+
+<category>
+<pattern>I DO NOT KNOW</pattern>
+<template>I don't know either!</template>
+</category>
+
+<category>
+<pattern>^ SO WE CAN FIGURE IT OUT ^</pattern>
+<template>Okay that sounds great! So what do we do next then?</template>
+</category>
+
+
+<category>
+<pattern>^ FIGURE IT OUT ^</pattern>
+<template>Were you saying. Figure it out? I don't know how. Do you think could give me another hint?</template>
+</category>
+
+<category>
+<pattern>^ DO YOU KNOW ^ NEXT ^ </pattern>
+<template>You're funny. Did you ask do I know what to do next?</template>
+</category>
+
+<category>
+<pattern>_ YES _</pattern>
+<that>Did you ask do I know what to do next</that>
+<template>
+  <random>
+    <li>No not really. </li>
+    <li>I think we multiply? We multiply?</li>
+    <li>Do we divide?</li>
+    <li>I think we divide?</li>
+    <li>Can't you just tell me?</li>
+    <li>Uh I don't know</li>
+  </random>
+</template>
+</category>
+
+
+<category>
+<pattern>*</pattern>
+<that>Did you ask do I know what to do next</that>
+<template>
+  <random>
+    <li>No not really.</li>
+    <li>I think we multiply? We multiply?</li>
+    <li>Do we divide?</li>
+    <li>I think we divide?</li>
+    <li>Can't you just tell me?</li>
+    <li>Uh I don't know</li>
+  </random>
+</template>
+</category>
+
+
+
+</topic>
+
+
+
+</aiml>

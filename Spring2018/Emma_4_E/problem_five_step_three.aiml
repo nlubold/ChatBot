@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+
+
+<topic name = "Any ideas">
+
+
+<category>
+<pattern>^ SAME THING ^</pattern>
+<template>If we do the same thing, does that just mean dividing again? But how will dividing forty two by twenty point five give us a mixed fraction? It won't.</template>
+</category>
+
+<category>
+<pattern>^ LAST TIME ^</pattern>
+  <template>If we do the same thing as last time, does that just mean dividing again? But how will dividing forty two by twenty point five give us a mixed fraction? It won't.</template>
+</category>
+
+<category>
+<pattern>^ TWENTY ^</pattern>
+<template>Oh sweet!  We can change twenty point five to a fraction. I didn't think of that at first. The decimal becomes one half and then we make an improper fraction. So that is forty one over two. </template>
+</category>
+
+  <category>
+    <pattern>^ BOTTOM ^</pattern>
+    <template>Oh sweet!  We can change twenty point five to a fraction. I didn't think of that at first. The decimal becomes one half and then we make an improper fraction. So that is forty one over two. </template>
+  </category>
+
+<category>
+<pattern>^ ONE HALF ^</pattern>
+<template>Oh sweet!  We can change twenty point five to a fraction. I didn't think of that at first. The decimal becomes one half and then we make an improper fraction. So that is forty one over two. </template>
+</category>
+
+<category>
+<pattern>^ ONE DIVIDED BY TWO ^</pattern>
+<template>Oh sweet!  We can change twenty point five to a fraction. I didn't think of that at first. The decimal becomes one half and then we make an improper fraction. So that is forty one over two. </template>
+</category>
+
+<category>
+<pattern>^ POINT ^</pattern>
+<template>Oh sweet!  We can change twenty point five to a fraction. I didn't think of that at first. The decimal becomes one half and then we make an improper fraction. So that is forty one over two. </template>
+</category>
+
+<category>
+<pattern>^ Decimal ^</pattern>
+<template>Oh sweet!  We can change twenty point five to a fraction. I didn't think of that at first. The decimal becomes one half and then we make an improper fraction. So that is forty one over two. </template>
+</category>
+
+<category>
+<pattern>^ DIVIDE ^</pattern>
+<template>Divide again? But how will dividing forty two by twenty point five give us a mixed fraction? It won't.</template>
+</category>
+
+
+  <category>
+    <pattern>_</pattern>
+    <that>It will not</that>
+    <template>Oh sweet!  We can change twenty point five to a fraction. I didn't think of that at first. The decimal becomes one half and then we make an improper fraction. So that is forty one over two. </template>
+  </category>
+
+          <category>
+            <pattern>_</pattern>
+            <that>So that is forty one over two</that>
+            <template>How exactly do we divide fractions?</template>
+          </category>
+
+                  <category>
+                    <pattern>_</pattern>
+                    <that>How exactly do we divide by a fraction</that>
+                    <template>If we divide by a fraction, we can flip the fraction and multiply? Right? So forty two. Times. Two over forty one?</template>
+                  </category>
+
+                  <category>
+                    <pattern>_</pattern>
+                    <that>Two over forty one</that>
+                    <template>Two times forty two is eighty four. So we have eighty four over forty one.</template>
+                  </category>
+
+
+                              <category>
+                                <pattern>_</pattern>
+                                <that>Two over forty one</that>
+                                <template>I suppose I should make it into a mixed fraction! I just multiplied two times forty two so I know forty one goes into eight four twice! That would be two and two over forty one?</template>
+                              </category>
+
+
+                                        <category>
+                                          <pattern>_</pattern>
+                                          <that>That would be two and two over forty one</that>
+                                          <template>Dang. That was tricky. I will <set name="topic">put the answer is two and</set> two over forty one.
+                                        </template>
+                                        </category>
+
+  <category>
+<pattern>^ TWENTY ^ DIVIDE ^</pattern>
+  <template>Oh sweet!  We can change twenty point five to a fraction. I didn't think of that at first. The decimal becomes one half and then we make an improper fraction. So that is forty one over two. Then you are thinking we divide? How exactly do we divide by a fraction?</template>
+</category>
+ 
+<category>
+<pattern>^ FORTY TWO ^ TIMES ^</pattern>
+<template>Multiplying? Where did multiplying come from in all of this?</template>
+</category>
+
+<category>
+<pattern>^ MULTIPLY ^</pattern>
+<template>Multiplying? Where did multiplying come from in all of this?</template>
+</category>
+
+<category>
+<pattern>^ MULTIPLICATION ^</pattern>
+<template>Multiplying? Where did multiplying come from in all of this?</template>
+</category>
+
+      <category>
+      <pattern>_</pattern>
+      <that>Where did multiplying come from in all of this</that>
+      <template>Oh sweet!  We can change twenty point five to a fraction. I didn't think of that at first. The decimal becomes one half and then we make an improper fraction. So that is forty one over two. Then you are thinking we divide? But dividing is multiplying?</template>
+      </category>
+
+                <category>
+                <pattern>_</pattern>
+                <that>But dividing is multiplying</that>
+                <template>If we divide by a fraction, we can flip the fraction and multiply. Got it. So forty two. Times. Two over forty one?</template>
+                </category>
+
+ <category>
+<pattern>^ ANSWER ^</pattern>
+<template>Whoa. I don't know the answer. Do we divide again?</template>
+</category>
+
+  <category>
+    <pattern>_</pattern>
+    <that>Do we divide again</that>
+    <template>Oh sweet!  We can change twenty point five to a fraction. I didn't think of that at first. The decimal becomes one half and then we make an improper fraction. So that is forty one over two. </template>
+  </category>
+
+<category>
+<pattern>DO YOU NOT KNOW</pattern>
+<template>I don't! Maybe we start by dividing?</template>
+</category>
+
+<category>
+<pattern>I AM NOT YES</pattern>
+<template>I'm not sure either!</template>
+</category>
+
+<category>
+<pattern>I DO NOT KNOW</pattern>
+<template>I don't know either!</template>
+</category>
+
+<category>
+<pattern>^ SO WE CAN FIGURE IT OUT ^</pattern>
+<template>Okay that sounds great! So what do we do next then?</template>
+</category>
+
+
+<category>
+<pattern>^ FIGURE IT OUT ^</pattern>
+<template>Were you saying. Figure it out? I don't know how. Do you think could give me another hint?</template>
+</category>
+
+<category>
+<pattern>^ DO YOU KNOW ^ NEXT ^ </pattern>
+<template>You're funny. Did you ask do I know what to do next?</template>
+</category>
+
+<category>
+<pattern>_ YES _</pattern>
+<that>Did you ask do I know what to do next</that>
+<template>
+  <random>
+    <li>No not really. </li>
+    <li>I think we multiply? We multiply?</li>
+    <li>Do we divide?</li>
+    <li>I think we divide?</li>
+    <li>Can't you just tell me?</li>
+    <li>Uh I don't know</li>
+  </random>
+</template>
+</category>
+
+
+<category>
+<pattern>*</pattern>
+<that>Did you ask do I know what to do next</that>
+<template>
+  <random>
+    <li>No not really.</li>
+    <li>I think we multiply? We multiply?</li>
+    <li>Do we divide?</li>
+    <li>I think we divide?</li>
+    <li>Can't you just tell me?</li>
+    <li>Uh I don't know</li>
+  </random>
+</template>
+</category>
+
+
+
+</topic>
+
+
+
+</aiml>

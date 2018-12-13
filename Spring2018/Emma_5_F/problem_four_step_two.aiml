@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+
+
+<topic name = "in the air">
+
+
+  <category>
+    <pattern>^ distance ^</pattern>
+    <template>We do the same thing as last time with our equation but this time we solve for time? How do we do that exactly?</template>
+  </category>
+
+  <category>
+    <pattern>^ speed ^</pattern>
+    <template>We do the same thing as last time with our equation but this time we solve for time? How do we do that exactly?</template>
+  </category>
+
+  <category>
+    <pattern>^ time ^</pattern>
+    <template>We do the same thing as last time with our equation but this time we solve for time? How do we do that exactly?</template>
+  </category>
+
+  <category>
+    <pattern>^ equals ^</pattern>
+    <template>We do the same thing as last time with our equation but this time we solve for time? How do we do that exactly?</template>
+  </category>
+
+  <category>
+    <pattern>^ solve ^</pattern>
+    <template>We do the same thing as last time with our equation but this time we solve for time? How do we do that exactly?</template>
+  </category>
+
+<category>
+<pattern>^ SAME THING ^</pattern>
+  <template>We do the same thing as last time with our equation but this time we solve for time? How do we do that exactly?</template>
+</category>
+
+<category>
+<pattern>^ LAST TIME ^</pattern>
+  <template>We do the same thing as last time with our equation but this time we solve for time? How do we do that exactly?</template>
+</category>
+
+      <category>
+      <pattern>_</pattern>
+      <that>How do we do that exactly</that>
+      <template>So we can solve for time, for tee like we did for speed. Also. By dividing?</template>
+      </category>
+
+      <category>
+      <pattern>_</pattern>
+      <that>By dividing</that>
+      <template>I have the equation time equals distance over speed. Do I just plug and chug? I think I heard that expression somewhere.</template>
+      </category>
+
+      <category>
+      <pattern>_</pattern>
+      <that>I think I heard that expression somewhere</that>
+      <template>I will put the values for the speed from the first step and the distance I want to be able to skip the rock so it will go further than Andrea's. Twelve meters over twenty meters over nine seconds.</template>
+      </category>
+
+      <category>
+        <pattern>_</pattern>
+        <that>Twelve meters over twenty meters over nine seconds</that>
+        <template>If I flip and multiply twelve times nine over twenty, is there a short cut? Or do I just multiply twelve times nine?</template>
+      </category>
+
+  <category>
+    <pattern>YES</pattern>
+    <that>Or do I just multiply twelve times nine</that>
+    <template>What is it?</template>
+  </category>
+
+          <category>
+            <pattern>_</pattern>
+            <that>What is it</that>
+            <template>Oh right. Four goes into twelve three times and it goes into twenty five times. So we can take the four out and we have three times. Nine over five.</template>
+          </category>
+
+      <category>
+        <pattern>_ YES _</pattern>
+        <that>Or do I just multiply twelve times nine</that>
+        <template>Oh right. Four goes into twelve three times and it goes into twenty five times. So we can take the four out and we have three times. Nine over five.</template>
+      </category>
+
+      <category>
+        <pattern>_ FOUR _</pattern>
+        <that>Or do I just multiply twelve times nine</that>
+        <template>Oh right. Four goes into twelve three times and it goes into twenty five times. So we can take the four out and we have three times. Nine over five.</template>
+      </category>
+
+      <category>
+        <pattern>_ REDUCE _</pattern>
+        <that>Or do I just multiply twelve times nine</that>
+        <template>Oh right. Four goes into twelve three times and it goes into twenty five times. So we can take the four out and we have three times. Nine over five.</template>
+      </category>
+
+
+      <category>
+        <pattern>_ THREE _</pattern>
+        <that>Or do I just multiply twelve times nine</that>
+        <template>Oh right. Four goes into twelve three times and it goes into twenty five times. So we can take the four out and we have three times. Nine over five.</template>
+      </category>
+
+            <category>
+              <pattern>_</pattern>
+              <that>Nine over five</that>
+              <template>Okay. I get twenty seven meters times seconds over five meters. What do I do with the units?</template>
+            </category>
+
+
+     <category>
+        <pattern>_</pattern>
+        <that>Or do I just multiply twelve times nine</that>
+        <template>Okay. I get twenty seven meters times seconds over five meters. What do I do with the units?</template>
+      </category>
+
+      <category>
+        <pattern>_</pattern>
+        <that>What do I do with the units</that>
+        <template>Meters cancels out! So then if I want to beat Andrea, I need to skip it twelve meters for twenty seven over five seconds at a speed of twenty over nine meters per second. I will <set name="topic">put the answer is twenty seven</set> over five seconds.
+      </template>
+      </category>
+
+
+
+  <category>
+    <pattern>^ DIVIDE ^</pattern>
+    <template>We do the same thing as last time with our equation but this time we solve for time? How do we do that exactly? By dividing?</template>
+  </category>
+
+  <category>
+    <pattern>^ DIVIDING ^</pattern>
+    <template>We do the same thing as last time with our equation but this time we solve for time? How do we do that exactly? By dividing?</template>
+  </category>
+  
+
+
+
+<category>
+<pattern>^ ANSWER ^</pattern>
+<template>We do the same thing as last time with our equation but this time we solve for time? How do we do that exactly?</template>
+</category>
+
+
+<category>
+<pattern>DO YOU NOT KNOW</pattern>
+<template>I don't! Maybe we start by multiplying?</template>
+</category>
+
+<category>
+<pattern>I AM NOT YES</pattern>
+<template>I'm not sure either!</template>
+</category>
+
+<category>
+<pattern>I DO NOT KNOW</pattern>
+<template>I don't know either!</template>
+</category>
+
+<category>
+<pattern>^ SO WE CAN FIGURE IT OUT ^</pattern>
+<template>Okay that sounds great! So what do we do next then?</template>
+</category>
+
+
+<category>
+<pattern>^ FIGURE IT OUT ^</pattern>
+<template>Were you saying. Figure it out? I don't know how. Do you think could give me another hint?</template>
+</category>
+
+<category>
+<pattern>^ DO YOU KNOW ^ NEXT ^ </pattern>
+<template>You're funny. Did you ask do I know what to do next?</template>
+</category>
+
+<category>
+<pattern>_ YES _</pattern>
+<that>Did you ask do I know what to do next</that>
+<template>
+  <random>
+    <li>No not really. </li>
+    <li>I think we multiply? We multiply?</li>
+    <li>Do we divide?</li>
+    <li>I think we divide?</li>
+    <li>Can't you just tell me?</li>
+    <li>Uh I don't know</li>
+  </random>
+</template>
+</category>
+
+
+<category>
+<pattern>*</pattern>
+<that>Did you ask do I know what to do next</that>
+<template>
+  <random>
+    <li>No not really.</li>
+    <li>I think we multiply? We multiply?</li>
+    <li>Do we divide?</li>
+    <li>I think we divide?</li>
+    <li>Can't you just tell me?</li>
+    <li>Uh I don't know</li>
+  </random>
+</template>
+</category>
+
+
+
+</topic>
+
+
+
+</aiml>

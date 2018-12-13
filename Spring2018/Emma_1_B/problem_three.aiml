@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+
+<category>
+<pattern>$PROBLEM START 3</pattern>
+<template>Thank you so much for helping me! So I am going to take my bike to get to the camping spot! Can you help me figure out where and when I can stop to rest on <set name="topic">MY WAY THERE</set>?</template>
+</category>
+
+<category>
+<pattern>$next step 3 2</pattern>
+<template>Wonderful! That was great! Can you give me a hint for <set name="topic">STEP TWO OF THIS THIRD PROBLEM</set>?</template>
+</category>
+
+
+<category>
+<pattern>$prior step 3 1</pattern>
+<template>Awesome! Back to one! So are you going to help me figure out how far my first stop is on <set name="topic">MY WAY THERE</set>?</template>
+</category>
+
+<category>
+<pattern>$prior step 3 1 a</pattern>
+<template>Didn't we already <set name="topic">do step one for problem THREE</set>?</template>
+</category>
+
+
+<category>
+<pattern>$next step 3 2 a</pattern>
+<template>Didn't we already <set name="topic">do step two for problem THREE</set>?</template>
+</category>
+
+
+<category>
+<pattern>3 1</pattern>
+<template><set name="topic">STEP ONE OF THIS THIRD PROBLEM</set></template>
+</category>
+
+<category>
+<pattern>3 2</pattern>
+<template><set name="topic">STEP TWO OF THIS THIRD PROBLEM</set></template>
+</category>
+
+
+
+
+<topic name = "DO STEP ONE for PROBLEM THREE">
+
+  <category>
+  <pattern>*</pattern>
+  <template><random>
+  <li>I'm sorry! I don't really understand why we're back on step one! </li>
+  <li>I'm sorry! Why are we back on step two for this problem? Didn't we already figure out that it is three hours?</li>
+    <li>Maybe we should go to the next step or problem?</li>
+  </random></template>
+  </category>
+
+</topic>
+
+<topic name = "DO STEP TWO for PROBLEM THREE">
+
+  <category>
+  <pattern>*</pattern>
+  <template><random>
+  <li>I'm sorry! I don't really understand why we're back on step two! After 7 and one quarter hours, I will have been traveling for seventy two point five miles, right?</li>
+  <li>I'm sorry! Why are we back on step two for this problem? We already figured out that after seven and one quarter hours I will have traveled seventy two point five miles, right?</li>
+  <li>We should go to the next step or problem because I already know how to do this one.</li>
+  </random></template>
+  </category>
+
+</topic>
+
+
+  <topic name = "PUT THE ANSWER IS THREE">
+
+    <category>
+      <pattern>*</pattern>
+      <template>Sweet! Ready to try the next step? </template>
+    </category>
+      
+      <category>
+        <pattern>*</pattern>
+        <that>Ready to try the next step</that>
+        <template>Lets do it! Move us to the next step!</template>
+      </category>
+
+      <category>
+        <pattern>^ GREAT ^</pattern>
+        <template>Thank you! You're really awesome!</template>
+      </category>
+
+
+      <category>
+        <pattern>^ Good ^</pattern>
+        <template>Thank you! You're really awesome!</template>
+      </category>
+
+      <category>
+        <pattern>^ NEXT ^</pattern>
+        <template>Sweet! But what did you say is next?</template>
+      </category>
+
+    <category>
+      <pattern>*</pattern>
+      <that>What did you say is next</that>
+      <template>Alright lets do it! Don't forget to hit the arrows. </template>
+    </category>
+
+    </topic>
+
+
+
+  <topic name = "put the answer is seventy two">
+
+    <category>
+      <pattern>*</pattern>
+      <template>Awesome! Are you ready to try the next problem?</template>
+    </category>
+
+    <category>
+      <pattern>*</pattern>
+      <that>Are you ready to try the next problem</that>
+      <template>You are amazing! Best tutor ever. Lets do it! Move us to the next problem please.</template>
+    </category>
+
+    <category>
+      <pattern>^ GREAT ^</pattern>
+      <template>Thank you! You're really awesome!</template>
+    </category>
+
+
+    <category>
+      <pattern>^ Good ^</pattern>
+      <template>Thank you! You're really awesome!</template>
+    </category>
+
+    <category>
+      <pattern>^ NEXT ^</pattern>
+      <template>Sweet! What's next?</template>
+    </category>
+
+    <category>
+      <pattern>*</pattern>
+      <that>WHAT IS NEXT</that>
+      <template>You are amazing! Best tutor ever. Lets do it! Move us to the next problem please.</template>
+    </category>
+    
+    
+  </topic>
+
+
+</aiml>

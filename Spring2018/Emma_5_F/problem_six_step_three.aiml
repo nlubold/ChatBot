@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+
+
+<topic name = "time is in hours">
+
+
+<category>
+<pattern>^ SAME THING ^</pattern>
+<template>Right! Do the same thing as last time but. First we convert Tasha's time. To minutes?</template>
+</category>
+
+<category>
+<pattern>^ LAST TIME ^</pattern>
+  <template>Right! Do the same thing as last time but. First we convert Tasha's time. To minutes?</template>
+</category>
+
+  <category>
+    <pattern>^ CONVERT ^</pattern>
+    <template>Right! Do the same thing as last time but. First we convert Tasha's time. To minutes?</template>
+  </category>
+  
+  <category>
+    <pattern>^ Change ^</pattern>
+    <template>Right! Do the same thing as last time but. First we convert Tasha's time. To minutes?</template>
+  </category>
+
+  <category>
+    <pattern>^ MULTIPLY ^</pattern>
+    <template>Right! Do the same thing as last time but. First we convert Tasha's time. To minutes?</template>
+  </category>
+  
+  <category>
+    <pattern>^ TIMES ^</pattern>
+    <template>Right! Do the same thing as last time but. First we convert Tasha's time. To minutes?</template>
+  </category>
+
+  <category>
+<pattern>^ MULTIPLICATION ^</pattern>
+    <template>Right! Do the same thing as last time but. First we convert Tasha's time. To minutes?</template>
+  </category>
+
+      <category>
+      <pattern>_</pattern>
+      <that>To minutes</that>
+      <template>Two hours is one hundred and twenty minutes. That's really close to the same amount of time as Zach! </template>
+      </category>
+
+      <category>
+      <pattern>_</pattern>
+      <that>That is really close to the same amount of time as Zach</that>
+      <template>I already know the total time is six hundred. So the fraction of Tasha's total time is one hundred and twenty minutes to six hundred. I will divide.</template>
+      </category>
+
+      <category>
+      <pattern>_</pattern>
+      <that>I will divide</that>
+      <template>
+        I got <set name="topic">zero point two</set>! I will put the answer is zero point two. I will miss you <bot name="username"/>! You were the best. Hope you had as much fun as I did!
+      </template>
+      </category>
+
+
+<category>
+<pattern>^ ANSWER ^</pattern>
+<template>How do we handle that her time is in hours?</template>
+</category>
+
+  <category>
+    <pattern>_</pattern>
+    <that>How do we handle that her time is in hours</that>
+    <template>Right! Do the same thing as last time but. First we convert Tasha's time. To minutes?</template>
+  </category>
+
+
+
+
+  <category>
+<pattern>DO YOU NOT KNOW</pattern>
+<template>I don't! Maybe we start by multiplying?</template>
+</category>
+
+<category>
+<pattern>I AM NOT YES</pattern>
+<template>I'm not sure either!</template>
+</category>
+
+<category>
+<pattern>I DO NOT KNOW</pattern>
+<template>I don't know either!</template>
+</category>
+
+<category>
+<pattern>^ SO WE CAN FIGURE IT OUT ^</pattern>
+<template>Okay that sounds great! So what do we do next then?</template>
+</category>
+
+
+<category>
+<pattern>^ FIGURE IT OUT ^</pattern>
+<template>Were you saying. Figure it out? I don't know how. Do you think could give me another hint?</template>
+</category>
+
+<category>
+<pattern>^ DO YOU KNOW ^ NEXT ^ </pattern>
+<template>You're funny. Did you ask do I know what to do next?</template>
+</category>
+
+<category>
+<pattern>_ YES _</pattern>
+<that>Did you ask do I know what to do next</that>
+<template>
+  <random>
+    <li>No not really. </li>
+    <li>I think we multiply? We multiply?</li>
+    <li>Do we divide?</li>
+    <li>I think we divide?</li>
+    <li>Can't you just tell me?</li>
+    <li>Uh I don't know</li>
+  </random>
+</template>
+</category>
+
+
+<category>
+<pattern>*</pattern>
+<that>Did you ask do I know what to do next</that>
+<template>
+  <random>
+    <li>No not really.</li>
+    <li>I think we multiply? We multiply?</li>
+    <li>Do we divide?</li>
+    <li>I think we divide?</li>
+    <li>Can't you just tell me?</li>
+    <li>Uh I don't know</li>
+  </random>
+</template>
+</category>
+
+
+
+</topic>
+
+
+
+</aiml>

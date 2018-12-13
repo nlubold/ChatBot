@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+
+<category>
+<pattern>$PROBLEM START 9</pattern>
+<template>So to make the punch I am going to use the juice and seltzer water. But I need to figure out how to long it will take me to make it. I may need to make <set name="topic">as little as three</set> and a half pitchers. But I may need to make up to eight!
+</template>
+</category>
+
+
+<category>
+<pattern>$PROBLEM START NINE</pattern>
+<template>
+So to make the punch I am going to use the juice and seltzer water. But I need to figure out how to long it will take me to make it. I may need to make <set name="topic">as little as three</set> and a half pitchers. But I may need to make up to eight!
+</template>
+</category>
+
+<category>
+<pattern>$next step 9 2</pattern>
+<template>Sweet! So it shouldn't take me very long to make three point six pitchers. Can you help me figure out how long it will take to make <set name="topic">eight pitchers</set>?</template>
+</category>
+
+
+<category>
+<pattern>$prior step 9 1</pattern>
+<template>So it seems like this should be easy but I can't remember where to start. How do I figure out long it will take me to make <set name="topic">as little as three</set> and a half pitchers? Or almost three and a half pitchers?</template>
+</category>
+
+<category>
+<pattern>$prior step 9 1 a</pattern>
+<template>Didn't we already figure out how long it will take me to make <set name="topic">three and a half pitchers</set>?</template>
+</category>
+
+
+<category>
+<pattern>$next step 9 2 a</pattern>
+<template>I think we figured this out? It will take me <set name="topic">twenty four minutes</set> to make eight pitchers of punch.</template>
+</category>
+
+
+<topic name = "three and a half pitchers">
+
+  <category>
+  <pattern>*</pattern>
+  <template>I think I understand this one. Maybe we should go to the next step?
+  </template>
+  </category>
+
+</topic>
+
+<topic name = "twenty four minutes ">
+
+  <category>
+  <pattern>*</pattern>
+  <template>We should go to the next step or problem because I already know how to do this one.
+  </template>
+  </category>
+
+</topic>
+
+
+  <topic name = "Put the answer is ten">
+
+    <category>
+      <pattern>*</pattern>
+      <template>Sweet! Ready to try the next step? </template>
+    </category>
+      
+      <category>
+        <pattern>*</pattern>
+        <that>Ready to try the next step</that>
+        <template>Lets do it! Move us to the next step!</template>
+      </category>
+
+      <category>
+        <pattern>^ GREAT ^</pattern>
+        <template>Thank you! You're really awesome!</template>
+      </category>
+
+
+      <category>
+        <pattern>^ Good ^</pattern>
+        <template>Thank you! You're really awesome!</template>
+      </category>
+
+      <category>
+        <pattern>^ NEXT ^</pattern>
+        <template>Sweet! But what did you say is next?</template>
+      </category>
+
+    <category>
+      <pattern>*</pattern>
+      <that>What did you say is next</that>
+      <template>Alright lets do it! Don't forget to hit the arrows. </template>
+    </category>
+
+    </topic>
+
+
+
+  <topic name = "put the answer is twenty four">
+
+    <category>
+      <pattern>*</pattern>
+      <template>Awesome! Are you ready to try the next problem?</template>
+    </category>
+
+    <category>
+      <pattern>*</pattern>
+      <that>Are you ready to try the next problem</that>
+      <template>Sweet! Move us to the next problem please.</template>
+    </category>
+
+    <category>
+      <pattern>^ GREAT ^</pattern>
+      <template>Thank you! You're really awesome!</template>
+    </category>
+
+
+    <category>
+      <pattern>^ Good ^</pattern>
+      <template>Thank you! You're really awesome!</template>
+    </category>
+
+    <category>
+      <pattern>^ NEXT ^</pattern>
+      <template>Sweet! What's next?</template>
+    </category>
+
+    <category>
+      <pattern>*</pattern>
+      <that>WHAT IS NEXT</that>
+      <template>You are amazing! Best tutor ever. Lets do it! Move us to the next problem please.</template>
+    </category>
+    
+    
+  </topic>
+
+
+</aiml>

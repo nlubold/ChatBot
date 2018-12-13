@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+
+<category>
+<pattern>$PROBLEM START 1</pattern>
+  <template>
+    I mentioned before that I am a curious robot. Well I was interested in how long people typically camp for and do you know, people can camp for a long time! But the park ranger could only give me general percentages. Can you help me <set name="topic">convert these percentages</set> to real numbers?
+  </template>
+</category>
+
+<category>
+<pattern>$PROBLEM START ONE</pattern>
+  <template>I mentioned before that I am a curious robot. Well I was interested in how long people typically camp for and do you know, people can camp for a long time! But the park ranger could only give me general percentages. Can you help me <set name="topic">convert these percentages</set> to real numbers?</template>
+</category>
+
+<category>
+<pattern>next step 1 2</pattern>
+<template>I got step one. Apparently <set name="topic">sixty percent</set> of people only stay one day though. How do we figure out how many people sixty percent is? </template>
+</category>
+
+<category>
+<pattern>prior step 1 1</pattern>
+<template>Alright back to step one and how to <set name="topic">convert these percentages</set>.</template>
+</category>
+
+<category>
+<pattern>prior step 1 1 a</pattern>
+<template>
+  I do like working with you <bot name="username" />, really I do. But didn't we already <set name="topic">put the answer is three hundred</set>and seventy five people?</template>
+</category>
+
+<category>
+<pattern>next step 1 2 a</pattern>
+<template>
+  I figured out that I should <set name="topic">put the answer is nine hundred</set>. Maybe you could hit the button to move us to the next problem!</template>
+</category>
+
+
+<topic name = "put the answer is nine hundred">
+
+
+  <category>
+    <pattern>*</pattern>
+    <that>How long would you camp for</that>
+    <template>Cool! Well we're going for two days! I can't wait. To the next problem?</template>
+  </category>
+
+
+  <category>
+    <pattern>*</pattern>
+    <that>To the next problem</that>
+    <template>Hey don't forget to hit the next problem button!</template>
+  </category>
+  
+
+
+<category>
+<pattern>^ GREAT ^</pattern>
+<template>I think I am pretty great! But seriously. Thanks!</template>
+</category>
+
+
+<category>
+<pattern>^ Good ^</pattern>
+  <template>I think that was pretty great! But seriously. Thanks!</template>
+</category>
+
+<category>
+<pattern>^ NEXT ^</pattern>
+<template>Cool! To the next problem.</template>
+</category>
+
+
+</topic>
+
+<topic name = "put the answer is three hundred">
+
+  <category>
+    <pattern>*</pattern>
+    <template>Next problem!</template>
+  </category>
+
+  <category>
+    <pattern>*</pattern>
+    <that>Next problem</that>
+    <template>Hey don't forget to hit the next problem button!</template>
+  </category>
+
+
+  <category>
+<pattern>^ GREAT ^</pattern>
+<template>Yeah I am great, right? </template>
+</category>
+
+
+<category>
+<pattern>^ Good ^</pattern>
+<template>I am a good robot! I agree!</template>
+</category>
+
+<category>
+<pattern>^ NEXT ^</pattern>
+<template>Cool. Lets do it. </template>
+</category>
+
+  <category>
+    <pattern>*</pattern>
+    <that>What is next</that>
+    <template>Cool! Let's do it.</template>
+  </category>
+
+
+</topic>
+
+
+</aiml>

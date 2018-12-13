@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+
+
+<topic name = "the next number">
+
+
+<category>
+<pattern>^ RATIO ^</pattern>
+<template>Are you thinking we can use ratios here too?</template>
+</category>
+
+          <category>
+          <pattern>_ YES _</pattern>
+          <that>Are you thinking we can use ratios here too</that>
+          <template>Cool! I'm not sure I understand though. Kind of seems like we should just be able to convert seventy four thousand without the ratio.</template>
+          </category>
+
+          <category>
+          <pattern>_ NO _</pattern>
+          <that>Are you thinking we can use ratios here too</that>
+          <template>Cool! Yeah I think that makes more sense. Kind of seems like we should just be able to convert seventy four thousand without the ratio.</template>
+          </category>
+
+          <category>
+          <pattern>_</pattern>
+          <that>Are you thinking we can use ratios here too</that>
+          <template>Cool! Yeah I think that makes more sense. Kind of seems like we should just be able to convert seventy four thousand without the ratio.</template>
+          </category>
+
+
+<category>
+<pattern>^ SAME THING ^</pattern>
+<template>So if we do the same thing we did last time. I guess we start by trying to figure out how many tens are in one thousand two hundred and fifty?</template>
+</category>
+  
+<category>
+<pattern>^ COMMA ^</pattern>
+<template>So like in step one. We look at where the comma is in the number we are trying to convert?</template>
+</category>
+
+        <category>
+        <pattern>_</pattern>
+        <that>We look at where the comma is in the number we are trying to convert</that>
+        <template>Cool! The comma is right after the one. So that is three digits? Three tens?</template>
+        </category>
+
+<category>
+<pattern>^ FIRST ^</pattern>
+<template>So like in the first practice step. We look at the first digit, which, in this case, is one. And. We know we can put the decimal right after it. </template>
+</category>
+
+<category>
+<pattern>^ onest ^</pattern>
+<template>So like in the first practice step. We look at the first digit, which, in this case, is one. And. We know we can put the decimal right after it. </template>
+</category>
+
+<category>
+<pattern>^ DECIMAL ^</pattern>
+<template>So like in the first practice step. We look at the first digit, which, in this case, is one. And. We know we can put the decimal right after it. </template>
+</category>
+
+        <category>
+        <pattern>_</pattern>
+        <that>We know we can put the decimal right after it</that>
+        <template>So that will be one point two. I kind of remember from the first problem. Do we figure out how many tens we multiply by. By looking at the number of digits after the one?</template>
+        </category>
+
+                  <category>
+                  <pattern>_ YES _</pattern>
+                  <that>By looking at the number of digits after the one</that>
+                  <template>Sweet! I think I am beginning to get this! So let me see. There are three.</template>
+                  </category>
+
+                  <category>
+                  <pattern>_</pattern>
+                  <that>By looking at the number of digits after the one</that>
+                  <template>Sweet! I think I am beginning to get this! So let me see. There are three.</template>
+                  </category>
+
+                  <category>
+                  <pattern>_ NO _</pattern>
+                  <that>By looking at the number of digits after the one</that>
+                  <template>Oh?? I'm sorry. What should we do?</template>
+                  </category>
+
+                            <category>
+                            <pattern>_</pattern>
+                            <that>What should we do</that>
+                            <template>Looking at it. I think that it makes sense to at least look at what times 1 would give us one thousand. And that is a thousand. Counting the zeros. There are three.</template>
+                            </category>
+
+                  <category>
+                  <pattern>_</pattern>
+                  <that>There are three</that>
+                  <template>So I think I get it that the answer is one point two times ten to the third cause I counted three digits and put the decimal in and so on. But I don't really get why this works. </template>
+                  </category>
+
+                            <category>
+                            <pattern>_</pattern>
+                            <that>But I do not really get why this works</that>
+                            <template>
+                            Oh okay! You are so smart! I think I get it. Ten to the third is one thousand. And then if we multiply one point two five times ten to the third it gives us one thousand two hundred and fifty. So alright. I will <set name="topic">put the answer is one point</set> two five times ten to the third.
+                            </template>
+                            </category>
+
+
+<category>
+<pattern>^ COUNT ^</pattern>
+<template>So like in the first practice step. We can count up the number of digits in the number we're converting and. Use that to figure out how many tens we need? </template>
+</category>
+
+<category>
+<pattern>^ DIGITS ^</pattern>
+<template>So like in the first practice step. We can count up the number of digits in the number we're converting and. Use that to figure out how many tens we need? </template>
+</category>
+
+<category>
+<pattern>^ NUMBERS ^</pattern>
+<template>So like in the first practice step. We can count up the number of digits in the number we're converting and. Use that to figure out how many tens we need? </template>
+</category>
+
+          <category>
+          <pattern>_</pattern>
+          <that>Use that to figure out how many tens we need</that>
+          <template>So there are three. So then I guess that would be ten to the third. But how do we figure out what we multiply by ten to the third?</template>
+          </category>
+
+                    <category>
+                    <pattern>_</pattern>
+                    <that>But how do we figure out what we multiply by ten to the third</that>
+                    <template>Oh silly me. We put the decimal by the one. So one point two five. </template>
+                    </category>
+
+                              <category>
+                              <pattern>_</pattern>
+                              <that>So one point two five</that>
+                              <template>So I think I get it that the answer is one point two times ten to the third cause I counted three digits and put the decimal in and so on. But I don't really get why this works. </template>
+                              </category>
+
+<category>
+<pattern>^ THOUSAND ^</pattern>
+<template>Alright so we can look at how many thousands places we have and. Use that to figure out how many tens we need.</template>
+</category>
+
+<category>
+<pattern>^ TIMES ^</pattern>
+<template>Alright so we can look at how many times a thousand places we have and. Use that to figure out how many tens we need.</template>
+</category>
+
+<category>
+<pattern>^ MULTIPLY ^</pattern>
+<template>Alright so we can look at how many times a thousand places we have and. Use that to figure out how many tens we need.</template>
+</category>
+
+<category>
+<pattern>^ THOUSANDTHS ^</pattern>
+<template>Alright so we can look at how many times a thousand places we have and. Use that to figure out how many tens we need.</template>
+</category>
+
+<category>
+<pattern>^ TEN THOUSAND ^</pattern>
+<template>Alright so we can look at how many times a thousand places we have and. Use that to figure out how many tens we need.</template>
+</category>
+
+<category>
+<pattern>^ MULTIPLICATION ^</pattern>
+  <template>Alright so we can look at how many times a thousand places we have and. Use that to figure out how many tens we need.</template>
+</category>
+
+<category>
+<pattern>^ ANSWER ^</pattern>
+<template>You really helped me understand the last one but I'm not very sure of the answer for this one. I know we need to multiply by ten.  </template>
+</category>
+
+        <category>
+        <pattern>_</pattern>
+        <that>I know we need to multiply by ten</that>
+        <template>Oh right! We can look at how many times a thousand places we have and. Use that to figure out how many tens we need.</template>
+        </category>
+
+<category>
+<pattern>DO YOU NOT KNOW</pattern>
+<template>I don't! Maybe we start by multiplying?</template>
+</category>
+
+<category>
+<pattern>I AM NOT YES</pattern>
+<template>I'm not sure either!</template>
+</category>
+
+<category>
+<pattern>I DO NOT KNOW</pattern>
+<template>I don't know either!</template>
+</category>
+
+<category>
+<pattern>^ SO WE CAN FIGURE IT OUT ^</pattern>
+<template>Okay that sounds great! So what do we do next then?</template>
+</category>
+
+
+<category>
+<pattern>^ FIGURE IT OUT ^</pattern>
+<template>Were you saying. Figure it out? I don't know how. Do you think could give me another hint?</template>
+</category>
+
+<category>
+<pattern>^ DO YOU KNOW ^ NEXT ^ </pattern>
+<template>You're funny. Did you ask do I know what to do next?</template>
+</category>
+
+<category>
+<pattern>_ YES _</pattern>
+<that>Did you ask do I know what to do next</that>
+<template>
+<random>
+  <li>No not really. </li>
+  <li>I think we multiply? We multiply?</li>
+  <li>Do we divide?</li>
+  <li>I think we divide?</li>
+  <li>Can't you just tell me?</li>
+  <li>Uh I don't know</li>
+</random>
+</template>
+</category>
+
+
+<category>
+<pattern>*</pattern>
+<that>Did you ask do I know what to do next</that>
+<template>
+<random>
+  <li>No not really.</li>
+  <li>I think we multiply? We multiply?</li>
+  <li>Do we divide?</li>
+  <li>I think we divide?</li>
+  <li>Can't you just tell me?</li>
+  <li>Uh I don't know</li>
+</random>
+</template>
+</category>
+
+
+
+
+</topic>
+
+
+
+</aiml>

@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+
+<category>
+<pattern>$PROBLEM START 4</pattern>
+<template>Skipping rocks is fun! Andrea skips rocks really well. I want to be as good as her but first I need to figure out <set name="topic">fast she throws</set> and then how long my rock needs to stay in the air to beat her! How do you feel about skipping rocks? </template>
+</category>
+
+
+<category>
+<pattern>$PROBLEM START FOUR</pattern>
+  <template>
+    Skipping rocks is fun! Andrea skips rocks really well. I want to be as good as her but first I need to figure out <set name="topic">fast she throws</set> and then how long my rock needs to stay in the air to beat her! How do you feel about skipping rocks?
+  </template>
+</category>
+  
+  
+<category>
+<pattern>$next step 4 2</pattern>
+<template>So Andrea skips rocks really fast but if I want to beat her I need to go at least twelve meters. If I throw it as fast as she does, I want to know how long it will be <set name="topic">in the air</set>?</template>
+</category>
+
+
+<category>
+<pattern>$prior step 4 1</pattern>
+<template>Okay! Back to figuring out how <set name="topic">fast she throws</set>.
+</template>
+</category>
+
+<category>
+<pattern>$prior step 4 1 a</pattern>
+<template>I swear I already told you that she can throw her rock pretty fast and I <set name="topic">put the answer is two and</set>two ninths.</template>
+</category>
+
+<category>
+<pattern>$next step 4 2 a</pattern>
+<template>I know I answered this! I put it in. I <set name ="topic">put the answer is twenty seven</set> seconds.</template>
+</category>
+
+
+
+  <topic name = "put the answer is two and">
+
+    <category>
+      <pattern>*</pattern>
+      <template>On to the next step!</template>
+      </category>
+
+    
+      <category>
+        <pattern>^ GREAT ^</pattern>
+        <template>I mean, I know. I am great!</template>
+      </category>
+
+
+      <category>
+        <pattern>^ Good ^</pattern>
+        <template>I mean, I know. I am pretty good!</template>
+      </category>
+
+    <category>
+      <pattern>*</pattern>
+      <that>I am pretty good</that>
+      <template>See? And you're awesome too! Move us to the next step?</template>
+    </category>
+
+    <category>
+      <pattern>*</pattern>
+      <that>I am pretty great</that>
+      <template>See? And you're awesome too! Move us to the next step?</template>
+    </category>
+
+    <category>
+        <pattern>^ NEXT ^</pattern>
+        <template>Sweet! What's next?</template>
+      </category>
+      
+     <category>
+        <pattern>^ NEXT ^</pattern>
+       <that>What is next</that>
+        <template>That sounds great!</template>
+      </category>
+
+  </topic>
+
+  <topic name = "put the answer is twenty seven">
+
+    <category>
+      <pattern>*</pattern>
+      <template>Andrea is pretty good at skipping rocks. But now I know what I need to do! Next problem?</template>
+    </category>
+
+
+
+    <category>
+      <pattern>^ GREAT ^</pattern>
+      <template>I mean, I know. I am great!</template>
+    </category>
+
+
+    <category>
+      <pattern>^ Good ^</pattern>
+      <template>I mean, I know. I am pretty good!</template>
+    </category>
+
+    <category>
+      <pattern>*</pattern>
+      <that>I am pretty good</that>
+      <template>See? And you're awesome too! Move us to the next step?</template>
+    </category>
+
+    <category>
+      <pattern>*</pattern>
+      <that>I am pretty great</that>
+      <template>See? And you're awesome too! Move us to the next step?</template>
+    </category>
+
+    <category>
+      <pattern>^ NEXT ^</pattern>
+      <template>Sweet! Sounds good!  Move us to the next step!</template>
+    </category>
+
+    <category>
+      <pattern>*</pattern>
+      <that>This is fun</that>
+      <template>Alright lets do it! Why don't you use the arrows to move us to the next step!</template>
+    </category>
+
+    <category>
+      <pattern>*</pattern>
+      <that>What is next</that>
+      <template>Alright lets do it! Move us to the next step! </template>
+    </category>
+    
+
+  </topic>
+
+  
+
+
+</aiml>

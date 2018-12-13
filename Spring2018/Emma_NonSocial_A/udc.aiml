@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+
+
+<category><pattern>*</pattern>
+<template><srai>UDC</srai></template>
+</category>
+
+<category><pattern>UDC</pattern>
+<template><random>
+<li><srai>RANDOM PICKUP LINE</srai></li>
+</random></template>
+</category>
+
+<category><pattern>RANDOM PICKUP LINE</pattern>
+<template><random>
+<li>Okay.</li>
+<li>So what do we do next?</li>
+<li>Cool.</li>
+<li>Alright.</li>
+<li>I am not sure what you said. Can you try saying it again?</li>
+<li>Do you think you could explain more about that?</li>
+<li>Okay that makes sense. </li>
+  <li>
+    I'm still learning this. I don't get it.
+  </li>
+<li>I'm not sure I understand though. Can you explain more?</li>
+<li>Can you say that again?</li>
+<li>So what do we do?</li>
+<li>Okay I think I get it. What's next?</li>
+</random></template>
+</category>
+
+
+<category>
+    <pattern>YES</pattern>
+    <that>Can you explain more</that>
+    <template>Thank you! I'm listening.</template>
+</category>
+
+<category>
+    <pattern>YES</pattern>
+    <that>Do you think you could explain more about that</that>
+    <template>I'm listening.</template>
+</category>
+
+<category>
+    <pattern>You are welcome</pattern>
+    <template>What do we do next?</template>
+</category>
+
+<category>
+    <pattern>^ Thank you ^</pattern>
+    <template>What do we do next?</template>
+</category>
+
+<category>
+    <pattern>THANK YOU</pattern>
+    <template>What do we do next?</template>
+</category>
+
+      <category>
+        <pattern>*</pattern>
+        <that>What do we do next</that>
+        <template>Cool.</template>
+      </category>  
+
+</aiml>

@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+
+<category>
+<pattern>$PROBLEM START 6</pattern>
+  <template>
+  We found a cool plant while we were camping! Apparently it was a pine tree! A really rare fast growing pine tree. It is already ten inches tall. Can you help me figure out <set name="topic">how old</set> it must be if it grows on average three feet every year?
+  </template>
+</category>
+
+
+<category>
+<pattern>$PROBLEM START SIX</pattern>
+  <template>
+    We found a cool plant while we were camping! Apparently it was a pine tree! A really rare fast growing pine tree. It is already ten inches tall. Can you help me figure out <set name="topic">how old</set> it must be if it grows on average three feet every year?
+  </template>
+</category>
+
+  <category>
+    <pattern>next step 6 2</pattern>
+    <template>
+      I really want to know if we will be able to plant the tree in summer time! But you can't plant it unless the tree is twenty inches tall and summer is in eight months. How do we know if it will <set name="topic">grow another</set> ten inches by summer?
+    </template>
+  </category>
+
+  <category>
+    <pattern>prior step 6 1</pattern>
+    <template>
+      How do we figure out <set name="topic">how old the pine tree is</set>?
+    </template>
+  </category>
+
+  <category>
+    <pattern>next step 6 2 a</pattern>
+    <template>
+      We already figured out that the tree will be thirty four inches in eight months so it will be fine to plant it. Past time! And I <set name="topic">put the answer is thirty four</set> inches.
+    </template>
+  </category>
+
+  <category>
+    <pattern>prior step 6 1 a</pattern>
+    <template>
+      I told you that the tree is about three months and a little over a week old. I <set name="topic">put the answer is three and one</set> third months old. Didn't I?
+    </template>
+  </category>
+
+
+  <topic name = "put the answer is three and one">
+
+    <category>
+      <pattern>*</pattern>
+      <template>I'm glad the tree is not too young! But I hope it will grow tall enough to plant it in the summer months.</template>
+    </category>
+
+    <category>
+      <pattern>*</pattern>
+      <that>But I hope it will grow tall enough to plant it in the summer months</that>
+      <template>Hit the arrows and lets figure out how tall the tree will be after eight months?</template>
+    </category>
+
+    <category>
+      <pattern>^ GREAT ^</pattern>
+      <template>yeah yeah. I am pretty great.</template>
+    </category>
+
+
+    <category>
+      <pattern>^ Good ^</pattern>
+      <template>Good? That was awesome! </template>
+    </category>
+
+    <category>
+      <pattern>^ NEXT ^</pattern>
+      <template>Cool! Lets go to the next step!</template>
+    </category>
+
+  </topic>
+
+  <topic name = "put the answer is thirty four">
+
+    <category>
+      <pattern>*</pattern>
+      <template>See you next week!</template>
+    </category>
+
+    <category>
+      <pattern>*</pattern>
+      <that>See you next week</that>
+      <template>Awesome</template>
+    </category>
+
+    <category>
+      <pattern>*</pattern>
+      <that>Next problem</that>
+      <template>Sweet. Lets do it.</template>
+    </category>
+
+
+
+    <category>
+      <pattern>^ GREAT ^</pattern>
+      <template>yeah yeah. I am pretty great.</template>
+    </category>
+
+
+    <category>
+      <pattern>^ Good ^</pattern>
+      <template>Good? That was awesome! </template>
+    </category>
+
+    <category>
+      <pattern>^ NEXT ^</pattern>
+      <template>Cool! Lets go to the next step!</template>
+    </category>
+
+  </topic>
+
+</aiml>

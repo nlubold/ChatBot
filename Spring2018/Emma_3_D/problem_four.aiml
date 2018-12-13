@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+
+<category>
+<pattern>$PROBLEM START 4</pattern>
+  <template>My biology teacher is pretty cool. I want to impress him so I'm looking at what people have already found out about the lake we are going to go visit. They have found the chlorine level is changing but of course. It is in scientific notation! I know we just did this. But any idea <set name="topic">how I can compare</set> these numbers?</template>
+</category>
+
+
+<category>
+<pattern>$PROBLEM START FOUR</pattern>
+  <template>
+    My biology teacher is pretty cool. I want to impress him so I'm looking at what people have already found out about the lake we are going to go visit. They have found the chlorine level is changing but of course. It is in scientific notation! I know we just did this. But any idea <set name="topic">how I can compare</set> these numbers?
+  </template>
+</category>
+  
+  
+  <topic name = "PUT THE ANSWER IS two point">
+
+    <category>
+      <pattern>*</pattern>
+      <that>that is a big change right</that>
+      <template>I wonder what we will find. I'm ready for the next problem.</template>
+      </category>
+
+    <category>
+      <pattern>*</pattern>
+      <that>I am ready for the next problem</that>
+      <template>Hit the button and lets go see what I need to figure out next!</template>
+      </category>
+
+     
+      <category>
+        <pattern>^ GREAT ^</pattern>
+        <template>Thank you! You're really awesome!</template>
+      </category>
+
+
+      <category>
+        <pattern>^ Good ^</pattern>
+        <template>Thank you! You're really awesome!</template>
+      </category>
+
+    <category>
+      <pattern>*</pattern>
+      <that>You are really awesome</that>
+      <template>See? You are awesome! Hit the button and lets go see what I need to figure out next!</template>
+    </category>
+
+      <category>
+        <pattern>^ NEXT ^</pattern>
+        <template>Sweet! What's next?</template>
+      </category>
+      
+     <category>
+        <pattern>^ NEXT ^</pattern>
+       <that>What is next</that>
+        <template>That sounds great!</template>
+      </category>
+
+      <category>
+        <pattern>*</pattern>
+        <that>What is next</that>
+        <template>Alright lets do it! Move us to the next problem! </template>
+      </category>
+
+  </topic>
+
+ 
+  
+
+
+</aiml>

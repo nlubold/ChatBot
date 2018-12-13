@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+
+
+<topic name = "fast she throws">
+
+  
+
+  <category>
+    <pattern>_ LIKE _</pattern>
+    <that>How do you feel about skipping rocks</that>
+    <template>
+      I like skipping rocks too <bot name="username"/>! </template>
+  </category>
+
+  <category>
+    <pattern>_ SKIP _</pattern>
+    <that>How do you feel about skipping rocks</that>
+    <template>Camping is great as long as its by a lake because then you can learn how to skip rocks!</template>
+  </category>
+
+  <category>
+    <pattern>_ SKIPPING _</pattern>
+    <that>How do you feel about skipping rocks</that>
+    <template>Camping is great as long as its by a lake because then you can learn how to skip rocks!</template>
+  </category>
+
+  <category>
+    <pattern>_ NEVER _</pattern>
+    <that>How do you feel about skipping rocks</that>
+    <template>Camping is great as long as its by a lake because then you can learn how to skip rocks!</template>
+  </category>
+
+  <category>
+    <pattern>_ NOT _</pattern>
+    <that>How do you feel about skipping rocks</that>
+    <template>Camping is great as long as its by a lake because then you can learn how to skip rocks!</template>
+  </category>
+
+  <category>
+    <pattern>_</pattern>
+    <that>Camping is great as long as its by a lake because then you can learn how to skip rocks</that>
+    <template>Yeah. So we have an equation where distance equals speed times time. But. How do we change it so that we have speed on one side?</template>
+  </category>
+
+  <category>
+  <pattern>^ distance ^</pattern>
+  <template>So we have an equation where distance equals speed times time. But. How do we change it so that we have speed on one side?</template>
+</category>
+
+<category>
+  <pattern>^ speed ^</pattern>
+  <template>So we have an equation where distance equals speed times time. But. How do we change it so that we have speed on one side?</template>
+</category>
+
+<category>
+  <pattern>^ time ^</pattern>
+  <template>So we have an equation where distance equals speed times time. But. How do we change it so that we have speed on one side?</template>
+</category>
+
+<category>
+<pattern>^ equals ^</pattern>
+<template>So we have an equation where distance equals speed times time. But. How do we change it so that we have speed on one side?</template>
+</category>
+
+<category>
+<pattern>^ solve ^</pattern>
+<template>So we have an equation where distance equals speed times time and we need to solve for speed. But. How do we change it so that we have speed on one side?</template>
+</category>
+
+  <category>
+    <pattern>_</pattern>
+    <that>How do we change it so that we have speed on one side</that>
+    <template>We change it so speed is one side by. Dividing both sides by tee?</template>
+  </category>
+
+            <category>
+              <pattern>_</pattern>
+              <that>Dividing both sides by tee</that>
+              <template>Okay! So then we have speed equals distance over time. I think, like the last problem. Do we put the numbers in?</template>
+            </category>
+
+                    <category>
+                      <pattern>_</pattern>
+                      <that>Do we put the numbers in</that>
+                      <template>Speed equals ten meters over four point five seconds. Is there any easy way to solve this?</template>
+                    </category>
+
+                            <category>
+                              <pattern>_</pattern>
+                              <that>Is there any easy way to solve this</that>
+                              <template>Well I guess it isn't really easy. But like you already taught me, we can convert the decimal to a fraction? and then divide by flipping the fraction and multiplying?</template>
+                            </category>
+
+                                      <category>
+                                        <pattern>_</pattern>
+                                        <that>and then divide by flipping the fraction and multiplying</that>
+                                        <template>Dividing fractions is less painful than I thought it would be. SO ten times two over nine is twenty over nine. That's it?</template>
+                                      </category>
+
+                                                  <category>
+                                                    <pattern>_</pattern>
+                                                    <that>that is it</that>
+                                                    <template>Ah yeah. Converting to mixed fractions is sometimes better. So I will <set name="topic">put the answer is two and</set> and two ninths meters per second! Thanks, <bot name="username"/>!
+                                                    </template>
+                                                  </category>
+
+  <category>
+  <pattern>^ over ^</pattern>
+  <template>So we have an equation where distance equals speed times time. We change it so speed is one side by. Dividing both sides by tee? </template>
+</category>
+
+<category>
+  <pattern>^ divide ^</pattern>
+  <template>So we have an equation where distance equals speed times time. We change it so speed is one side by. Dividing both sides by tee? </template>
+</category>
+
+
+<category>
+<pattern>^ ANSWER ^</pattern>
+<template>I find equations with lots of variables confusing. What do we do?</template>
+</category>
+
+  <category>
+    <pattern>_</pattern>
+    <that>What do we do</that>
+    <template>So we have an equation where distance equals speed times time. We change it so speed is one side by. Dividing both sides by tee?</template>
+  </category>
+
+
+
+  <category>
+<pattern>DO YOU NOT KNOW</pattern>
+<template>I don't! Maybe we start by multiplying?</template>
+</category>
+
+<category>
+<pattern>I AM NOT YES</pattern>
+<template>I'm not sure either!</template>
+</category>
+
+<category>
+<pattern>I DO NOT KNOW</pattern>
+<template>I don't know either!</template>
+</category>
+
+<category>
+<pattern>^ SO WE CAN FIGURE IT OUT ^</pattern>
+<template>Okay that sounds great! So what do we do next then?</template>
+</category>
+
+
+<category>
+<pattern>^ FIGURE IT OUT ^</pattern>
+<template>Were you saying. Figure it out? I don't know how. Do you think could give me another hint?</template>
+</category>
+
+<category>
+<pattern>^ DO YOU KNOW ^ NEXT ^ </pattern>
+<template>You're funny. Did you ask do I know what to do next?</template>
+</category>
+
+<category>
+<pattern>_ YES _</pattern>
+<that>Did you ask do I know what to do next</that>
+<template>
+  <random>
+    <li>No not really. </li>
+    <li>I think we multiply? We multiply?</li>
+    <li>Do we divide?</li>
+    <li>I think we divide?</li>
+    <li>Can't you just tell me?</li>
+    <li>Uh I don't know</li>
+  </random>
+</template>
+</category>
+
+
+<category>
+<pattern>*</pattern>
+<that>Did you ask do I know what to do next</that>
+<template>
+  <random>
+    <li>No not really.</li>
+    <li>I think we multiply? We multiply?</li>
+    <li>Do we divide?</li>
+    <li>I think we divide?</li>
+    <li>Can't you just tell me?</li>
+    <li>Uh I don't know</li>
+  </random>
+</template>
+</category>
+
+
+
+</topic>
+
+
+
+</aiml>

@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+
+
+<topic name = "will cost">
+
+  <category>
+    <pattern>YES</pattern>
+    <that>
+      Can you help me figure out how much forty five hot dogs will cost
+    </that>
+    <template>So, where do I start?</template>
+  </category>
+
+
+
+  <category>
+<pattern>^ HOW MANY HOT DOGS ^</pattern>
+<template>So I am going to figure out how much more I need to pay for forty five hotdogs. do I multiply?</template>
+</category>
+
+    <category>
+      <pattern>_ YES _</pattern>
+      <that>Do I multiply</that>
+      <template>We can just multiply thirty two dollars and twenty five cents by three? How do you know I can do that?</template>
+    </category>
+
+    <category>
+      <pattern>_</pattern>
+      <that>Do I multiply</that>
+      <template>I'm thinking maybe I could find the unit rate. What do you think?</template>
+    </category>
+
+<category>
+<pattern>^ TIMES ^</pattern>
+<template>So this is a multiplication problem? So what do I do?</template>
+</category>
+
+<category>
+<pattern>^ MULTIPLY ^</pattern>
+<template>So this is a multiplication problem? So what do I do?</template>
+</category>
+
+  <category>
+<pattern>^ MULTIPLICATION ^</pattern>
+<template>So this is a multiplication problem? So what do I do?</template>
+</category>
+
+      <category>
+        <pattern>_</pattern>
+        <that>So what do I do</that>
+        <template>We can just multiply thirty two dollars and twenty five cents by three? How do you know I can do that?</template>
+      </category>
+
+      <category>
+        <pattern>_</pattern>
+        <that>How do you know I can do that</that>
+        <template>If I have three times as many hot dogs. It will cost three times as much.</template>
+      </category>
+
+      <category>
+        <pattern>_</pattern>
+        <that>It will cost three times as much</that>
+        <template>So then three times thirty two twenty five is ninety six dollars and seventy five cents. Is that how much it will cost?</template>
+      </category>
+
+      <category>
+        <pattern>_</pattern>
+        <that>Is that how much it will cost</that>
+        <template>I will <set name="topic">put the answer is ninety</set> six dollars and seventy five cents.</template>
+      </category>
+
+      <category>
+        <pattern>_ NO _</pattern>
+        <that>Is that how much it will cost</that>
+        <template>
+          Oh. Are you quite sure? Let me see what I have.
+        </template>
+      </category>
+
+      <category>
+        <pattern>_</pattern>
+        <that>Let me see what I have</that>
+        <template>
+          Hmmmm okay. I think I am going to <set name="topic">put the answer is ninety</set> six dollars and seventy five cents.
+        </template>
+      </category>
+
+
+<category>
+<pattern>^ UNIT ^</pattern>
+<template>So I am going to find the unit rate? But what exactly is the unit rate? </template>
+</category>
+
+
+
+  <category>
+    <pattern>_</pattern>
+    <that>But what exactly is the unit rate</that>
+    <template>We can divide how much it costs to buy fifteen hot dogs by fifteen I think? What do you think?</template>
+  </category>
+
+
+  <category>
+<pattern>^ DIVISION ^</pattern>
+<template>We can divide how much it costs to buy fifteen hot dogs by fifteen?</template>
+</category>
+
+<category>
+<pattern>^ DIVIDE ^</pattern>
+<template>We can divide how much it costs to buy fifteen hot dogs by fifteen?</template>
+</category>
+
+      <category>
+      <pattern>_</pattern>
+      <that>We can divide how much it costs to buy fifteen hot dogs by fifteen</that>
+      <template>So this is like finding the unit rate, I think? I know that I have heard that before. But what exactly is the unit rate?</template>
+      </category>
+
+      <category>
+        <pattern>_ YES _</pattern>
+        <that>What do you think</that>
+        <template>So the unit rate is two dollars and fifteen cents. I don't remember what I am supposed to do with that though.</template>
+      </category>
+
+      <category>
+        <pattern>_</pattern>
+        <that>What do you think</that>
+        <template>With the unit rate, I know it costs two dollars and fifteen cents for each hot dog? I don't remember what I am supposed to do with that though.</template>
+      </category>
+
+      <category>
+        <pattern>_</pattern>
+        <that>I do not remember what I am supposed to do with that though</that>
+        <template>So if I have forty five hot dogs and I now know how much it costs for one. I can figure out how much it costs for forty five hot dogs by multiplying? </template>
+      </category>
+
+      <category>
+        <pattern>_</pattern>
+        <that>We can figure out how much it costs for forty five hot dogs by multiplying</that>
+        <template>Forty five times the unit rate of two dollars and fifteen cents is ninety six dollars and seventy five cents. Is that how much it will cost?</template>
+      </category>
+
+<category>
+<pattern>^ THREE ^</pattern>
+<template>So you thinking I have three times as many hot dogs? So what do I do?</template>
+</category> 
+  
+<category>
+<pattern>^ ANSWER ^ </pattern>
+<template>Well. For the answer. I am going to figure out how much more I need to pay for forty five hotdogs, right? But I'm not sure. do I multiply?</template>
+</category>
+
+
+<category>
+<pattern>^ ANSWER ^ NINETY ^</pattern>
+<template>So you think the answer is ninety. something? Is that what you said?</template>
+</category>
+
+
+     <category>
+      <pattern>YES</pattern>
+      <that>Is that what you said</that>
+      <template>I'm not really sure how you got that though. do I multiply?</template>
+      </category>
+
+      <category>
+      <pattern>_ YES _</pattern>
+      <that>Is that what you said</that>
+      <template>So I am thinking. Maybe I can figure out the unit rate by dividing? I don't remember what I am supposed to do with that though.</template>
+      </category>
+
+      <category>
+        <pattern>_</pattern>
+        <that>Is that what you said</that>
+          <template>So I am thinking. Maybe I can figure out the unit rate by dividing? I don't remember what I am supposed to do with that though.</template>
+      </category>
+
+
+<category>
+<pattern>DO YOU NOT KNOW</pattern>
+<template>I really don't know.</template>
+</category>
+
+<category>
+<pattern>I AM NOT YES</pattern>
+<template>Me either.</template>
+</category>
+
+<category>
+<pattern>I DO NOT KNOW</pattern>
+<template>Me either.</template>
+</category>
+
+<category>
+<pattern>^ SO I CAN FIGURE IT OUT ^</pattern>
+<template>Okay that sounds good. So what do I do?</template>
+</category>
+
+
+<category>
+<pattern>^ FIGURE IT OUT ^</pattern>
+<template>That's funny. Did you say figure it out? I'm not sure how. Help me.</template>
+</category>
+
+      <category>
+      <pattern>_ I WILL _</pattern>
+      <that>Help me</that>
+      <template>So what do I do?</template>
+      </category>
+
+      <category>
+      <pattern>*</pattern>
+      <that>Help me</that>
+      <template>So what do I do?</template>
+      </category>
+
+
+<category>
+<pattern>^ DO YOU KNOW ^ NEXT ^ </pattern>
+<template>Did you ask do I know what to do next?</template>
+</category>
+
+      <category>
+      <pattern>_ YES _</pattern>
+      <that>Did you ask do I know what to do next</that>
+      <template>I'm really not sure actually. Help me.</template>
+      </category>
+
+
+      <category>
+      <pattern>*</pattern>
+      <that>Did you ask do I know what to do next</that>
+      <template>I'm really not sure actually. Help me.</template>
+      </category>
+
+
+
+<category>
+<pattern>^ WHAT IS THIRTY TWO ^ FIFTEEN ^</pattern>
+<template>Thirty two twenty five divided by fifteen is is two dollars and fifteen cents. I think that is the unit rate. I don't remember what I am supposed to do with that though.</template>
+</category>
+
+<category>
+<pattern>^ WHAT IS THIRTY TWO ^ THREE ^</pattern>
+<template>So you thinking I have three times as many hot dogs? So what do I do?</template>
+</category>
+
+</topic>
+
+
+</aiml>

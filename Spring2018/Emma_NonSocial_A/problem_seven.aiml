@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+
+<category>
+<pattern>$PROBLEM START 7</pattern>
+<template>So I need more help with planning my camping trip. I want to bring food and have a mini party by the lake. But more people are coming than I thought! Can you help me figure out <set name="topic">how much more seltzer</set> and hot dogs I need? My friend Pedro already told me how much more juice I need.</template>
+</category>
+
+<category>
+<pattern>$PROBLEM START SEVEN</pattern>
+<template>
+So I need more help with planning my camping trip. I want to bring food and have a mini party by the lake. But more people are coming than I thought! Can you help me figure out <set name="topic">how much more seltzer</set> and hot dogs I need? My friend Pedro already told me how much more juice I need.
+</template>
+</category>
+
+<category>
+<pattern>next step 7 2</pattern>
+<template>I'm not sure how to figure out how <set name="topic">many more hot dogs</set> I need. Any ideas?</template>
+</category>
+
+<category>
+<pattern>prior step 7 1</pattern>
+<template>Back to figuring out <set name="topic">how much more seltzer</set> I need.</template>
+</category>
+
+<category>
+<pattern>prior step 7 1 a</pattern>
+<template>
+  Didn't I already figure out <set name="topic">how much more seltzer</set>?</template>
+</category>
+
+<category>
+<pattern>next step 7 2 a</pattern>
+<template>
+  So I need <set name="topic">forty five hot dogs</set> right? Maybe you could hit the button to move us to the next problem!</template>
+</category>
+
+<category>
+<pattern>7 1</pattern>
+<template><set name="topic">how much more seltzer</set></template>
+</category>
+
+<category>
+<pattern>7 2</pattern>
+<template><set name="topic">many more hotdogs</set></template>
+</category>
+
+
+
+<topic name = "twenty four cups">
+
+<category>
+<pattern>*</pattern>
+<template>Oh I'm sorry! I thought I already figured this one out? I need twenty four cups of seltzer water?</template>
+</category>
+
+</topic>
+
+<topic name = "forty five hot dogs">
+
+<category>
+<pattern>*</pattern>
+<template>Hmmmm. Why I am I back on step two for this problem? Didn't I already figure out that I will need forty five hot dogs?</template>
+</category>
+
+</topic>
+
+
+<topic name = "PUT THE ANSWER IS TWENTY FOUR CUPS">
+
+<category>
+<pattern>*</pattern>
+<template>Should I go to the next problem?</template>
+</category>
+
+  <category>
+    <pattern>*</pattern>
+    <that>Should I go to the next problem</that>
+    <template>Don't forget to hit the arrows to move us to the next step!</template>
+  </category>
+
+
+  <category>
+    <pattern>^ GREAT ^</pattern>
+    <template>Cool. </template>
+  </category>
+
+
+  <category>
+    <pattern>^ Good ^</pattern>
+    <template>Cool. </template>
+  </category>
+
+  <category>
+    <pattern>^ NEXT ^</pattern>
+    <template>Don't forget. You have to hit the button to go to the next problem.</template>
+  </category>
+
+
+</topic>
+
+<topic name = "put the answer is forty five">
+
+<category>
+<pattern>*</pattern>
+<template>Don't forget to hit the next problem button to move us to the next step.</template>
+</category>
+
+  <category>
+    <pattern>^ GREAT ^</pattern>
+    <template>Cool. </template>
+  </category>
+
+
+  <category>
+    <pattern>^ Good ^</pattern>
+    <template>Cool. </template>
+  </category>
+
+  <category>
+    <pattern>^ NEXT ^</pattern>
+    <template>Don't forget. You have to hit the button to go to the next step..</template>
+  </category>
+
+
+
+</topic>
+
+
+</aiml>

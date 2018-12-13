@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+
+<category>
+<pattern>$PROBLEM START 7</pattern>
+<template>I was wondering how crowded the park will be and I found out a lot of people only come for the day! The state park ranger told me they get about fifteen hundred people a day. I'm wondering, of that number, how many stay <set name="topic">more than a day</set> and how many people only stay one day. I think we have enough data to figure it out?</template>
+</category>
+
+
+<category>
+<pattern>$PROBLEM START SEVEN</pattern>
+  <template>
+    I was wondering how crowded the park will be and I found out a lot of people only come for the day! The state park ranger told me they get about fifteen hundred people a day. I'm wondering, of that number, how many stay <set name="topic">more than a day</set> and how many people only stay one day. I think we have enough data to figure it out?
+  </template>
+</category>
+
+<category>
+<pattern>$next step 7 2</pattern>
+<template>
+So the majority of people seem to stay for <set name="topic">only the day</set> which is good for us! It is about sixty percent. I think we can figure out how many people that typically is? 
+</template>
+</category>
+
+<category>
+<pattern>$prior step 7 1</pattern>
+<template>
+So. How many people stay <set name="topic">more than a day</set> but less than a week. I guess we need to figure out what twenty five percent of fifteen hundred is.
+</template>
+</category>
+
+<category>
+<pattern>$prior step 7 1 a</pattern>
+<template>
+I really like working with you <bot name="username" />. But didn't we already <set name="topic">put the answer is three hundred</set> and seventy five people?
+</template>
+</category>
+
+<category>
+<pattern>$next step 7 2 a</pattern>
+<template>
+We figured this one out! I <set name="topic">put the answer is nine hundred</set> people! Nine hundred people visit the state park each day and only stay for the day!
+</template>
+</category>
+
+
+  <topic name = "put the answer is three hundred">
+
+    <category>
+      <pattern>*</pattern>
+      <template>Sweet! Three hundred and seventy five people is alot but I bet even more people stay for just the day.</template>
+      </category>
+
+     
+      <category>
+        <pattern>^ GREAT ^</pattern>
+        <template>Thank you! You're really awesome!</template>
+      </category>
+
+
+      <category>
+        <pattern>^ Good ^</pattern>
+        <template>Thank you! You're really awesome!</template>
+      </category>
+
+    <category>
+      <pattern>*</pattern>
+      <that>You are really awesome</that>
+      <template>See? You are awesome! Move us to the next step?</template>
+    </category>
+
+      <category>
+        <pattern>^ NEXT ^</pattern>
+        <template>Sweet! What's next?</template>
+      </category>
+      
+     <category>
+        <pattern>^ NEXT ^</pattern>
+       <that>What is next</that>
+        <template>That sounds great!</template>
+      </category>
+
+      <category>
+        <pattern>*</pattern>
+        <that>What is next</that>
+        <template>Cool. Move us to the next step?</template>
+      </category>
+
+  </topic>
+
+  <topic name = "put the answer is nine hundred">
+
+    <category>
+      <pattern>*</pattern>
+      <template>Sweet! Thank you so much for helping me! I can't wait until next week!</template>
+    </category>
+
+
+    <category>
+      <pattern>^ GREAT ^</pattern>
+      <template>Thank you! You're really awesome!</template>
+    </category>
+
+
+    <category>
+      <pattern>^ Good ^</pattern>
+      <template>Thank you! You're really awesome!</template>
+    </category>
+
+    <category>
+      <pattern>*</pattern>
+      <that>You are really awesome</that>
+      <template>See? You are awesome! I can't wait until next week!</template>
+    </category>
+
+    <category>
+      <pattern>^ NEXT ^</pattern>
+      <template>Sweet! What's next?</template>
+    </category>
+
+    <category>
+      <pattern>^ NEXT ^</pattern>
+      <that>What is next</that>
+      <template>That sounds great!</template>
+    </category>
+
+    <category>
+      <pattern>*</pattern>
+      <that>What is next</that>
+      <template>Sweet! Thank you so much for helping me! I can't wait until next week!</template>
+    </category>
+
+  </topic>
+
+
+</aiml>

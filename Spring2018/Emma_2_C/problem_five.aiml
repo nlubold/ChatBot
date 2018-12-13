@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+
+<category>
+<pattern>$PROBLEM START FIVE</pattern>
+<template>You are the best helper. I really feel like we're going to be ready for this trip! I have another problem though. I want to plan our evening and I'm trying to figure out exactly how long we should spend doing certain activities. I would like to spend one third of our time after telling stories <set name="topic">drinking hot chocolate</set> but I'm not sure how to figure out how many minutes that is.</template>
+</category>
+
+<category>
+<pattern>$PROBLEM START 5</pattern>
+<template>
+You are the best helper. I really feel like we're going to be ready for this trip! I have another problem though. I want to plan our evening and I'm trying to figure out exactly how long we should spend doing certain activities. I would like to spend one third of our time after telling stories <set name="topic">drinking hot chocolate</set> but I'm not sure how to figure out how many minutes that is.
+</template>
+</category>
+
+  <category>
+<pattern>next step 5 2</pattern>
+<template>Sweet! So I'm thinking. How do we figure out what <set name="topic">one fifth</set> of the time would be?</template>
+</category>
+
+<category>
+<pattern>prior step 5 1</pattern>
+<template>So we're going to figure out how long we will be <set name="topic">drinking hot chocolate</set> I am but what do we do first?</template>
+</category>
+
+<category>
+<pattern>prior step 5 2</pattern>
+<template>Okay so here we're going to figure out what <set name="topic">one fifth</set> of our time is.</template>
+</category>
+
+<category>
+<pattern>prior step 5 1 a</pattern>
+<template>Interesting. So we figured this out right? We should drink hot chocolate for <set name="topic">about twelve</set> and a half minutes?</template>
+</category>
+
+<category>
+<pattern>prior step 5 2 a</pattern>
+<template>Oh ummm. Didn't we figure out that we should make ssmores for <set name="topic">about seven</set> and a half minutes?</template>
+</category>
+
+<topic name = "about twelve">
+
+<category>
+<pattern>*</pattern>
+<template>I don't really understand why we're back on step one cause we figured this out, right? The answer is twelve and a half minutes?</template>
+</category>
+</topic>
+
+<topic name = "about seven">
+
+
+<category>
+<pattern>*</pattern>
+<template>I got this! We should spend about seven and a half minutes making ssmores, right?</template>
+</category>
+</topic>
+
+  
+<topic name = "PUT THE ANSWER IS TWELVE">
+
+    <category>
+      <pattern>*</pattern>
+      <template>Cool! Lets figure out how long we should make ssmores for?</template>
+    </category>
+
+    <category>
+        <pattern>^ GREAT ^</pattern>
+        <template>Thank you! You're really awesome!</template>
+      </category>
+
+
+      <category>
+        <pattern>^ Good ^</pattern>
+        <template>Thank you! You're really awesome!</template>
+      </category>
+
+      <category>
+        <pattern>^ NEXT ^</pattern>
+        <template>Sweet! What's next?</template>
+      </category>
+
+
+      <category>
+        <pattern>*</pattern>
+        <that>What is next</that>
+        <template>Cool! Lets go to the next step!</template>
+      </category>
+
+      <category>
+        <pattern>*</pattern>
+        <that>Lets figure out how long we should make ssmores for</that>
+        <template>Cool! Lets go to the next step!</template>
+      </category>
+
+</topic>
+
+  <topic name = "put the answer is seven">
+
+    <category>
+      <pattern>*</pattern>
+      <template>Awesome! So I think it makes sense that we should make ssmores for about seven and a half minutes based on how long I think we should spend on everything else. Next problem?</template>
+    </category>
+
+    <category>
+      <pattern>^ GREAT ^</pattern>
+      <template>Thank you! You're really awesome!</template>
+    </category>
+
+
+    <category>
+      <pattern>^ Good ^</pattern>
+      <template>Thank you! You're really awesome!</template>
+    </category>
+
+    <category>
+      <pattern>^ NEXT ^</pattern>
+      <template>Sweet! What's next?</template>
+    </category>
+
+
+    <category>
+      <pattern>*</pattern>
+      <that>What is next</that>
+      <template>Cool! Lets go to the next problem!</template>
+    </category>
+
+    <category>
+      <pattern>*</pattern>
+      <that>Next problem</that>
+      <template>Cool! Lets go to the next problem!</template>
+    </category>
+
+  </topic>
+
+
+</aiml>

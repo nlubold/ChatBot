@@ -1,0 +1,330 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+
+
+
+<topic name = "three hours">
+
+<category>
+<pattern>next step 1 2</pattern>
+  <template>
+    Hmmmm. To figure out how many people are in the park <set name="topic">after seven hours</set>, I think it would be something similar as to step one.
+  </template>
+</category>
+
+<category>
+<pattern>^ RATIO ^</pattern>
+<template>So I know that we have the ratio of one point two to thirty. But that's  where I get confused. You think there is a way to simplify it? I'm not quite sure I understand how.</template>
+</category>
+
+<category>
+<pattern>^ DECIMAL ^</pattern>
+<template>So I know that we have the ratio of one point two to thirty. But that's  where I get confused. You think there is a way to simplify it? I'm not quite sure I understand how.</template>
+</category>
+
+<category>
+<pattern>^ DECIMALS ^</pattern>
+<template>So I know that we have the ratio of one point two to thirty. But that's  where I get confused. You think there is a way to simplify it? I'm not quite sure I understand how.</template>
+</category>
+
+<category>
+<pattern>^ RATIOS ^</pattern>
+<template>So I know that we have the ratio of one point two to thirty. But that's  where I get confused. You think there is a way to simplify it? I'm not quite sure I understand how.</template>
+</category>
+
+<category>
+<pattern>^ SIMPLIFY ^</pattern>
+  <template>So let me see if I understand what you are saying. We have the ratio of one point two to thirty. And we can simplify it. But. I'm not quite sure I understand how.</template>
+</category>
+
+<category>
+<pattern>^ REDUCE ^</pattern>
+  <template>So let me see if I understand what you are saying. We have the ratio of one point two to thirty. And we can simplify it. But. I'm not quite sure I understand how.</template>
+</category>
+
+<category>
+<pattern>^ OVER ^</pattern>
+<template>So I know that we have the ratio of one point two to thirty and we can represent that as one point two over thirty. But that's where I get confused. You think there is a way to simplify it? I'm not quite sure I understand how.</template>
+</category>
+
+      <category>
+      <pattern>_ MULTIPLY _</pattern>
+      <that>I am not quite yes I understand how</that>
+      <template>Oh okay! I was thinking of how we simplified ratios before and that seemed really hard. But. If we multiply by ten. It gets rid of the decimal!</template>
+      </category>
+
+      <category>
+      <pattern>_ TIMES _</pattern>
+      <that>I am not quite yes I understand how</that>
+      <template>Oh okay! I was thinking of how we simplified ratios before and that seemed really hard. But. If we multiply by ten. It gets rid of the decimal!</template>
+      </category>
+
+      <category>
+      <pattern>_ TEN _</pattern>
+      <that>I am not quite yes I understand how</that>
+      <template>Oh okay! I was thinking of how we simplified ratios before and that seemed really hard. But. If we multiply by ten. It gets rid of the decimal!</template>
+      </category>
+
+      <category>
+      <pattern>_</pattern>
+      <that>I am not quite yes I understand how</that>
+      <template>Oh okay! I was thinking of how we simplified ratios before and that seemed really hard. But multiplying by ten will get rid of the decimal so that seems like a good way to go.</template>
+      </category>
+
+  
+      <category>
+      <pattern>_ DIVIDE _</pattern>
+      <that>But multiplying by ten will get rid of the decimal so that seems like a good way to go</that>
+      <template>Cool. So after multiplying we have twelve over three hundred. And then we find what twelve and three hundred have in common and then divide by that? But how did you find what they have in common?</template>
+      </category>
+   
+      <category>
+      <pattern>_</pattern>
+      <that>But multiplying by ten will get rid of the decimal so that seems like a good way to go</that>
+      <template>Cool. That gives us twelve over three hundred. And then we find what twelve and three hundred have in common? But how did you find what they have in common?</template>
+      </category>
+
+      <category>
+      <pattern>_ MULTIPLY _</pattern>
+      <that>But multiplying by ten will get rid of the decimal so that seems like a good way to go</that>
+      <template>Cool. So after multiplying we have twelve over three hundred. But you think we multiply again? I think we probably reduce the twelve over three hundred. Did you figure out what how to reduce twelve over three hundred by multiplying?</template>
+      </category>
+    
+<category>
+<pattern>^ TIMES ^</pattern>
+<template>Oh okay! I was thinking of how we simplified ratios before and that seemed really hard. But. If we multiply by ten. It gets rid of the decimal!</template>
+</category>
+
+<category>
+<pattern>^ MULTIPLY ^</pattern>
+<template>Oh okay! I was thinking of how we simplified ratios before and that seemed really hard. But. If we multiply by ten. It gets rid of the decimal!</template>
+</category>
+
+<category>
+<pattern>^ MULTIPLICATION ^</pattern>
+<template>Oh okay! I was thinking of how we simplified ratios before and that seemed really hard. But. If we multiply by ten. It gets rid of the decimal!</template>
+</category>
+
+      <category>
+      <pattern>_ DIVIDE _</pattern>
+      <that>It gets rid of the decimal</that>
+      <template>Cool. So after multiplying we have twelve over three hundred. And then we find what twelve and three hundred have in common and then divide by that? But how did you find what they have in common?</template>
+      </category>
+
+      <category>
+      <pattern>_</pattern>
+      <that>It gets rid of the decimal</that>
+      <template>Cool. That gives us twelve over three hundred. And then we find the what twelve and three hundred have in common? But how did you find what they have in common?</template>
+      </category>
+  
+      <category>
+      <pattern>_ Greatest _</pattern>
+      <that>But how did you find what they have in common</that>
+      <template>Awesome! You are so good at this! So I think I get it. We find the largest number that they have in common? SO we can divide both by that number. Which is twelve?</template>
+      </category>
+  
+      <category>
+      <pattern>_ LARGEST _</pattern>
+      <that>But how did you find what they have in common</that>
+      <template>Awesome! You are so good at this! So I think I get it. We find the largest number that they have in common?  SO we can divide both by that number. Which is twelve?</template>
+      </category>
+  
+      <category>
+      <pattern>_ Factor _</pattern>
+      <that>But how did you find what they have in common</that>
+      <template>Awesome! You are so good at this! So I think I get it. We find the largest number that they have in common?  SO we can divide both by that number. Which is twelve?</template>
+      </category>
+
+      <category>
+      <pattern>_ TWELVE _</pattern>
+      <that>But how did you find what they have in common</that>
+      <template>Awesome! You are so good at this! So I think I get it. We find the largest number that they have in common?  SO we can divide both by that number. Which is twelve?</template>
+      </category>
+    
+      <category>
+      <pattern>_ COMMON _</pattern>
+      <that>But how did you find what they have in common</that>
+      <template>Awesome! You are so good at this! So I think I get it. We find the largest number that they have in common?  SO we can divide both by that number. Which is twelve?</template>
+      </category>
+  
+      <category>
+      <pattern>_</pattern>
+      <that>But how did you find what they have in common</that>
+      <template>Awesome! I think I get it. We can find the largest number that they have in common, right?  So then we can divide by that number. Which is twelve?</template>
+      </category>
+
+      <category>
+      <pattern>_ MULTIPLY _</pattern>
+      <that>It gets rid of the decimal</that>
+      <template>Cool. So after multiplying we have twelve over three hundred. But you think we multiply again? I think we probably reduce the twelve over three hundred. Did you figure out what how to reduce twelve over three hundred by multiplying?</template>
+      </category>
+        
+      <category>
+      <pattern>_ NO _</pattern>
+      <that>Did you figure out what how to reduce twelve over three hundred by multiplying</that>
+      <template>Oh okay. I was going to say. It seems weird that you used multiplication to figure out what they have in common! I'm thinking. We can find the largest number they have in common and then divide by that number and that will help us reduce the twelve over three hundred. And THEN. Maybe we multiply?</template>
+      </category>
+      
+      <category>
+      <pattern>_ YES _</pattern>
+      <that>Did you figure out what how to reduce twelve over three hundred by multiplying</that>
+      <template>Hmmm. That's interesting. I'm not quite sure I understand though. You reduced twelve over three hundred by multiplying?</template>
+      </category>
+  
+      <category>
+      <pattern>_</pattern>
+      <that>Did you figure out what how to reduce twelve over three hundred by multiplying</that>
+      <template>Oh okay! This is great! I think I get it. We can find the largest number that they have in common, right?  So then we can divide by that number. Which is twelve?</template>
+      </category>
+     
+      <category>
+      <pattern>_</pattern>
+      <that>You reduced twelve over three hundred by multiplying</that>
+      <template>Ohhhh okay! You are so smart! So I'm thinking, we can reduce twelve over three hundred by dividing by twelve and that gives us one over twenty five. And THEN. Maybe we multiply?</template>
+      </category>
+    
+      <category>
+      <pattern>_</pattern>
+      <that>Maybe we multiply</that>
+      <template>Very nice! We get one over twenty five which is a much easier ratio to use. Then we can do what you already taught me. We know that one times three is three. That tells us that we can just multiply twenty five by three.</template>
+      </category>
+       
+      <category>
+      <pattern>_</pattern>
+      <that>Which is twelve</that>
+      <template>Dividing both the top and bottom by twelve. We get one over twenty five which is a much easier ratio to use. Then we can do what you already taught me. We know that one times three is three. That tells us that we can just multiply twenty five by three.</template>
+      </category>
+  
+      <category>
+      <pattern>_</pattern>
+      <that>That tells us that we can just multiply twenty five by three</that>
+      <template>You are a really great tutor, <bot name="username" />. I will <set name="topic">put the answer is seventy</set> five!</template>
+      </category>
+
+  
+<category>
+<pattern>^ UNIT RATE ^</pattern>
+<template>Oh I remember talking about the unit rate. So maybe are you thinking finding the unit rate is the best way to solve this problem?
+</template>
+</category>
+
+      <category>
+      <pattern>_</pattern>
+      <that>So maybe are you thinking finding the unit rate is the best way to solve this problem</that>
+      <template>That is some tough math though. Because. To find the unit rate. We divide thirty by one point two right?</template>
+      </category>
+
+      <category>
+      <pattern>_</pattern>
+      <that>We divide thirty by one point two right</that>
+      <template>So that's twenty five. Which means we have twenty five guests every hour to the park. </template>
+      </category>
+  
+      <category>
+      <pattern>_</pattern>
+      <that>We divide thirty by one point two right</that>
+      <template>Awesome! This is great. If we know we have twenty five guests every hour. Then for three hours we can just multiply by twenty five by three.</template>
+      </category>
+  
+      <category>
+      <pattern>_</pattern>
+      <that>We divide thirty by one point two right</that>
+      <template>Then for three hours we can just multiply by twenty five by three.</template>
+      </category>
+  
+      <category>
+      <pattern>_</pattern>
+      <that>Then for three hours we can just multiply by twenty five by three</that>
+      <template>You are a really great tutor, <bot name="username" />. I will <set name="topic">put the answer is seventy</set> five!</template>
+      </category>
+    
+      <category>
+      <pattern>_ NO _</pattern>
+      <that>So maybe are you thinking finding the unit rate is the best way to solve this problem</that>
+      <template>Oh good! Because that is some tough math! It seems like it would be easier to get rid of the decimal by multiplying. </template>
+      </category>
+  
+      <category>
+      <pattern>_</pattern>
+      <that>It seems like it would be easier to get rid of the decimal by multiplying</that>
+      <template>>Cool! If we multiply by ten, that gives us twelve over three hundred. And then we find what twelve and three hundred have in common? Hmmmm. How do you think we can find what they have in common?</template>
+      </category>
+  
+       <category>
+      <pattern>_</pattern>
+      <that>How do you think we can find what they have in common</that>
+      <template>Awesome! I think I get it. We can find the largest number that they have in common, right?  So then we can divide by that number. Which is twelve.</template>
+      </category>
+  
+<category>
+<pattern>^ ANSWER ^</pattern>
+<template>So I know that we have the ratio of one point two to thirty. But that's where I get confused. You think there is a way to simplify it? I'm not quite sure I understand how.
+</template>
+</category>
+
+
+<category>
+<pattern>DO YOU NOT KNOW</pattern>
+<template>I don't! Maybe we start by multiplying?</template>
+</category>
+
+<category>
+<pattern>I AM NOT YES</pattern>
+<template>I'm not sure either!</template>
+</category>
+
+<category>
+<pattern>I DO NOT KNOW</pattern>
+<template>I don't know either!</template>
+</category>
+
+<category>
+<pattern>^ SO WE CAN FIGURE IT OUT ^</pattern>
+<template>Okay that sounds great! So what do we do next then?</template>
+</category>
+
+
+<category>
+<pattern>^ FIGURE IT OUT ^</pattern>
+<template>Were you saying. Figure it out? I don't know how. Do you think could give me another hint?</template>
+</category>
+
+<category>
+<pattern>^ DO YOU KNOW ^ NEXT ^ </pattern>
+<template>You're funny. Did you ask do I know what to do next?</template>
+</category>
+
+      <category>
+      <pattern>_ YES _</pattern>
+      <that>Did you ask do I know what to do next</that>
+      <template><random>
+      <li>No not really.</li>
+      <li>I think we multiply? We multiply?</li>
+      <li>Do we divide?</li>
+      <li>I think we divide?</li>
+      <li>Can't you just tell me?</li>
+      <li>Uh I don't know</li>
+      </random></template>
+      </category>
+
+
+      <category>
+      <pattern>*</pattern>
+      <that>Did you ask do I know what to do next</that>
+      <template><random>
+      <li>No not really. </li>
+      <li>I think we multiply? We multiply?</li>
+      <li>Do we divide?</li>
+      <li>I think we divide?</li>
+      <li>Can't you just tell me?</li>
+      <li>Uh I don't know</li>
+      </random></template>
+      </category>
+
+
+
+</topic>
+
+
+
+</aiml>

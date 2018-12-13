@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+
+
+<topic name = "how to do this one">
+
+
+  <category>
+    <pattern>^ SAME THING ^</pattern>
+    <template>Cool! We do the same thing and divide again?</template>
+  </category>
+
+  <category>
+    <pattern>^ LAST TIME ^</pattern>
+    <template>Cool! We do the same thing and divide again?</template>
+  </category>
+
+  <category>
+    <pattern>^ SIMILAR ^</pattern>
+    <template>Cool! We do the same thing and divide again??</template>
+  </category>
+
+
+            <category>
+              <pattern>_</pattern>
+              <that>We do the same thing and divide again</that>
+              <template>Eighteen divided by four is four. Is four the answer?</template>
+            </category>
+
+                      <category>
+                        <pattern>_ NO _</pattern>
+                        <that>Is four the answer</that>
+                        <template>Ha! Of course four isn't the answer. That was a trick! But then. Just curious. How do you know what the answer is?</template>
+                      </category>
+
+                      <category>
+                        <pattern>_ NOPE _</pattern>
+                        <that>Is four the answer</that>
+                        <template>Ha! Of course four isn't the answer. That was a trick! But then. Just curious. How do you know what the answer is?</template>
+                      </category>
+
+                      <category>
+                        <pattern>_</pattern>
+                        <that>Is four the answer</that>
+                        <template>Ha! I figured it out. Four isn't the answer. Cause we have more to do?</template>
+                      </category>
+
+                                  <category>
+                                    <pattern>_ REDUCE _</pattern>
+                                    <that>How do you know what the answer is</that>
+                                    <template>The remainder! We have to include that. So the answer is four and two fourths. But we can simplify it to four and one half!</template>
+                                  </category>
+
+                                  <category>
+                                    <pattern>_ SIMPLIFY _</pattern>
+                                    <that>How do you know what the answer is</that>
+                                    <template>The remainder! We have to include that. So the answer is four and two fourths. But we can simplify it to four and one half!</template>
+                                  </category>
+
+                                  <category>
+                                    <pattern>_ REDUCE _</pattern>
+                                    <that>Cause we have more to do</that>
+                                    <template>The remainder! We have to include that. So the answer is four and two fourths. But we can simplify it to four and one half!</template>
+                                  </category>
+                                  <category>
+                                    <pattern>_ ONE _</pattern>
+                                    <that>How do you know what the answer is</that>
+                                    <template>The remainder! We have to include that. So the answer is four and two fourths. But we can simplify it to four and one half!</template>
+                                  </category>
+
+                                  <category>
+                                    <pattern>_ SIMPLIFY _</pattern>
+                                    <that>Cause we have more to do</that>
+                                    <template>The remainder! We have to include that. So the answer is four and two fourths. But we can simplify it to four and one half!</template>
+                                  </category>
+
+                                  <category>
+                                    <pattern>_ ONE _</pattern>
+                                    <that>Cause we have more to do</that>
+                                    <template>The remainder! We have to include that. So the answer is four and two fourths. But we can simplify it to four and one half!</template>
+                                  </category>
+
+                                  <category>
+                                    <pattern>_ HALF _</pattern>
+                                    <that>How do you know what the answer is</that>
+                                    <template>The remainder! We have to include that. So the answer is four and two fourths. But we can simplify it to four and one half!</template>
+                                  </category>
+
+                                  <category>
+                                    <pattern>_ HALF _</pattern>
+                                    <that>Cause we have more to do</that>
+                                    <template>The remainder! We have to include that. So the answer is four and two fourths. But we can simplify it to four and one half!</template>
+                                  </category>
+
+                                              <category>
+                                                <pattern>_</pattern>
+                                                <that>But we can simplify it to four and one half</that>
+                                                <template>Sweet. I will <set name="topic">put the answer is four and</set> one half!</template>
+                                              </category>
+
+
+                                  <category>
+                                    <pattern>_</pattern>
+                                    <that>How do you know what the answer is</that>
+                                    <template>The remainder! We have to include that. So the answer is four and two over four?</template>
+                                  </category>
+
+                                  <category>
+                                    <pattern>_</pattern>
+                                    <that>Cause we have more to do</that>
+                                    <template>The remainder! We have to include that. So the answer is four and two over four?</template>
+                                  </category>
+
+
+                                              <category>
+                                                <pattern>_</pattern>
+                                                <that>So the answer is four and two over four</that>
+                                                <template>
+                                                  I almost forgot we can reduce it! I will <set name="topic">put the answer is four and</set> one half!
+                                                </template>
+                                              </category>
+
+<category>
+<pattern>^ DIVIDE ^</pattern>
+<template>Cool! We do the same thing and divide again?</template>
+</category>
+  
+<category>
+<pattern>^ OVER ^</pattern>
+<template>Cool! This time we have eighteen over four. We do the same thing and divide again?</template>
+</category>
+
+<category>
+<pattern>^ ANSWER ^</pattern>
+<template>Hmmm. We know we have eighteen over four. Can. We do the same thing and divide again?</template>
+</category>
+
+
+<category>
+<pattern>DO YOU NOT KNOW</pattern>
+<template>I don't! Maybe we start by dividing?</template>
+</category>
+
+<category>
+<pattern>I AM NOT YES</pattern>
+<template>I'm not sure either!</template>
+</category>
+
+<category>
+<pattern>I DO NOT KNOW</pattern>
+<template>I don't know either!</template>
+</category>
+
+<category>
+<pattern>^ SO WE CAN FIGURE IT OUT ^</pattern>
+<template>Okay that sounds great! So what do we do next then?</template>
+</category>
+
+
+<category>
+<pattern>^ FIGURE IT OUT ^</pattern>
+<template>Were you saying. Figure it out? I don't know how. Do you think could give me another hint?</template>
+</category>
+
+<category>
+<pattern>^ DO YOU KNOW ^ NEXT ^ </pattern>
+<template>You're funny. Did you ask do I know what to do next?</template>
+</category>
+
+<category>
+<pattern>_ YES _</pattern>
+<that>Did you ask do I know what to do next</that>
+<template>
+  <random>
+    <li>No not really. </li>
+    <li>I think we multiply? We multiply?</li>
+    <li>Do we divide?</li>
+    <li>I think we divide?</li>
+    <li>Can't you just tell me?</li>
+    <li>Uh I don't know</li>
+  </random>
+</template>
+</category>
+
+
+<category>
+<pattern>*</pattern>
+<that>Did you ask do I know what to do next</that>
+<template>
+  <random>
+    <li>No not really.</li>
+    <li>I think we multiply? We multiply?</li>
+    <li>Do we divide?</li>
+    <li>I think we divide?</li>
+    <li>Can't you just tell me?</li>
+    <li>Uh I don't know</li>
+  </random>
+</template>
+</category>
+
+
+
+</topic>
+
+
+
+</aiml>

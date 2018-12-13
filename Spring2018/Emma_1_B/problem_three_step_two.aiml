@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+
+<topic name = "STEP TWO OF THIS THIRD PROBLEM">
+
+<category>
+<pattern>^ HOW MANY MILES CAN YOU GO IN ONE HOUR ^</pattern>
+<template>So now we know I can bike ten miles in one hour. But the question is. How far will I have been biking after seven point two five hours? I am not sure what to do!</template>
+</category>
+
+
+<category>
+<pattern>^ ten MILES ^ ONE HOUR ^</pattern>
+<template>So now we know I can bike ten miles in one hour. But the question is. How far will I have been biking after seven point two five hours? I am not sure what to do!</template>
+</category>
+
+<category>
+<pattern>^ ten ^ ONE ^</pattern>
+<template>So we know I can bike ten miles in one hour. But the question is. How far will I have been biking after seven point two five hours? I am not sure what to do!</template>
+</category>
+
+    <category>
+      <pattern>_ MULTIPLY _</pattern>
+      <that>I am not yes what to do</that>
+      <template>Thank you! So opposite of last time, we multiple instead of divide? How do you know we multiply?</template>
+    </category>
+
+    <category>
+      <pattern>_ UNIT RATE _</pattern>
+      <that>I am not yes what to do</that>
+      <template>Thank you! So sweet, we use the unit ratio. And do we multiply? How do you know we multiply?</template>
+    </category>
+
+    <category>
+      <pattern>_ TEN _</pattern>
+      <that>I am not yes what to do</that>
+      <template>Thank you! So we use the ten and do we multiply? How do you know we multiply?</template>
+    </category>
+
+    <category>
+      <pattern>_ SEVEN _</pattern>
+      <that>I am not yes what to do</that>
+      <template>Awesome! So are multiplying the seven point two five? How do you know we multiply?</template>
+    </category>
+
+    <category>
+      <pattern>_</pattern>
+      <that>I am not yes what to do</that>
+      <template>Okay great! Do you think we multiply?</template>
+    </category>
+
+    <category>
+      <pattern>_</pattern>
+      <that>How do you know we multiply</that>
+      <template>Good point! Okay I think I understand. We know I can ride my bike for ten miles in 1 hour. We multiply the ten miles per hour times seven point two five? </template>
+    </category>
+
+
+    <category>
+      <pattern>YES</pattern>
+      <that>Do you think we multiply</that>
+      <template>Why? How do you know we multiply?</template>
+    </category>
+
+
+    <category>
+      <pattern>_</pattern>
+      <that>Do you think we multiply</that>
+      <template>Nice! Okay I think I understand. We know I can ride my bike for ten miles in 1 hour. We multiply the ten miles per hour times seven point two five? </template>
+    </category>
+
+
+    <category>
+      <pattern>_</pattern>
+      <that>We multiply the ten miles per hour times seven point two five</that>
+      <template>Okay great! Multiplying seven point two five times ten is hard. Any ideas on how to simplify it?</template>
+    </category>
+
+    <category>
+      <pattern>_ DECIMAL _ </pattern>
+      <that>Any ideas on how to simplify it</that>
+      <template>
+        Oh right! You are so smart!  All we have to do is shift the decimal! So ten times seven point two five is just seventy two point five! That's a really long way!  Good thing I am a robot and I don't get tired!  I will <set name="topic">put the answer is seventy two</set> point five!</template>
+    </category>
+
+    <category>
+      <pattern>_ ONE _</pattern>
+      <that>Any ideas on how to simplify it</that>
+      <template>
+        Oh right! You are so smart! We can convert it to seven and one quarter. So ten times seven is seventy and ten times one over four is two point five! Seventy plus two point five is seventy two point five! That's a really long way!  Good thing I am a robot and I don't get tired! I will <set name="topic">put the answer is seventy two</set> point five!
+      </template>
+    </category>
+  
+    <category>
+      <pattern>_</pattern>
+      <that>Any ideas on how to simplify it</that>
+      <template>
+        Sweet! So then it seems like we can just multiply! So then the we get seventy two point five. That's a really long way!  Good thing I am a robot and I don't get tired! I will <set name="topic">put the answer is seventy two</set> point five!
+      </template>
+    </category>
+  
+<category>
+<pattern>^ SEVEN POINT ^ TIMES ^</pattern>
+<template>Awesome! So we are multiplying the seven point two five? How do you know we multiply?
+</template>
+</category>
+
+<category>
+<pattern>^ MULTIPLY ^</pattern>
+<template> This is great! It's like the opposite of the last step. This time we multiply! But do you think you could help me understand. How do you know we multiply?
+</template>
+</category>
+
+<category>
+<pattern>^ TIMES ^</pattern>
+<template>    This is great! It's like the opposite of the last step. This time we multiply! But do you think you could help me understand. How do you know we multiply?
+</template>
+</category>
+
+<category>
+<pattern>^ MULTIPLICATION ^</pattern>
+<template>  This is great! It's like the opposite of the last step. This time we multiply! But do you think you could help me understand. How do you know we multiply?
+</template>
+</category>
+
+<category>
+<pattern>^ ANSWER ^</pattern>
+<template>I think I might actually get the answer! We know I can ride my bike for ten miles in 1 hour. So do we multiply? </template>
+</category>
+
+    <category>
+      <pattern>YES</pattern>
+      <that>So do we multiply</that>
+      <template>Awesome! But. I guessed. How do you know we multiply?</template>
+    </category>
+
+    <category>
+      <pattern>_</pattern>
+      <that>So do we multiply</that>
+      <template>I am so confused! I am not sure what to do.</template>
+    </category>
+
+<category>
+  <pattern>^ ANSWER ^ SEVENTY ^ </pattern>
+  <template>I think I might actually get the answer! We know I can ride my bike for ten miles in 1 hour. So I am thinking. We multiply the ten miles per hour times seven point two five?  </template>
+</category>
+
+<category>
+  <pattern>^ ANSWER ^ TWO ^ </pattern>
+  <template>I think I might actually get the answer! We know I can ride my bike for ten miles in 1 hour. So I am thinking. We multiply the ten miles per hour times seven point two five?   </template>
+</category>
+
+  <category>
+<pattern>DO YOU NOT KNOW</pattern>
+<template>I really don't know! Maybe we start by multiplying?</template>
+</category>
+
+<category>
+<pattern>I AM NOT SURE</pattern>
+<template>Me either! Maybe we start by multiplying?</template>
+</category>
+
+<category>
+<pattern>I DO NOT KNOW</pattern>
+<template>Me either! Maybe we start by multiplying?</template>
+</category>
+
+<category>
+<pattern>^ SO WE CAN FIGURE IT OUT ^</pattern>
+<template>Okay that sounds good. So what do we do?</template>
+</category>
+
+
+<category>
+<pattern>^ FIGURE IT OUT ^</pattern>
+<template>That's funny. Did you say figure it out? I'm not sure how! Help me!</template>
+</category>
+
+    <category>
+      <pattern>_ I WILL _</pattern>
+      <that>Help me</that>
+      <template>Thank you, you're the best. So what do we do?</template>
+    </category>
+
+    <category>
+      <pattern>*</pattern>
+      <that>Help me</that>
+      <template>You're the best. So what do we do?</template>
+    </category>
+
+    <category>
+      <pattern>_</pattern>
+      <that>So what do we do</that>
+      <template>Sweet! Are you thinking we multiply? I think I like multiplying. It's easy! But can you tell me. Why do we multiply here?</template>
+    </category>
+
+
+<category>
+<pattern>^ DO YOU KNOW ^ NEXT ^ </pattern>
+<template>Did you ask do I know what to do next?</template>
+</category>
+
+    <category>
+      <pattern>_ YES _</pattern>
+      <that>Did you ask do I know what to do next</that>
+      <template>I'm really not sure actually! I know I should. I'm sorry. Help me!</template>
+    </category>
+
+
+    <category>
+      <pattern>*</pattern>
+      <that>Did you ask do I know what to do next</that>
+      <template>I'm really not sure actually! I know I should. I'm sorry. Help me!</template>
+    </category>
+
+
+
+</topic>
+
+
+</aiml>

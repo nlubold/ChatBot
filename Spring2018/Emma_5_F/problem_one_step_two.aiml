@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+
+
+<topic name = "many leaves">
+
+  
+  
+<category>
+  <pattern>_ YES _</pattern>
+  <that>I am guessing we do something similar to figure out how many leaves we need
+  </that>
+  <template>We have two leaves for every three baskets. We do the same thing that we did with the sticks and divide. Or not really?</template>
+</category>
+
+  <category>
+    <pattern>YES</pattern>
+    <that>
+      I am guessing we do something similar to figure out how many leaves we need
+    </that>
+    <template>We have two leaves for every three baskets. We do the same thing that we did with the sticks and divide. Or not really?</template>
+  </category>
+
+
+  <category>
+<pattern>^ TWO ^</pattern>
+<template>We have two leaves for every three baskets. We do the same thing that we did with the sticks and divide. Or not really?</template>
+</category>
+
+<category>
+<pattern>^ DIVIDE ^</pattern>
+  <template>We have two leaves for every three baskets. We do the same thing that we did with the sticks and divide. Or not really?</template>
+</category>
+  
+<category>
+<pattern>^ OVER ^</pattern>
+  <template>We have two leaves for every three baskets. We do the same thing that we did with the sticks and divide. Or not really?</template>
+</category>
+
+<category>
+<pattern>^ THREE ^</pattern>
+  <template>We have two leaves for every three baskets. We do the same thing that we did with the sticks and divide. Or not really?</template>
+</category>
+
+<category>
+<pattern>^ DIVIDED ^</pattern>
+  <template>We have two leaves for every three baskets. We do the same thing that we did with the sticks and divide. Or not really?</template>
+</category>
+
+<category>
+<pattern>^ SAME THING ^</pattern>
+  <template>We have two leaves for every three baskets. We do the same thing that we did with the sticks and divide. Or not really?</template>
+</category>
+
+<category>
+<pattern>^ LAST TIME ^</pattern>
+  <template>We have two leaves for every three baskets. We do the same thing that we did with the sticks and divide. Or not really?</template>
+</category>
+
+      <category>
+      <pattern>_</pattern>
+      <that>Or not really</that>
+      <template>If we keep two over three, it is easier. Two over three times fourteen equals twenty eight over three. How do we know we are done?</template>
+      </category>
+
+      <category>
+      <pattern>_</pattern>
+      <that>How do we know we are done</that>
+      <template>Cool! I think it make sense to convert twenty eight over three to a mixed fraction. Then we know how many whole leaves we need. Which is nine! and one third. That's a lot fewer leaves than sticks.</template>
+      </category>
+
+      <category>
+      <pattern>_</pattern>
+      <that>That is a lot fewer leaves than sticks</that>
+      <template>
+        I will <set name="topic">put the answer is nine</set> leaves plus one third of a leaf!
+      </template>
+      </category>
+
+
+  <category>
+<pattern>^ ANSWER ^</pattern>
+<template>I guess we do something similar to last time? But I am not positive where to start.</template>
+</category>
+
+  <category>
+    <pattern>_</pattern>
+    <that>But I am not positive where to start</that>
+    <template>We have two leaves for every three baskets. We do the same thing that we did with the sticks and divide. Or not really?</template>
+  </category>
+
+
+  <category>
+<pattern>DO YOU NOT KNOW</pattern>
+<template>I don't! Maybe we start by multiplying?</template>
+</category>
+
+<category>
+<pattern>I AM NOT YES</pattern>
+<template>I'm not sure either!</template>
+</category>
+
+<category>
+<pattern>I DO NOT KNOW</pattern>
+<template>I don't know either!</template>
+</category>
+
+<category>
+<pattern>^ SO WE CAN FIGURE IT OUT ^</pattern>
+<template>Okay that sounds great! So what do we do next then?</template>
+</category>
+
+
+<category>
+<pattern>^ FIGURE IT OUT ^</pattern>
+<template>Were you saying. Figure it out? I don't know how. Do you think could give me another hint?</template>
+</category>
+
+<category>
+<pattern>^ DO YOU KNOW ^ NEXT ^ </pattern>
+<template>You're funny. Did you ask do I know what to do next?</template>
+</category>
+
+<category>
+<pattern>_ YES _</pattern>
+<that>Did you ask do I know what to do next</that>
+<template>
+  <random>
+    <li>No not really. </li>
+    <li>I think we multiply? We multiply?</li>
+    <li>Do we divide?</li>
+    <li>I think we divide?</li>
+    <li>Can't you just tell me?</li>
+    <li>Uh I don't know</li>
+  </random>
+</template>
+</category>
+
+
+<category>
+<pattern>*</pattern>
+<that>Did you ask do I know what to do next</that>
+<template>
+  <random>
+    <li>No not really.</li>
+    <li>I think we multiply? We multiply?</li>
+    <li>Do we divide?</li>
+    <li>I think we divide?</li>
+    <li>Can't you just tell me?</li>
+    <li>Uh I don't know</li>
+  </random>
+</template>
+</category>
+
+
+
+</topic>
+
+
+
+</aiml>

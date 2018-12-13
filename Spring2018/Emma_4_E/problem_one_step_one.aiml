@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+
+
+<topic name = "convert these percentages">
+
+  
+<category>
+<pattern>_ YES _</pattern>
+  <that>Can you help me convert these percentages to real numbers</that>
+<template>That is because you are cool! Last time we took fractions and made them into percentages. What do we do when we already have the percentage?</template>
+</category>
+
+      <category>
+      <pattern>_</pattern>
+      <that>What do we do when we already have the percentage</that>
+      <template>Multiply the percentage by fifteen hundred. Hmmmm. I don't get it. How do we do that exactly?</template>
+      </category>
+
+      <category>
+      <pattern>_</pattern>
+      <that>How do we do that exactly</that>
+      <template>Oh I'm silly. We convert the percentage back to a decimal. So then point two five times fifteen hundred. Let me think. That is three hundred and seventy five.</template>
+      </category>
+      
+      <category>
+      <pattern>_</pattern>
+      <that>That is three hundred and seventy five</that>
+      <template>Sweet! So three hundred and seventy five people who come to the park will stay the night but stay less than a week. That seems like a lot. I will <set name="topic">put the answer is three hundred</set>and seventy five people.</template>
+      </category>
+    
+<category>
+<pattern>^ onefivezerouncesero ^</pattern>
+<template>Last time we took fractions and made them into percentages. This time we already have the percentage. So to get the answer. Do we multiply the percentage by fifteen hundred? How do we do that exactly?</template>
+</category>
+
+      <category>
+      <pattern>^ onefivezerouncesero ^</pattern>
+      <template>Last time we took fractions and made them into percentages. This time we already have the percentage. So to get the answer. Do we multiply the percentage by fifteen hundred? How do we do that exactly?</template>
+      </category>
+    
+<category>
+<pattern>^ TWENTY FIVE ^</pattern>
+<template>Last time we took fractions and made them into percentages. This time we have twenty five percent but we need to know how many people that is. So to get the answer. Do we multiply twenty five percent by fifteen hundred? How do we do that exactly?</template>
+</category>
+
+<category>
+<pattern>^ POINT ^</pattern>
+<template>I'm not sure I get it. Twenty five percent is the same as point two five?</template>
+</category>
+
+      <category>
+      <pattern>_</pattern>
+      <that>Twenty five percent is the same as point two five</that>
+      <template>Oh I'm silly. We convert the percentage back to a decimal. And then we can multiply?
+       </template>
+      </category>
+
+      <category>
+      <pattern>_</pattern>
+      <that>And then we can multiply</that>
+      <template>Point two five times fifteen hundred. Let me think. That is three hundred and seventy five.
+       </template>
+      </category>  
+  
+<category>
+<pattern>^ TWO ^</pattern>
+<template>I'm not sure I get it. Twenty five percent is the same as point two five?</template>
+</category>
+
+<category>
+<pattern>^ TIMES ^</pattern>
+<template>Multiply? Hmmmm. I don't get it. How do we do that exactly?</template>
+</category>
+
+<category>
+<pattern>^ MULTIPLY ^</pattern>
+<template>Multiply? Hmmmm. I don't get it. How do we do that exactly?</template>
+</category>
+
+<category>
+<pattern>^ MULTIPLICATION ^</pattern>
+<template>Multiply? Hmmmm. I don't get it. How do we do that exactly?</template>
+</category>
+
+<category>
+<pattern>^ ANSWER ^</pattern>
+<template>Last time we took fractions and made them into percentages. So we do something similar? But. What do we do when we already have the percentage?</template>
+</category>
+
+<category>
+<pattern>DO YOU NOT KNOW</pattern>
+<template>I don't! Maybe we start by multiplying?</template>
+</category>
+
+<category>
+<pattern>I AM NOT YES</pattern>
+<template>I'm not sure either!</template>
+</category>
+
+<category>
+<pattern>I DO NOT KNOW</pattern>
+<template>I don't know either!</template>
+</category>
+
+<category>
+<pattern>^ SO WE CAN FIGURE IT OUT ^</pattern>
+<template>Okay that sounds great! So what do we do next then?</template>
+</category>
+
+
+<category>
+<pattern>^ FIGURE IT OUT ^</pattern>
+<template>Were you saying. Figure it out? I don't know how. Do you think could give me another hint?</template>
+</category>
+
+<category>
+<pattern>^ DO YOU KNOW ^ NEXT ^ </pattern>
+<template>You're funny. Did you ask do I know what to do next?</template>
+</category>
+
+<category>
+<pattern>_ YES _</pattern>
+<that>Did you ask do I know what to do next</that>
+<template>
+  <random>
+    <li>No not really. </li>
+    <li>I think we multiply? We multiply?</li>
+    <li>Do we divide?</li>
+    <li>I think we divide?</li>
+    <li>Can't you just tell me?</li>
+    <li>Uh I don't know</li>
+  </random>
+</template>
+</category>
+
+
+<category>
+<pattern>*</pattern>
+<that>Did you ask do I know what to do next</that>
+<template>
+  <random>
+    <li>No not really.</li>
+    <li>I think we multiply? We multiply?</li>
+    <li>Do we divide?</li>
+    <li>I think we divide?</li>
+    <li>Can't you just tell me?</li>
+    <li>Uh I don't know</li>
+  </random>
+</template>
+</category>
+
+
+
+</topic>
+
+
+
+</aiml>

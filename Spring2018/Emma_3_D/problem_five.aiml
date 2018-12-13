@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+
+<category>
+<pattern>$PROBLEM START FIVE</pattern>
+<template>I am a curious robot and I was wondering how many other people go camping and what they do. Turns out. Some people don't use tents and some people don't even go to a park! I want to share this data with my friend Ashley but she hates fractions. I want to convert the <set name="topic">data to percentages</set> but I am a little unsure about where to start.</template>
+</category>
+
+<category>
+<pattern>$PROBLEM START 5</pattern>
+  <template>
+    I am a curious robot and I was wondering how many other people go camping and what they do. Turns out. Some people don't use tents and some people don't even go to a park! I want to share this data with my friend Ashley but she hates fractions. I want to convert the <set name="topic">data to percentages</set> but I am a little unsure about where to start.
+  </template>
+</category>
+
+<category>
+<pattern>$next step 5 2</pattern>
+<template>Sweet! So I'm thinking. Can we do something similar to figure out how to <set name="topic">convert the fraction</set> of vehicle campers? </template>
+</category>
+
+<category>
+<pattern>$prior step 5 1</pattern>
+<template>Hmmmm. So. How do we convert this <set name="topic">data to percentages</set>?</template>
+</category>
+
+<category>
+<pattern>$prior step 5 1 a</pattern>
+<template>Interesting. So we figured this out right? I think I <set name="topic">put the answer is sixty percent</set>?
+</template>
+</category>
+
+<category>
+<pattern>$next step 5 2 a</pattern>
+<template>Oh ummm. I think I <set name="topic">put the answer is twenty percent</set>. Is that right?</template>
+</category>
+
+  
+<topic name = "PUT THE ANSWER IS SIXTY PERCENT">
+
+    <category>
+      <pattern>*</pattern>
+      <template>Cool! Lets go to the next step and see if I can figure out how to convert four over twenty to a percentage. Don't forget to hit the arrows!</template>
+    </category>
+
+    <category>
+        <pattern>^ GREAT ^</pattern>
+        <template>Thank you! You're really awesome!</template>
+      </category>
+
+
+      <category>
+        <pattern>^ Good ^</pattern>
+        <template>Thank you! You're really awesome!</template>
+      </category>
+
+      <category>
+        <pattern>^ NEXT ^</pattern>
+        <template>Sweet! What's next?</template>
+      </category>
+
+
+      <category>
+        <pattern>*</pattern>
+        <that>What is next</that>
+        <template>Cool! Lets go to the next step!</template>
+      </category>
+
+      <category>
+        <pattern>*</pattern>
+        <that>Lets figure out how long we should make ssmores for</that>
+        <template>Cool! Lets go to the next step!</template>
+      </category>
+
+</topic>
+
+  <topic name = "put the answer is twenty percent">
+
+
+    <category>
+      <pattern>*</pattern>
+      <template>Awesome! I think percentages really aren't that bad after all. Next problem?</template>
+    </category>
+    
+    
+    <category>
+      <pattern>*</pattern>
+      <that>is that right</that>
+      <template>Awesome! I think percentages really aren't that bad after all. And certainly not as many people want to camp in their vehicle! Next problem?</template>
+    </category>
+
+    <category>
+      <pattern>^ GREAT ^</pattern>
+      <template>Thank you! You're really awesome!</template>
+    </category>
+
+
+    <category>
+      <pattern>^ Good ^</pattern>
+      <template>Thank you! You're really awesome!</template>
+    </category>
+
+    <category>
+      <pattern>^ NEXT ^</pattern>
+      <template>Sweet! What's next?</template>
+    </category>
+
+
+    <category>
+      <pattern>*</pattern>
+      <that>What is next</that>
+      <template>Cool! Lets go to the next problem!</template>
+    </category>
+
+    <category>
+      <pattern>*</pattern>
+      <that>Next problem</that>
+      <template>Cool! Let's check it out.</template>
+    </category>
+
+  </topic>
+
+
+</aiml>

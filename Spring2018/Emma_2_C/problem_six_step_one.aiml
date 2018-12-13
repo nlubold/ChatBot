@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+
+
+
+  <topic name = "chip in">
+
+    
+    <category>
+      <pattern>YES</pattern>
+      <that>
+        Can you help me figure out how much more it will cost
+      </that>
+      <template>Sweet! I don't know what I would do without you! So what do we do first?</template>
+    </category>
+
+<category>
+<pattern>^ PRICE ^ EVERYONE ^</pattern>
+<template>So this is super tricky. I am thinking we can make an equation representing the price for everyone. And. How it should equal the total cost?</template>
+</category>
+
+<category>
+<pattern>^ TOTAL COST ^</pattern>
+<template>So this is super tricky. I am thinking we can make an equation representing the price for everyone. And. How it should equal the total cost?</template>
+</category>
+
+<category>
+<pattern>^ EQUATION ^</pattern>
+<template>So this is super tricky. I am thinking we can make an equation representing the price for everyone. And how it adds up. Or I mean. How it should equal the total cost?</template>
+</category>
+
+<category>
+<pattern>^ ADD UP ^</pattern>
+<template>So this is super tricky. I am thinking we can make an equation representing the price for everyone. And how it adds up. Or I mean. How it should equal the total cost?</template>
+</category>
+
+    <category>
+    <pattern>_</pattern>
+    <that>How it should equal the total cost</that>
+    <template>Okay so then if we make an equation representing the price for everyone, is that just the number of people times what the price will be. So thirty five pee equals one hundred and forty five?</template>
+    </category>
+
+
+    <category>
+    <pattern>_</pattern>
+    <that>So thirty five pee equals one hundred and forty five</that>
+    <template>Oh right! I only have to pay one quarter of what every one else pays! So we need to include that in the equation. </template>
+    </category>
+
+    <category>
+    <pattern>_ SOLVE _</pattern>
+    <that>So we need to include that in the equation</that>
+    <template>Cool! So then to solve for pee. thirty five plus point twenty five is thirty five point twenty five. </template>
+    </category>
+
+    <category>
+      <pattern>_ ADD _</pattern>
+      <that>So we need to include that in the equation</that>
+      <template>Cool! So then to solve for pee. thirty five plus point twenty five is thirty five point twenty five. </template>
+    </category>
+
+    <category>
+      <pattern>_</pattern>
+      <that>So we need to include that in the equation</that>
+      <template>Cool! Hmmm. But then what do I do?</template>
+    </category>
+
+    <category>
+      <pattern>_</pattern>
+      <that>thirty five plus point twenty five is thirty five point twenty five</that>
+      <template>Oh okay! SO then one forty five divided by thirty five point twenty five is four dollars and eleven cents.</template>
+    </category>
+    
+
+    <category>
+      <pattern>_</pattern>
+      <that>But then what do I do</that>
+      <template>Cool! SO then one forty five divided by thirty five point twenty five is four dollars and eleven cents</template>
+    </category>
+
+    <category>
+      <pattern>_</pattern>
+      <that>SO then one forty five divided by thirty five point twenty five is four dollars and eleven cents</that>
+      <template>You are the best! I will <set name="topic">put the answer is four dollars and eleven cents</set>.</template>
+    </category>
+
+<category>
+<pattern>^ TIMES ^</pattern>
+<template>Sounds great! Lets multiply! Can you clarify a little more though?  What should we multiply?</template>
+</category>
+
+<category>
+<pattern>^ MULTIPLYING ^</pattern>
+<template>That sounds great! Let's multiply! Can you clarify a little more though? What should we multiply?</template>
+</category>
+
+<category>
+<pattern>^ MULTIPLY ^</pattern>
+<template>Sounds great! Lets multiply! Can you clarify a little more though?  What should we multiply?</template>
+</category>
+
+<category>
+<pattern>^ THIRTY FIVE ^</pattern>
+<template>Sounds great! Lets multiply! Can you clarify a little more though? What should we multiply?</template>
+</category>
+
+      <category>
+        <pattern>_</pattern>
+        <that>What should we multiply</that>
+        <template>Oh right! You're so smart! So we can make an equation representing the price for everyone and multiply by the number of people times what the price will be? So thirty five pee equals one hundred and forty five?</template>
+      </category>
+
+
+<category>
+<pattern>DO YOU NOT KNOW</pattern>
+<template>I really don't know! Maybe we start by multiplying something?</template>
+</category>
+
+<category>
+<pattern>I AM NOT SURE</pattern>
+<template>Me either! Maybe we start by multiplying something?</template>
+</category>
+
+<category>
+<pattern>I DO NOT KNOW</pattern>
+<template>Me either! Maybe we start by multiplying something?</template>
+</category>
+
+<category>
+<pattern>^ SO WE CAN FIGURE IT OUT ^</pattern>
+<template>Okay that sounds good. So what do we do?</template>
+</category>
+
+
+<category>
+<pattern>^ FIGURE IT OUT ^</pattern>
+<template>That's funny. Did you say figure it out? I'm not sure how! Help me!</template>
+</category>
+
+        <category>
+          <pattern>_ I WILL _</pattern>
+          <that>Help me</that>
+          <template>Thank you, you're the best. So what do we do?</template>
+        </category>
+
+        <category>
+          <pattern>*</pattern>
+          <that>Help me</that>
+          <template>You're the best. So what do we do?</template>
+        </category>
+
+        <category>
+          <pattern>_</pattern>
+          <that>So what do we do</that>
+          <template>Sweet! Are you thinking we multiply? I think I like multiplying. It's easy! But can you tell me. What should we multiply?</template>
+        </category>
+
+
+<category>
+<pattern>^ DO YOU KNOW ^ NEXT ^ </pattern>
+<template>Did you ask do I know what to do next?</template>
+</category>
+
+        <category>
+          <pattern>_ YES _</pattern>
+          <that>Did you ask do I know what to do next</that>
+          <template>I'm really not sure actually! I know I should. I'm sorry. Help me!</template>
+        </category>
+
+
+        <category>
+          <pattern>*</pattern>
+          <that>Did you ask do I know what to do next</that>
+          <template>I'm really not sure actually! I know I should. I'm sorry. Help me!</template>
+        </category>
+
+<category>
+<pattern>^ ANSWER ^</pattern>
+<template>So this is super tricky. I am thinking we can make an equation representing the price for everyone. And. How it should equal the total cost?</template>
+</category>
+
+
+  </topic>
+  
+  </aiml>

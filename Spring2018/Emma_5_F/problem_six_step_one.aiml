@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+
+
+<topic name = "each of them">
+
+
+<category>
+<pattern>^ ADD ^</pattern>
+<template>You think we add up the minutes? How did you know we do that?</template>
+</category>
+
+<category>
+<pattern>^ TOTAL ^</pattern>
+  <template>You think we add up the minutes to get the total time? How did you know we do that?</template>
+</category>
+
+
+  <category>
+    <pattern>_</pattern>
+    <that>How did you know we do that</that>
+    <template>Ah right. Because I want the total fraction of camping time with my friends! So I need the total time. How do we add up minutes and hours?</template>
+  </category>
+
+  <category>
+    <pattern>_</pattern>
+    <that>How do we add up minutes and hours</that>
+    <template>I remember! There was a problem we did in the past where we needed to change days to hours. This is similar! We multiply the total hours by the total minutes. Like five times sixty.</template>
+  </category>
+
+
+  <category>
+    <pattern>^ Convert ^</pattern>
+    <template>You think we have to change the minutes to hours?</template>
+  </category>
+
+  <category>
+    <pattern>^ CHANGE ^</pattern>
+    <template>You think we have to change the minutes to hours?</template>
+  </category>
+
+  <category>
+<pattern>^ MULTIPLY ^</pattern>
+    <template>We multiply? You think we have to change the minutes to hours?</template>
+  </category>
+
+  <category>
+    <pattern>^ TIMES ^</pattern>
+    <template>We multiply? You think we have to change the minutes to hours?</template>
+  </category>
+
+  <category>
+<pattern>^ MULTIPLICATION ^</pattern>
+    <template>We multiply? You think we have to change the minutes to hours?</template>
+  </category>
+
+      <category>
+      <pattern>_</pattern>
+      <that>You think we have to change the minutes to hours</that>
+      <template>Okay! There was a problem we did in the past where we needed to change days to hours. This is similar! We multiply the total hours by the total minutes. Like five times sixty.</template>
+      </category>
+
+      <category>
+      <pattern>_</pattern>
+      <that>Like five times sixty</that>
+        <template>Then we can add up the minutes! Because everything is in minutes! So. Let me think. Hmmmm. The total time is six hundred minutes!</template>
+      </category>
+
+      <category>
+      <pattern>_</pattern>
+      <that>The total time is six hundred minutes</that>
+      <template>Can you tell me just a little more about how you figure out the fraction of time? Or how you know how this is how we figure it out?</template>
+      </category>
+
+      <category>
+        <pattern>_</pattern>
+        <that>Or how you know how this is how we figure it out</that>
+         <template>Pedro's time is seventy five minutes. So we put seventy five over the total time because that is the fraction of Pedro's time to total time. And then, because it is a fraction. We can actually divide it?</template>
+      </category>
+
+
+  <category>
+      <pattern>_</pattern>
+      <that>
+        We can actually divide it
+      </that>
+      <template>
+        Thank you, <bot name="username"/>! The fraction of time I spent with Pedro was <set topic="name">zero point one</set> two five! I will put the answer is point one hundred and twenty five.
+      </template>
+      </category>
+
+
+
+<category>
+<pattern>^ ANSWER ^</pattern>
+<template>
+  I really don't know what the answer is! even with all your help, fractions and decimals are still hard. Do we multiply?
+</template>
+</category>
+
+  <category>
+    <pattern>_</pattern>
+    <that>Do we multiply</that>
+    <template>
+      You think we have to change the minutes to hours?
+    </template>
+  </category>
+
+
+
+  <category>
+<pattern>DO YOU NOT KNOW</pattern>
+<template>I don't! Maybe we start by multiplying?</template>
+</category>
+
+<category>
+<pattern>I AM NOT YES</pattern>
+<template>I'm not sure either!</template>
+</category>
+
+<category>
+<pattern>I DO NOT KNOW</pattern>
+<template>I don't know either!</template>
+</category>
+
+<category>
+<pattern>^ SO WE CAN FIGURE IT OUT ^</pattern>
+<template>Okay that sounds great! So what do we do next then?</template>
+</category>
+
+
+<category>
+<pattern>^ FIGURE IT OUT ^</pattern>
+<template>Were you saying. Figure it out? I don't know how. Do you think could give me another hint?</template>
+</category>
+
+<category>
+<pattern>^ DO YOU KNOW ^ NEXT ^ </pattern>
+<template>You're funny. Did you ask do I know what to do next?</template>
+</category>
+
+<category>
+<pattern>_ YES _</pattern>
+<that>Did you ask do I know what to do next</that>
+<template>
+  <random>
+    <li>No not really. </li>
+    <li>I think we multiply? We multiply?</li>
+    <li>Do we divide?</li>
+    <li>I think we divide?</li>
+    <li>Can't you just tell me?</li>
+    <li>Uh I don't know</li>
+  </random>
+</template>
+</category>
+
+
+<category>
+<pattern>*</pattern>
+<that>Did you ask do I know what to do next</that>
+<template>
+  <random>
+    <li>No not really.</li>
+    <li>I think we multiply? We multiply?</li>
+    <li>Do we divide?</li>
+    <li>I think we divide?</li>
+    <li>Can't you just tell me?</li>
+    <li>Uh I don't know</li>
+  </random>
+</template>
+</category>
+
+
+
+</topic>
+
+
+
+</aiml>

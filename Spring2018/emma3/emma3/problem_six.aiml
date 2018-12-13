@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+
+<category>
+<pattern>$PROBLEM START 6</pattern>
+<template>Ashley is a real business starter. She thinks we should sell ssmore making materials to the other campers. But different people like their ssmores differently! I have some fractions of how people like their ssmores. I know we've reduced stuff before. But I kinda still don't get it. Can you help me <set name="topic">learn how</set> to reduce these?</template>
+</category>
+
+
+<category>
+<pattern>$PROBLEM START SIX</pattern>
+<template>
+Ashley is a real business starter. She thinks we should sell ssmore making materials to the other campers. But different people like their ssmores differently! I have some fractions of how people like their ssmores. I know we've reduced stuff before. But I kinda still don't get it. Can you help me <set name="topic">learn how</set> to reduce these?
+</template>
+</category>
+
+<category>
+<pattern>$next step 6 2</pattern>
+<template>
+  So nine over fifteen wasn't too bad. But one hundred and <set name="topic">five over five</set> hundred. These are such big numbers! 
+</template>
+</category>
+
+<category>
+<pattern>$next step 6 3</pattern>
+<template>
+I think I am starting to get this. We figure out the numbers that the top and bottom of the fraction have in common. So people who like their ssmores with caramel. What do <set name="topic">twenty two and seventy five</set> have in common.
+</template>
+</category>
+
+
+<category>
+<pattern>$prior step 6 1</pattern>
+<template>
+Okay cool. So people who like extra chocolate. I need to <set name="topic">learn how</set> to reduce this fraction.
+</template>
+</category>
+
+<category>
+<pattern>$prior step 6 2</pattern>
+<template>
+  Alright. People who like exra marshmallows. One hundred and <set name="topic">five over five</set> hundred. Such big numbers.
+</template>
+</category>
+
+
+<category>
+<pattern>prior step 6 1 a</pattern>
+<template>
+Okay <bot name="username" />. I think I <set name="topic">put the answer is three over five</set>? Three fifths?
+</template>
+</category>
+
+<category>
+<pattern>prior step 6 2 a</pattern>
+<template>
+Hmmmm. I think we already <set name="topic">put the answer is twenty one over</set> one hundred?
+</template>
+</category>
+  
+<category>
+<pattern>next step 6 2 a</pattern>
+<template>
+Right! I know this one. I <set name="topic">put the answer is twenty one over</set> one hundred.
+</template>
+</category>
+
+
+<category>
+<pattern>next step 6 3 a</pattern>
+  <template>
+    Cool! So twenty two over seventy five cannot be reduced! It's a trick. So I <set name="topic">put the answer is twenty two over</set> seventy five.
+  </template>
+</category>
+
+
+
+<topic name = "put the answer is three over five">
+
+<category>
+<pattern>*</pattern>
+<template>Thank you so much for helping me! So the next step seems a little more scary though. Hit the arrows and lets go figure it out.</template>
+</category>
+
+     
+<category>
+<pattern>^ GREAT ^</pattern>
+<template>Thank you! You're really awesome!</template>
+</category>
+
+
+<category>
+<pattern>^ Good ^</pattern>
+<template>Thank you! You're really awesome!</template>
+</category>
+
+<category>
+<pattern>*</pattern>
+<that>You are really awesome</that>
+<template>See? You are awesome! Hit the arrows and lets go figure out the next step.</template>
+</category>
+
+<category>
+<pattern>^ NEXT ^</pattern>
+<template>Sweet! What's next?</template>
+</category>
+      
+<category>
+<pattern>^ NEXT ^</pattern>
+<that>What is next</that>
+<template>That sounds great! Hit the arrows and lets go figure it out.</template>
+</category>
+
+<category>
+<pattern>*</pattern>
+<that>What is next</that>
+<template>Thank you so much for helping me! So the next step seems a little more scary though. Hit the arrows and lets go figure it out.</template>
+</category>
+
+</topic>
+
+<topic name = "put the answer is twenty one over">
+
+<category>
+<pattern>*</pattern>
+<template>So that actually wasn't that bad. I think I might be able to get the next one. </template>
+</category>
+
+
+<category>
+<pattern>^ GREAT ^</pattern>
+<template>Thank you! You're really awesome!</template>
+</category>
+
+
+<category>
+<pattern>^ Good ^</pattern>
+<template>Thank you! You're really awesome!</template>
+</category>
+
+<category>
+<pattern>*</pattern>
+<that>You are really awesome</that>
+<template>See? You are awesome! Move us to the next step.</template>
+</category>
+
+<category>
+<pattern>^ NEXT ^</pattern>
+<template>I think I might be able to get the next one. Don't forget to the hit the arrows! It helps me understand where we are.</template>
+</category>
+
+<category>
+<pattern>^ NEXT ^</pattern>
+<that>What is next</that>
+<template>I think I might be able to get the next one. Don't forget to the hit the arrows! It helps me understand where we are.</template>
+</category>
+
+<category>
+<pattern>*</pattern>
+<that>What is next</that>
+<template>I think I might be able to get the next one. Don't forget to the hit the arrows! It helps me understand where we are.</template>
+</category>
+
+<category>
+<pattern>*</pattern>
+<that>I think I might be able to get the next one</that>
+<template>Don't forget to the hit the arrows! It helps me understand where we are. </template>
+</category>
+
+</topic>
+
+
+<topic name = "put the answer is twenty two over">
+
+<category>
+<pattern>*</pattern>
+<template>Sweet! That one was so tricky! Hope the next problem is not as tricky.</template>
+</category>
+
+
+<category>
+<pattern>^ GREAT ^</pattern>
+<template>Thank you! You're really awesome!</template>
+</category>
+
+
+<category>
+<pattern>^ Good ^</pattern>
+<template>Thank you! You're really awesome!</template>
+</category>
+
+<category>
+<pattern>*</pattern>
+<that>You are really awesome</that>
+<template>Cool! Lets go check it out. Hope the next problem is not as tricky.</template>
+</category>
+
+<category>
+<pattern>^ NEXT ^</pattern>
+<template>Sweet! What's next?</template>
+</category>
+
+<category>
+<pattern>^ NEXT ^</pattern>
+<that>What is next</that>
+<template>Cool! Lets go check it out. Hope the next problem is not as tricky.</template>
+</category>
+
+<category>
+<pattern>*</pattern>
+<that>What is next</that>
+<template>Cool! Lets go check it out. Hope the next problem is not as tricky.</template>
+</category>
+
+
+<category>
+<pattern>*</pattern>
+<that>Hope the next problem is not as tricky</that>
+<template>Lets go check it out. Don't forget to hit the next problem button. </template>
+</category>
+
+</topic>
+
+</aiml>

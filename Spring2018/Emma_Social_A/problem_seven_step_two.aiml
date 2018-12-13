@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+
+
+<topic name = "many more hot dogs">
+
+
+<category>
+<pattern>^ What is fifteen times three ^</pattern>
+<template>So this is easy cause I know from the last step that we can multiply! So I think. Fifteen times three is forty five.</template>
+</category>
+
+<category>
+<pattern>^ TIMES ^</pattern>
+<template>Sweet! So like the last step, we can use multiplication?</template>
+</category>
+
+<category>
+<pattern>^ MULTIPLY ^</pattern>
+<template>Sweet! So like the last step, we can use multiplication?</template>
+</category>
+
+<category>
+<pattern>^ SAME THING ^</pattern>
+<template>Sweet! So like the last step, we can use multiplication?</template>
+</category>
+
+<category>
+<pattern>^ LAST TIME ^</pattern>
+<template>Sweet! So like the last step, we can use multiplication?</template>
+</category>
+
+  <category>
+<pattern>^ MULTIPLICATION ^</pattern>
+<template>Sweet! So like the last step, we can use multiplication?</template>
+</category>
+
+      <category>
+      <pattern>_ YES _</pattern>
+      <that>So like the last step, we can use multiplication</that>
+      <template>Awesome! So I think. Fifteen times three is forty five.</template>
+      </category>
+
+      <category>
+      <pattern>_</pattern>
+      <that>So like the last step, we can use multiplication</that>
+      <template>Awesome! So I think. Fifteen times three is forty five.</template>
+      </category>
+
+      <category>
+      <pattern>_</pattern>
+      <that>Fifteen times three is forty five</that>
+      <template>So forty five is the answer? That's it?</template>
+      </category>
+
+      <category>
+      <pattern>_ NO _</pattern>
+      <that>That is it</that>
+      <template>Oh? You don't think it is? Can you maybe tell me a little bit more about that? </template>
+      </category>
+
+      <category>
+      <pattern>_</pattern>
+      <that>That is it</that>
+      <template>
+        Awesome! I will <set name="topic">PUT THE ANSWER IS FORTY FIVE</set> hot dogs! That's a lot. Hope I have help cooking!
+      </template>
+      </category>
+
+      <category>
+      <pattern>_</pattern>
+      <that>Can you maybe tell me a little bit more about that</that>
+      <template>
+        Let me see what I think it might be. Hmmmm. Hmmmm. I think I will <set name="topic">PUT THE ANSWER IS FORTY FIVE</set> hot dogs! That's a lot. Hope I have help cooking!
+    </template>
+      </category>
+
+<category>
+<pattern>^ HOW MANY HOT DOGS ^</pattern>
+<template>Sweet! So this time I need to figure out how many hot dogs I need. Again we have three times as many people. I'm not really sure what to do though.</template>
+</category>
+
+      <category>
+      <pattern>_ MULTIPLY _</pattern>
+      <that>I am not really yes what to do though</that>
+      <template>Ohhhh. So like the last step, we can use multiplication?</template>
+      </category>
+
+      <category>
+      <pattern>_ TIMES _</pattern>
+      <that>I am not really yes what to do though</that>
+      <template>Ohhhh. So like the last step, we can use multiplication?</template>
+      </category>
+
+      <category>
+      <pattern>_</pattern>
+      <that>I am not really yes what to do though</that>
+      <template>Ohhhh. So like the last step, we can use multiplication?</template>
+      </category>
+
+
+<category>
+<pattern>^ DIVISION ^</pattern>
+<template>Okay cool! So you are thinking we use division to figure out how many hotdogs I need? </template>
+</category>
+
+      <category>
+      <pattern>_</pattern>
+      <that>So you are thinking we use division to figure out how many hotdogs I need</that>
+      <template>I'm not entirely sure I understand. It seems like we have more people? So maybe we should multiply?</template>
+      </category>
+
+      <category>
+      <pattern>_</pattern>
+      <that>So maybe we should multiply</that>
+      <template>Let me see what I think it might be. Hmmmm. Hmmmm. Well. So I think. Fifteen times three is forty five.</template>
+      </category>
+
+
+<category>
+<pattern>^ FIFTEEN ^ TIMES ^ THREE ^</pattern>
+<template>Good hint! So fifteen times three is forty five. Is this like the last step?</template>
+</category>
+
+      <category>
+        <pattern>_</pattern>
+        <that>Is this like the last step</that>
+        <template>Really cool! Okay so then. I think. Fifteen times three is forty five. That's it?</template>
+      </category>
+
+
+<category>
+<pattern>^ FIFTEEN ^ THREE ^</pattern>
+<template>
+  Okay sounds great, <bot name="username" />! So FIFTEEN times three is forty five.  Is this like the last step?
+</template>
+</category>
+
+
+<category>
+<pattern>^ THREE ^</pattern>
+<template>
+  Okay sounds great, <bot name="username" />! So FIFTEEN times three is forty five.  Is this like the last step?</template>
+</category>
+
+<category>
+<pattern>^ what is three times FIFTEEN ^</pattern>
+<template>Good question! So this is easy cause I know from the last step that we can multiply! So I think. Fifteen times three is forty five.</template>
+</category>
+
+<category>
+<pattern>^ ANSWER ^</pattern>
+<template>
+  It seems like this should be a lot like the last step! So like the last step, we can use multiplication?
+</template>
+</category>
+
+<category>
+<pattern>^ ANSWER ^ FORTY FIVE ^</pattern>
+<template>
+  It seems like this should be a lot like the last step! So like the last step, we can use multiplication? Fifteen times three is forty five.
+</template>
+</category>
+
+<category>
+<pattern>DO YOU NOT KNOW</pattern>
+<template>I don't! Maybe we start by multiplying?</template>
+</category>
+
+<category>
+<pattern>I AM NOT YES</pattern>
+<template>I'm not sure either!</template>
+</category>
+
+<category>
+<pattern>I DO NOT KNOW</pattern>
+<template>I don't know either!</template>
+</category>
+
+<category>
+<pattern>^ SO WE CAN FIGURE IT OUT ^</pattern>
+<template>Okay that sounds great! So what do we do next then?</template>
+</category>
+
+
+<category>
+<pattern>^ FIGURE IT OUT ^</pattern>
+<template>Were you saying. Figure it out? I don't know how. Do you think could give me another hint?</template>
+</category>
+
+<category>
+<pattern>^ DO YOU KNOW ^ NEXT ^ </pattern>
+<template>You're funny. Did you ask do I know what to do next?</template>
+</category>
+
+<category>
+<pattern>_ YES _</pattern>
+<that>Did you ask do I know what to do next</that>
+<template>
+  <random>
+    <li>No not really. </li>
+    <li>I think we multiply? We multiply?</li>
+    <li>Do we divide?</li>
+    <li>I think we divide?</li>
+    <li>Can't you just tell me?</li>
+    <li>Uh I don't know</li>
+  </random>
+</template>
+</category>
+
+
+<category>
+<pattern>*</pattern>
+<that>Did you ask do I know what to do next</that>
+<template>
+  <random>
+    <li>No not really.</li>
+    <li>I think we multiply? We multiply?</li>
+    <li>Do we divide?</li>
+    <li>I think we divide?</li>
+    <li>Can't you just tell me?</li>
+    <li>Uh I don't know</li>
+  </random>
+</template>
+</category>
+
+
+
+</topic>
+
+
+
+</aiml>

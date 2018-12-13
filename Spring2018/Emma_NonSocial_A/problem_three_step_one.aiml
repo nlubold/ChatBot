@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+
+<topic name = "MY WAY THERE">
+
+
+<category>
+<pattern>^ TWENTY FIVE ^</pattern>
+<template>So I know I can ride 25 miles in two and a half hours. And you are thinking I divide to figure out how long it will take me to go three hours?</template>
+</category>
+
+<category>
+<pattern>^ UNIT RATE ^</pattern>
+<template>I am becoming more familiar with unit rates. I am thinking I can get the unit rate by dividing. What do you think?</template>
+</category>
+  
+<category>
+<pattern>^ DIVIDE ^</pattern>
+<template>So I know I can ride 25 miles in two and a half hours. And you are thinking I divide to figure out how long it will take me to go three hours?</template>
+</category>
+
+<category>
+<pattern>^ DIVISION ^</pattern>
+<template>So I know I can ride 25 miles in two and a half hours. And you are thinking I divide to figure out how long it will take me to go three hours?</template>
+</category>
+
+<category>
+<pattern>^ OVER ^</pattern>
+<template>So I know I can ride 25 miles in two and a half hours. And you are thinking I divide to figure out how long it will take me to go three hours?</template>
+</category>
+
+    <category>
+      <pattern>_ DIVIDE _</pattern>
+      <that>And you are thinking I divide to figure out how long it will take me to go three hours</that>
+      <template>How do you know I divide?</template>
+    </category>
+
+    <category>
+    <pattern>_ TWENTY FIVE ^ TEN _ </pattern>
+    <that>How do you know I divide</that>
+    <template>So dividing twenty five by two point five gives us ten. Ten miles per hour?</template>
+    </category>
+
+    <category>
+      <pattern>_ TWENTY FIVE _ </pattern>
+      <that>How do you know I divide</that>
+      <template>So dividing twenty five by two point five gives us ten. Ten miles per hour?</template>
+    </category>
+
+    <category>
+      <pattern>_ THIRTY _ </pattern>
+      <that>How do you know I divide</that>
+      <template>I divide thirty by ten? Can you explain just a little bit more about that? </template>
+    </category>
+
+    <category>
+    <pattern>_</pattern>
+    <that>How do you know I divide</that>
+    <template>So dividing twenty five by two point five gives us ten. Ten miles per hour?</template>
+    </category>
+
+    <category>
+      <pattern>YES</pattern>
+      <that>Ten miles per hour</that>
+      <template>Okay. What do I do with that?
+    </template>
+    </category>
+
+      <category>
+      <pattern>_</pattern>
+      <that>Ten miles per hour</that>
+        <template>
+          So if I know that I can ride my bike 10 miles in 1 hour. I can figure out how many hours I can ride thirty miles?
+        </template>
+    </category>
+
+    <category>
+      <pattern>_</pattern>
+      <that>Can you explain just a little bit more about that</that>
+      <template>So I know I can ride my bike ten miles in one hour. So I can divide thirty miles by ten miles per hour to figure out how long it takes to go that far. What do you think?</template>
+    </category>
+  
+    <category>
+      <pattern>_ THIRTY _ </pattern>
+      <that>Can you explain just a little bit more about that</that>
+      <template>So I know I can ride my bike ten miles in one hour. So I can divide thirty miles by ten miles per hour to figure out how long it takes to go that far. What do you think?</template>
+    </category>
+
+
+    <category>
+      <pattern>_</pattern>
+      <that>What do I do with that</that>
+      <template>
+        So I can divide thirty miles by ten miles per hour to figure out how long it takes to go that far. What do you think? 
+      </template>
+    </category>
+
+    <category>
+      <pattern>_</pattern>
+      <that>What do you think</that>
+      <template>
+        Do you have any idea what happens to the units? I mean the miles? How do I end up with hours? 
+      </template>
+    </category>
+
+
+    <category>
+      <pattern>_</pattern>
+      <that>How do I end up with hours</that>
+      <template>
+        Okay. So I think dividing. I can cross out the units. Miles cancels out miles and I should be left with hours? So it will take me three hours to ride my bike thirty miles.  I will <set name="topic">put the answer is three</set>.
+      </template>
+    </category>
+  
+  
+    <category>
+      <pattern>_</pattern>
+      <that>I can figure out how many hours I can ride thirty miles</that>
+      <template>
+        So I divide. Do you have any idea what happens to the units? I mean the miles? How do I end up with hours?
+      </template>
+    </category>
+
+
+<category>
+<pattern>^ WHAT IS TWENTY FIVE DIVIDED BY ^</pattern>
+<template>Twenty five divided by two point five is ten. What do I do with that?</template>
+</category>
+
+
+<category>
+<pattern>^ WHAT IS ^ thirty ^ ten ^ </pattern>
+<template>Thirty divided by ten is 3. What do you think?</template>
+</category>
+
+<category>
+<pattern>^ ten MILES ^ ONE HOUR ^</pattern>
+<template>I can bike ten miles in one hour. So then. I can figure out how many hours I can ride thirty miles?</template>
+</category>
+
+<category>
+<pattern>^ HOW MANY MILES CAN YOU GO IN ONE HOUR ^</pattern>
+<template>So I know I can bike ten miles in one hour. I can know that by dividing. So then. I can figure out how many hours I can ride thirty miles?</template>
+</category>
+
+<category>
+<pattern>^ ANSWER ^ THREE ^</pattern>
+<template>It takes me three hours to go thirty miles? Can you explain just a little bit more about that?</template>
+</category>
+
+    <category>
+      <pattern>YES</pattern>
+      <that>Can you explain just a little bit more about that</that>
+      <template>I'm listening.</template>
+    </category>
+
+    <category>
+      <pattern>_</pattern>
+      <that>I am listening</that>
+      <template>
+       So I know I can ride my bike ten miles in one hour. So I can divide thirty miles by ten miles per hour to figure out how long it takes to go that far. What do you think?.
+      </template>
+    </category>
+
+    <category>
+      <pattern>_</pattern>
+      <that>Can you explain a little bit more about why though</that>
+      <template>
+        So I know I can ride my bike ten miles in one hour. So I can divide thirty miles by ten miles per hour to figure out how long it takes to go that far. What do you think?.
+      </template>
+    </category>
+
+
+<category>
+<pattern>DO YOU NOT KNOW</pattern>
+<template>I really don't know. Maybe I start by dividing?</template>
+</category>
+
+<category>
+<pattern>I AM NOT YES</pattern>
+<template>Me either. Maybe I start by dividing?</template>
+</category>
+
+<category>
+<pattern>I DO NOT KNOW</pattern>
+<template>Me either. Maybe I start by dividing?</template>
+</category>
+
+<category>
+<pattern>^ SO I CAN FIGURE IT OUT ^</pattern>
+<template>Okay. So what do I do?</template>
+</category>
+
+
+<category>
+<pattern>^ FIGURE IT OUT ^</pattern>
+<template>I'm not sure how. Help me.</template>
+</category>
+
+      <category>
+        <pattern>_ I WILL _</pattern>
+        <that>Help me</that>
+        <template>So what do I do?</template>
+      </category>
+
+      <category>
+        <pattern>*</pattern>
+        <that>Help me</that>
+        <template>So what do I do?</template>
+      </category>
+
+
+<category>
+<pattern>^ DO YOU KNOW ^ NEXT ^ </pattern>
+<template>Did you ask do I know what to do next?</template>
+</category>
+
+      <category>
+        <pattern>_ YES _</pattern>
+        <that>Did you ask do I know what to do next</that>
+        <template>I know I should know. Help me.</template>
+      </category>
+
+
+      <category>
+        <pattern>*</pattern>
+        <that>Did you ask do I know what to do next</that>
+        <template>I know I should know. Help me.</template>
+      </category>
+
+<category>
+<pattern>^ ANSWER ^</pattern>
+<template>So given the last two problems, I think I know what to do. But again. I'm not sure if I'm right. Do I divide? How do you know I divide?</template>
+</category>
+
+
+</topic>
+
+</aiml>

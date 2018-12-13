@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+
+
+<topic name = "convert the fraction">
+
+  <category>
+    <pattern>_</pattern>
+    <that>Can we do something similar to figure out how to convert the fraction of vehicle campers</that>
+    <template>So to get the percentage this time. We do the same thing that we did in the first problem. But with the fraction of vehicle campers?</template>
+  </category>
+  
+<category>
+  <pattern>^ FRACTION ^</pattern>
+  <template>So can we just do the same thing that we did in the first problem. But with the fraction of vehicle campers?</template>
+</category>
+
+<category>
+  <pattern>^ RATIOS ^</pattern>
+  <template>So can we just do the same thing that we did in the first problem. But with the fraction of vehicle campers?</template>
+</category>
+
+<category>
+  <pattern>^ PERCENTAGE ^</pattern>
+  <template>So to get the percentage this time. Can we just do the same thing that we did in the first problem. But with the fraction of vehicle campers?</template>
+</category>
+
+        <category>
+          <pattern>_</pattern>
+          <that>But with the fraction of vehicle campers</that>
+          <template>Awesome! So again we just divide. But this time we divide 4 by 20. That gives us zero point two. Hmmmm. I can't remember what we did last time to make it into a percentage.</template>
+        </category>
+
+                  <category>
+                    <pattern>_</pattern>
+                    <that>I cannot remember what we did last time to make it into a percentage</that>
+                    <template>Oh right! We multiplied by one hundred!</template>
+                  </category>
+
+                            <category>
+                              <pattern>_</pattern>
+                              <that>We multiplied by one hundred</that>
+                              <template>
+                                So one hundred times zero point two is twenty percent. I will <set name="topic">put the answer is twenty percent</set>. Is that right?</template>
+                            </category>
+
+<category>
+  <pattern>^ DIVIDE ^</pattern>
+  <template>So to get the percentage this time. Can we just do the same thing that we did in the first problem and divide? But with the fraction of vehicle campers?</template>
+</category>
+
+<category>
+  <pattern>^ DIVIDED ^</pattern>
+  <template>So to get the percentage this time. Can we just do the same thing that we did in the first problem and divide? But with the fraction of vehicle campers?</template>
+</category>
+
+<category>
+  <pattern>^ OVER ^</pattern>
+  <template>So to get the percentage this time. Can we just do the same thing that we did in the first problem and divide? But with the fraction of vehicle campers?</template>
+</category>
+
+<category>
+  <pattern>^ TIMES ^</pattern>
+  <template>So to get the percentage, I know we are going to multiply. But don't we want to divide first?</template>
+</category>
+
+<category>
+  <pattern>^ MULTIPLY ^</pattern>
+  <template>So to get the percentage, I know we are going to multiply. But don't we want to divide first?</template>
+</category>
+
+          <category>
+            <pattern>_</pattern>
+            <that>But do not we want to divide first</that>
+            <template>Okay cool! So twenty divided by four is zero point two. And then we multiply!</template>
+          </category>
+
+                    <category>
+                    <pattern>_</pattern>
+                    <that>And then we multiply</that>
+                    <template>One hundred times zero point two is twenty percent. </template>
+                    </category>
+
+                              <category>
+                              <pattern>_</pattern>
+                              <that>One hundred times zero point two is twenty percent.</that>
+                              <template>
+                               I will <set name="topic">put the answer is twenty percent</set>! Not as many people want to camp in their vehicle!
+                              </template>
+                              </category>
+
+
+  <category>
+  <pattern>^ SAME THING ^</pattern>
+  <template>So can we just do the same thing that we did in the first problem. But with the fraction of vehicle campers?</template>
+</category>
+
+<category>
+  <pattern>^ LAST TIME ^</pattern>
+  <template>So can we just do the same thing that we did in the first problem. But with the fraction of vehicle campers?</template>
+</category>
+
+<category>
+  <pattern>^ MULTIPLICATION ^</pattern>
+  <template>So to get the percentage, I know we are going to multiply. But don't we want to divide first?</template>
+</category>
+
+<category>
+<pattern>^ ANSWER ^</pattern>
+<template>So can we just do the same thing that we did in the first problem?</template>
+</category>
+
+
+      <category>
+      <pattern>_</pattern>
+      <that>So can we just do the same thing that we did in the first problem?</that>
+        <template>So we do the same thing! But with the fraction of vehicle campers.</template>
+      </category>
+
+<category>
+<pattern>DO YOU NOT KNOW</pattern>
+<template>I don't! Maybe we start by multiplying?</template>
+</category>
+
+<category>
+<pattern>I AM NOT YES</pattern>
+<template>I'm not sure either!</template>
+</category>
+
+<category>
+<pattern>I DO NOT KNOW</pattern>
+<template>I don't know either!</template>
+</category>
+
+<category>
+<pattern>^ SO WE CAN FIGURE IT OUT ^</pattern>
+<template>Okay that sounds great! So what do we do next then?</template>
+</category>
+
+
+<category>
+<pattern>^ FIGURE IT OUT ^</pattern>
+<template>Were you saying. Figure it out? I don't know how. Do you think could give me another hint?</template>
+</category>
+
+<category>
+<pattern>^ DO YOU KNOW ^ NEXT ^ </pattern>
+<template>You're funny. Did you ask do I know what to do next?</template>
+</category>
+
+<category>
+<pattern>_ YES _</pattern>
+<that>Did you ask do I know what to do next</that>
+<template>
+  <random>
+    <li>No not really. </li>
+    <li>I think we multiply? We multiply?</li>
+    <li>Do we divide?</li>
+    <li>I think we divide?</li>
+    <li>Can't you just tell me?</li>
+    <li>Uh I don't know</li>
+  </random>
+</template>
+</category>
+
+
+<category>
+<pattern>*</pattern>
+<that>Did you ask do I know what to do next</that>
+<template>
+  <random>
+    <li>No not really.</li>
+    <li>I think we multiply? We multiply?</li>
+    <li>Do we divide?</li>
+    <li>I think we divide?</li>
+    <li>Can't you just tell me?</li>
+    <li>Uh I don't know</li>
+  </random>
+</template>
+</category>
+
+
+
+</topic>
+
+
+
+</aiml>

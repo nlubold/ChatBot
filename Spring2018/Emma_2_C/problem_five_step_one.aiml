@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+
+
+<topic name = "drinking hot chocolate">
+
+<category>
+<pattern>^ Step Zero ^</pattern>
+<template>Sweet! So step zero tells us that if we spend half of our seventy five minutes telling stories. That is thirty seven and a half minutes. But then we need to take one third of the remaining time. How do we do that?</template>
+</category>
+
+<category>
+<pattern>^ TELLING STORIES ^</pattern>
+<template>Sweet! So if we spend half of our seventy five minutes telling stories. That is thirty seven and a half minutes. But then we need to take one third of the remaining time. How do we do that?</template>
+</category>
+
+<category>
+<pattern>^ HALF ^</pattern>
+<template>Sweet! So if we spend half of our seventy five minutes telling stories. That is thirty seven and a half minutes. But then we need to take one third of the remaining time. How do we do that?</template>
+</category>
+
+  <category>
+<pattern>^ Drinking chocolate ^</pattern>
+<template>Sweet! So we can spend half of our seventy five minutes telling stories. That is thirty seven and a half minutes. And then for drinking chocolate, we want to figure out one third of the remaining time. But. How do we do that?</template>
+</category>
+
+<category>
+<pattern>^ ONE THIRD ^</pattern>
+<template>Sweet! So we can spend half of our seventy five minutes telling stories. That is thirty seven and a half minutes. And then for drinking chocolate, we want to figure out one third of the remaining time. But. Can you explain a little more. How do we do that?</template>
+</category>
+
+      <category>
+      <pattern>_ MULTIPLY _</pattern>
+      <that>How do we do that?</that>
+      <template>Oh okay! I think I get it? We need to figure out one third of the remaining time. And. We do that by multiplying?</template>
+      </category>
+
+      <category>
+      <pattern>_</pattern>
+      <that>How do we do that?</that>
+      <template>Oh okay! So I'm thinking. We need to figure out one third of the remaining time. And so maybe.  We do that by multiplying?</template>
+      </category>
+
+<category>
+<pattern> ^ MULTIPLY ^</pattern>
+<template>Oh okay! So if we spend half of our seventy five minutes telling stories. That is thirty seven and a half minutes. Then we need to take one third of the remaining time. We do that by multiplying?</template>
+</category>
+
+
+<category>
+<pattern>^ MULTIPLYING ^</pattern>
+<template>Oh okay! So if we spend half of our seventy five minutes telling stories. That is thirty seven and a half minutes. Then we need to take one third of the remaining time. We do that by multiplying?</template>
+</category>
+
+
+<category>
+<pattern>^ TIMES ^</pattern>
+<template>Oh okay! So if we spend half of our seventy five minutes telling stories. That is thirty seven and a half minutes. Then we need to take one third of the remaining time. We do that by multiplying?</template>
+</category>
+
+      <category>
+      <pattern>_ YES _</pattern>
+      <that>We do that by multiplying</that>
+      <template>Multiplying thirty seven point five times one third is kind of hard. Is there anyway to simplify it?</template>
+      </category>
+
+      <category>
+      <pattern>_</pattern>
+      <that>We do that by multiplying</that>
+      <template>Multiplying thirty seven point five times one third is kind of hard. Is there anyway to simplify it?</template>
+      </category>
+
+      <category>
+      <pattern>_ SIMPLIFY _</pattern>
+      <that>We do that by multiplying</that>
+      <template>Oh right! So I can change thirty seven and one half into an improper fraction. So that would be seventy five over two. And then I can multiply that by one third.</template>
+      </category>
+
+      <category>
+      <pattern>_ CONVERT _</pattern>
+      <that>We do that by multiplying</that>
+      <template>Oh right! So I can change thirty seven and one half into an improper fraction. So that would be seventy five over two. And then I can multiply that by one third.</template>
+      </category>
+
+      <category>
+      <pattern>_</pattern>
+      <that>Is there anyway to simplify it</that>
+      <template>Oh right! I know! So I can change thirty seven and one half into an improper fraction. So that would be seventy five over two. And then I can multiply that by one third.</template>
+      </category>
+
+      <category>
+      <pattern>_</pattern>
+      <that>And then I can multiply that by one third</that>
+      <template>Great! I know how many minutes we should spend drinking chocolate. Twelve and a half minutes! I will <set name="topic">put the answer is twelve</set> and a half. </template>
+      </category>
+
+  <category>
+<pattern>^ SUBTRACT ^</pattern>
+<template>Sweet! So if we spend half of our seventy five minutes telling stories, we can subtract. That is thirty seven and a half minutes. And then for drinking chocolate, we want to figure out one third of the remaining time. But. How do we do that?</template>
+</category>
+
+
+<category>
+<pattern>WHAT IS ONE THIRD TIMES ^</pattern>
+<template>You do ask great questions! So one third times thirty seven and one half is tricky. Do you know. Is there anyway to simplify it?</template>
+</category>
+
+
+<category>
+<pattern>^ ANSWER ^ TWELVE ^</pattern>
+<template>
+Cool beans! You are so smart! The answer is twelve and a half minutes? But I'm still confused. Did you multiply? How do we do that? </template>
+</category>
+
+ 
+<category>
+<pattern>DO YOU NOT KNOW</pattern>
+<template>I really don't know! Maybe we start by subtracting?</template>
+</category>
+
+<category>
+<pattern>I AM NOT YES</pattern>
+<template>Me either! Maybe we start by subtracting?</template>
+</category>
+
+<category>
+<pattern>I DO NOT KNOW</pattern>
+<template>Me either! Maybe we start by subtracting?</template>
+</category>
+
+<category>
+<pattern>^ SO WE CAN FIGURE IT OUT ^</pattern>
+<template>Okay that sounds good! What do we do?</template>
+</category>
+
+
+<category>
+<pattern>^ FIGURE IT OUT ^</pattern>
+<template>That's funny. Did you say figure it out? I'm not sure how! Help me!</template>
+</category>
+
+      <category>
+      <pattern>_ I WILL _</pattern>
+      <that>Help me</that>
+      <template>Thank you, that's because you're really nice. So. What do we do?</template>
+      </category>
+
+      <category>
+      <pattern>*</pattern>
+      <that>Help me</that>
+      <template>You're the best. So. What do we do?</template>
+      </category>
+
+
+<category>
+<pattern>^ DO YOU KNOW ^ NEXT ^ </pattern>
+<template>Did you ask. Do I know what to do next?</template>
+</category>
+
+      <category>
+      <pattern>_ YES _</pattern>
+      <that>Do I know what to do next</that>
+      <template>I'm really not sure actually! I know I should. I'm sorry. Help me!</template>
+      </category>
+
+
+      <category>
+      <pattern>*</pattern>
+      <that>Do I know what to do next</that>
+      <template>I'm really not sure actually! I know I should. I'm sorry. Help me!</template>
+      </category>
+
+<category>
+<pattern>^ ANSWER ^</pattern>
+<template>I like to think that I am getting better at fractions. But I'm a little confused still. I think we multiply? How do we do that?</template>
+</category>
+
+
+</topic>
+
+
+</aiml>

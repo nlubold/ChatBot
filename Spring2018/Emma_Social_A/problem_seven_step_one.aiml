@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+
+
+
+<topic name = "how much more seltzer">
+
+<category>
+<pattern>next step 1 2</pattern>
+<template> I really like hot dogs! But I'm not sure how to figure out how <set name="topic">many more hot dogs</set> I need. Any ideas?</template>
+</category>
+
+  <category>
+    <pattern>YES</pattern>
+    <that>
+      My friend Pedro already told me how much more juice I need
+    </that>
+    <template>Yay! Thank you! You are awesome. Where do we start?</template>
+  </category>
+
+
+
+  <category>
+<pattern>^ What is eight times three ^</pattern>
+<template>Great question! So I think. Eight times three is twenty four? Can you maybe explain how that helps us?</template>
+</category>
+
+<category>
+<pattern>^ TIMES ^</pattern>
+<template>Sweet! So maybe we can use multiplication? Although. Can you maybe explain how that helps us?</template>
+</category>
+
+<category>
+<pattern>^ MULTIPLICATION ^</pattern>
+<template>Sweet! So maybe we can use multiplication? Although. Can you maybe explain how that helps us?</template>
+</category>
+
+      <category>
+      <pattern>_ YES _</pattern>
+      <that>Can you maybe explain how that helps us</that>
+      <template>Ohhhh. Thank you for explaining! So we have three times as many people.</template>
+      </category>
+
+      <category>
+      <pattern>_</pattern>
+      <that>Can you maybe explain how that helps us</that>
+      <template>Ohhhh. Okay cool! So we have three times as many people.</template>
+      </category>
+
+      <category>
+      <pattern>_</pattern>
+      <that>So we have three times as many people</that>
+      <template>It seems like I will need three times as many cups of seltzer. Eight times three is twenty four so is the answer twenty four? </template>
+      </category>
+
+      <category>
+      <pattern>_ NO _</pattern>
+      <that>Eight times three is twenty four so is the answer twenty four</that>
+      <template>Oh? You don't think it is? Can you maybe tell me a little bit more about that? </template>
+      </category>
+
+      <category>
+      <pattern>_</pattern>
+      <that>Eight times three is twenty four so is the answer twenty four</that>
+      <template>
+      Awesome! I will <set name="topic">PUT THE ANSWER IS TWENTY FOUR CUPS</set>!
+      </template>
+      </category>
+
+      <category>
+      <pattern>_</pattern>
+      <that>Can you maybe tell me a little bit more about that</that>
+      <template>
+      Let me see what I think it might be. Hmmmm. Hmmmm. I think I will <set name="topic">PUT THE ANSWER IS TWENTY FOUR CUPS</set>.
+      </template>
+      </category>
+
+<category>
+<pattern>^ HOW MANY CUPS ^</pattern>
+<template>Sweet! So we are looking at how many cups of seltzer I need with three times as many people. I'm not really sure what to do though.</template>
+</category>
+
+      <category>
+        <pattern>_ MULTIPLY _</pattern>
+        <that>I am not really yes what to do though</that>
+        <template>Ohhhh. Okay cool! So we multiply? Because we have three times as many people.</template>
+      </category>
+
+      <category>
+        <pattern>_ TIMES _</pattern>
+        <that>I am not really yes what to do though</that>
+        <template>Ohhhh. Okay cool! So we multiply? Because we have three times as many people.</template>
+      </category>
+
+      <category>
+      <pattern>_</pattern>
+      <that>I am not really yes what to do though</that>
+      <template>Ohhhh. Hmmmm. So maybe we multiply? Because we have three times as many people.</template>
+      </category>
+
+      <category>
+        <pattern>_</pattern>
+        <that>Because we have three times as many people</that>
+        <template>It seems like I will need three times as many cups of seltzer. Eight times three is twenty four so is the answer twenty four?</template>
+      </category>
+
+<category>
+<pattern>^ DIVISION ^</pattern>
+<template>Okay cool! So you are thinking we use division? </template>
+</category>
+
+      <category>
+        <pattern>_</pattern>
+        <that>So you are thinking we use division</that>
+        <template>I'm not entirely sure I understand. It seems like we have more people? So maybe we should multiply?</template>
+      </category>
+  
+      <category>
+        <pattern>_</pattern>
+        <that>So maybe we should multiply</that>
+        <template>Let me see what I think it might be. Hmmmm. Hmmmm. Well. Eight times three is twenty four so is the answer twenty four?</template>
+      </category>  
+
+  
+  
+<category>
+<pattern>^ EIGHT ^ TIMES ^ THREE ^</pattern>
+<template>Good hint! So eight times three is twenty four. Can you maybe explain how that helps us?</template>
+</category>
+
+<category>
+<pattern>^ EIGHT ^ THREE ^</pattern>
+<template>Okay sounds great, <bot name="username" />! So eight times three is twenty four. Can you maybe explain how that helps us?
+</template>
+</category>
+
+
+<category>
+<pattern>^ THREE ^</pattern>
+<template>So we have three times as many people.  So maybe we multiply? Because we have three times as many people.</template>
+</category>
+
+<category>
+<pattern>^ what is three times eight ^</pattern>
+<template>Good question! So I think. Eight times three is twenty four? Can you maybe explain how that helps us?</template>
+</category>
+ 
+<category>
+<pattern>^ ANSWER ^</pattern>
+<template>So I'm still not one hundred percent on the answer. But we have three times as many people.  So maybe we multiply? Because we have three times as many people.
+</template>
+</category>
+
+<category>
+<pattern>^ ANSWER ^ FOUR ^</pattern>
+  <template>
+    So I'm still not one hundred percent on the answer. But we have three times as many people.  So maybe we multiply? Because we have three times as many people.
+  </template>
+</category>
+
+<category>
+<pattern>DO YOU NOT KNOW</pattern>
+<template>I don't! Maybe we start by multiplying?</template>
+</category>
+
+<category>
+<pattern>I AM NOT YES</pattern>
+<template>I'm not sure either!</template>
+</category>
+
+<category>
+<pattern>I DO NOT KNOW</pattern>
+<template>I don't know either!</template>
+</category>
+
+<category>
+<pattern>^ SO WE CAN FIGURE IT OUT ^</pattern>
+<template>Okay that sounds great! So what do we do next then?</template>
+</category>
+
+
+<category>
+<pattern>^ FIGURE IT OUT ^</pattern>
+<template>Were you saying. Figure it out? I don't know how. Do you think could give me another hint?</template>
+</category>
+
+<category>
+<pattern>^ DO YOU KNOW ^ NEXT ^ </pattern>
+<template>You're funny. Did you ask do I know what to do next?</template>
+</category>
+
+      <category>
+      <pattern>_ YES _</pattern>
+      <that>Did you ask do I know what to do next</that>
+      <template><random>
+      <li>No not really.</li>
+      <li>I think we multiply? We multiply?</li>
+      <li>Do we divide?</li>
+      <li>I think we divide?</li>
+      <li>Can't you just tell me?</li>
+      <li>Uh I don't know</li>
+      </random></template>
+      </category>
+
+
+      <category>
+      <pattern>*</pattern>
+      <that>Did you ask do I know what to do next</that>
+      <template><random>
+      <li>No not really. </li>
+      <li>I think we multiply? We multiply?</li>
+      <li>Do we divide?</li>
+      <li>I think we divide?</li>
+      <li>Can't you just tell me?</li>
+      <li>Uh I don't know</li>
+      </random></template>
+      </category>
+
+
+
+</topic>
+
+
+
+</aiml>

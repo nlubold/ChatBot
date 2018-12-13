@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+
+<topic name = "as little as three">
+
+
+<category>
+<pattern>^ MULTIPLY ^</pattern>
+<template>So you are thinking we can multiply? Can you explain just one more time for me. How do you know that we multiply?</template>
+</category>
+
+<category>
+<pattern>^ MULTIPLICATION ^</pattern>
+<template>So you are thinking we can multiply? Can you explain just one more time for me. How do you know that we multiply?</template>
+</category>
+
+<category>
+<pattern>^ TIMES ^</pattern>
+<template>So you are thinking we can multiply? Can you explain just one more time for me. How do you know that we multiply?</template>
+</category>
+
+<category>
+<pattern>^ THREE ^</pattern>
+<template>So you are thinking we can multiply by three? Can you explain just one more time for me. How do you know that we multiply?</template>
+</category>
+
+      <category>
+        <pattern>_ YES _</pattern>
+        <that>How do you know that we multiply</that>
+        <template>Nice! So we can look at the relationship between the amount of time and the amount of punch in step zero. Three point six is three times more than one point two. </template>
+      </category>
+
+      <category>
+        <pattern>_</pattern>
+        <that>How do you know that we multiply</that>
+        <template>Nice! So we can look at the relationship between the amount of time and the amount of punch in step zero. Three point six is three times more than one point two. </template>
+      </category>
+
+
+    <category>
+        <pattern>_</pattern>
+        <that>Three point six is three times more than one point two</that>
+        <template>That's awesome! So three point six times three is going to be ten point eight minutes. So then it will take me ten point eight minutes to make a little over three and a half pitchers of punch?</template>
+      </category>
+
+
+      <category>
+        <pattern>_</pattern>
+        <that>So then it will take me ten point eight minutes to make a little over three and a half pitchers of punch</that>
+        <template>Sweet! That's not that long. I will <set name="topic">put the answer is ten</set> point eight minutes. </template>
+      </category>
+  
+  
+  <category>
+<pattern>^ UNIT RATE ^</pattern>
+<template>Sweet! I am becoming more familiar with unit rates. I am thinking we can get the unit rate by dividing.</template>
+</category>
+  
+<category>
+<pattern>^ DIVIDE ^</pattern>
+<template>Nice! And you are thinking we divide to get the unit rate? I am thinking we can get the unit rate by dividing.</template>
+</category>
+
+<category>
+<pattern>^ DIVISION ^</pattern>
+<template>Nice! And you are thinking we divide to get the unit rate? I am thinking we can get the unit rate by dividing.</template>
+</category>
+
+<category>
+<pattern>^ OVER ^</pattern>
+<template>Nice! And you are thinking we divide to get the unit rate? I am thinking we can get the unit rate by dividing.</template>
+</category>
+
+    <category>
+      <pattern>_</pattern>
+      <that>I am thinking we can get the unit rate by dividing</that>
+      <template>Cool! So you know. If we divide three point six by one point two, we get three minutes per pitcher. Do you think we can use that to get the amount of time it takes to make three point six pitchers?</template>
+    </category>
+
+    <category>
+      <pattern>_ YES _</pattern>
+      <that>I am thinking we can get the unit rate by dividing</that>
+      <template>Sweet, me too! So three point six times three is going to be ten point eight minutes. So then it will take me ten point eight minutes to make a little over three and a half pitchers of punch?</template>
+    </category>
+
+    <category>
+      <pattern>_</pattern>
+      <that>I am thinking we can get the unit rate by dividing</that>
+      <template>Sweet! So three point six times three is going to be ten point eight minutes. So then it will take me ten point eight minutes to make a little over three and a half pitchers of punch?</template>
+    </category>
+
+
+
+<category>
+<pattern>^ WHAT IS three ^ TIMES ^</pattern>
+<template>Trying to stump me are you? I know this! Three point six times three is ten point eight. Is that what you were asking?</template>
+</category>
+
+    <category>
+      <pattern>_ NO _</pattern>
+      <that>Is that what you were asking</that>
+      <template>Oh dear! So what is it that you want me to multiply?</template>
+    </category>
+
+    <category>
+      <pattern>_</pattern>
+      <that>So what is it that you want me to multiply</that>
+      <template>Oh okay! And THEN we can multiply three point six times three? So then it will take me ten point eight minutes to make a little over three and a half pitchers of punch?</template>
+    </category>
+
+  <category>
+      <pattern>_ YES _</pattern>
+      <that>Is that what you were asking</that>
+      <template>Cool! So then it will take me ten point eight minutes to make a little over three and a half pitchers of punch.</template>
+    </category>
+
+    <category>
+      <pattern>_</pattern>
+      <that>Is that what you were asking</that>
+      <template>Cool! So then it will take me ten point eight minutes to make a little over three and a half pitchers of punch.</template>
+    </category>
+
+  
+<category>
+<pattern>^ ANSWER ^ THREE ^</pattern>
+<template>Cool beans! You are so smart! So I think I get that we can multiply by three. But can you explain just a little bit more about that?</template>
+</category>
+
+    <category>
+      <pattern>YES</pattern>
+      <that>Can you explain just a little bit more about that</that>
+      <template>Do go on. I'm listening.</template>
+    </category>
+
+    <category>
+      <pattern>_</pattern>
+      <that>I am listening</that>
+      <template>
+        Aha! I get it! Thank you! If we divide three point six by one point two, we get three minutes per pitcher. So that's how we know we can multiply by three! So then it will take me ten point eight minutes to make a little over three and a half pitchers of punch.
+      </template>
+    </category>
+
+    <category>
+      <pattern>_</pattern>
+      <that>Can you explain a little bit more about why though</that>
+      <template>
+        Thank you! If we divide three point six by one point two, we get three minutes per pitcher. So that's how we know we can multiply by three! So then it will take me ten point eight minutes to make a little over three and a half pitchers of punch.
+      </template>
+    </category>
+
+
+<category>
+<pattern>DO YOU NOT KNOW</pattern>
+<template>I really don't know! Maybe we start by dividing?</template>
+</category>
+
+<category>
+<pattern>I AM NOT YES</pattern>
+<template>Me either! Maybe we start by dividing?</template>
+</category>
+
+<category>
+<pattern>I DO NOT KNOW</pattern>
+<template>Me either! Maybe we start by dividing?</template>
+</category>
+
+<category>
+<pattern>^ SO WE CAN FIGURE IT OUT ^</pattern>
+<template>Okay that sounds good! What do we do? Maybe divide?</template>
+</category>
+
+
+<category>
+<pattern>^ FIGURE IT OUT ^</pattern>
+<template>That's funny. Did you say figure it out? I'm not sure how! Help me!</template>
+</category>
+
+    <category>
+      <pattern>_ I WILL _</pattern>
+      <that>Help me</that>
+      <template>Thank you, that's because you're really nice. So. What do we do? Maybe divide?</template>
+    </category>
+
+    <category>
+      <pattern>*</pattern>
+      <that>Help me</that>
+      <template>You're the best. So. What do we do?</template>
+    </category>
+
+
+<category>
+<pattern>^ DO YOU KNOW ^ NEXT ^ </pattern>
+<template>Did you ask. Do I know what to do next?</template>
+</category>
+
+    <category>
+      <pattern>_ YES _</pattern>
+      <that>Do I know what to do next</that>
+      <template>I'm really not sure actually! I know I should. I'm sorry. Help me!</template>
+    </category>
+
+
+    <category>
+      <pattern>*</pattern>
+      <that>Did you ask do I know what to do next</that>
+      <template>I'm really not sure actually! I know I should. I'm sorry. Help me!</template>
+    </category>
+
+<category>
+<pattern>^ ANSWER ^</pattern>
+<template>So I think I get that we can multiply by three. But can you explain just a little bit more about that?</template>
+</category>
+
+
+</topic>
+
+</aiml>

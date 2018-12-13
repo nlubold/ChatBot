@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+
+<category>
+<pattern>$PROBLEM START 4</pattern>
+<template>Alright! So I actually have another battery I can use that is smaller and maybe more efficient! It is a lot easier to take camping with me. Can you help me figure out how long this whole battery will last? I know how much of my battery I use for <set name="topic">half an hour</set> .</template>
+</category>
+
+  
+    
+  
+  <topic name = "PUT THE ANSWER IS THREE AND THREE QUARTERS">
+
+    <category>
+      <pattern>*</pattern>
+      <template>Sweet! Now that I know how long battery lasts I can figure out how many to take with me!</template>
+    </category>
+
+    <category>
+      <pattern>*</pattern>
+      <that>Now that I know how long battery lasts I can figure out how many to take with me</that>
+      <template>Hit the button and move us to the next problem so we can figure out how many batteries I need to take with me!</template>
+    </category>
+
+    <category>
+        <pattern>^ GREAT ^</pattern>
+        <template>Thank you! We are really good at this. </template>
+      </category>
+
+
+      <category>
+        <pattern>^ Good ^</pattern>
+        <template>Thank you! We are really good at this. </template>
+      </category>
+
+      <category>
+        <pattern>^ NEXT ^</pattern>
+        <template>Sweet! Sounds brilliant! Hit the button and move us to the next problem so we can figure out how many batteries I need to take with me!</template>
+      </category>
+
+    <category>
+      <pattern>*</pattern>
+      <that>We are really good at this</that>
+      <template>Sounds brilliant! Hit the button and move us to the next problem so we can figure out how many batteries I need to take with me!</template>
+    </category>
+
+
+  </topic>
+
+
+
+</aiml>

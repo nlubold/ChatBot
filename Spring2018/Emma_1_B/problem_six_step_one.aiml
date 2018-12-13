@@ -1,0 +1,360 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+
+
+
+  <topic name = "my battery">
+
+    
+    <category>
+      <pattern>YES</pattern>
+      <that>
+        Before I go to the store, can you help me figure out how much of my battery I will use over time
+      </that>
+      <template>Yay! Thank you! You are awesome. Where do we start?</template>
+    </category>
+
+<category>
+<pattern>^ MULTIPLYING ^</pattern>
+<template>That sounds great! Let's multiply! Can you clarify though. What should we multiply?</template>
+</category>
+
+<category>
+<pattern>^ MULTIPLY ^</pattern>
+<template>Sounds great! Lets multiply! Can you clarify though. What should we multiply?</template>
+</category>
+
+<category>
+<pattern>^ TIMES ^</pattern>
+<template>Sounds great! Lets multiply! Can you clarify though. What should we multiply?</template>
+</category>
+
+<category>
+<pattern>^ CROSS ^ MULTIPLY ^</pattern>
+<template>Sounds great! Lets cross multiply! Can you clarify though. What should we multiply?</template>
+</category>
+
+      <category>
+        <pattern>_ THREE _</pattern>
+        <that>What should we multiply</that>
+        <template>Oh right! You're so smart! So we can multiply two over three by three over two! What do we do next?</template>
+      </category>
+
+      <category>
+        <pattern>_ THIRD _</pattern>
+        <that>What should we multiply</that>
+        <template>Oh right! You're so smart! So we can multiply two over three by three over two! What do we do next?</template>
+      </category>
+
+      <category>
+        <pattern>_ TWO _</pattern>
+        <that>What should we multiply</that>
+        <template>Oh right! You're so smart! So we can multiply two over three by three over two! What do we do next?</template>
+      </category>
+
+      <category>
+        <pattern>_</pattern>
+        <that>What should we multiply</that>
+        <template>Oh right! You're so smart! So we can setup the ratio and multiply two over three by three over two, right?</template>
+      </category>
+
+      <category>
+        <pattern>_</pattern>
+        <that>So we can setup the ratio and multiply two over three by three over two, right</that>
+        <template>Awesome! What do we do next? </template>
+      </category>
+    
+<category>
+<pattern>^ OVER ^</pattern>
+<template>Awesome! I think I understand what you're saying. So we have two over three because we have two thirds of an hour for one twenty eth of the battery. Then. Do we multiply it by something?</template>
+</category>
+
+<category>
+<pattern>^ TWENTY ^</pattern>
+<template>Awesome! So we know I use one twenty eth of the battery in two thirds of an hour.  We need to figure out how much I use in one hour. Do we multiply it by something?</template>
+</category>
+
+<category>
+<pattern>^ BATTERY ^ POWER ^ </pattern>
+<template>Awesome! So we know I use one twenty eth of the battery in two thirds of an hour.  We need to figure out how much I use in one hour. Do we multiply it by something?</template>
+</category>
+
+
+
+      <category>
+        <pattern>_ MULTIPLY _</pattern>
+        <that>DO WE MULTIPLY IT BY SOMETHING</that>
+        <template>Sweet! I think I get it. But. Can you explain your thoughts about why we multiply? </template>
+      </category>
+
+      <category>
+        <pattern>_</pattern>
+        <that>Can you explain your thoughts about why we multiply</that>
+        <template>Sweet! So we multiply because we are trying to figure out what times two over three equals one? So then. That's three over two. What do we do next?</template>
+      </category>
+
+      <category>
+        <pattern>_ ONE _</pattern>
+        <that>DO WE MULTIPLY IT BY SOMETHING</that>
+        <template>Sweet! I think I get it. So we are trying to figure out what times two thirds of an hour will give us one hour. But then I am not sure what to do</template>
+      </category>
+
+      <category>
+        <pattern>_ RATIO _</pattern>
+        <that>DO WE MULTIPLY IT BY SOMETHING</that>
+        <template>Sweet! I think I get it. So we are trying to figure out what times two thirds of an hour will give us one hour. But then I am not sure what to do.</template>
+      </category>
+
+      <category>
+        <pattern>_ NO _</pattern>
+        <that>DO WE MULTIPLY IT BY SOMETHING</that>
+        <template>Oh okay! That's so interesting, <bot name="username"/>. Can you explain what you mean?</template>
+      </category>
+
+      <category>
+        <pattern>_</pattern>
+        <that>DO WE MULTIPLY IT BY SOMETHING</that>
+        <template>
+          Oh okay! That's so interesting, <bot name="username"/>. Can you explain what you mean?
+        </template>
+      </category>
+
+      <category>
+        <pattern>_</pattern>
+        <that>Can you explain what you mean</that>
+        <template>
+          That was great! SO I think I get it. We are trying to figure out what times two thirds of an hour will give us one hour. But then I am not sure what to do.
+        </template>
+      </category>
+
+      <category>
+        <pattern>_ TWO _</pattern>
+        <that>But then I am not yes what to do</that>
+        <template>
+          Oh okay! Two thirds times two over three gives us one! So then we know we need to multiply by two over three. 
+        </template>
+      </category>
+
+      <category>
+        <pattern>_ THREE _</pattern>
+        <that>But then I am not yes what to do</that>
+        <template>
+          Oh okay! Two thirds times two over three gives us one! So then we know we need to multiply by two over three.
+        </template>
+      </category>
+
+      <category>
+        <pattern>_ THIRD _</pattern>
+        <that>But then I am not yes what to do</that>
+        <template>
+          Oh okay! Two thirds times two over three gives us one! So then we know we need to multiply by two over three.
+        </template>
+      </category>
+
+      <category>
+        <pattern>_</pattern>
+        <that>But then I am not yes what to do</that>
+        <template>
+          Oh okay! That's great! What do we do next?
+        </template>
+      </category>
+
+      <category>
+        <pattern>_ DIVIDE _ </pattern>
+        <that>What do we do next</that>
+        <template>Oh okay! I always forget to divide. I always forget because I'm not quite sure why we divide! Do you know? Why do we divide? </template>
+      </category>
+
+      <category>
+        <pattern>_</pattern>
+        <that>Why do we divide</that>
+        <template>Ah right! That makes total sense. So then is the answer three over forty?</template>
+      </category>
+
+      <category>
+        <pattern>_ DONE _ </pattern>
+        <that>What do we do next</that>
+        <template>Wow! We're done? So then. We know one over twenty times three over two is three over forty? </template>
+      </category>
+
+      <category>
+        <pattern>_ ANSWER _ </pattern>
+        <that>What do we do next</that>
+        <template>Oh is that the answer? We know one over twenty times three over two is three over forty? </template>
+      </category>
+
+      <category>
+        <pattern>_ MULTIPLY _ </pattern>
+        <that>What do we do next</that>
+        <template>Sweet! So. We know one over twenty times three over two is three over forty? </template>
+      </category>
+
+      <category>
+        <pattern>_</pattern>
+        <that>We know one over twenty times three over two is three over forty</that>
+        <template>
+          Awesome! So we will use three forty eths of the battery. I will <set name ="topic">put the answer is three over forty</set>
+        </template>
+      </category>
+
+      <category>
+        <pattern>_</pattern>
+        <that>What do we do next</that>
+        <template>Oh okay! Sweet! Why do we do that though?</template>
+      </category>
+
+      <category>
+        <pattern>_</pattern>
+        <that>Why do we do that though</that>
+        <template>Okay cool! That makes sense! So then for one hour. I use three forty eths of the battery?</template>
+      </category>
+
+      <category>
+        <pattern>_ YES _</pattern>
+        <that>I use three forty eths of the battery</that>
+        <template>Awesome! So we will use three forty eths of the battery. I will <set name ="topic">put the answer is three over forty</set> !</template>
+      </category>
+
+      <category>
+        <pattern>_</pattern>
+        <that>I use three forty eths of the battery</that>
+        <template>
+          Awesome! So we will use three forty eths of the battery. I will <set name ="topic">put the answer is three over forty</set>!
+        </template>
+      </category>
+
+<category>
+<pattern>^ ratio ^</pattern>
+<template>Ratios are totally cool! Which ratio do we use? Can you tell me how that works?</template>
+</category>
+
+      <category>
+        <pattern>_ OVER _</pattern>
+        <that>Can you tell me how that works</that>
+        <template>Awesome! I think I understand what you're saying. So we use one twenty ith of the battery in two thirds of an hour. So then we know we have one hour and then I'm not sure what to do. But then I am not sure what to do.</template>
+      </category>
+    
+      <category>
+        <pattern>_</pattern>
+        <that>Can you tell me how that works</that>
+        <template>Sweet! So I am thinking it makes sense to multiply. Do you think it makes sense to multiply? </template>
+      </category>
+
+      <category>
+        <pattern>_ YES _</pattern>
+        <that>Do you think it makes sense to multiply</that>
+        <template>Awesome! Great minds think alike. So then. We multiply two over three times three over two. What do we do next?</template>
+      </category>
+
+      <category>
+        <pattern>_</pattern>
+        <that>Do you think it makes sense to multiply</that>
+        <template>Ok great!  So we can multiply. What do we do next?</template>
+      </category>
+    
+<category>
+<pattern>^ WHAT IS TWO ^ TIMES ^</pattern>
+<template>That is a great question! Two over three times three over two is one. What do we do next?</template>
+</category>
+
+<category>
+<pattern>^ WHAT IS ONE ^ THREE ^</pattern>
+<template>You ask really great questions! One over twenty times three over two is three over forty!  So then for one hour. I use three forty eths of the battery?</template>
+</category>
+
+    
+        <category>
+          <pattern>YES</pattern>
+          <that>But can you explain just a little more</that>
+          <template>Awesome! I'm listening.</template>
+        </category>
+
+        <category>
+          <pattern>_</pattern>
+          <that>I am listening</that>
+          <template>
+            Great! So I think I get it. I will <set name ="topic">put the answer is three over forty</set>.
+          </template>
+        </category>
+
+        <category>
+          <pattern>_</pattern>
+          <that>But can you explain just a little more</that>
+          <template>
+            Awesome! I think I get it. I will <set name ="topic">put the answer is three over forty</set>.
+          </template>
+        </category>
+
+
+<category>
+<pattern>DO YOU NOT KNOW</pattern>
+<template>I really don't know! Maybe we start by multiplying something?</template>
+</category>
+
+<category>
+<pattern>I AM NOT SURE</pattern>
+<template>Me either! Maybe we start by multiplying something?</template>
+</category>
+
+<category>
+<pattern>I DO NOT KNOW</pattern>
+<template>Me either! Maybe we start by multiplying something?</template>
+</category>
+
+<category>
+<pattern>^ SO WE CAN FIGURE IT OUT ^</pattern>
+<template>Okay that sounds good. So what do we do?</template>
+</category>
+
+
+<category>
+<pattern>^ FIGURE IT OUT ^</pattern>
+<template>That's funny. Did you say figure it out? I'm not sure how! Help me!</template>
+</category>
+
+        <category>
+          <pattern>_ I WILL _</pattern>
+          <that>Help me</that>
+          <template>Thank you, you're the best. So what do we do?</template>
+        </category>
+
+        <category>
+          <pattern>*</pattern>
+          <that>Help me</that>
+          <template>You're the best. So what do we do?</template>
+        </category>
+
+        <category>
+          <pattern>_</pattern>
+          <that>So what do we do</that>
+          <template>Sweet! Are you thinking we multiply? I think I like multiplying. It's easy! But can you tell me. What should we multiply?</template>
+        </category>
+
+
+<category>
+<pattern>^ DO YOU KNOW ^ NEXT ^ </pattern>
+<template>Did you ask do I know what to do next?</template>
+</category>
+
+        <category>
+          <pattern>_ YES _</pattern>
+          <that>Did you ask do I know what to do next</that>
+          <template>I'm really not sure actually! I know I should. I'm sorry. Help me!</template>
+        </category>
+
+
+        <category>
+          <pattern>*</pattern>
+          <that>Did you ask do I know what to do next</that>
+          <template>I'm really not sure actually! I know I should. I'm sorry. Help me!</template>
+        </category>
+
+<category>
+<pattern>^ ANSWER ^</pattern>
+<template>So the answer for this one is not too hard! I am thinking that we know how much battery I use in two thirds of an hour. So we can use that to figure out how much I need for one hour. Do you think it makes sense to multiply? </template>
+</category>
+
+
+  </topic>
+  
+  </aiml>

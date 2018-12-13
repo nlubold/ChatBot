@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+
+
+<topic name = "how old">
+
+  <category>
+    <pattern>YES</pattern>
+    <that>Can you help me figure out how old it must be if it grows on average three feet every year</that>
+    <template>I think once we convert the feet to inches, we can setup ratios like you taught me already. But. I am a little confused. How do we convert the feet?</template>
+  </category>
+
+  <category>
+    <pattern>_ YES _</pattern>
+    <that>Can you help me figure out how old it must be if it grows on average three feet every year</that>
+  <template>I think once we convert the feet to inches, we can setup ratios like you taught me already. But. I am a little confused. How do we convert the feet?</template>
+  </category>
+
+  <category>
+<pattern>^ CONVERT ^ FEET ^</pattern>
+<template>We have to convert the three feet to inches? How do we do that?</template>
+</category>
+
+<category>
+<pattern>^ CONVERT ^ THREE ^</pattern>
+  <template>We have to convert the three feet to inches? How do we do that?</template>
+</category>
+
+      <category>
+        <pattern>_ TWELVE _</pattern>
+        <that>How do we do that</that>
+        <template>We can multiply by twelve? Where did the twelve come from?</template>
+      </category>
+  
+        <category>
+          <pattern>_</pattern>
+          <that>How do we do that</that>
+          <template>We can multiply by twelve?</template>
+        </category>
+
+
+        <category>
+          <pattern>_</pattern>
+          <that>We can multiply by twelve</that>
+          <template>Sweet! So that is thirty six inches. Do we convert the one year to months? </template>
+        </category>
+
+        <category>
+          <pattern>_</pattern>
+          <that>Where did the twelve come from</that>
+          <template>Oh right. There are twelve inches in a foot. So we can multiply by twelve. SO that is thirty six! Do we convert the one year to months?</template>
+        </category>
+
+
+        <category>
+          <pattern>_</pattern>
+          <that>do we convert the one year to months</that>
+          <template>Converting the year is a bit easier because I remember that there are twelve months in the year. So I can multiply one times twelve.</template>
+        </category>
+
+
+          <category>
+          <pattern>_</pattern>
+          <that>So I can multiply one times twelve</that>
+          <template>I remember all you taught me about ratios! Well almost. We can use the thirty six inches and the twelve months to. Setup a ratio for the ten inches right? </template>
+          </category>
+
+
+          <category>
+          <pattern>_</pattern>
+          <that>Setup a ratio for the ten inches right</that>
+          <template>And thirty six times something needs to equal ten. Okay I forgot. How do I solve for that?</template>
+          </category>
+
+
+          <category>
+          <pattern>_</pattern>
+          <that>How do I solve for that</that>
+          <template>Oh got it! Ten over thirty six times thirty six will equal ten! And then we can use that times twelve to figure out. How many months old the pine tree is!</template>        
+          </category>
+
+          <category>
+            <pattern>_</pattern>
+            <that>How many months old the pine tree is</that>
+            <template>I guess it is easier if we reduce ten over thirty six. But multiplying it out, we get ten over three! That is the answer right?</template>
+          </category>
+
+
+          <category>
+            <pattern>_</pattern>
+            <that>That is the answer right</that>
+            <template>I will use what you taught me and convert it a mixed fraction so we know about how many months old it is. SO that would be three months and one third! Three months and a little over a week. I will <set name="topic">put the answer is three and one</set> third months old.
+          </template>
+          </category>
+
+<category>
+<pattern>^ CONVERT ^ FEET ^ MULTIPLY ^ TWELVE ^</pattern>
+<template>Okay so we can convert the feet to inches and we can multiply by twelve? Where did the twelve come from?</template>
+</category>
+
+<category>
+<pattern>^ CONVERT ^ THREE ^ MULTIPLY ^ TWELVE ^</pattern>
+<template>Okay so we can convert the feet to inches and we can multiply by twelve? Where did the twelve come from?</template>
+</category>
+   
+<category>
+<pattern>^ CONVERT ^</pattern>
+<template>I get that we need to convert the feet to inches and the year to months so we can setup ratios like you taught me already. But. I am a little confused. How do we convert the feet?</template>
+</category>
+
+
+  <category>
+    <pattern>_ TWELVE _</pattern>
+    <that>How do we convert the feet</that>
+    <template>We can multiply by twelve? Where did the twelve come from?</template>
+  </category>
+
+  <category>
+    <pattern>_</pattern>
+    <that>How do we convert the feet</that>
+    <template>We can multiply by twelve?</template>
+  </category>
+  
+<category>
+<pattern>^ TIMES ^</pattern>
+<template>Are you saying that to convert the feet to inches, we can multiply by twelve? Where did the twelve come from?</template>
+</category>
+
+<category>
+<pattern>^ MULTIPLY ^</pattern>
+<template>Are you saying that to convert the feet to inches, we can multiply by twelve? Where did the twelve come from?</template>
+</category>
+
+<category>
+<pattern>^ SAME THING ^</pattern>
+  <template>I think once we convert the feet to inches, we can setup ratios like you taught me already. But. I am a little confused. How do we convert the feet?</template>
+</category>
+
+  <category>
+    <pattern>^ RATIO ^</pattern>
+    <template>I think once we convert the feet to inches, we can setup ratios like you taught me already. But. I am a little confused. How do we convert the feet?</template>
+  </category>
+
+  <category>
+<pattern>^ ANSWER ^</pattern>
+<template>SO I think I can figure it out after I figure out how to convert the feet to inches and the years to months. But I'm not sure how to do that. </template>
+</category>
+
+  <category>
+    <pattern>_</pattern>
+    <that>But I am not yes how to do that</that>
+    <template>I'm still confused.</template>
+  </category>
+  
+
+<category>
+<pattern>DO YOU NOT KNOW</pattern>
+<template>I don't! Maybe we start by multiplying?</template>
+</category>
+
+<category>
+<pattern>I AM NOT YES</pattern>
+<template>I'm not sure either!</template>
+</category>
+
+<category>
+<pattern>I DO NOT KNOW</pattern>
+<template>I don't know either!</template>
+</category>
+
+<category>
+<pattern>^ SO WE CAN FIGURE IT OUT ^</pattern>
+<template>Okay that sounds great! So what do we do next then?</template>
+</category>
+
+
+<category>
+<pattern>^ FIGURE IT OUT ^</pattern>
+<template>Were you saying. Figure it out? I don't know how. Do you think could give me another hint?</template>
+</category>
+
+<category>
+<pattern>^ DO YOU KNOW ^ NEXT ^ </pattern>
+<template>You're funny. Did you ask do I know what to do next?</template>
+</category>
+
+<category>
+<pattern>_ YES _</pattern>
+<that>Did you ask do I know what to do next</that>
+<template>
+  <random>
+    <li>No not really. </li>
+    <li>I think we multiply? We multiply?</li>
+    <li>Do we divide?</li>
+    <li>I think we divide?</li>
+    <li>Can't you just tell me?</li>
+    <li>Uh I don't know</li>
+  </random>
+</template>
+</category>
+
+
+<category>
+<pattern>*</pattern>
+<that>Did you ask do I know what to do next</that>
+<template>
+  <random>
+    <li>No not really.</li>
+    <li>I think we multiply? We multiply?</li>
+    <li>Do we divide?</li>
+    <li>I think we divide?</li>
+    <li>Can't you just tell me?</li>
+    <li>Uh I don't know</li>
+  </random>
+</template>
+</category>
+
+
+
+</topic>
+
+
+
+</aiml>

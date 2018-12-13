@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+
+<category>
+<pattern>$PROBLEM START 5</pattern>
+<template>Now that I know how long one battery will last, can you help me figure out <set name="topic">how many batteries</set> I need total?</template>
+</category>
+
+  <category>
+    <pattern>$PROBLEM START FIVE</pattern>
+    <template>
+      Now that I know how long one battery will last, can you help me figure out <set name="topic">how many batteries</set> I need total?
+    </template>
+  </category>
+
+
+
+
+
+  <topic name = "PUT THE ANSWER IS EIGHTEEN BATTERIES">
+
+    <category>
+      <pattern>*</pattern>
+      <template>Now I know how much waterproof paint I need. I know how many batteries I need and how long it will take me to get to the store to get them. On to the next problem. </template>
+    </category>
+
+    <category>
+      <pattern>*</pattern>
+      <that>On to the next problem</that>
+      <template>Don't forget. You have to hit the button to go to the next problem.</template>
+    </category>
+
+    <category>
+        <pattern>^ GREAT ^</pattern>
+        <template>Cool. </template>
+      </category>
+
+
+      <category>
+        <pattern>^ Good ^</pattern>
+        <template>Cool. </template>
+      </category>
+
+      <category>
+        <pattern>^ NEXT ^</pattern>
+        <template>Don't forget. You have to hit the button to go to the next problem.</template>
+      </category>
+
+    <category>
+      <pattern>*</pattern>
+      <that>Cool</that>
+      <template>Don't forget. You have to hit the button to go to the next problem.</template>
+    </category>
+
+
+  </topic>
+
+
+
+</aiml>

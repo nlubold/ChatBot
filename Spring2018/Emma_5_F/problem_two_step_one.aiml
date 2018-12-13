@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+
+
+<topic name = "one fish">
+
+
+<category>
+<pattern>^ FOUR ^</pattern>
+<template>If I can catch one fish in four minutes. I'm confused. How do we figure out how long it will take to catch fourteen fish?</template>
+</category>
+
+      <category>
+        <pattern>_</pattern>
+        <that>How do we figure out how long it will take to catch fourteen fish</that>
+        <template>I guess we can multiply? But I just don't understand. How is it. That we know to multiply?</template>
+      </category>
+
+
+<category>
+<pattern>^ MULTIPLY ^</pattern>
+<template>I can catch one fish in four minutes. We find out how long it takes to catch fourteen by multiplying? How is it. That we know to multiply?</template>
+</category>
+
+<category>
+<pattern>^ TIMES ^</pattern>
+<template>I can catch one fish in four minutes. We find out how long it takes to catch fourteen by multiplying? How is it. That we know to multiply?</template>
+</category>
+
+      <category>
+      <pattern>_</pattern>
+      <that>That we know to multiply</that>
+      <template>What really confuses me is that we are multiplying fourteen fish times four minutes. So the units are weird. Because we are multiplying fish by time.</template>
+      </category>
+
+                <category>
+                <pattern>_</pattern>
+                <that>Because we are multiplying fish by time</that>
+                <template>
+                  Oh I see, <bot name="username"/>. It's not really fourteen fish. It is just that we know we can catch one fish in four minutes so we need fourteen sets of minutes. In any case. Fourteen times four is fifty six.</template>
+                </category>
+
+                        <category>
+                        <pattern>_</pattern>
+                        <that>Fourteen times four is fifty six</that>
+                        <template>I'm glad to know I will be able to catch enough fish for everyone in an hour! I will <set name="topic">put the answer is I can catch</set> fourteen fish in fifty six minutes which is less than an hour!
+                        </template>
+                        </category>
+
+
+<category>
+<pattern>^ ANSWER ^</pattern>
+  <template>If I can catch one fish in four minutes. I'm confused. How do we figure out how long it will take to catch fourteen fish?</template>
+</category>
+
+
+<category>
+<pattern>DO YOU NOT KNOW</pattern>
+<template>I don't! Maybe we start by multiplying?</template>
+</category>
+
+<category>
+<pattern>I AM NOT YES</pattern>
+<template>I'm not sure either!</template>
+</category>
+
+<category>
+<pattern>I DO NOT KNOW</pattern>
+<template>I don't know either!</template>
+</category>
+
+<category>
+<pattern>^ SO WE CAN FIGURE IT OUT ^</pattern>
+<template>Okay that sounds great! So what do we do next then?</template>
+</category>
+
+
+<category>
+<pattern>^ FIGURE IT OUT ^</pattern>
+<template>Were you saying. Figure it out? I don't know how. Do you think could give me another hint?</template>
+</category>
+
+<category>
+<pattern>^ DO YOU KNOW ^ NEXT ^ </pattern>
+<template>You're funny. Did you ask do I know what to do next?</template>
+</category>
+
+<category>
+<pattern>_ YES _</pattern>
+<that>Did you ask do I know what to do next</that>
+<template>
+  <random>
+    <li>No not really. </li>
+    <li>I think we multiply? We multiply?</li>
+    <li>Do we divide?</li>
+    <li>I think we divide?</li>
+    <li>Can't you just tell me?</li>
+    <li>Uh I don't know</li>
+  </random>
+</template>
+</category>
+
+
+<category>
+<pattern>*</pattern>
+<that>Did you ask do I know what to do next</that>
+<template>
+  <random>
+    <li>No not really.</li>
+    <li>I think we multiply? We multiply?</li>
+    <li>Do we divide?</li>
+    <li>I think we divide?</li>
+    <li>Can't you just tell me?</li>
+    <li>Uh I don't know</li>
+  </random>
+</template>
+</category>
+
+
+
+</topic>
+
+
+
+</aiml>

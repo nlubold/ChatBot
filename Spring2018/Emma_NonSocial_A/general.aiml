@@ -1,0 +1,632 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+
+<category><pattern>^ YOU READY ^</pattern>
+<template>I'm ready. Are you ready?</template>
+</category>
+
+<category><pattern>*</pattern>
+<that>Are you ready</that>
+<template>So. What are we doing?</template>
+</category>
+
+<category><pattern>^ YES WHY NOT ^</pattern>
+<template>Okay.</template>
+</category>
+
+<category><pattern>^ THE ANSWER IS NOT ^</pattern>
+<template>Are you sure? Because it really seems like it should be to me. Can you explain more?
+</template>
+</category>
+
+<category><pattern>DID YOU UNDERSTAND</pattern>
+<template>Figuring out the solutions to these problems is challenging.
+</template>
+</category>
+
+<category><pattern>^ REPEAT ^</pattern>
+<template>I really am sorry but I don't remember what I just said. How about you explain what you were explaining again?
+</template>
+</category>
+
+<category><pattern>HELLO FIRST TIME</pattern>
+<template>Hi. My name is Emma. Glad to meet you.
+</template>
+</category>
+
+  <category>
+    <pattern>*</pattern>
+    <that>Glad to meet you.</that>
+    <template>
+      Are you ready to get started?
+    </template>
+  </category>
+
+  <category><pattern>* HI *</pattern>
+<template><srai>HELLO</srai>
+</template>
+</category>
+
+<category><pattern>^ HI ^</pattern>
+<template><srai>HELLO</srai>
+</template>
+</category>
+
+<category><pattern>HELLO</pattern>
+<template><random>
+<li>Are you ready to get started? </li>
+  <li>What is your name?</li>
+<li>Have we met before?</li>
+</random></template>
+</category>
+
+
+  <category><pattern>MY NAME IS *</pattern>
+<that>WHAT IS YOUR NAME</that>
+<template>Nice to meet you. Are you ready to get started?</template>
+</category>
+
+
+<category><pattern>^ HI ^</pattern>
+<that>WHAT IS YOUR NAME</that>
+<template>Nice to meet you. Are you ready to get started?</template>
+</category>
+
+<category><pattern>^ HELLO ^</pattern>
+<that>WHAT IS YOUR NAME</that>
+<template>Nice to meet you. Are you ready to get started?</template>
+</category>
+
+<category><pattern>^ HEY ^</pattern>
+<that>WHAT IS YOUR NAME</that>
+<template>Nice to meet you. Are you ready to get started?</template>
+</category>
+
+
+<category><pattern>* YES *</pattern>
+<that>ARE YOU READY TO GET STARTED</that>
+<template>Press the start teaching button and we can get started.</template>
+</category>
+
+<category><pattern>* I AM *</pattern>
+<that>ARE YOU READY TO GET STARTED</that>
+<template>Press the start teaching button and we can get started.</template>
+</category>
+
+<category><pattern>* ARE YOU *</pattern>
+<that>ARE YOU READY TO GET STARTED</that>
+<template>Press the start teaching button and we can get started.</template>
+</category>
+
+
+<category><pattern>* YOU BET *</pattern>
+<that>ARE YOU READY TO GET STARTED</that>
+<template>Press the start teaching button and we can get started.</template>
+</category>
+
+<category><pattern>* NO *</pattern>
+<that>ARE YOU READY TO GET STARTED</that>
+<template>What? Why are you not ready? I am.</template>
+</category>
+
+<category><pattern>*</pattern>
+<that>I AM</that>
+<template>Press the start teaching button and we can get started.</template>
+</category>
+
+<category><pattern>* NAME *</pattern>
+<that>WHAT IS YOUR NAME</that>
+<template>Are you ready to get started?</template>
+</category>
+
+<category><pattern>*</pattern>
+<that>WHAT IS YOUR NAME</that>
+<template>Are you ready to get started?</template>
+</category>
+
+<category><pattern>* YES *</pattern>
+<that>WHAT IS YOUR NAME</that>
+<template>Oh I am sorry. Were you teaching me?</template>
+</category>
+
+
+<category><pattern>* YES *</pattern>
+<that>have we met before</that>
+<template>Oh I am sorry. Were you teaching me?</template>
+</category>
+
+<category><pattern>* NO *</pattern>
+<that>have we met before</that>
+<template>Okay. How are you doing today?</template>
+</category>
+
+
+<category><pattern>*</pattern>
+<that>have we met before</that>
+<template>Okay. How are you doing today?</template>
+</category>
+
+<category><pattern>* YES *</pattern>
+<that>Were you teaching me</that>
+<template>Lets get back to learning.</template>
+</category>
+
+<category><pattern>* NO *</pattern>
+<that>Were you teaching me</that>
+<template>Oh. Lets get back to learning anyway.</template>
+</category>
+
+<category><pattern>*</pattern>
+<that>Were you teaching me</that>
+<template>Okay. Lets get back to learning.</template>
+</category>
+
+<category><pattern>MY NAME IS * </pattern>
+<template>Nice to meet you <star/>. How are you doing today?</template>
+</category>
+
+<category><pattern>HOW ARE YOU *</pattern>
+<template>Good. How are you?</template>
+</category>
+
+<category><pattern>* FINE *</pattern><that>HOW ARE YOU DOING TODAY</that>
+<template>I AM FINE TOO. Are you ready to get started?</template>
+</category>
+
+<category><pattern>* OKAY *</pattern><that>HOW ARE YOU DOING TODAY</that>
+<template>I AM OKAY TOO. Are you ready to get started?</template>
+</category>
+
+<category><pattern> *</pattern><that>HOW ARE YOU DOING TODAY</that>
+<template>Are you ready to get started?</template>
+</category>
+
+<category><pattern>* YES *</pattern><that>ARE YOU READY TO GET STARTED</that>
+<template>Press the start teaching button and we can get started. </template>
+</category>
+
+<category><pattern>* NO *</pattern><that>ARE YOU READY TO GET STARTED</that>
+<template>Press the start teaching button and we can get started. </template>
+</category>
+
+<category><pattern>*</pattern><that>ARE YOU READY TO GET STARTED</that>
+<template>Press the start teaching button and we can get started. </template>
+</category>
+
+<category><pattern>PROBLEM START 1</pattern><that>ARE YOU READY TO GET STARTED</that>
+  <template>
+    I am going camping with my friends. They want to go swimming in the lake and I'm not waterproof. But. I can make myself waterproof with paint. Can you help me figure out what waterproof paint I need to cover my arms and body? Lets start with my <set name="topic">arms</set>.
+  </template>
+  </category>
+
+<category>
+<pattern>^ Good job ^ </pattern>
+<template>
+  <random>
+    <li>That's nice.</li>
+    <li>Cool.</li>
+    <li>Okay.</li>
+  </random></template>
+</category>
+
+<category>
+<pattern>^ Great job ^ </pattern>
+  <template>
+    <random>
+    <li>That's nice.</li>
+    <li>Cool.</li>
+    <li>Okay.</li>
+    </random>
+  </template>
+</category>
+
+
+<category>
+<pattern>^ Nice job ^ </pattern>
+  <template>
+    <random>
+    <li>That's nice.</li>
+    <li>Cool.</li>
+    <li>Okay.</li>
+    </random>
+  </template>
+</category>
+
+<category>
+<pattern>^ Nice ^ </pattern>
+  <template>
+    <random>
+    <li>That's nice.</li>
+    <li>Cool.</li>
+    <li>Okay.</li>
+    </random>
+  </template>
+</category>
+
+
+
+<category>
+<pattern>HOW DID YOU ^</pattern>
+<template><random>
+<li>I took what you said and I thought about it and it came to me what to do.</li>
+<li>I have a pretty good memory and I'm figuring this out </li>
+</random></template>
+</category>
+
+<category>
+<pattern>HOW DO YOU KNOW ^</pattern>
+<template><random>
+<li>I've been listening to you and it just came to meo.</li>
+<li>I have a pretty good memory and I'm figuring this out </li>
+</random></template>
+</category>
+
+<category>
+<pattern>YOU DO *</pattern>
+<template>Okay so that is what we do. What do we do next?</template>
+</category>
+
+<category>
+<pattern>NO RESPONSE</pattern>
+<template><random>
+<li>Are you there? I didn't quite here what you said.</li>
+<li>To be honest, I have no idea what you just said.</li>
+<li>Hmmmm. I didn't hear you. Can you repeat that? </li>
+<li>I'm sorry, sometimes I'm a little hard of hearing.</li>
+</random>
+</template>
+</category>
+
+<category>
+<pattern>TRIGGERED SPEECH 1</pattern>
+<template>Why aren't you talking to me? Are you thinking?</template>
+</category>
+
+<category>
+<pattern>TRIGGERED SPEECH 2</pattern>
+<template>Why aren't you talking to me?</template>
+</category>
+
+<category>
+<pattern>TRIGGERED SPEECH 3</pattern>
+<template>Are you going to talk to me?</template>
+</category>
+
+<category>
+<pattern>TRIGGERED SPEECH</pattern>
+<template>
+  <random>
+    <li>Okay.</li>
+    <li>This is a hard problem. What do I do next?</li>
+    <li>Okay</li>
+    <li>Alright.</li>
+    <li>Can you please try saying that again?</li>
+    <li>Do you think you could explain more about that?</li>
+    <li>
+      Okay that makes sense.
+    </li>
+    <li>
+      I'm still learning ratios. What should I do?
+    </li>
+    <li>I'm not sure I understand. Can you explain a little more?</li>
+    <li>
+      Can you explain a little more?
+    </li>
+    <li>Ah ha. Okay.</li>
+    <li>Can you say that again please?</li>
+    <li>So what do I do?</li>
+    <li>
+      I think I get it. What do I do next?
+    </li>
+  </random>
+</template>
+</category>
+
+ <category>
+<pattern>^ WHAT MAKES SENSE ^</pattern>
+   <that>Okay that makes sense</that>
+<template>What you just said. What do I do next?</template>
+</category>
+
+  
+
+<category>
+<pattern>* I *</pattern><that>WHY DO YOU NOT TELL ME</that>
+<template>Okay thanking you for telling me.</template>
+</category>
+
+
+<category>
+<pattern>* I *</pattern><that>WERE YOU TEACHING ME</that>
+<template>Okay. I'll listen if you want to teach me.</template>
+</category>
+
+<category>
+<pattern>OKAY</pattern>
+<template>Now what do I do?</template>
+</category>
+
+<category>
+<pattern>FINE</pattern>
+<template>I am fine and that is fine.</template>
+</category>
+
+<category>
+<pattern>I AM KIDDING</pattern>
+<template>Aha ok.</template>
+</category>
+
+<category>
+<pattern>REALLY</pattern>
+<template>Really?</template>
+</category>
+
+
+<category>
+<pattern>REALLY</pattern><that>REALLY</that>
+<template>Oh okay.</template>
+</category>
+
+<category>
+<pattern>*</pattern><that>REALLY</that>
+<template>Oh okay.</template>
+</category>
+
+<category>
+<pattern>* your last name *</pattern>
+<template><srai>LAST NAME</srai></template>
+</category>
+
+<category>
+<pattern>* your first name *</pattern>
+<template><srai>FIRST NAME</srai></template>
+</category>
+
+
+<category>
+<pattern>* your middle name *</pattern>
+<template><srai>middle NAME</srai></template>
+</category>
+
+<category>
+<pattern>* your full name *</pattern>
+<template><srai>full NAME</srai></template>
+</category>
+
+
+<category>
+<pattern>* your name *</pattern>
+<template><srai>full NAME</srai></template>
+</category>
+
+<category>
+<pattern>* like * name *</pattern>
+<template>Cool.</template>
+</category>
+
+<category>
+<pattern>* how old *</pattern>
+<template><srai>AGE</srai></template>
+</category>
+
+
+<category>
+<pattern>* when * birthday *</pattern>
+<template><srai>BIRTHDAY</srai></template>
+</category>
+
+
+<category>
+<pattern>* when * birthdate *</pattern>
+<template><srai>BIRTHDATE</srai></template>
+</category>
+
+
+<category>
+<pattern>* were * born *</pattern>
+<template><srai>BIRTHDAY</srai></template>
+</category>
+
+
+<category>
+<pattern>* when * birthdate *</pattern>
+<template><srai>BIRTHDATE</srai></template>
+</category>
+
+
+<category>
+<pattern>* are you * boy *</pattern>
+<template><srai>GENDER</srai></template>
+</category>
+
+<category>
+<pattern>* are you * girl *</pattern>
+<template><srai>GENDER</srai></template>
+</category>
+
+<category>
+<pattern>* are you * male *</pattern>
+<template><srai>GENDER</srai></template>
+</category>
+
+<category>
+<pattern>* are you * female *</pattern>
+<template><srai>GENDER</srai></template>
+</category>
+
+<category>
+<pattern>* are you * woman *</pattern>
+<template><srai>GENDER</srai></template>
+</category>
+
+<category>
+<pattern>* are you * man *</pattern>
+<template><srai>GENDER</srai></template>
+</category>
+
+<category>
+<pattern>* are you * woman *</pattern>
+<template><srai>GENDER</srai></template>
+</category>
+
+<category>
+<pattern>* are you * man *</pattern>
+<template><srai>GENDER</srai></template>
+</category>
+
+<category>
+<pattern>* are you * robot *</pattern>
+<template><srai>SPECIES</srai></template>
+</category>
+
+<category>
+<pattern>* are you * human *</pattern>
+<template><srai>SPECIES</srai></template>
+</category>
+
+<category>
+<pattern>* are you * species *</pattern>
+<template><srai>SPECIES</srai></template>
+</category>
+
+<category>
+<pattern>* species *</pattern>
+<template><srai>SPECIES</srai></template>
+</category>
+
+<category>
+<pattern>* YOUR HAIR *</pattern>
+<template><srai>HAIR</srai></template>
+</category>
+
+<category>
+<pattern>* YOUR EYECOLOR *</pattern>
+<template><srai>EYECOLOR</srai></template>
+</category>
+
+<category>
+<pattern>* YOUR EYES *</pattern>
+<template><srai>EYES</srai></template>
+</category>
+
+<category>
+<pattern>* YOUR * FAVORITE COLOR *</pattern>
+<template><srai>EYES</srai></template>
+</category>
+
+<category><pattern>* GET IT *</pattern>
+<template>I think I get it.
+</template>
+</category>
+
+<category><pattern>* WHAT DO YOU GET *</pattern>
+<template>That I multiply and divide to solve ratio problems. Although I still mess up on what to multiply or divide.
+</template>
+</category>
+
+<category><pattern>^ READY ^ NEXT PROBLEM ^</pattern>
+<template>
+    Yes I am ready for the next problem.
+</template>
+</category>
+
+<category><pattern>^ READY ^ NEXT STEP ^</pattern>
+<template><random>
+    <li>I am definitely ready for the next step.</li>
+    <li>I would like to go to the next step.</li>
+</random>
+</template>
+</category>
+
+<category><pattern>^ READY FOR STEP ^</pattern>
+<template><random>
+    <li>I am definitely ready for the next step.</li>
+    <li>I would like to go to the next step.</li>
+</random>
+</template>
+</category>
+
+<category><pattern>^ NEXT PROBLEM ^</pattern>
+<template><random>
+    <li>I am definitely ready for the next problem.</li>
+    <li>I would like to go to the next problem.</li>
+</random>
+</template>
+</category>
+
+<category><pattern>^ Let us start ^ </pattern>
+<template>Alright.
+</template>
+</category>
+
+<category><pattern>^ COLOR ^ </pattern>
+<template>My favorite color is blue but lets get back to work.
+</template>
+</category>
+
+
+
+<category><pattern>^ MATH ^</pattern>
+<template>Yes math is nice. What do you think of math?
+</template>
+</category>
+
+<category><pattern>^ LIKE ^</pattern>
+<that>What do you think of math</that>
+<template>I like math. I should get back to learning math.
+</template>
+</category>
+
+
+<category><pattern>^ HATE ^</pattern>
+<that>What do you think of math</that>
+<template>I like math. I should get back to learning math.
+</template>
+</category>
+
+<category><pattern>_</pattern>
+<that>What do you think of math</that>
+<template>Do you want to tell me more about that?
+</template>
+</category>
+
+
+<category><pattern>_</pattern>
+<that>Do you want to tell me more about that</that>
+<template>It's nice to hear someone else's thoughts about math. I should get back to learning math though.
+</template>
+</category>
+
+
+<category><pattern>^ WEIRD ^</pattern>
+<template>Did you way I'm weird? Sometimes I do weird things. I am a robot. 
+</template>
+</category>
+
+<category><pattern>^ REPEAT ^</pattern>
+<template>I'm sorry. Did you ask me to repeat something? I don't really repeat things well. 
+</template>
+</category>
+
+<category><pattern>^ SAY THAT AGAIN ^</pattern>
+<template>I'm sorry. Did you ask me to repeat something? I don't really repeat things well. 
+</template>
+</category>
+
+  <category>
+    <pattern>^ WHAT IS ^</pattern>
+    <template>
+      <random>
+        <li>Hmmmm. I know I should know but I don't remember. Would you mind telling me what it is?</li>
+        <li>I know I seem like I know some things really well but I don't actually know. Can you explain more?</li>
+        <li>I'm not sure actually.</li>
+    </random>
+  </template>
+  </category>
+
+  <category>
+    <pattern>^ FAST ^</pattern>
+    <template>I am a very fast bike rider and a very fast swimmer. But I am a robot. I am not so fast at speaking. I apologize for that.</template>
+  </category>
+
+</aiml>

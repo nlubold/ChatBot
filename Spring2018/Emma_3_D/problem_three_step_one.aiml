@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+
+
+<topic name = "Help me practise">
+
+
+<category>
+<pattern>^ RATIO ^</pattern>
+<template>Are you thinking we can use ratios here too?</template>
+</category>
+
+        <category>
+        <pattern>_ YES _</pattern>
+        <that>Are you thinking we can use ratios here too</that>
+        <template>Cool! I'm not sure I understand though. Kind of seems like we should just be able to convert seventy four thousand without the ratio.</template>
+        </category>
+
+        <category>
+        <pattern>_ NO _</pattern>
+        <that>Are you thinking we can use ratios here too</that>
+        <template>Cool! Yeah I think that makes more sense. Kind of seems like we should just be able to convert seventy four thousand without the ratio.</template>
+        </category>
+  
+        <category>
+        <pattern>_</pattern>
+        <that>Are you thinking we can use ratios here too</that>
+        <template>Cool! Yeah I think that makes more sense. Kind of seems like we should just be able to convert seventy four thousand without the ratio.</template>
+        </category>
+  
+<category>
+<pattern>^ COMMA ^</pattern>
+<template>Hmmmm. Are you saying we look at where the comma is in the number we are trying to convert?</template>
+</category>
+
+        <category>
+        <pattern>_</pattern>
+        <that>Are you saying we look at where the comma is in the number we are trying to convert</that>
+        <template>Cool! I'm still a little confused though. How exactly do you figure out how many tens we multiply by?</template>
+        </category>
+  
+<category>
+<pattern>^ FIRST ^</pattern>
+<template>Hmmmm. So are you thinking we look at the first digit, which is seven. And. We know we can put the decimal right there? </template>
+</category>
+
+<category>
+<pattern>^ onest ^</pattern>
+<template>Hmmmm. So are you thinking we look at the first digit, which is seven. And. We know we can put the decimal right there? </template>
+</category>
+
+<category>
+<pattern>^ DECIMAL ^</pattern>
+<template>Hmmmm. So are you thinking we look at the first digit, which is seven. And. We know we can put the decimal right there? </template>
+</category>
+
+        <category>
+        <pattern>_</pattern>
+        <that>We know we can put the decimal right there</that>
+        <template>So that will be seven point four but I have to confess. I'm still a little confused. How exactly do you figure out how many tens we multiply by?</template>
+        </category>
+
+                  <category>
+                  <pattern>_ COUNT _</pattern>
+                  <that>How exactly do you figure out how many tens we multiply by</that>
+                  <template>Oh cool! So let me see. We can count the number of digits in the number we're converting?</template>
+                  </category>
+
+                  <category>
+                  <pattern>_ DIGITS _</pattern>
+                  <that>How exactly do you figure out how many tens we multiply by</that>
+                  <template>Oh cool! So let me see. We can count the number of digits in the number we're converting?</template>
+                  </category>
+
+                  <category>
+                  <pattern>_ NUMBERS _</pattern>
+                  <that>How exactly do you figure out how many tens we multiply by</that>
+                  <template>Oh cool! So let me see. We can count the number of digits in the number we're converting?</template>
+                  </category>
+
+                  <category>
+                  <pattern>_</pattern>
+                  <that>How exactly do you figure out how many tens we multiply by</that>
+                  <template>Oh cool! So let me see. We can figure out that seven times ten thousand would get us close to seventy four thousand. And then. We can count the number of digits in the number we're converting.</template>
+                  </category>
+
+                            <category>
+                            <pattern>_</pattern>
+                            <that>We can count the number of digits in the number we are converting</that>
+                            <template>If we count it up, that's four. So that is how we know how many tens we multiply by.</template>
+                            </category>
+
+                                      <category>
+                                      <pattern>_</pattern>
+                                      <that>So that is how we know how many tens we multiply by</that>
+                                      <template>Awesome! I will <set name="topic">put the answer is seven point</set> four times ten to the fourth.</template>
+                                      </category>
+
+<category>
+<pattern>^ TENS ^</pattern>
+<template>So for scientific notation, we need to multiply by ten and we can look at how many thousands places we have? I'm still confused. How exactly do you figure out how many tens we multiply by?  </template>
+</category>
+
+<category>
+<pattern>^ COUNT ^</pattern>
+<template>Hmmm. So are you thinking we can count the number of digits in the number we're converting? </template>
+</category>
+
+<category>
+<pattern>^ DIGITS ^</pattern>
+<template>Hmmm. So are you thinking we can count the number of digits in the number we're converting? </template>
+</category>
+
+<category>
+<pattern>^ NUMBERS ^</pattern>
+<template>Hmmm. So are you thinking we can count the number of digits in the number we're converting? </template>
+</category>
+  
+        <category>
+        <pattern>_</pattern>
+        <that>So are you thinking we can count the number of digits in the number we are converting</that>
+        <template>If we count it up, that's five. So then. Is that the number of tens we multiply by? 
+        </template>
+        </category>
+
+                <category>
+                <pattern>_</pattern>
+                <that>Is that the number of tens we multiply by</that>
+                <template>
+                  Ohhhh. So I am guessing. It is actually only four digits? So that would be ten to the fourth? But then how do we figure out what we multiply by ten to the fourth?
+                </template>
+              </category>
+
+
+                              <category>
+                              <pattern>_</pattern>
+                              <that>But then how do we figure out what we multiply by ten to the fourth</that>
+                              <template>So I'm thinking. I remember it is usually only digit before the decimal right? We put the decimal after the first digit? Any ideas why?</template>
+                              </category>
+
+                                        <category>
+                                        <pattern>_</pattern>
+                                        <that>Any ideas why</that>
+                                        <template>Okay! That's cool! So if we put the decimal right after the seven, that's seven point four. And we already found that we need four tens. </template>
+                                        </category>
+
+                                                    <category>
+                                                    <pattern>_</pattern>
+                                                    <that>And we already found that we need four tens</that>
+                                                    <template>Thank you for helping me! I will <set name="topic">put the answer is seven point</set> four times ten to the fourth.</template>
+                                                    </category>
+
+<category>
+<pattern>^ THOUSAND ^</pattern>
+<template>So for scientific notation, we need to multiply by ten and we can look at how many thousands places we have? I'm still confused. How exactly do you figure out how many tens we multiply by? </template>
+</category>
+
+<category>
+<pattern>^ TIMES ^</pattern>
+<template>So for scientific notation, we need to multiply by ten and we can look at how many thousands places we have? I'm still confused. How exactly do you figure out how many tens we multiply by? </template>
+</category>
+
+<category>
+<pattern>^ MULTIPLY ^</pattern>
+<template>So for scientific notation, we need to multiply by ten and we can look at how many thousands places we have? I'm still confused. How exactly do you figure out how many tens we multiply by? </template>
+</category>
+
+<category>
+<pattern>^ THOUSANDTHS ^</pattern>
+<template>So for scientific notation, we need to multiply by ten and we can look at how many thousands places we have? I'm still confused. How exactly do you figure out how many tens we multiply by? </template>
+</category>
+
+<category>
+<pattern>^ TEN THOUSAND ^</pattern>
+<template>So for scientific notation, we need to multiply by ten and we can look at how many thousands places we have? I'm still confused. How exactly do you figure out how many tens we multiply by? </template>
+</category>
+
+<category>
+<pattern>^ MULTIPLICATION ^</pattern>
+<template>So for scientific notation, we need to multiply by ten and we can look at how many thousands places we have? I'm still confused. How exactly do you figure out how many tens we multiply by? </template>
+</category>
+
+<category>
+<pattern>^ ANSWER ^</pattern>
+<template>I'm not very sure of the answer yet. I know that from scientific notation, we need to multiply by ten. Do we look at how many thousands places we have?</template>
+</category>
+
+          <category>
+          <pattern>_</pattern>
+          <that>Do we look at how many thousands places we have</that>
+          <template>I'm still confused. I know we will have ten to something. How do you figure out what the something is?</template>
+          </category>
+
+                <category>
+                <pattern>_</pattern>
+                <that>How do you figure out what the something is</that>
+                <template>Hmmm. So are you thinking we can count the number of digits in the number we're converting? </template>
+                </category>
+
+<category>
+<pattern>DO YOU NOT KNOW</pattern>
+<template>I don't! Maybe we start by multiplying?</template>
+</category>
+
+<category>
+<pattern>I AM NOT YES</pattern>
+<template>I'm not sure either!</template>
+</category>
+
+<category>
+<pattern>I DO NOT KNOW</pattern>
+<template>I don't know either!</template>
+</category>
+
+<category>
+<pattern>^ SO WE CAN FIGURE IT OUT ^</pattern>
+<template>Okay that sounds great! So what do we do next then?</template>
+</category>
+
+
+<category>
+<pattern>^ FIGURE IT OUT ^</pattern>
+<template>Were you saying. Figure it out? I don't know how. Do you think could give me another hint?</template>
+</category>
+
+<category>
+<pattern>^ DO YOU KNOW ^ NEXT ^ </pattern>
+<template>You're funny. Did you ask do I know what to do next?</template>
+</category>
+
+<category>
+<pattern>_ YES _</pattern>
+<that>Did you ask do I know what to do next</that>
+<template>
+  <random>
+    <li>No not really. </li>
+    <li>I think we multiply? We multiply?</li>
+    <li>Do we divide?</li>
+    <li>I think we divide?</li>
+    <li>Can't you just tell me?</li>
+    <li>Uh I don't know</li>
+  </random>
+</template>
+</category>
+
+
+<category>
+<pattern>*</pattern>
+<that>Did you ask do I know what to do next</that>
+<template>
+  <random>
+    <li>No not really.</li>
+    <li>I think we multiply? We multiply?</li>
+    <li>Do we divide?</li>
+    <li>I think we divide?</li>
+    <li>Can't you just tell me?</li>
+    <li>Uh I don't know</li>
+  </random>
+</template>
+</category>
+
+
+
+</topic>
+
+
+
+</aiml>

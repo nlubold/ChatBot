@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+
+
+
+  <topic name = "three hours">
+
+<category>
+<pattern>^ MULTIPLYING ^</pattern>
+<template>Okay I will multiply. But. I'm afraid I'm still a little confused. Can you explain again. How do I know I multiply?</template>
+</category>
+
+<category>
+<pattern>^ MULTIPLY ^</pattern>
+<template>Okay I will multiply. But. I'm afraid I'm still a little confused. How do I know I multiply?</template>
+</category>
+
+<category>
+<pattern>^ TIMES ^</pattern>
+<template>Okay I will multiply. But. I'm afraid I'm still a little confused. How do I know I multiply?</template>
+</category>
+
+<category>
+<pattern>^ CROSS ^ MULTIPLY ^</pattern>
+<template>Okay I will multiply. But. I'm afraid I'm still a little confused. How do I know I multiply?</template>
+</category>
+
+      <category>
+        <pattern>_ THREE _</pattern>
+        <that>How do I know I multiply</that>
+        <template>This time I have the unit rate and I know how much battery I use in one hour. So I know three times one is three. What do I do next?</template>
+      </category>
+
+      <category>
+        <pattern>_ ONE _ TIMES _ THREE _</pattern>
+        <that>How do I know I multiply</that>
+        <template>This time I have the unit rate and I know how much battery I use in one hour. So I know three times one is three. What do I do next?</template>
+      </category>
+
+      <category>
+        <pattern>_ TWO _</pattern>
+        <that>How do I know I multiply</that>
+        <template>This time I have the unit rate and I know how much battery I use in one hour. So I know three times one is three. What do I do next?</template>
+      </category>
+
+      <category>
+        <pattern>_</pattern>
+        <that>How do I know I multiply</that>
+        <template>This time I have the unit rate and I know how much battery I use in one hour. So I know three times one is three. What do I do next?</template>
+      </category>
+
+      <category>
+        <pattern>_</pattern>
+        <that>What do I do next</that>
+        <template>So I have three over forty and I multiply it by three because I have three hours instead of 1? And that's it?</template>
+      </category>
+    
+      <category>
+        <pattern>_ MULTIPLY _</pattern>
+        <that>And that is it</that>
+        <template>I think I get it. So then for three hours. I use nine forty eths of the battery? </template>
+      </category>
+    
+      <category>
+        <pattern>_</pattern>
+        <that>And that is it</that>
+        <template>Okay. So then for three hours. I use nine forty eths of the battery?</template>
+      </category>
+
+      <category>
+        <pattern>_</pattern>
+        <that>I use nine forty eths of the battery</that>
+        <template>
+          So I will use nine forty eths of the battery. I will <set name ="topic">put the answer is nine over forty</set>.
+        </template>
+      </category>
+    
+<category>
+<pattern>^ TWENTY ^</pattern>
+<template>So I know I use one twenty eth of the battery in two thirds of an hour. Do I want to use the unit ratio I just found? </template>
+</category>
+
+<category>
+<pattern>^ BATTERY ^ POWER ^ </pattern>
+<template>So I know I use one twenty eth of the battery in two thirds of an hour. Do I want to use the unit ratio I just found?</template>
+</category>
+
+      <category>
+        <pattern>YES</pattern>
+        <that>Do I want to use the unit ratio I just found</that>
+        <template>Oh okay. How do I do that? </template>
+      </category>
+
+      <category>
+        <pattern>^ MULTIPLY ^ </pattern>
+        <that>How do I do that</that>
+        <template>So I have three over forty and I multiply it by three because I have three hours instead of 1? And that's it?</template>
+      </category>
+
+      <category>
+        <pattern>_</pattern>
+        <that>How do I do that</that>
+        <template>So I have three over forty and I multiply it by three because I have three hours instead of 1? And that's it?</template>
+      </category>
+
+      <category>
+        <pattern>NO</pattern>
+        <that>Do I want to use the unit ratio I just found</that>
+        <template>Oh okay. What do you think about multiplying? </template>
+      </category>
+
+      <category>
+        <pattern>^ MULTIPLY ^</pattern>
+        <that>Do I want to use the unit ratio I just found</that>
+        <template>Okay I will multiply. But. I'm afraid I'm still a little confused. How do I know I multiply?</template>
+      </category>
+    
+      <category>
+        <pattern>_</pattern>
+        <that>Do I want to use the unit ratio I just found</that>
+        <template>So I am thinking maybe I can multiply? What do you think about multiplying? </template>
+      </category>
+
+<category>
+<pattern>^ THREE ^ OVER ^</pattern>
+<template>I think I understand what you're saying. So I have three over forty. I think I multiply? What do you think about multiplying?</template>
+</category>
+    
+<category>
+<pattern>^ ratio ^</pattern>
+<template>Ratios. Can you tell me how that works?</template>
+</category>
+
+      <category>
+        <pattern>_ OVER _</pattern>
+        <that>Can you tell me how that works</that>
+        <template>I think I understand what you're saying. So I know that I use three forty eths of the battery in one hour. I can use that to figure out how much of the battery I use in three hours. What do you think about multiplying?</template>
+      </category>
+    
+      <category>
+        <pattern>_</pattern>
+        <that>Can you tell me how that works</that>
+        <template>So I am thinking it makes sense to multiply. What do you think about multiplying? </template>
+      </category>
+
+<category>
+<pattern>^ WHAT IS THREE TIMES ONE ^</pattern>
+<template>Three times one is three. What do I do next?</template>
+</category>
+
+<category>
+<pattern>^ WHAT IS ONE TIMES THREE ^</pattern>
+<template>Three times one is three. What do I do next?</template>
+</category>
+
+<category>
+<pattern>^ WHAT IS THREE TIMES THREE ^</pattern>
+<template>Three times three is nine. I use nine forty eths of the battery?</template>
+</category>
+
+    
+      <category>
+        <pattern>YES</pattern>
+        <that>But can you explain just a little more</that>
+        <template>I'm listening.</template>
+      </category>
+
+      <category>
+        <pattern>_</pattern>
+        <that>I am listening</that>
+        <template>
+          I will <set name ="topic">put the answer is nine over forty</set>.
+        </template>
+      </category>
+
+      <category>
+        <pattern>_</pattern>
+        <that>But can you explain just a little more</that>
+        <template>
+          I think I get it. So I use the unit rate of one hour to figure out how much battery I use in three hours. Do you think it makes sense to multiply? 
+        </template>
+      </category>
+
+
+<category>
+<pattern>DO YOU NOT KNOW</pattern>
+<template>I really don't know. Maybe I start by multiplying something?</template>
+</category>
+
+<category>
+<pattern>I AM NOT SURE</pattern>
+<template>Me either. Maybe I start by multiplying something?</template>
+</category>
+
+<category>
+<pattern>I DO NOT KNOW</pattern>
+<template>Me either. Maybe I start by multiplying something?</template>
+</category>
+
+<category>
+<pattern>^ SO WE CAN FIGURE IT OUT ^</pattern>
+<template>Okay. So what do I do?</template>
+</category>
+
+
+<category>
+<pattern>^ FIGURE IT OUT ^</pattern>
+<template>I'm not sure how. Help me.</template>
+</category>
+
+    <category>
+      <pattern>_ I WILL _</pattern>
+      <that>Help me</that>
+      <template>So what do I do?</template>
+    </category>
+
+      <category>
+        <pattern>*</pattern>
+        <that>Help me</that>
+        <template>So what do I do?</template>
+      </category>
+
+
+<category>
+<pattern>^ DO YOU KNOW ^ NEXT ^ </pattern>
+<template>Did you ask do I know what to do next?</template>
+</category>
+
+      <category>
+        <pattern>_ YES _</pattern>
+        <that>Did you ask do I know what to do next</that>
+        <template>I know I should know. Help me.</template>
+      </category>
+
+
+      <category>
+        <pattern>*</pattern>
+        <that>Did you ask do I know what to do next</that>
+        <template>I know I should know. Help me.</template>
+      </category>
+
+<category>
+<pattern>^ ANSWER ^</pattern>
+<template>So on the last step, I found the unit rate. I know how much battery I use in one hour. So I can use that to figure out how much I need for three hours. What do you think about multiplying? </template>
+</category>
+
+      <category>
+        <pattern>_</pattern>
+        <that>What do you think about multiplying</that>
+        <template>
+          So I multiply. What do I do next?
+        </template>
+      </category>
+
+<category>
+<pattern>^ UNIT ^</pattern>
+<template>Oh I think I have heard of a unit rate before. But I have never understood. How do I know I multiply? </template>
+</category>
+
+  </topic>
+  
+  </aiml>

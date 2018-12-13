@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+
+
+<topic name = "fourteen baskets">
+
+
+<category>
+<pattern>^ FIVE ^</pattern>
+<template>So I know we need five sticks for every three baskets. I remember you explaining about unit rates. If we divide. We can figure out the number of sticks we need for just one basket?</template>
+</category>
+
+<category>
+<pattern>^ THREE ^</pattern>
+  <template>So I know we need five sticks for every three baskets. I remember you explaining about unit rates. If we divide. We can figure out the number of sticks we need for just one basket?</template>
+</category>
+
+<category>
+<pattern>^ DIVIDE ^</pattern>
+  <template>So I know we need five sticks for every three baskets. I remember you explaining about unit rates. If we divide. We can figure out the number of sticks we need for just one basket?</template>
+</category>
+
+<category>
+<pattern>^ DIVIDED ^</pattern>
+  <template>So I know we need five sticks for every three baskets. I remember you explaining about unit rates. If we divide. We can figure out the number of sticks we need for just one basket?</template>
+</category>
+  
+<category>
+<pattern>^ OVER ^</pattern>
+  <template>So I know we need five sticks for every three baskets. I remember you explaining about unit rates. If we divide. We can figure out the number of sticks we need for just one basket?</template><template></template>
+</category>
+
+        <category>
+          <pattern>^ NO ^</pattern>
+          <that>We can figure out the number of sticks we need for just one basket</that>
+          <template>Ah! We don't divide?  Why not?</template>
+        </category>
+
+        <category>
+          <pattern>^ NOT ^</pattern>
+          <that>We can figure out the number of sticks we need for just one basket</that>
+          <template>Ah! We don't divide? Why not?</template>
+        </category>
+
+                <category>
+                  <pattern>_</pattern>
+                  <that>Why not</that>
+                  <template>Oh if we just put five over three. That keeps the numbers simple!</template>
+                </category>
+    
+        <category>
+          <pattern>^ OVER ^</pattern>
+          <that>We can figure out the number of sticks we need for just one basket</that>
+          <template>Ah! We just put five over three! That keeps the numbers simple!  </template>
+        </category>
+
+        <category>
+          <pattern>_</pattern>
+          <that>We can figure out the number of sticks we need for just one basket</that>
+          <template>Ah! If we just put five over three. That keeps the numbers simple!  </template>
+        </category>
+
+                  <category>
+                    <pattern>_</pattern>
+                    <that>That keeps the numbers simple</that>
+                    <template>We can mulitply five over three by fourteen and that is seventy over three! That is a lot of sticks! Of course everybody can collect their own.</template>
+                  </category>
+
+
+                            <category>
+                              <pattern>_</pattern>
+                              <that>Of course everybody can collect their own</that>
+                              <template>I can use what you taught me to convert it to a mixed fraction. The mixed fraction will help us understand exactly how many full sticks we need. So I will <set name="topic">put the answer is twenty nine</set> sticks plus one third of a stick.
+                              </template>
+                            </category>
+
+  <category>
+    <pattern>^ RATE ^</pattern>
+    <template>So I know we need five sticks for every three baskets. I remember you explaining about unit rates. If we divide. We can figure out the number of sticks we need for just one basket?</template>
+    <template></template>
+  </category>
+  
+  
+  <category>
+<pattern>^ ANSWER ^</pattern>
+<template>Hmmmm. I am not sure what the answer is. Does it involve finding the unit rate?</template>
+</category>
+
+      <category>
+        <pattern>_</pattern>
+        <that>Does it involve finding the unit rate</that>
+        <template>So I know we need five sticks for every three baskets. I remember you explaining about unit rates. If we divide. We can figure out the number of sticks we need for just one basket?</template>
+      </category>
+
+<category>
+<pattern>DO YOU NOT KNOW</pattern>
+<template>I don't! Maybe we start by multiplying?</template>
+</category>
+
+<category>
+<pattern>I AM NOT YES</pattern>
+<template>I'm not sure either!</template>
+</category>
+
+<category>
+<pattern>I DO NOT KNOW</pattern>
+<template>I don't know either!</template>
+</category>
+
+<category>
+<pattern>^ SO WE CAN FIGURE IT OUT ^</pattern>
+<template>Okay that sounds great! So what do we do next then?</template>
+</category>
+
+
+<category>
+<pattern>^ FIGURE IT OUT ^</pattern>
+<template>Were you saying. Figure it out? I don't know how. Do you think could give me another hint?</template>
+</category>
+
+<category>
+<pattern>^ DO YOU KNOW ^ NEXT ^ </pattern>
+<template>You're funny. Did you ask do I know what to do next?</template>
+</category>
+
+<category>
+<pattern>_ YES _</pattern>
+<that>Did you ask do I know what to do next</that>
+<template>
+  <random>
+    <li>No not really. </li>
+    <li>I think we multiply? We multiply?</li>
+    <li>Do we divide?</li>
+    <li>I think we divide?</li>
+    <li>Can't you just tell me?</li>
+    <li>Uh I don't know</li>
+  </random>
+</template>
+</category>
+
+
+<category>
+<pattern>*</pattern>
+<that>Did you ask do I know what to do next</that>
+<template>
+  <random>
+    <li>No not really.</li>
+    <li>I think we multiply? We multiply?</li>
+    <li>Do we divide?</li>
+    <li>I think we divide?</li>
+    <li>Can't you just tell me?</li>
+    <li>Uh I don't know</li>
+  </random>
+</template>
+</category>
+
+
+
+</topic>
+
+
+
+</aiml>

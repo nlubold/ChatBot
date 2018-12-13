@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+
+
+<topic name = "only the day">
+
+
+<category>
+<pattern>^ RATIO ^</pattern>
+<template></template>
+</category>
+
+<category>
+<pattern>^ DIVIDE ^</pattern>
+<template></template>
+</category>
+  
+<category>
+<pattern>^ OVER ^</pattern>
+<template></template>
+</category>
+
+<category>
+<pattern>^ TIMES ^</pattern>
+<template></template>
+</category>
+
+<category>
+<pattern>^ MULTIPLY ^</pattern>
+<template></template>
+</category>
+
+<category>
+<pattern>^ SAME THING ^</pattern>
+<template></template>
+</category>
+
+<category>
+<pattern>^ LAST TIME ^</pattern>
+<template></template>
+</category>
+
+<category>
+<pattern>^ MULTIPLICATION ^</pattern>
+<template></template>
+</category>
+
+      <category>
+      <pattern>_ YES _</pattern>
+      <that></that>
+      <template></template>
+      </category>
+
+      <category>
+      <pattern>_</pattern>
+      <that></that>
+      <template></template>
+      </category>
+
+      <category>
+      <pattern>_</pattern>
+      <that></that>
+      <template></template>
+      </category>
+
+      <category>
+      <pattern>_ NO _</pattern>
+      <that></that>
+      <template></template>
+      </category>
+
+      <category>
+      <pattern>_</pattern>
+      <that></that>
+      <template></template>
+      </category>
+
+      <category>
+      <pattern>_</pattern>
+      <that></that>
+      <template></template>
+      </category>
+
+
+
+<category>
+<pattern>^ ANSWER ^</pattern>
+<template></template>
+</category>
+
+
+<category>
+<pattern>DO YOU NOT KNOW</pattern>
+<template>I don't! Maybe we start by multiplying?</template>
+</category>
+
+<category>
+<pattern>I AM NOT YES</pattern>
+<template>I'm not sure either!</template>
+</category>
+
+<category>
+<pattern>I DO NOT KNOW</pattern>
+<template>I don't know either!</template>
+</category>
+
+<category>
+<pattern>^ SO WE CAN FIGURE IT OUT ^</pattern>
+<template>Okay that sounds great! So what do we do next then?</template>
+</category>
+
+
+<category>
+<pattern>^ FIGURE IT OUT ^</pattern>
+<template>Were you saying. Figure it out? I don't know how. Do you think could give me another hint?</template>
+</category>
+
+<category>
+<pattern>^ DO YOU KNOW ^ NEXT ^ </pattern>
+<template>You're funny. Did you ask do I know what to do next?</template>
+</category>
+
+<category>
+<pattern>_ YES _</pattern>
+<that>Did you ask do I know what to do next</that>
+<template>
+  <random>
+    <li>No not really. </li>
+    <li>I think we multiply? We multiply?</li>
+    <li>Do we divide?</li>
+    <li>I think we divide?</li>
+    <li>Can't you just tell me?</li>
+    <li>Uh I don't know</li>
+  </random>
+</template>
+</category>
+
+
+<category>
+<pattern>*</pattern>
+<that>Did you ask do I know what to do next</that>
+<template>
+  <random>
+    <li>No not really.</li>
+    <li>I think we multiply? We multiply?</li>
+    <li>Do we divide?</li>
+    <li>I think we divide?</li>
+    <li>Can't you just tell me?</li>
+    <li>Uh I don't know</li>
+  </random>
+</template>
+</category>
+
+
+
+</topic>
+
+
+
+</aiml>
