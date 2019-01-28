@@ -4,8 +4,8 @@ This repository contains all of the chatbot files used with Pandorabots to gener
 These two files allow you to upload and then talk to a bot using the Pandorabots Python API. You will need to open both files and edit the User Key and App ID. 
 
 The Create_List_Load program allows you to do the following:
-* List all the files belonging to a particular bot
-* Create a new bot (arg: list bot)
+* List all the files belonging to a particular bot (arg: list bot)
+* Create a new bot (arg: create bot)
 * Compile an existing bot (arg: compile bot)
 * Upload a directory of files to a bot (arg: upload bot directory)
 * Upload a single file (arg: uploadsingle bot file)
